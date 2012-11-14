@@ -1,0 +1,279 @@
+<?php
+echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'contratar-servico'));
+?>
+<div id="container">
+		<div id="wrapper">
+			<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', ['tctl00$ContentPlaceHolder_Body$uppContratarServico','ContentPlaceHolder_Body_uppContratarServico'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+			
+    <div id="ContentPlaceHolder_Body_uppContratarServico">
+	
+            <div id="content">
+                
+                    <!--Conteudo Principal-->
+                    <div class="relative row">
+                        <h2 class="title">
+                            contratar um servi�o</h2>
+                        <div id="ContentPlaceHolder_Body_pnlAlertaServico" class="alert">
+		
+                            Voc� ainda n�o possui um servi�o contratado!
+	</div>
+                    </div>
+                    
+                        <!--COM OP��O 1 E 2-->
+                        <h5 class="title_1">
+                            Escolha o tipo de servi�o que deseja contratar:</h5>
+                        
+                        <div id="tipoServico">
+                            <!--DESABILITADO-->
+                            <div>
+                                <input type="hidden" name="ctl00$ContentPlaceHolder_Body$hdnServicoSelecionado" id="ContentPlaceHolder_Body_hdnServicoSelecionado" /><div id="ContentPlaceHolder_Body_pnlPlano">
+		
+                                    <div id="tipoServicoLeft">
+                                        <div class="opcao opcao1">
+                                            <h3>
+                                                Planos</h3>
+                                            <span>Escolha a quantidade mensal que preferir.</span>
+                                        </div>
+                                        <div class="boxrounded_a">
+                                            <div class="boxroundedCont_a">
+                                                <h4>
+                                                    Planos dispon�veis:</h4>
+                                                <fieldset>
+                                                    <ul id="ContentPlaceHolder_Body_rblPlanosDisp" class="radioList">
+			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_0" type="radio" name="ctl00$ContentPlaceHolder_Body$rblPlanosDisp" value="emails/m�s - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_0">emails/m�s - <span class="semCredUvaia">R$</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_1" type="radio" name="ctl00$ContentPlaceHolder_Body$rblPlanosDisp" value="emails/m�s - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_1">emails/m�s - <span class="semCredUvaia">R$</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_2" type="radio" name="ctl00$ContentPlaceHolder_Body$rblPlanosDisp" value="emails/m�s - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_2">emails/m�s - <span class="semCredUvaia">R$</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_3" type="radio" name="ctl00$ContentPlaceHolder_Body$rblPlanosDisp" value="emails/m�s - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$3\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_3">emails/m�s - <span class="semCredUvaia">R$</span></label></li>
+
+		</ul>
+                                                </fieldset>
+                                            </div>
+                                            <div class="boxroundedBot_a">
+                                            </div>
+                                        </div>
+                                        <!--/.boxrounded_a-->
+                                        <a id="ContentPlaceHolder_Body_btnSaibaMaisSobrePlanos" class="btnSaibaMais openBoxTip" href="#">Saiba mais sobre Planos</a>
+                                        <div class="boxTip">
+                                            <div class="boxTipCont">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus nisl
+                                                    in purus lacinia ultricies. Curabitur nibh mauris, facilisis et euismod nec, consequat
+                                                    vitae libero. Aliquam lectus lacus, tristique quis volutpat ac, adipiscing tincidunt
+                                                    risus. Vivamus vitae suscipit nisl. Morbi pretium bibendum diam venenatis bibendum.
+                                                    Aliquam erat volutpat. Vivamus
+                                                </p>
+                                            </div>
+                                            <a href="#" class="closeBoxTip">Fechar</a>
+                                        </div>
+                                    </div>
+                                
+	</div><div id="ContentPlaceHolder_Body_pnlCreditos">
+		
+                                    <div id="tipoServicoRight">
+                                        <div class="opcao opcao2">
+                                            <h3>
+                                                cr�ditos
+                                            </h3>
+                                            <span>Adquira cr�ditos com a quantidade de emails que deseja enviar (1 cr�dito = 1 e-mail).</span>
+                                        </div>
+                                        <div class="boxrounded_a">
+                                            <div class="boxroundedCont_a">
+                                                <h4>
+                                                    Pacotes dispon�veis:</h4>
+                                                <fieldset>
+                                                    <ul id="ContentPlaceHolder_Body_rblCreditosDisp" class="radioList">
+			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_0" type="radio" name="ctl00$ContentPlaceHolder_Body$rblCreditosDisp" value="emails - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_0">emails - <span class="semCredUvaia">R$</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_1" type="radio" name="ctl00$ContentPlaceHolder_Body$rblCreditosDisp" value="emails - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_1">emails - <span class="semCredUvaia">R$</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_2" type="radio" name="ctl00$ContentPlaceHolder_Body$rblCreditosDisp" value="emails - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_2">emails - <span class="semCredUvaia">R$</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_3" type="radio" name="ctl00$ContentPlaceHolder_Body$rblCreditosDisp" value="emails - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$3\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_3">emails - <span class="semCredUvaia">R$</span></label></li>
+
+		</ul>
+                                                </fieldset>
+                                            </div>
+                                            <div class="boxroundedBot_a">
+                                            </div>
+                                        </div>
+                                        <!--/.boxrounded_a-->
+                                        <a id="ContentPlaceHolder_Body_btnSaibaMaisSobreCreditos" class="btnSaibaMais openBoxTip" href="#">Saiba mais sobre Cr�ditos</a>
+                                        <div class="boxTip">
+                                            <div class="boxTipCont">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus nisl
+                                                    in purus lacinia ultricies. Curabitur nibh mauris, facilisis et euismod nec, consequat
+                                                    vitae libero. Aliquam lectus lacus, tristique quis volutpat ac, adipiscing tincidunt
+                                                    risus. Vivamus vitae suscipit nisl. Morbi pretium bibendum diam venenatis bibendum.
+                                                    Aliquam erat volutpat. Vivamus
+                                                </p>
+                                            </div>
+                                            <a href="#" class="closeBoxTip">Fechar</a>
+                                        </div>
+                                    </div>
+                                
+	</div>
+                            </div>
+                            <!--fecharDESABILITADO-->
+                            <!--/#tipoServicoLeft-->
+                            <div>
+                                
+                            </div>
+                            <!--fechaDESABILITADO-->
+                            <!--/#tipoServicoRight-->
+                        </div>
+                    
+                    <!--/#tipoServico-->
+                    
+                    <div id="formaPagamento">
+                        <div id="formaPagamentoLeft">
+                            <div class="boxrounded_a">
+                                <div class="boxroundedCont_a">
+                                    <h4>
+                                        Cart�es de cr�dito dispon�veis:</h4>
+                                    <fieldset class="formPagamentoCard">
+                                        <ol id="ContentPlaceHolder_Body_rblBandeiraCartao" class="bandeiraCartao">
+		<li><input id="ContentPlaceHolder_Body_rblBandeiraCartao_0" type="radio" name="ctl00$ContentPlaceHolder_Body$rblBandeiraCartao" value="Mastercard" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblBandeiraCartao$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblBandeiraCartao_0"><span><img src="../img/site/mastercard.gif" alt="Mastercard" title="Mastercard" /></span>Mastercard</label></li>
+		<li><input id="ContentPlaceHolder_Body_rblBandeiraCartao_1" type="radio" name="ctl00$ContentPlaceHolder_Body$rblBandeiraCartao" value="Visa" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblBandeiraCartao$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblBandeiraCartao_1"><span><img src="../img/site/visa.gif" alt="Visa" title="Visa" /></span>Visa</label></li>
+		<li><span class="aspNetDisabled"><input id="ContentPlaceHolder_Body_rblBandeiraCartao_2" type="radio" name="ctl00$ContentPlaceHolder_Body$rblBandeiraCartao" value="Cr�ditos Uvaia" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblBandeiraCartao$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblBandeiraCartao_2"><span><img src="../img/credUvaia.png" alt="Cr�ditos Uvaia" title="Cr�ditos Uvaia" /></span><strong>Cr�ditos Uvaia</strong><a target="_blank" href="http://www.uvaia.com.br/webforms/Default.aspx" class="linkUvaia">Conhe�a o Uvaia</a></label></span></li>
+
+	</ol>
+                                        <div class="boxTip">
+                                            <div class="boxTipCont">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus nisl
+                                                    in purus lacinia ultricies. Curabitur nibh mauris, facilisis et euismod nec, consequat
+                                                    vitae libero. Aliquam lectus lacus, tristique quis volutpat ac, adipiscing tincidunt
+                                                    risus. Vivamus vitae suscipit nisl. Morbi pretium bibendum diam venenatis bibendum.
+                                                    Aliquam erat volutpat. Vivamus
+                                                </p>
+                                            </div>
+                                            <a href="#" class="closeBoxTip">Fechar</a>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="boxroundedBot_a">
+                                </div>
+                            </div>
+                            <!--/.boxrounded_a-->
+                        </div>
+                        <!--/#formaPagamentoLeft-->
+                        <div id="formaPagamentoRight">
+                            <fieldset>
+                                
+                                    <!--Era o q j� estava programado-->
+                                    <div>
+                                        <label for="ContentPlaceHolder_Body_tbNomeCartao" id="ContentPlaceHolder_Body_lblNomeCartao" class="lblTextbox">Nome impresso no cart�o:</label><input name="ctl00$ContentPlaceHolder_Body$tbNomeCartao" type="text" id="ContentPlaceHolder_Body_tbNomeCartao" class="textbox" />
+                                    </div>
+                                   
+                                
+                                    <div class="formPagamento">
+                                        <p>
+                                            Forma do Pagamento: <span id="ContentPlaceHolder_Body_lblFormPagamento">n�o selecionado</span>
+                                        </p>
+                                        
+                                            <p>
+                                                Servi�o escolhido: <span id="ContentPlaceHolder_Body_lblServico"></span>
+                                            </p>
+                                            
+                                    </div>
+                                
+                            </fieldset>
+                        </div>
+
+                        <!--/#formaPagamentoRight-->
+                        <div class="btnContLine">
+                            <contenttemplate>
+                            <a id="ContentPlaceHolder_Body_btnConcluirCompra" class="btnConcluirCompra" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder_Body$btnConcluirCompra&quot;, &quot;&quot;, true, &quot;Contratar&quot;, &quot;&quot;, false, true))">Concluir Compra</a>
+                        </contenttemplate>
+                        </div>
+                    </div>
+                    <!--/#formaPagamento-->
+                    <span id="ContentPlaceHolder_Body_ctvContratar" style="display:none;"></span>
+            </div>
+        
+</div>
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<div id="footer">
+    <div id="footerCont">
+        <ul>
+            <li><a href="PoliticaPrivacidade.aspx">Pol�tica de Privacidade</a></li>
+            <li>|</li>
+            <li><a href="TermosCondicoes.aspx">Termos e Condi��es de Uso</a></li>
+        </ul>
+        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
+    </div>
+</div>
+	<!--/#footer-->
+	
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder_Body_ctvContratar"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder_Body_ctvContratar = document.all ? document.all["ContentPlaceHolder_Body_ctvContratar"] : document.getElementById("ContentPlaceHolder_Body_ctvContratar");
+ContentPlaceHolder_Body_ctvContratar.display = "None";
+ContentPlaceHolder_Body_ctvContratar.validationGroup = "Contratar";
+ContentPlaceHolder_Body_ctvContratar.evaluationfunction = "CustomValidatorEvaluateIsValid";
+ContentPlaceHolder_Body_ctvContratar.clientvalidationfunction = "fnCustomValidator";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+$(function () {
+$('.openBoxTip').click(function (e) {
+e.preventDefault();
+var position = $(this).position();
+var height = $(this).outerHeight(true);
+var marginLeft = $(this).css('marginLeft');
+margin = parseInt(marginLeft, 10);
+$(this).parent().find('.boxTip').css({
+'top': position.top + height + 3,
+'left': position.left + margin + 10
+}).toggle();
+});
+$('.closeBoxTip').click(function (e) { e.preventDefault(); $(this).parent('.boxTip').hide(); });
+});
+ Cufon.replace("#menuHeader, #pnlNaoLogado span, #homeBloco1 p, #homeBloco4 h4, #homeBloco4 ul li span:first-child", { fontFamily: "Helvetica Neue", fontWeight: "500" });
+Cufon.replace(".title, .titleHome, .entryContent h3, .opcao h3, .fonte700, .emailClose, .linkHome, .emailOpen", { fontFamily: "Helvetica Neue", fontWeight: "700" });
+//]]>
+</script>
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'menuHeader', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ContentPlaceHolder_Body_ctvContratar').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_ctvContratar'));
+}
+//]]>
+</script>
+</form>
+	<script type="text/javascript">        Cufon.now(); </script>
+</body>
+</html>

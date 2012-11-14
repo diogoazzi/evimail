@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Evimail
+</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<link href="../img/favicon.ico" rel="shortcut icon" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" /><link href="../css/temp.css" rel="stylesheet" type="text/css" /><link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+	<script src="../js/lib/jquery.js" type="text/javascript"></script>
+	<script src="../js/cufon/cufon.js" type="text/javascript"></script>
+	<script src="../js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
+	<script src="../js/cufon-fonts.js" type="text/javascript"></script>
+	<script src="../js/base.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+	
+	<!--[if IE]> 
+		<link href="../css/ie.css" rel="stylesheet" type="text/css" />
+		<script src="../js/DD_rounded.js" type="text/javascript"></script>
+		<script type="text/javascript">   
+			DD_roundies.addRule('.validation_summary', '10px');
+		</script> 
+	<![endif]-->
+	<!--[if IE 6]> 
+		<script type="text/javascript" src="../js/lib/DD_belatedPNG.js"></script> 
+		<script type="text/javascript"> DD_belatedPNG.fix('*'); </script> 
+	<![endif]-->
+
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function () {
+			//Examples of how to assign the ColorBox event to elements
+			$(".modalAlerta").colorbox({ width: "80%", height: "80%", iframe: true });
+			$(".esqueciSenha").colorbox({ width: "470px", height: "200px", iframe: true });
+		});
+
+		//function closeColorbox() {
+			//alert('1');
+			//$.fn.colorbox.close();
+		//}
+	</script>
+        
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22354822-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+	
+    <script type="text/javascript">
+        $(function () {
+            i = 0;
+            $('#formaPagamentoLeft ol li').each(function () {
+                i++;
+                $(this).addClass('li_' + i);
+            });
+        });
+        //
+        function fnCustomValidator(source, args) {
+            args.IsValid = true;
+        };
+    </script>
+</head>
+<body id="body" class="inner contratarServico">
+	<form method="post" action="ContratarServico.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="formMain">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwODczNzIwNDkPFgYeJkNvbnRyYXRhclNlcnZpY29fVGlwb1NlcnZpY29Db250cmF0YWRvCylaVk9MLkVudW1lcmFjYW8rRW51bVRpcG9TZXJ2aWNvLCBWT0wsIFZlcnNpb249MS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsAB4OY29kTG9qYUV2aW1haWxmHgVjcG5wagUOMjUzNjE0NTgwMDAxMDUWAmYPZBYCAgMPFgIeBWNsYXNzBRZpbm5lciBjb250cmF0YXJTZXJ2aWNvFgICAQ9kFgYCAQ9kFgJmDw8WBB4IQ3NzQ2xhc3MFDGhlYWRlckxvZ2Fkbx4EXyFTQgICZBYGAgMPPCsADQEMFCsABWQUKwACFgIeBFRleHQFBEhvbWVkFCsAAhYCHwYFClF1ZW0gU29tb3NkFCsAAhYCHwYFFFBlcmd1bnRhcyBGcmVxdWVudGVzZBQrAAIWAh8GBQxGYWxlIENvbm9zY29kZAIHDw8WAh4HVmlzaWJsZWdkFgYCAQ8PFgIfBgUEU2FpcmRkAgMPFgIfBgUJU2FtaXJhIFBKZAIFDxYCHwYFKFZvY8OqIG7Do28gcG9zc3VpIHVtIHNlcnZpw6dvIGNvbnRyYXRhZG9kAgkPFgIfB2cWAgIBD2QWAgIHDxYCHwMFCHNlbGVjdGVkZAIFD2QWAgIBD2QWAmYPZBYCAgEPZBYGAgMPZBYKAgEPDxYCHwdoZGQCBA9kFgICAQ8QZA8WBGYCAQICAgMWBBAFMmVtYWlscy9tw6pzIC0gPHNwYW4gY2xhc3M9InNlbUNyZWRVdmFpYSI+UiQ8L3NwYW4+ZGcQBTJlbWFpbHMvbcOqcyAtIDxzcGFuIGNsYXNzPSJzZW1DcmVkVXZhaWEiPlIkPC9zcGFuPmRnEAUyZW1haWxzL23DqnMgLSA8c3BhbiBjbGFzcz0ic2VtQ3JlZFV2YWlhIj5SJDwvc3Bhbj5kZxAFMmVtYWlscy9tw6pzIC0gPHNwYW4gY2xhc3M9InNlbUNyZWRVdmFpYSI+UiQ8L3NwYW4+ZGcWAGQCBQ9kFgICAQ8QZA8WBGYCAQICAgMWBBAFLWVtYWlscyAtIDxzcGFuIGNsYXNzPSJzZW1DcmVkVXZhaWEiPlIkPC9zcGFuPmRnEAUtZW1haWxzIC0gPHNwYW4gY2xhc3M9InNlbUNyZWRVdmFpYSI+UiQ8L3NwYW4+ZGcQBS1lbWFpbHMgLSA8c3BhbiBjbGFzcz0ic2VtQ3JlZFV2YWlhIj5SJDwvc3Bhbj5kZxAFLWVtYWlscyAtIDxzcGFuIGNsYXNzPSJzZW1DcmVkVXZhaWEiPlIkPC9zcGFuPmRnFgBkAgcPDxYCHwdoZBYCAgEPEGRkFgBkAggPDxYCHwdoZBYCAgEPEGRkFgBkAgYPEGRkFgBkAgkPZBYCAgQPZBYCAgQPEA8WAh4HQ2hlY2tlZGdkZGRkAgcPZBYCAgEPFgIfBgUEMjAxMmRkHZipB4qunLEqEvyJGv+gQ5VBdztUFsP83cseFbm1SwA=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formMain'];
+if (!theForm) {
+    theForm = document.formMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pYi-1yPyfj6-ZVqQVaJqt6xCxM8HP-Uf8KO8ZL_WxaL5Z4aB2RKtjao8m-9bNS5WG6V8yH-026Bn0l1OzHLUXWP392xgSiHkqbQS78sFkE41&amp;t=634635510940000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=BWd0jzbNchrMRu3cylIzmG2-I-1ViwWf2sl7Lh_coA4pkvIVgiAjtMLJWd5PsfpoqRE4hQXQWF4b5raf4c4pg6HH1B76R9ZIqsSoXSamhTKSsBIO6wOpcakZzOi1BuozqLpaOXHk-qBBBnLKBGPi-w2&amp;t=57d51992" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=FSq42yTuwVGNTe1ZDQM8lypie3QZ4RhEx-NWB5IJcs2dBhmHIF_DJB3yIW0Y7cpQ85WGtWOtonO9xFqRNnp3tr7tV-yWR2rNN58Xx0R_undrpUcBZGWf_sEaHjG2_xW2gOKlRvlgFF07R4zLPP_n3ohQvNnN7JtYkfONGmiuHyw1&amp;t=57d51992" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=MWKZiVNn975l4EU7UMFNOD67K9-a9paiHNmpLMOgH3TpeqJJ-_yiAhfxRzKXzAsdQ53E7bUdq6ttu8XNwzN44j4yokVG8zunAdqnWVwpNgx_2qWRAjWzwX1eHJL-FX4-DaAEI2MGQIyXiKk_ammTUY---QdHKEwkXZmkeP_MSNsOTu9SzpWEz-zRgSpK-cBw0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=AE_03CR8liGX6c9l4bbU-69Kb64xtTGarEPM6FQkDO3eGTnwLtzwaYhcBg4XxPyv8TuIXy54ZylE9B5YWQR-XXARrVrRgPZJ3NOzw12qyjR2sNH6ZHxY4Kkew_eQdAyV97tBODlGQxtuzE3S1kBrlzpO_fTO_3VZM-b4Sq1-DfdY6k591QFYfXoIH8IO70fy0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWEwLF9ZyKCgLS2bVfApiu5GsC/NPKJgL808omAvzTyiYC/NPKJgKW7sSSCQKSu/DIDwKSu/DIDwKSu/DIDwKSu/DIDwKZ87XqBgK7/OsdAoPcvJ0EArbGhMIHApbBhqsJAtq82b0OAvv7/+MMdocpwjqnnap+p6DkxTyqlQEnXKAqGqhi654SSXwiUgY=" />
+</div>
+	<div id="header" class="headerLogado">
+	
+    <div id="headerCont">
+        <h1 id="logo"><a href="../Webforms/Default.aspx">Evimail Evidência</a></h1>
+        <div id="menuHeader">
+		<ul class="level1">
+			<li><a class="level1" href="Default.aspx">Home</a></li><li><a class="level1" href="QuemSomos.aspx">Quem Somos</a></li><li><a class="level1" href="PerguntasFrequentes.aspx">Perguntas Frequentes</a></li><li><a class="level1" href="FaleConosco.aspx">Fale Conosco</a></li>
+		</ul>
+	</div>
+        
+        <div id="pnlLogado">
+		
+            <div id="divLogadoCont">
+                <a id="lnkSair" href="javascript:__doPostBack(&#39;ctl00$ucHeader$lnkSair&#39;,&#39;&#39;)">Sair</a>
+                <p class="firstChild">Olá,&nbsp;Samira PJ</p>
+                <p>Você não possui um serviço contratado</p>
+            </div>
+        
+	</div>
+    </div>
+    <!--/#headerCont-->
+    <div id="menuUsrLogado">
+        <ul id="ulsrLogado">
+            <li id="menuUsrLogado_Conta" <?php if($this->menu == 'minha-conta') echo 'class="selected"';?>><a href="minha-conta"><span>Minha Conta</span></a></li>
+            <li id="menuUsrLogado_Dados" <?php if($this->menu == 'alterar-dados') echo 'class="selected"';?>><a href="minha-conta/alterar-daodos"><span>Alterar Dados</span></a></li>
+            <li id="menuUsrLogado_Emails" <?php if($this->menu == 'emails') echo 'class="selected"';?>><a href="GerenciarEmails.aspx"><span>Gerenciar Emails Adicionais</span></a></li>
+            <li id="menuUsrLogado_Contratar" <?php if($this->menu == 'contratar') echo 'class="selected"';?>><a href="ContratarServico.aspx"><span>Contratar um Servi�o</span></a></li>
+            <li id="menuUsrLogado_Historico" <?php if($this->menu == 'historico') echo 'class="selected"';?>> <a href="ConsultarHistorico.aspx"><span>Consultar Hist�rico de Emails</span></a></li>
+        </ul>
+    </div>
+
+</div>
+	<!--/#header-->
