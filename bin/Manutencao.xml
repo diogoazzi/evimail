@@ -1,0 +1,2102 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Manutencao
+</name>
+</assembly>
+<members>
+<member name="F:Manutencao.UsuarioEdit.ltrlTitulo">
+	<summary>
+ltrlTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.lblErro">
+	<summary>
+lblErro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.txtNomeEdit">
+	<summary>
+txtNomeEdit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.txtEmailEdit">
+	<summary>
+txtEmailEdit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.RegularExpressionValidator1">
+	<summary>
+RegularExpressionValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.chkAtivo">
+	<summary>
+chkAtivo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.lnkEnviar">
+	<summary>
+lnkEnviar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.lnkCancelar">
+	<summary>
+lnkCancelar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioEdit.lblAcao">
+	<summary>
+lblAcao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List2.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List2.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List2.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List2.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List2.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List2.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List2.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List2.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List2.InsertHyperLink">
+	<summary>
+InsertHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.AlterarSenha.txtSenha">
+	<summary>
+txtSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.AlterarSenha.rqfSenha">
+	<summary>
+rqfSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.AlterarSenha.txtNovaSenha">
+	<summary>
+txtNovaSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.AlterarSenha.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.AlterarSenha.cmpSenha">
+	<summary>
+cmpSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.AlterarSenha.btnAlterarSenha">
+	<summary>
+btnAlterarSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.AlterarSenha.sumario">
+	<summary>
+sumario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Manutencao.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:Manutencao.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:Manutencao.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:Manutencao.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:Manutencao.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:Manutencao.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Manutencao.ListEmailDestinatarios.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailDestinatarios.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailDestinatarios.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailDestinatarios.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailDestinatarios.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailDestinatarios.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailDestinatarios.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailDestinatarios.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidos.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidos.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidos.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidos.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidos.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidos.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidos.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidos.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.DateTime.Calendar1">
+	<summary>
+Calendar1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.lembra_senha.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.lembra_senha.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.lembra_senha.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.lembra_senha.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.lembra_senha.txtLogin">
+	<summary>
+txtLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.lembra_senha.btnOk">
+	<summary>
+btnOk control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.lembra_senha.rfvUsuario">
+	<summary>
+rfvUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.lembra_senha.rfvUsuario2">
+	<summary>
+rfvUsuario2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.lembra_senha.MessageBox1">
+	<summary>
+MessageBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Integer_Range.tbMin">
+	<summary>
+tbMin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Integer_Range.tbMax">
+	<summary>
+tbMax control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailAnexos.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailAnexos.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailAnexos.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailAnexos.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailAnexos.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailAnexos.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailAnexos.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmailAnexos.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoItens.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoItens.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoItens.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoItens.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoItens.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoItens.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoItens.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoItens.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:Manutencao.Usuario.CarregarUsuario(System.Int32)">
+	<summary>
+ Método que carrega os dados de um usuário
+ </summary>
+	<param name="CodUsuario">Código do usuário que deseja obter os dados</param>
+	<remarks></remarks>
+</member><member name="M:Manutencao.Usuario.CarregarFormulario(VOL.EvimailContext.UsuarioManutencao)">
+	<summary>
+ Carrega o formulário com os dados do usuário consultado
+ </summary>
+	<param name="objUsuario">Objeto preenchido com as informações do usuário que foi consultado</param>
+	<remarks></remarks>
+</member><member name="M:Manutencao.Usuario.LimparFormulario">
+	<summary>
+ Método que limpa o formulário após uma inclusão
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Manutencao.Usuario.PreencherObjeto(VOL.EvimailContext.UsuarioManutencao@,Manutencao.Usuario.acao)">
+	<summary>
+ Método para preencher o objeto Usuário para uma inclusão ou alteração de dados
+ </summary>
+	<param name="objUsuario">Objeto que será preenchido</param>
+	<param name="acao">Inclusão ou Alteração</param>
+	<remarks></remarks>
+</member><member name="M:Manutencao.Usuario.IncluirUsuario">
+	<summary>
+ Método que efetua a inclusão de dados de um usuário
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Manutencao.Usuario.AtualizarUsuario">
+	<summary>
+ Método que efetua uma atualização de dados de um usuário
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Manutencao.ParametroEdit.CarregarParametro(System.Int32)">
+	<summary>Método que carrega os dados de um Parãmetro</summary>
+	<param name="CodParametro">Código do parãmetro que deseja obter os dados</param>
+	<remarks></remarks>
+</member><member name="F:Manutencao.ParametroInsert.ltrlTitulo">
+	<summary>
+ltrlTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroInsert.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroInsert.lblErro">
+	<summary>
+lblErro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroInsert.LiteralNomeParametro">
+	<summary>
+LiteralNomeParametro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroInsert.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroInsert.txtValorParametro">
+	<summary>
+txtValorParametro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroInsert.rqfValorParametro">
+	<summary>
+rqfValorParametro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroInsert.lnkEnviar">
+	<summary>
+lnkEnviar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroInsert.lnkCancelar">
+	<summary>
+lnkCancelar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroInsert.lblAcao">
+	<summary>
+lblAcao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ForeignKey.DropDownList1">
+	<summary>
+DropDownList1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Manutencao.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Manutencao.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Manutencao.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:Manutencao.ListPedidoPagamentos.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoPagamentos.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoPagamentos.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoPagamentos.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoPagamentos.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoPagamentos.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoPagamentos.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListPedidoPagamentos.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.GridViewPager.ImageButtonFirst">
+	<summary>
+ImageButtonFirst control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.GridViewPager.ImageButtonPrev">
+	<summary>
+ImageButtonPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.GridViewPager.LabelPage">
+	<summary>
+LabelPage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.GridViewPager.TextBoxPage">
+	<summary>
+TextBoxPage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.GridViewPager.LabelNumberOfPages">
+	<summary>
+LabelNumberOfPages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.GridViewPager.ImageButtonNext">
+	<summary>
+ImageButtonNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.GridViewPager.ImageButtonLast">
+	<summary>
+ImageButtonLast control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.GridViewPager.LabelRows">
+	<summary>
+LabelRows control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.GridViewPager.DropDownListPageSize">
+	<summary>
+DropDownListPageSize control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:Manutencao.ParametroInsert.CarregarParametro(System.Int32)">
+	<summary>Método que carrega os dados de um Parãmetro</summary>
+	<param name="CodParametro">Código do parãmetro que deseja obter os dados</param>
+	<remarks></remarks>
+</member><member name="F:Manutencao._Decimal.TextBox1">
+	<summary>
+TextBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:Manutencao.Insert.Render(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Altera o texto dos botões de Atualizar e Cancelar
+ </summary>
+	<param name="writer"></param>
+	<remarks></remarks>
+</member><member name="M:Manutencao.UsuarioRecurso.CarregarListaRecursosUsuario(VOL.EvimailContext.UsuarioManutencao)">
+	<summary>
+ Carrega lista de recursos(itens de menu) que pertencem ao usuário
+ </summary>
+	<param name="objUsuario"></param>
+	<remarks></remarks>
+</member><member name="M:Manutencao.UsuarioRecurso.CarregarListaRecursosDisponiveis(System.Int32)">
+	<summary>
+ Carrega a lista de recursos(itens de menu) que ainda não pertencem ao usuário
+ </summary>
+	<param name="CodUsuario"></param>
+	<remarks></remarks>
+</member><member name="M:Manutencao.UsuarioRecurso.AdicionarTodosRecursos">
+	<summary>
+ Adiciona todos os itens selecionados
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Manutencao.UsuarioRecurso.AtualizarCombosRecursos(System.Int32)">
+	<summary>
+ Recarrega os dados para atualizar as listas de itens
+ </summary>
+	<param name="CodUsuario"></param>
+	<remarks></remarks>
+</member><member name="M:Manutencao.UsuarioRecurso.ExcluirTodosRecursos">
+	<summary>
+ Excluir os recursos selecionados da lista de recursos do usuário
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Manutencao.Usuario.ltrlTitulo">
+	<summary>
+ltrlTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.lblErro">
+	<summary>
+lblErro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.txtNomeEdit">
+	<summary>
+txtNomeEdit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.txtEmailEdit">
+	<summary>
+txtEmailEdit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.RegularExpressionValidator1">
+	<summary>
+RegularExpressionValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.txtSenhaEdit">
+	<summary>
+txtSenhaEdit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.txtConfirmaSenhaEdit">
+	<summary>
+txtConfirmaSenhaEdit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.CompareValidator1">
+	<summary>
+CompareValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.ddlClube">
+	<summary>
+ddlClube control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.chkAtivo">
+	<summary>
+chkAtivo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.lnkEnviar">
+	<summary>
+lnkEnviar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.lnkCancelar">
+	<summary>
+lnkCancelar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Usuario.lblAcao">
+	<summary>
+lblAcao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Text.TextBox1">
+	<summary>
+TextBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Text_Contains.TextBox1">
+	<summary>
+TextBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Site.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Site.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Site.rptMenu">
+	<summary>
+rptMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Site.lnkLogout">
+	<summary>
+lnkLogout control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Site.ltlMigalha">
+	<summary>
+ltlMigalha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Site.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Site.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Site.ltlAno">
+	<summary>
+ltlAno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Details.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Details.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Details.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Details.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Details.DetailsViewValidator">
+	<summary>
+DetailsViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Details.DetailsView1">
+	<summary>
+DetailsView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Details.DetailsDataSource">
+	<summary>
+DetailsDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Details.ListHyperLink">
+	<summary>
+ListHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:Manutencao.Edit.ObterSession">
+	<summary>
+ Verifica se existe alguma session criada
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Manutencao.Edit.Render(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Altera o texto dos botões de Atualizar e Cancelar
+ </summary>
+	<param name="writer"></param>
+	<remarks></remarks>
+</member><member name="F:Manutencao.List.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List.InsertHyperLink">
+	<summary>
+InsertHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmails.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmails.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmails.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmails.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmails.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmails.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmails.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListEmails.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListParametro.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListParametro.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListParametro.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListParametro.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListParametro.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListParametro.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListParametro.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListParametro.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarioEmails.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarioEmails.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarioEmails.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarioEmails.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarioEmails.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarioEmails.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarioEmails.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarioEmails.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarios.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarios.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarios.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarios.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarios.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarios.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarios.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarios.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ListUsuarios.InsertHyperLink">
+	<summary>
+InsertHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:Manutencao.Site.CarregarMenu">
+	<summary>
+ Método que obtém os itens de menu do usuário logado
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Manutencao._Boolean.CheckBox1">
+	<summary>
+CheckBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Edit.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Edit.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Edit.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Edit.DetailsViewValidator">
+	<summary>
+DetailsViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Edit.DetailsView1">
+	<summary>
+DetailsView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Edit.DetailsDataSource">
+	<summary>
+DetailsDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao._Default.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao._Default.Menu1">
+	<summary>
+Menu1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.ltrlTitulo">
+	<summary>
+ltrlTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.lblErro">
+	<summary>
+lblErro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.LiteralNomeParametro">
+	<summary>
+LiteralNomeParametro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.txtValorParametro">
+	<summary>
+txtValorParametro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.rqfValorParametro">
+	<summary>
+rqfValorParametro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.lnkEnviar">
+	<summary>
+lnkEnviar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.lnkCancelar">
+	<summary>
+lnkCancelar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ParametroEdit.lblAcao">
+	<summary>
+lblAcao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.lblErro">
+	<summary>
+lblErro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.DetailsViewValidator">
+	<summary>
+DetailsViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.DetailsView1">
+	<summary>
+DetailsView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.DetailsDataSource">
+	<summary>
+DetailsDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.lblUsuarioPermissao">
+	<summary>
+lblUsuarioPermissao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.lstRecursos">
+	<summary>
+lstRecursos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.lnkBtnIncluirTodos">
+	<summary>
+lnkBtnIncluirTodos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.lnkBtnExcluirTodos">
+	<summary>
+lnkBtnExcluirTodos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.lstRecursosUsuario">
+	<summary>
+lstRecursosUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.UsuarioRecurso.lblCodUsuario">
+	<summary>
+lblCodUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao._Integer.TextBox1">
+	<summary>
+TextBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Decimal_Range.tbMin">
+	<summary>
+tbMin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Decimal_Range.tbMax">
+	<summary>
+tbMax control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ForeignKey_MultiSelect.ListBox1">
+	<summary>
+ListBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.ForeignKeyField.Literal1">
+	<summary>
+Literal1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Insert.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Insert.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Insert.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Insert.DetailsViewValidator">
+	<summary>
+DetailsViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Insert.DetailsView1">
+	<summary>
+DetailsView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.Insert.DetailsDataSource">
+	<summary>
+DetailsDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.DynamicDataManager1">
+	<summary>
+DynamicDataManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.ScriptManagerProxy1">
+	<summary>
+ScriptManagerProxy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.GridViewValidator">
+	<summary>
+GridViewValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.DynamicFilterRepeater1">
+	<summary>
+DynamicFilterRepeater1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.GridDataSource">
+	<summary>
+GridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.InsertHyperLink">
+	<summary>
+InsertHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.List1.Img1">
+	<summary>
+Img1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.login.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.login.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.login.txtUsuario">
+	<summary>
+txtUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.login.rfvUsuario">
+	<summary>
+rfvUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.login.txtSenha">
+	<summary>
+txtSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.login.rfvSenha">
+	<summary>
+rfvSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.login.btnLogar">
+	<summary>
+btnLogar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.login.MessageBox1">
+	<summary>
+MessageBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.DateTime_Range.cMin">
+	<summary>
+cMin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.DateTime_Range.cMax">
+	<summary>
+cMax control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.DateTime_Range.DataIni">
+	<summary>
+DataIni control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Manutencao.DateTime_Range.DataFim">
+	<summary>
+DataFim control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

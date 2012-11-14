@@ -1,0 +1,62 @@
+2011-08-10 09:31:37,097 ERROR LogInFile Erro carregando emails (minha conta): Invalid column name 'Cabecalho'.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DAL.DalEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\DAL\DalEmail.vb:line 26
+   at BLL.BllEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\BLL\BllEmail.vb:line 62
+   at WebSiteFrontEnd.MinhaConta.BindListViewEmails() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\MinhaConta.aspx.vb:line 562\n usuário: sramalho 
+2011-08-10 10:34:38,498 ERROR LogInFile Erro carregando emails (minha conta): Invalid column name 'Cabecalho'.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DAL.DalEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\DAL\DalEmail.vb:line 26
+   at BLL.BllEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\BLL\BllEmail.vb:line 62
+   at WebSiteFrontEnd.MinhaConta.BindListViewEmails() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\MinhaConta.aspx.vb:line 562\n usuário: fabio11 
+2011-08-10 10:54:56,017 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:54:56,208 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:55:01,852 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:55:39,889 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:55:40,019 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:55:43,780 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:55:45,994 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:55:51,230 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:56:01,884 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:56:10,729 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:56:13,509 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:56:13,634 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:56:18,093 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:56:26,247 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:56:44,820 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:57:16,678 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:57:43,868 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 10:58:18,780 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 17:40:49,895 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=1760&idusu=133 
+2011-08-10 17:41:49,320 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 17:42:03,835 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-10 17:42:45,124 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 

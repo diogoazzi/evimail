@@ -1,0 +1,65 @@
+2011-09-14 11:32:54,710 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=1643&idusu=150 
+2011-09-14 11:33:05,571 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. License expired.. 
+2011-09-14 11:33:12,781 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=1643&idusu=150 
+2011-09-14 11:33:13,200 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. License expired.. 
+2011-09-14 11:33:25,192 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=1642&idusu=150 
+2011-09-14 11:33:25,740 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. License expired.. 
+2011-09-14 11:57:02,252 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 324
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-09-14 11:58:38,916 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 324
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-09-14 12:09:03,401 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2527&idusu=154 
+2011-09-14 12:09:03,957 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. License expired.. 
+2011-09-14 13:32:50,433 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-09-14 13:33:48,137 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 324
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-09-14 13:37:10,572 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 324
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-09-14 13:37:21,196 DEBUG LogInFile CodPedido:365 
+2011-09-14 13:37:21,925 DEBUG LogInFile CodPedido:365 
+2011-09-14 14:53:48,676 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2526&idusu=133 
+2011-09-14 14:53:49,471 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. License expired.. 
+2011-09-14 14:54:02,856 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. The found license is for a different product.. 
+2011-09-14 15:02:09,389 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-09-14 15:02:52,637 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-09-14 15:02:57,943 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-09-14 15:13:13,859 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 324
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-09-14 15:14:16,835 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 324
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-09-14 15:14:44,018 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 324
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-09-14 23:07:10,472 DEBUG LogInFile CodPedido:366 
+2011-09-14 23:07:11,265 ERROR LogInFile DalGenerics (SubmitChanges): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PedidoPagamentos_SituacaoPagamento". The conflict occurred in database "evimail", table "dbo.SituacaoPagamento", column 'CodSituacaoPagto'.
+The statement has been terminated. 
+2011-09-14 23:07:11,266 ERROR LogInFile BllGenerics (SubmitChanges): The method or operation is not implemented. 
+2011-09-14 23:07:11,267 ERROR LogInFile InserirPedidoPgto(BllPedidoPgto): The method or operation is not implemented. 
+2011-09-14 23:07:11,359 DEBUG LogInFile CodPedido:366 

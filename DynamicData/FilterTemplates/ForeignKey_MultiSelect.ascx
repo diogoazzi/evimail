@@ -1,0 +1,2 @@
+﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="ForeignKey_MultiSelect.ascx.vb" Inherits="Manutencao.ForeignKey_MultiSelect" %>
+<asp:ListBox ID="ListBox1" runat="server" SelectionMode="Multiple"></asp:ListBox>

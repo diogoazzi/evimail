@@ -1,0 +1,5 @@
+2011-08-19 15:01:32,410 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=1760&idusu=133 
+2011-08-19 17:18:20,150 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=1755&idusu=133 
+2011-08-19 17:26:02,153 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-19 17:26:22,714 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-19 17:26:26,616 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 

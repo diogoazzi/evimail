@@ -1,0 +1,68 @@
+2011-08-05 16:19:13,543 ERROR LogInFile Erro carregando emails (minha conta): Invalid column name 'Cabecalho'.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DAL.DalEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\DAL\DalEmail.vb:line 26
+   at BLL.BllEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\BLL\BllEmail.vb:line 62
+   at WebSiteFrontEnd.MinhaConta.BindListViewEmails() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\MinhaConta.aspx.vb:line 562\n usuário: meirelles 
+2011-08-05 16:19:37,721 ERROR LogInFile BuscarPorIdentificador (DalEmail): Invalid column name 'Cabecalho'. 
+2011-08-05 16:20:12,072 ERROR LogInFile BuscarPorIdentificador (DalEmail): Invalid column name 'Cabecalho'. 
+2011-08-05 16:23:52,328 ERROR LogInFile Erro carregando emails (minha conta): Invalid column name 'Cabecalho'.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DAL.DalEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\DAL\DalEmail.vb:line 26
+   at BLL.BllEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\BLL\BllEmail.vb:line 62
+   at WebSiteFrontEnd.MinhaConta.BindListViewEmails() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\MinhaConta.aspx.vb:line 562\n usuário: meirelles 
+2011-08-05 16:23:59,023 ERROR LogInFile BuscarPorIdentificador (DalEmail): Invalid column name 'Cabecalho'. 
+2011-08-05 16:24:22,195 ERROR LogInFile BuscarPorIdentificador (DalEmail): Invalid column name 'Cabecalho'. 
+2011-08-05 16:24:33,281 ERROR LogInFile BuscarPorIdentificador (DalEmail): Invalid column name 'Cabecalho'. 
+2011-08-05 16:24:39,984 ERROR LogInFile BuscarPorIdentificador (DalEmail): Invalid column name 'Cabecalho'. 
+2011-08-05 18:05:53,398 ERROR LogInFile Erro carregando emails (minha conta): Invalid column name 'Cabecalho'.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DAL.DalEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\DAL\DalEmail.vb:line 26
+   at BLL.BllEmail.ObterEmailsEnviadosPorUsuario(Int32 codusuario) in C:\inetpub\wwwroot\Evimail\BLL\BllEmail.vb:line 62
+   at WebSiteFrontEnd.MinhaConta.BindListViewEmails() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\MinhaConta.aspx.vb:line 562\n usuário: meirelles 
+2011-08-05 18:06:02,028 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=1760&idusu=133 
+2011-08-05 18:06:02,168 ERROR LogInFile BuscarPorIdentificador (DalEmail): Invalid column name 'Cabecalho'. 

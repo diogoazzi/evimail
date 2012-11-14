@@ -1,0 +1,12 @@
+2011-07-01 10:24:53,920 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 10:40:41,509 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 10:40:46,659 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 10:40:57,778 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 10:50:04,789 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 10:50:11,458 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 10:57:51,052 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 10:57:51,067 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-01 10:57:51,069 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 11:07:19,425 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 11:07:41,434 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 
+2011-07-01 11:07:48,909 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'.  Reason: The password of the account has expired. 

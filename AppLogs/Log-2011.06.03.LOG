@@ -1,0 +1,1627 @@
+2011-06-03 10:14:57,955 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307106897790" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000281001</tid>
+  <dados-pedido>
+    <numero>296493535</numero>
+    <valor>1000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T10:16:01.748-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=c6cfbaba9478d0b1e985a3625b590f03</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 10:14:57,959 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=c6cfbaba9478d0b1e985a3625b590f03 
+2011-06-03 10:16:33,926 DEBUG LogInFile CodPedido:370 
+2011-06-03 10:16:33,986 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000281001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <dados-pedido>
+    <numero>296493535</numero>
+    <valor>1000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T10:16:01.748-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T10:17:37.562-03:00</data-hora>
+    <valor>1000</valor>
+    <eci>6</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T10:17:37.603-03:00</data-hora>
+    <valor>1000</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 10:16:33,986 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000281001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <dados-pedido>
+    <numero>296493535</numero>
+    <valor>1000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T10:16:01.748-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T10:17:37.562-03:00</data-hora>
+    <valor>1000</valor>
+    <eci>6</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T10:17:37.603-03:00</data-hora>
+    <valor>1000</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 10:16:33,987 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000281001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <dados-pedido>
+    <numero>296493535</numero>
+    <valor>1000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T10:16:01.748-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T10:17:37.562-03:00</data-hora>
+    <valor>1000</valor>
+    <eci>6</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T10:17:37.603-03:00</data-hora>
+    <valor>1000</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 10:18:32,343 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307107112236" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000291001</tid>
+  <dados-pedido>
+    <numero>494822452</numero>
+    <valor>1000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T10:19:36.179-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=acbc2a67408003e6f8da009baeca8aa1</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 10:18:32,343 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=acbc2a67408003e6f8da009baeca8aa1 
+2011-06-03 10:18:59,463 DEBUG LogInFile CodPedido:371 
+2011-06-03 10:18:59,574 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000291001</tid>
+  <pan>b1SQ6jpKCDt3n9C0dgD/ZkPQ1Bh+7aJESqr/CwP64P0=</pan>
+  <dados-pedido>
+    <numero>494822452</numero>
+    <valor>1000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T10:19:36.179-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Nao autenticada</mensagem>
+    <data-hora>2011-06-03T10:20:02.705-03:00</data-hora>
+    <valor>1000</valor>
+    <eci>1</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T10:20:02.718-03:00</data-hora>
+    <valor>1000</valor>
+    <lr>14</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 10:18:59,574 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000291001</tid>
+  <pan>b1SQ6jpKCDt3n9C0dgD/ZkPQ1Bh+7aJESqr/CwP64P0=</pan>
+  <dados-pedido>
+    <numero>494822452</numero>
+    <valor>1000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T10:19:36.179-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Nao autenticada</mensagem>
+    <data-hora>2011-06-03T10:20:02.705-03:00</data-hora>
+    <valor>1000</valor>
+    <eci>1</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T10:20:02.718-03:00</data-hora>
+    <valor>1000</valor>
+    <lr>14</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 10:18:59,574 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000291001</tid>
+  <pan>b1SQ6jpKCDt3n9C0dgD/ZkPQ1Bh+7aJESqr/CwP64P0=</pan>
+  <dados-pedido>
+    <numero>494822452</numero>
+    <valor>1000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T10:19:36.179-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Nao autenticada</mensagem>
+    <data-hora>2011-06-03T10:20:02.705-03:00</data-hora>
+    <valor>1000</valor>
+    <eci>1</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T10:20:02.718-03:00</data-hora>
+    <valor>1000</valor>
+    <lr>14</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 10:58:36,619 DEBUG LogInFile CodPedido:372 
+2011-06-03 10:58:37,099 DEBUG LogInFile não há tag <tid> no xml de reposta 
+2011-06-03 10:58:37,099 DEBUG LogInFile não há tag <url-autenticacao> no xml de reposta 
+2011-06-03 10:58:37,102 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<erro xmlns="http://ecommerce.cbmp.com.br"><codigo>001</codigo><mensagem><![CDATA[
+O XML informado não é valido:
+- String: '' does not match pattern for type of produto element in FormaPagamento in namespace http://ecommerce.cbmp.com.br: '<xml-fragment/>'
+]]></mensagem></erro>
+ 
+2011-06-03 10:58:37,102 DEBUG LogInFile Retorno EnviaCielo:  
+2011-06-03 10:58:37,228 DEBUG LogInFile CodPedido:372 
+2011-06-03 10:58:37,276 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<erro xmlns="http://ecommerce.cbmp.com.br"><codigo>001</codigo><mensagem><![CDATA[
+O XML informado não é valido:
+- String: '' does not match pattern for tidType in namespace http://ecommerce.cbmp.com.br: '<xml-fragment/>'
+]]></mensagem></erro>
+ 
+2011-06-03 10:58:37,276 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<erro xmlns="http://ecommerce.cbmp.com.br"><codigo>001</codigo><mensagem><![CDATA[
+O XML informado não é valido:
+- String: '' does not match pattern for tidType in namespace http://ecommerce.cbmp.com.br: '<xml-fragment/>'
+]]></mensagem></erro>
+ 
+2011-06-03 10:58:37,276 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<erro xmlns="http://ecommerce.cbmp.com.br"><codigo>001</codigo><mensagem><![CDATA[
+O XML informado não é valido:
+- String: '' does not match pattern for tidType in namespace http://ecommerce.cbmp.com.br: '<xml-fragment/>'
+]]></mensagem></erro>
+ 
+2011-06-03 11:07:58,795 DEBUG LogInFile CodPedido:373 
+2011-06-03 11:07:59,472 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307110079145" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500002A1001</tid>
+  <dados-pedido>
+    <numero>987575336</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T11:09:03.483-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=a872e666d323e0e4a8fd326d27e30458</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 11:07:59,472 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=a872e666d323e0e4a8fd326d27e30458 
+2011-06-03 11:29:23,353 DEBUG LogInFile CodPedido:374 
+2011-06-03 11:29:24,022 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307111363893" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500002B1001</tid>
+  <dados-pedido>
+    <numero>17960329</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T11:30:28.242-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=ba66a39d373e8c0ba0a594d0ef5213e1</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 11:29:24,022 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=ba66a39d373e8c0ba0a594d0ef5213e1 
+2011-06-03 11:30:03,150 DEBUG LogInFile CodPedido:374 
+2011-06-03 11:30:03,270 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500002B1001</tid>
+  <pan>rrxKVjs4QRptBfTgz91avV10eKY930sqoEbQlJM0vc4=</pan>
+  <dados-pedido>
+    <numero>17960329</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T11:30:28.242-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>3</status>
+  <autenticacao>
+    <codigo>3</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T11:31:07.228-03:00</data-hora>
+    <valor>100</valor>
+    <eci>6</eci>
+  </autenticacao>
+</transacao>
+
+ 
+2011-06-03 11:30:03,270 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500002B1001</tid>
+  <pan>rrxKVjs4QRptBfTgz91avV10eKY930sqoEbQlJM0vc4=</pan>
+  <dados-pedido>
+    <numero>17960329</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T11:30:28.242-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>3</status>
+  <autenticacao>
+    <codigo>3</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T11:31:07.228-03:00</data-hora>
+    <valor>100</valor>
+    <eci>6</eci>
+  </autenticacao>
+</transacao>
+
+ 
+2011-06-03 11:30:03,271 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500002B1001</tid>
+  <pan>rrxKVjs4QRptBfTgz91avV10eKY930sqoEbQlJM0vc4=</pan>
+  <dados-pedido>
+    <numero>17960329</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T11:30:28.242-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>3</status>
+  <autenticacao>
+    <codigo>3</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T11:31:07.228-03:00</data-hora>
+    <valor>100</valor>
+    <eci>6</eci>
+  </autenticacao>
+</transacao>
+
+ 
+2011-06-03 11:49:22,041 DEBUG LogInFile CodPedido:375 
+2011-06-03 11:49:22,660 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307112562296" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500002D1001</tid>
+  <dados-pedido>
+    <numero>561830721</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T11:50:26.999-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=a24969df3586438cc1d53c3f9f3fa35c</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 11:49:22,660 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=a24969df3586438cc1d53c3f9f3fa35c 
+2011-06-03 11:49:57,582 DEBUG LogInFile CodPedido:375 
+2011-06-03 11:49:57,665 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500002D1001</tid>
+  <pan>ByO5u0luL9ocuXFUTFjN17IeycQG0BGZ1lxmH85bf7Q=</pan>
+  <dados-pedido>
+    <numero>561830721</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T11:50:26.999-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T11:51:00.444-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T11:51:00.451-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>053534</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T11:51:01.712-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 11:49:57,665 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500002D1001</tid>
+  <pan>ByO5u0luL9ocuXFUTFjN17IeycQG0BGZ1lxmH85bf7Q=</pan>
+  <dados-pedido>
+    <numero>561830721</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T11:50:26.999-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T11:51:00.444-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T11:51:00.451-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>053534</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T11:51:01.712-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 11:49:57,760 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500002D1001</tid>
+  <pan>ByO5u0luL9ocuXFUTFjN17IeycQG0BGZ1lxmH85bf7Q=</pan>
+  <dados-pedido>
+    <numero>561830721</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T11:50:26.999-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T11:51:00.444-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T11:51:00.451-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>053534</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T11:51:01.712-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 14:50:48,925 DEBUG LogInFile CodPedido:376 
+2011-06-03 14:50:49,404 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307123448979" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000301001</tid>
+  <dados-pedido>
+    <numero>703280203</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T14:51:54.711-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=41f6c1c381c1006d3bd157da1bd901ad</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 14:50:49,404 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=41f6c1c381c1006d3bd157da1bd901ad 
+2011-06-03 14:57:32,176 DEBUG LogInFile CodPedido:376 
+2011-06-03 14:57:32,548 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000301001</tid>
+  <dados-pedido>
+    <numero>703280203</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T14:51:54.711-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Cancelamento solicitado pelo usuario</mensagem>
+    <data-hora>2011-06-03T14:58:37.456-03:00</data-hora>
+    <valor>100</valor>
+  </cancelamento>
+</transacao>
+
+ 
+2011-06-03 14:57:32,549 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000301001</tid>
+  <dados-pedido>
+    <numero>703280203</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T14:51:54.711-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Cancelamento solicitado pelo usuario</mensagem>
+    <data-hora>2011-06-03T14:58:37.456-03:00</data-hora>
+    <valor>100</valor>
+  </cancelamento>
+</transacao>
+
+ 
+2011-06-03 14:57:32,550 ERROR LogInFile Erro na confirmaçao do pedido: (ConfirmacaoPedido_Load, ConfirmacaoPedido.aspx): Thread was being aborted. 
+2011-06-03 14:57:48,940 DEBUG LogInFile CodPedido:377 
+2011-06-03 14:57:49,321 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307123868956" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000311001</tid>
+  <dados-pedido>
+    <numero>335240007</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T14:58:54.691-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=8311b92bb59472e3fc1f64442dd42b39</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 14:57:49,321 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=8311b92bb59472e3fc1f64442dd42b39 
+2011-06-03 14:58:10,477 DEBUG LogInFile CodPedido:377 
+2011-06-03 14:58:10,550 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000311001</tid>
+  <pan>La//eU0LnhcRAFbx2TBXrRpS0aztcpZks+nrcFt8PxU=</pan>
+  <dados-pedido>
+    <numero>335240007</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T14:58:54.691-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T14:59:15.045-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T14:59:15.060-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>028751</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T14:59:15.833-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 14:58:10,550 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000311001</tid>
+  <pan>La//eU0LnhcRAFbx2TBXrRpS0aztcpZks+nrcFt8PxU=</pan>
+  <dados-pedido>
+    <numero>335240007</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T14:58:54.691-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T14:59:15.045-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T14:59:15.060-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>028751</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T14:59:15.833-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 14:58:10,648 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000311001</tid>
+  <pan>La//eU0LnhcRAFbx2TBXrRpS0aztcpZks+nrcFt8PxU=</pan>
+  <dados-pedido>
+    <numero>335240007</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T14:58:54.691-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T14:59:15.045-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T14:59:15.060-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>028751</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T14:59:15.833-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 15:17:08,768 DEBUG LogInFile CodPedido:378 
+2011-06-03 15:17:08,979 DEBUG LogInFile CodPedido:378 
+2011-06-03 15:36:00,650 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 15:36:00,651 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 15:36:44,354 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 15:36:44,355 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 15:39:51,527 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 15:39:51,528 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 15:40:42,066 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 15:40:42,067 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 15:41:45,744 DEBUG LogInFile CodPedido:379 
+2011-06-03 15:41:46,042 DEBUG LogInFile CodPedido:379 
+2011-06-03 15:42:21,821 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 15:42:21,822 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 15:44:15,834 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 15:44:15,835 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 16:02:23,616 DEBUG LogInFile CodPedido:380 
+2011-06-03 16:02:24,009 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307127743633" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000321001</tid>
+  <dados-pedido>
+    <numero>678548047</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:03:29.753-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=7291bb94c5972d70c9c17f0552759862</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 16:02:24,009 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=7291bb94c5972d70c9c17f0552759862 
+2011-06-03 16:03:41,670 DEBUG LogInFile CodPedido:380 
+2011-06-03 16:03:45,278 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000321001</tid>
+  <pan>GS6TqOrHndxrug7IsQuqoZqNCVi8isXTiLSlwhXOi44=</pan>
+  <dados-pedido>
+    <numero>678548047</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:03:29.753-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T16:04:47.162-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T16:04:47.186-03:00</data-hora>
+    <valor>100</valor>
+    <lr>01</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 16:03:45,278 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000321001</tid>
+  <pan>GS6TqOrHndxrug7IsQuqoZqNCVi8isXTiLSlwhXOi44=</pan>
+  <dados-pedido>
+    <numero>678548047</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:03:29.753-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T16:04:47.162-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T16:04:47.186-03:00</data-hora>
+    <valor>100</valor>
+    <lr>01</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 16:03:45,278 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000321001</tid>
+  <pan>GS6TqOrHndxrug7IsQuqoZqNCVi8isXTiLSlwhXOi44=</pan>
+  <dados-pedido>
+    <numero>678548047</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:03:29.753-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T16:04:47.162-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T16:04:47.186-03:00</data-hora>
+    <valor>100</valor>
+    <lr>01</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 16:05:26,205 DEBUG LogInFile CodPedido:381 
+2011-06-03 16:05:26,426 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307127926223" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000331001</tid>
+  <dados-pedido>
+    <numero>765172037</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:06:32.201-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=a06742ee377429b11dbb08fb78ce993b</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 16:05:26,426 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=a06742ee377429b11dbb08fb78ce993b 
+2011-06-03 16:06:15,361 DEBUG LogInFile CodPedido:381 
+2011-06-03 16:06:15,424 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000331001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <dados-pedido>
+    <numero>765172037</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:06:32.201-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T16:07:20.553-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T16:07:20.675-03:00</data-hora>
+    <valor>100</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 16:06:15,424 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000331001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <dados-pedido>
+    <numero>765172037</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:06:32.201-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T16:07:20.553-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T16:07:20.675-03:00</data-hora>
+    <valor>100</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 16:06:15,424 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000331001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <dados-pedido>
+    <numero>765172037</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:06:32.201-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T16:07:20.553-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T16:07:20.675-03:00</data-hora>
+    <valor>100</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 16:08:20,278 DEBUG LogInFile CodPedido:382 
+2011-06-03 16:08:20,605 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307128100297" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000341001</tid>
+  <dados-pedido>
+    <numero>519015700</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:09:26.392-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=88c2b8e109f6e04c9802e40ac96c5a15</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 16:08:20,606 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=88c2b8e109f6e04c9802e40ac96c5a15 
+2011-06-03 16:20:19,335 DEBUG LogInFile CodPedido:382 
+2011-06-03 16:20:19,413 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000341001</tid>
+  <dados-pedido>
+    <numero>519015700</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:09:26.392-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Cancelamento por timeout do usuario</mensagem>
+    <data-hora>2011-06-03T16:19:57.126-03:00</data-hora>
+    <valor>100</valor>
+  </cancelamento>
+</transacao>
+
+ 
+2011-06-03 16:20:19,413 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000341001</tid>
+  <dados-pedido>
+    <numero>519015700</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T16:09:26.392-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Cancelamento por timeout do usuario</mensagem>
+    <data-hora>2011-06-03T16:19:57.126-03:00</data-hora>
+    <valor>100</valor>
+  </cancelamento>
+</transacao>
+
+ 
+2011-06-03 16:20:19,413 ERROR LogInFile Erro na confirmaçao do pedido: (ConfirmacaoPedido_Load, ConfirmacaoPedido.aspx): Thread was being aborted. 
+2011-06-03 16:37:15,463 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 16:37:15,486 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 17:01:42,819 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 17:01:42,820 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 17:14:18,081 DEBUG LogInFile CodPedido:383 
+2011-06-03 17:14:19,187 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307132058489" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000351001</tid>
+  <dados-pedido>
+    <numero>571243563</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:15:25.340-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=44b74631986c34372caa437bd1096c21</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 17:14:19,187 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=44b74631986c34372caa437bd1096c21 
+2011-06-03 17:15:08,651 DEBUG LogInFile CodPedido:383 
+2011-06-03 17:15:08,721 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000351001</tid>
+  <pan>EtZfVKrfsnkljhQkKkUGyqknuKFucHZMPK6I7oFOaTA=</pan>
+  <dados-pedido>
+    <numero>571243563</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:15:25.340-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:16:14.516-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T17:16:14.522-03:00</data-hora>
+    <valor>100</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 17:15:08,721 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000351001</tid>
+  <pan>EtZfVKrfsnkljhQkKkUGyqknuKFucHZMPK6I7oFOaTA=</pan>
+  <dados-pedido>
+    <numero>571243563</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:15:25.340-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:16:14.516-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T17:16:14.522-03:00</data-hora>
+    <valor>100</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 17:15:08,722 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000351001</tid>
+  <pan>EtZfVKrfsnkljhQkKkUGyqknuKFucHZMPK6I7oFOaTA=</pan>
+  <dados-pedido>
+    <numero>571243563</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:15:25.340-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:16:14.516-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T17:16:14.522-03:00</data-hora>
+    <valor>100</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 17:15:55,095 DEBUG LogInFile CodPedido:384 
+2011-06-03 17:15:55,476 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307132155377" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000361001</tid>
+  <dados-pedido>
+    <numero>882360351</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:17:01.628-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=80b1bfedeeeb4a6cd94dfef9a4b143f2</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 17:15:55,476 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=80b1bfedeeeb4a6cd94dfef9a4b143f2 
+2011-06-03 17:16:18,991 DEBUG LogInFile CodPedido:384 
+2011-06-03 17:16:19,173 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000361001</tid>
+  <pan>EtZfVKrfsnkljhQkKkUGyqknuKFucHZMPK6I7oFOaTA=</pan>
+  <dados-pedido>
+    <numero>882360351</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:17:01.628-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:17:24.550-03:00</data-hora>
+    <valor>100</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T17:17:24.558-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>045516</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T17:17:25.131-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 17:16:19,174 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000361001</tid>
+  <pan>EtZfVKrfsnkljhQkKkUGyqknuKFucHZMPK6I7oFOaTA=</pan>
+  <dados-pedido>
+    <numero>882360351</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:17:01.628-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:17:24.550-03:00</data-hora>
+    <valor>100</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T17:17:24.558-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>045516</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T17:17:25.131-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 17:16:19,314 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000361001</tid>
+  <pan>EtZfVKrfsnkljhQkKkUGyqknuKFucHZMPK6I7oFOaTA=</pan>
+  <dados-pedido>
+    <numero>882360351</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:17:01.628-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:17:24.550-03:00</data-hora>
+    <valor>100</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T17:17:24.558-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>045516</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T17:17:25.131-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 17:23:49,223 DEBUG LogInFile CodPedido:385 
+2011-06-03 17:23:49,758 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1307132629338" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000371001</tid>
+  <dados-pedido>
+    <numero>122481734</numero>
+    <valor>200</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:24:55.935-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://ecommerce.cbmp.com.br/web/index.cbmp?id=6752c24a729e6ee5e46fa612f0bcc86b</url-autenticacao>
+</transacao>
+
+ 
+2011-06-03 17:23:49,758 DEBUG LogInFile Retorno EnviaCielo: https://ecommerce.cbmp.com.br/web/index.cbmp?id=6752c24a729e6ee5e46fa612f0bcc86b 
+2011-06-03 17:24:10,874 DEBUG LogInFile CodPedido:385 
+2011-06-03 17:24:10,937 DEBUG LogInFile Xml de Resposta da Cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000371001</tid>
+  <pan>RddFw8k2wp5YU6O//e2Jt35JdUPnix4t4TXFAQz+bTM=</pan>
+  <dados-pedido>
+    <numero>122481734</numero>
+    <valor>200</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:24:55.935-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:25:15.513-03:00</data-hora>
+    <valor>200</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T17:25:15.518-03:00</data-hora>
+    <valor>200</valor>
+    <lr>00</lr>
+    <arp>080142</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T17:25:17.003-03:00</data-hora>
+    <valor>200</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 17:24:10,937 DEBUG LogInFile Retorno EnviaCielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000371001</tid>
+  <pan>RddFw8k2wp5YU6O//e2Jt35JdUPnix4t4TXFAQz+bTM=</pan>
+  <dados-pedido>
+    <numero>122481734</numero>
+    <valor>200</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:24:55.935-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:25:15.513-03:00</data-hora>
+    <valor>200</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T17:25:15.518-03:00</data-hora>
+    <valor>200</valor>
+    <lr>00</lr>
+    <arp>080142</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T17:25:17.003-03:00</data-hora>
+    <valor>200</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 17:24:11,001 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000371001</tid>
+  <pan>RddFw8k2wp5YU6O//e2Jt35JdUPnix4t4TXFAQz+bTM=</pan>
+  <dados-pedido>
+    <numero>122481734</numero>
+    <valor>200</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:24:55.935-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:25:15.513-03:00</data-hora>
+    <valor>200</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T17:25:15.518-03:00</data-hora>
+    <valor>200</valor>
+    <lr>00</lr>
+    <arp>080142</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T17:25:17.003-03:00</data-hora>
+    <valor>200</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 17:38:09,577 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 17:38:09,602 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 17:38:39,094 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 17:38:39,095 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 17:41:04,727 DEBUG LogInFile CodPedido:386 
+2011-06-03 17:41:35,074 DEBUG LogInFile CodPedido:386 
+2011-06-03 17:41:35,157 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000381001</tid>
+  <pan>U9Dxhnfr08rMYylMwzuGazCegbGnkfeoDRgYKs5It6U=</pan>
+  <dados-pedido>
+    <numero>176519500</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:42:11.476-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:42:40.024-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-03T17:42:40.029-03:00</data-hora>
+    <valor>100</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-03 17:41:51,247 DEBUG LogInFile CodPedido:387 
+2011-06-03 17:42:12,690 DEBUG LogInFile CodPedido:387 
+2011-06-03 17:42:12,940 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000391001</tid>
+  <pan>La//eU0LnhcRAFbx2TBXrRpS0aztcpZks+nrcFt8PxU=</pan>
+  <dados-pedido>
+    <numero>312434185</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-03T17:42:57.623-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-03T17:43:17.216-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-03T17:43:17.222-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>010888</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-03T17:43:18.700-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-03 17:42:15,712 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Specified cast is not valid. 
+2011-06-03 17:42:15,713 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-06-03 17:50:34,931 ERROR LogInFile BuscarPorIdentificador (DalEmail): The null value cannot be assigned to a member with type System.Boolean which is a non-nullable value type. 

@@ -1,0 +1,2 @@
+Cufon.replace("#menuHeader, #pnlNaoLogado span, #homeBloco1 p, #homeBloco4 h4, #homeBloco4 ul li span:first-child", { fontFamily: "Helvetica Neue", fontWeight: "500" });
+Cufon.replace(".title, .titleHome, .entryContent h3, .opcao h3, .fonte700, .emailClose, .linkHome, .emailOpen", { fontFamily: "Helvetica Neue", fontWeight: "700" });

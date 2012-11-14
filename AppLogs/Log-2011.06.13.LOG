@@ -1,0 +1,110 @@
+2011-06-13 18:04:27,549 DEBUG LogInFile CodPedido:399 
+2011-06-13 18:05:51,982 DEBUG LogInFile CodPedido:399 
+2011-06-13 18:05:52,051 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500003C1001</tid>
+  <pan>ksyPENJ2xI/t07BlaQs4x+PqyxQnZ0tmydcEqghN7fY=</pan>
+  <dados-pedido>
+    <numero>974340454</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-13T18:05:55.756-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-13T18:07:16.368-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-13T18:07:16.389-03:00</data-hora>
+    <valor>100</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-13 18:06:32,079 DEBUG LogInFile CodPedido:400 
+2011-06-13 18:07:11,175 DEBUG LogInFile CodPedido:400 
+2011-06-13 18:07:11,240 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500003D1001</tid>
+  <pan>EhM7Ilc4W9bpgxFEGxjmxPNCalrBA/aZ5pJiIO8uFjY=</pan>
+  <dados-pedido>
+    <numero>535587961</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-13T18:07:58.561-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-13T18:08:36.774-03:00</data-hora>
+    <valor>100</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-13T18:08:36.783-03:00</data-hora>
+    <valor>100</valor>
+    <lr>05</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-13 18:10:00,486 DEBUG LogInFile CodPedido:401 
+2011-06-13 18:10:48,996 DEBUG LogInFile CodPedido:401 
+2011-06-13 18:10:49,067 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500003E1001</tid>
+  <pan>rPV1jviCQKYT1in8+rOZsOuavdTWAY94Kt3/xqATFyo=</pan>
+  <dados-pedido>
+    <numero>464421959</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-13T18:11:27.275-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-13T18:12:13.605-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autorização negada</mensagem>
+    <data-hora>2011-06-13T18:12:13.611-03:00</data-hora>
+    <valor>100</valor>
+    <lr>57</lr>
+  </autorizacao>
+</transacao>
+
+ 
+2011-06-13 18:11:20,425 DEBUG LogInFile CodPedido:402 
+2011-06-13 18:11:21,631 DEBUG LogInFile CodPedido:402 

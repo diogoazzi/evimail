@@ -1,0 +1,8 @@
+2011-08-23 18:00:13,494 DEBUG LogInFile CodPedido:350 
+2011-08-23 18:00:14,076 DEBUG LogInFile CodPedido:350 
+2011-08-23 18:07:46,316 DEBUG LogInFile CodPedido:351 
+2011-08-23 18:07:46,543 DEBUG LogInFile CodPedido:351 
+2011-08-23 18:08:46,247 ERROR LogInFile Erro carregando emails (minha conta): Sequence contains no elements   at System.Linq.Enumerable.Max(IEnumerable`1 source)
+   at WebSiteFrontEnd.MinhaConta.BindListViewEmails() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\MinhaConta.aspx.vb:line 577\n usuário: meirelles2 
+2011-08-23 18:09:52,736 DEBUG LogInFile CodPedido:352 
+2011-08-23 18:09:52,911 DEBUG LogInFile CodPedido:352 

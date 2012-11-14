@@ -1,0 +1,146 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DAL
+</name>
+</assembly>
+<members>
+<member name="M:DAL.DalUsuario.EfetuarLogin(System.String,System.String)">
+	<summary></summary>
+	<param name="pLogin">Login do usuário</param>
+	<param name="pSenha">Senha do usuário não criptografada</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DAL.DalUsuario.SaldoPorUsuario(System.Int32)">
+	<summary>Retorna Saldo em Créditos e/ou Período em Meses, Dias, Anos. Dependendo do serviço contratado pelo usuário.</summary>
+	<param name="pCodUsuario">[dbo].[Usuarios].[CodUsuario]</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DAL.DalUsuario.BuscarEmail(System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+	<summary></summary>
+	<param name="pCodUsuario">Código do usuário logado. Que está realizando a busca.</param>
+	<param name="pEnviado">Se usuário quer buscar e-mails enviados POR ele.</param>
+	<param name="pRecebido">Se usuário quer buscar e-mails enviados PARA ele.</param>
+	<param name="pRemetente"></param>
+	<param name="pDestinatario"></param>
+	<param name="pAssunto"></param>
+	<param name="pComAnexo">Buscar e-mail COM anexo.</param>
+	<param name="pSemAnexo">Buscar e-mail SEM anexo.</param>
+	<param name="pEntregue">Buscar e-mail que foi marcado como recebido.</param>
+	<param name="pConteudo">Buscar e-mail que teve Conteúdo lido.</param>
+	<param name="pAnexo">Buscar e-mail que teve anexo.</param>
+	<param name="pDataInicial"></param>
+	<param name="pDataFinal"></param>
+	<param name="pPaginaAtual">Define página atual dos resultados.</param>
+	<param name="pTamanhoPagina">Define número de resultados por página.</param>
+	<param name="pRegistros">Retorna o númrero TOTAL de registros (considera todas as páginas) da consulta.</param>
+	<returns></returns>
+	<remarks>Para pEnviado = True e pRecebido = True, passar ambos como Nothing. O mesmo vale para pComAnexo e pSemAnexo.</remarks>
+</member><member name="M:DAL.DalUsuario.BuscarEmailDestinatarioIndividual(System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+	<summary></summary>
+	<param name="pCodUsuario">Código do usuário logado. Que está realizando a busca.</param>
+	<param name="pEnviado">Se usuário quer buscar e-mails enviados POR ele.</param>
+	<param name="pRecebido">Se usuário quer buscar e-mails enviados PARA ele.</param>
+	<param name="pRemetente"></param>
+	<param name="pDestinatario"></param>
+	<param name="pAssunto"></param>
+	<param name="pComAnexo">Buscar e-mail COM anexo.</param>
+	<param name="pSemAnexo">Buscar e-mail SEM anexo.</param>
+	<param name="pEntregue">Buscar e-mail que foi marcado como recebido.</param>
+	<param name="pConteudo">Buscar e-mail que teve Conteúdo lido.</param>
+	<param name="pAnexo">Buscar e-mail que teve anexo.</param>
+	<param name="pDataInicial"></param>
+	<param name="pDataFinal"></param>
+	<param name="pPaginaAtual">Define página atual dos resultados.</param>
+	<param name="pTamanhoPagina">Define número de resultados por página.</param>
+	<param name="pRegistros">Retorna o númrero TOTAL de registros (considera todas as páginas) da consulta.</param>
+	<returns></returns>
+	<remarks>Para pEnviado = True e pRecebido = True, passar ambos como Nothing. O mesmo vale para pComAnexo e pSemAnexo.</remarks>
+</member><member name="M:DAL.dalRecurso.ListarRecursos(System.String)">
+	<summary>
+ Lista todos os recursos disponíveis para um usuário da manutenção
+ </summary>
+	<param name="Identificacao">Identificação do usuário</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DAL.dalRecurso.ListarRecursosDisponiveis(System.Int32)">
+	<summary>
+ Lista todos os recursos que podem ser associados a um usuário
+ </summary>
+	<param name="CodUsuario">Código do usuário</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DAL.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DAL.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DAL.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:DAL.Generics.Incluir``1(``0@)">
+	<summary>
+ Inclusão de Uma Entidade  
+ </summary>
+</member><member name="M:DAL.Generics.Excluir``1(``0,System.Func{``0,System.Boolean})">
+	<summary>
+ Exclusão de Uma Entidade  
+ </summary>
+</member><member name="M:DAL.Generics.Atualizar``1(``0)">
+	<summary>
+ Atualização de Uma Entidade  
+ </summary>
+</member><member name="M:DAL.Generics.BuscarTodos``1(``0)">
+	<summary>
+ Localização de Uma Entidade sem filtros
+ </summary>
+</member><member name="M:DAL.DalGenerics`1.Incluir(`0)">
+	<summary>
+ Inclusão de Uma Entidade  
+ </summary>
+</member><member name="M:DAL.DalGenerics`1.BuscarTodos">
+	<summary>
+ Localização de Uma Entidade sem filtros
+ </summary>
+</member><member name="M:DAL.DalParametro.ObterDetalhesParametro(System.Int32)">
+	<summary>Obtém os detalhes de um parãmetro</summary>
+	<param name="pCodParametro">Identificação do usuário</param>
+</member><member name="M:DAL.DalUsuarioManutencao.ObterDetalhesUsuario(System.Int32)">
+	<summary>
+ Obtém as informações detalhadas do usuário
+ </summary>
+	<param name="CodUsuario">Código do usuário que deseja consultar</param>
+</member><member name="M:DAL.DalUsuarioManutencao.VerificarLogin(System.String,System.Int32)">
+	<summary>
+ Verifica se o login já existe
+ </summary>
+	<param name="Identificacao">Identificação do usuário</param>
+	<param name="CodUsuario">Código do usuário</param>
+</member><member name="M:DAL.DalUsuarioManutencao.ObterDetalhesUsuario(System.String)">
+	<summary>
+ Obtém os detalhes de um usuário na manutenção
+ </summary>
+	<param name="Identificacao">Identificação do usuário</param>
+</member><member name="M:DAL.DalUsuarioManutencao.ExcluirPermissoes(System.Int32)">
+	<summary>
+ Exclui as permissões de um usuário na manutenção
+ </summary>
+	<param name="CodUsuario">Código do usuário que terá suas permissões excluídas</param>
+</member><member name="M:DAL.DalUsuarioManutencao.VerificarEmail(System.String,System.Int32)">
+	<summary>
+ Verifica se o e-mail já existe
+ </summary>
+	<param name="Email">E-mail do usuário</param>
+	<param name="CodUsuario">Código do usuário</param>
+</member><member name="M:DAL.DalServico.BuscarPorTipo(System.Int32)">
+	<summary>Retorna todos os serviços do tipo especificado.</summary>
+	<param name="pCodTipoServico">1 - Planos por Período | 2 - Pacotes de Créditos</param>
+</member>
+</members>
+</doc>

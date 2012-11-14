@@ -1,0 +1,462 @@
+2011-07-07 09:59:50,328 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 15:26:23,975 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 15:48:01,847 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 15:48:16,526 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 15:48:22,547 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 15:48:55,041 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 15:58:38,781 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 15:58:54,545 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 15:59:00,937 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 15:59:05,666 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:00:55,177 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 16:01:02,446 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:07:59,742 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:23:58,392 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 16:24:10,001 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:24:18,290 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:24:25,448 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:25:44,059 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:25:50,252 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:26:02,696 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:27:36,801 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:28:53,125 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:29:06,458 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:29:12,504 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:29:39,389 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:31:43,330 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:34:29,842 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 16:34:41,003 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:34:48,000 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:34:59,958 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:35:09,607 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:37:50,989 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:38:41,089 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:38:41,089 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:38:41,091 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:38:54,087 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:38:54,088 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:38:54,089 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:39:10,430 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:39:32,420 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 16:39:32,542 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 16:39:41,238 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:39:41,239 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:39:41,239 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:39:47,714 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:39:47,715 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:39:47,715 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:39:51,426 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:39:51,426 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:39:51,427 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:45:44,239 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 16:45:54,190 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:45:54,190 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:45:54,192 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:47:53,336 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 16:47:55,954 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:47:55,954 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:47:55,955 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:48:40,058 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:48:40,063 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:48:40,063 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:48:44,782 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:48:44,782 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:48:44,783 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:48:46,028 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 16:49:08,960 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 16:49:14,170 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:49:14,170 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:49:14,171 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:49:24,303 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:49:24,304 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:49:24,304 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:51:59,697 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 16:51:59,697 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 16:51:59,698 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:30:07,971 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 17:30:26,328 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 17:30:29,355 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:30:29,356 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:30:29,357 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:33:59,592 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:33:59,593 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:33:59,594 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:00,489 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:00,489 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:00,489 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:04,201 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:04,202 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:04,202 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:04,891 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:04,892 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:04,892 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:05,390 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:05,391 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:05,391 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:05,785 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:05,786 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:05,786 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:06,121 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:06,122 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:06,122 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:06,535 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:06,536 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:06,537 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:06,888 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:06,888 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:06,889 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:07,256 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:07,257 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:07,257 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:07,610 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:07,611 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:07,611 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:07,946 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:07,946 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:07,947 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:08,312 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:08,312 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:08,313 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:08,633 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:08,633 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:08,633 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:09,003 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:09,003 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:09,004 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:09,337 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:09,338 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:09,338 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:09,688 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:09,688 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:09,689 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:10,042 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:10,043 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:10,043 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:10,408 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:10,408 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:10,409 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:10,761 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:10,764 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:10,764 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:11,128 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:11,129 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:11,129 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:11,480 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:11,481 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:11,482 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:11,816 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:11,816 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:11,817 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:12,167 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:12,168 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:12,168 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:12,552 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:12,553 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:12,553 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:12,889 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:12,890 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:12,890 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:13,243 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:13,243 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:13,244 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:13,625 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:13,626 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:13,626 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:13,977 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:13,977 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:13,978 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:14,328 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:14,328 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:14,329 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:14,664 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:14,664 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:14,665 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:15,032 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:15,032 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:15,033 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:15,355 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:15,355 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:15,356 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:15,719 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:15,720 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:15,721 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:16,058 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:16,058 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:16,059 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:16,422 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:16,422 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:16,423 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:16,759 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:16,760 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:16,760 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:17,093 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:17,094 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:17,095 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:17,431 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:17,432 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:17,432 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:17,770 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:17,770 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:17,771 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:18,090 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:18,091 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:18,091 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:18,440 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:18,440 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:18,441 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:18,791 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:18,791 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:18,792 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:19,144 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:19,145 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:19,145 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:19,510 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:19,511 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:19,511 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:19,862 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:19,863 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:19,864 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:20,232 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:20,232 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:20,233 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:20,587 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:20,587 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:20,588 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:20,918 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:20,918 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:20,919 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:21,703 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:21,703 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:21,704 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:22,055 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:22,055 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:22,055 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:22,390 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:22,391 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:22,391 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:22,726 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:22,727 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:22,727 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:23,079 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:23,080 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:23,081 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:23,815 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:23,816 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:23,816 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:24,263 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:24,264 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:24,264 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:24,598 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:24,599 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:24,599 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:24,921 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:24,922 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:24,922 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:25,238 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:25,239 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:25,240 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:25,575 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:25,575 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:25,576 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:25,865 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:25,865 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:25,866 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:27,031 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:27,031 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:27,032 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:28,246 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:28,247 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:28,247 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:28,838 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:28,838 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:28,839 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:29,112 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:29,113 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:29,114 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:29,382 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:29,382 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:29,383 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:29,686 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:29,687 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:29,688 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:30,043 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:30,043 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:30,044 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:30,247 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:30,247 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:30,248 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:30,550 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:30,551 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:30,551 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:30,839 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:30,840 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:30,840 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:31,142 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:31,143 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:31,143 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:31,413 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:31,413 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:31,414 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:31,703 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:31,703 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:31,704 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:32,080 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:32,080 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:32,081 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:32,261 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:32,262 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:32,262 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:32,567 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:32,568 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:32,568 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:32,868 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:32,868 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:32,869 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:33,174 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:33,174 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:33,175 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:33,463 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:33,463 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:33,464 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:33,766 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:33,767 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:33,767 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:34,054 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:34,055 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:34,055 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:34,324 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:34,324 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:34,325 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:34,619 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:34,620 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:34,621 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:34,918 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:34,918 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:34,919 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:35,206 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:35,206 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:35,207 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:37,160 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:37,160 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:37,161 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:37,447 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:37,447 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:37,448 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:37,704 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:37,704 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:37,705 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:37,974 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:37,975 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:37,975 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:38,269 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:38,270 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:38,271 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:38,454 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:38,455 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:38,455 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:38,710 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:38,710 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:38,711 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:38,949 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:38,950 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:38,951 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:39,188 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:39,189 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:39,189 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:39,427 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:39,428 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:39,428 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:39,671 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:39,672 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:39,672 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:39,911 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:39,912 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:39,912 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:40,135 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:40,136 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:40,136 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:40,359 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:40,359 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:40,360 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:40,597 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:40,597 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:40,598 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:40,854 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:40,855 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:40,855 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:41,079 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:41,080 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:41,081 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:41,316 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:41,317 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:41,317 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:41,542 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:41,542 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:41,543 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:41,782 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:41,782 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:41,783 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:42,036 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:42,037 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:42,038 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:42,821 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:42,822 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:42,822 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:43,189 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:43,190 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:43,190 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:43,508 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:43,508 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:43,509 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:51,404 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:51,405 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:34:51,405 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:34:58,212 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 17:35:00,149 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:00,149 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:35:00,150 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:53,566 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:53,567 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:35:53,567 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:54,188 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:54,189 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:35:54,189 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:54,574 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:54,575 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:35:54,575 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:54,928 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:54,929 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:35:54,930 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:55,212 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:55,213 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:35:55,213 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:55,550 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:55,551 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:35:55,552 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:55,854 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:55,854 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:35:55,855 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:56,159 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:35:56,160 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:35:56,160 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:36:27,416 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 17:36:36,074 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-07 17:36:40,759 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:36:40,760 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:36:40,760 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:36:47,034 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 17:37:11,758 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-07 17:37:16,230 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:37:16,230 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:37:16,231 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:37:17,668 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:37:17,669 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:37:17,669 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:37:18,197 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:37:18,197 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:37:18,198 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:37:18,499 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 17:37:18,500 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-07 17:37:18,500 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-07 18:36:10,774 DEBUG LogInFile CodPedido:326 
+2011-07-07 18:36:11,411 DEBUG LogInFile CodPedido:326 

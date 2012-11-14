@@ -1,0 +1,18 @@
+2011-07-25 14:43:20,114 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-07-25 14:46:45,740 DEBUG LogInFile CodPedido:330 
+2011-07-25 14:46:56,268 DEBUG LogInFile CodPedido:331 
+2011-07-25 14:46:56,691 DEBUG LogInFile CodPedido:332 
+2011-07-25 14:46:57,025 DEBUG LogInFile CodPedido:333 
+2011-07-25 14:46:57,304 DEBUG LogInFile CodPedido:334 
+2011-07-25 14:46:57,905 DEBUG LogInFile CodPedido:335 
+2011-07-25 14:46:58,337 DEBUG LogInFile CodPedido:336 
+2011-07-25 14:46:58,836 DEBUG LogInFile CodPedido:337 
+2011-07-25 14:46:59,494 DEBUG LogInFile CodPedido:338 
+2011-07-25 14:47:00,030 DEBUG LogInFile CodPedido:339 
+2011-07-25 14:47:00,598 DEBUG LogInFile CodPedido:340 
+2011-07-25 14:50:28,628 DEBUG LogInFile CodPedido:341 
+2011-07-25 14:57:25,633 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. The found license is for a different product.. 
+2011-07-25 14:58:47,862 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. The found license is for a different product.. 
+2011-07-25 14:58:52,178 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. The found license is for a different product.. 
+2011-07-25 14:58:56,828 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. The found license is for a different product.. 
+2011-07-25 15:45:04,270 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 

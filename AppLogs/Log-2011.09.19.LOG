@@ -1,0 +1,70 @@
+2011-09-19 14:13:19,112 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2528&idusu=133 
+2011-09-19 14:13:40,788 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2528&idusu=133 
+2011-09-19 14:33:44,338 DEBUG LogInFile CodPedido:367 
+2011-09-19 14:33:44,965 ERROR LogInFile DalGenerics (SubmitChanges): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PedidoPagamentos_SituacaoPagamento". The conflict occurred in database "evimail", table "dbo.SituacaoPagamento", column 'CodSituacaoPagto'.
+The statement has been terminated. 
+2011-09-19 14:33:44,971 ERROR LogInFile BllGenerics (SubmitChanges): The method or operation is not implemented. 
+2011-09-19 14:33:44,972 ERROR LogInFile InserirPedidoPgto(BllPedidoPgto): The method or operation is not implemented. 
+2011-09-19 14:34:26,419 DEBUG LogInFile CodPedido:367 
+2011-09-19 14:34:27,230 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500004F1001</tid>
+  <pan>9OJWOrwgqsV2AfvZtNR2Ka2Qb57jF2x2RfammNYMB0o=</pan>
+  <dados-pedido>
+    <numero>854930915</numero>
+    <valor>2000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-09-19T14:34:08.155-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-09-19T14:34:48.331-03:00</data-hora>
+    <valor>2000</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-09-19T14:34:48.394-03:00</data-hora>
+    <valor>2000</valor>
+    <lr>00</lr>
+    <arp>073744</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-09-19T14:34:49.001-03:00</data-hora>
+    <valor>2000</valor>
+  </captura>
+</transacao>
+
+ 
+2011-09-19 14:36:57,989 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2528&idusu=133 
+2011-09-19 14:43:44,103 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2530&idusu=133 
+2011-09-19 15:29:11,221 DEBUG LogInFile CodPedido:368 
+2011-09-19 15:29:11,920 ERROR LogInFile DalGenerics (SubmitChanges): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PedidoPagamentos_SituacaoPagamento". The conflict occurred in database "evimail", table "dbo.SituacaoPagamento", column 'CodSituacaoPagto'.
+The statement has been terminated. 
+2011-09-19 15:29:11,921 ERROR LogInFile BllGenerics (SubmitChanges): The method or operation is not implemented. 
+2011-09-19 15:29:11,922 ERROR LogInFile InserirPedidoPgto(BllPedidoPgto): The method or operation is not implemented. 
+2011-09-19 15:29:14,492 DEBUG LogInFile CodPedido:368 
+2011-09-19 17:57:29,366 DEBUG LogInFile CodPedido:369 
+2011-09-19 17:57:29,918 ERROR LogInFile DalGenerics (SubmitChanges): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_DetalheCartao_BandeiraCartao". The conflict occurred in database "evimail", table "dbo.BandeirasCartao", column 'CodBandeiraCartao'.
+The statement has been terminated. 
+2011-09-19 17:57:29,918 ERROR LogInFile BllGenerics (SubmitChanges): The method or operation is not implemented. 
+2011-09-19 17:57:29,919 ERROR LogInFile InserirPedidoPgto(BllPedidoPgto): The method or operation is not implemented. 
+2011-09-19 17:57:30,619 DEBUG LogInFile CodPedido:369 
+2011-09-19 18:02:42,456 DEBUG LogInFile CodPedido:370 
+2011-09-19 18:02:42,778 ERROR LogInFile DalGenerics (SubmitChanges): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_DetalheCartao_BandeiraCartao". The conflict occurred in database "evimail", table "dbo.BandeirasCartao", column 'CodBandeiraCartao'.
+The statement has been terminated. 
+2011-09-19 18:02:42,779 ERROR LogInFile BllGenerics (SubmitChanges): The method or operation is not implemented. 
+2011-09-19 18:02:42,779 ERROR LogInFile InserirPedidoPgto(BllPedidoPgto): The method or operation is not implemented. 
+2011-09-19 18:02:46,488 DEBUG LogInFile CodPedido:370 
+2011-09-19 18:24:57,695 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2531&idusu=133 

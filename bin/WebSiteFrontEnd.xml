@@ -1,0 +1,5020 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebSiteFrontEnd
+</name>
+</assembly>
+<members>
+<member name="P:WebSiteFrontEnd.Resources.Evimail.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDados_Mensagem_Sucesso">
+	<summary>
+  Looks up a localized string similar to Alterações realizadas com sucesso.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Botao_SalvarAlteracoes">
+	<summary>
+  Looks up a localized string similar to Salvar Alterações.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_CamposObrigatorios">
+	<summary>
+  Looks up a localized string similar to * Campos de preenchimento obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_Bairro">
+	<summary>
+  Looks up a localized string similar to Bairro.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_CEP">
+	<summary>
+  Looks up a localized string similar to CEP.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_CEP_LinkCorreios">
+	<summary>
+  Looks up a localized string similar to Não sabe seu CEP?.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_Cidade">
+	<summary>
+  Looks up a localized string similar to Cidade.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_Complemento">
+	<summary>
+  Looks up a localized string similar to Complemento.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_DataNascimento">
+	<summary>
+  Looks up a localized string similar to Data de Nascimento.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_Email">
+	<summary>
+  Looks up a localized string similar to Email.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_Logradouro">
+	<summary>
+  Looks up a localized string similar to Logradouro.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_Nome">
+	<summary>
+  Looks up a localized string similar to Nome.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_NomeUsuario">
+	<summary>
+  Looks up a localized string similar to Nome do Usuário.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_Numero">
+	<summary>
+  Looks up a localized string similar to Número.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_Pais">
+	<summary>
+  Looks up a localized string similar to País.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneCelular">
+	<summary>
+  Looks up a localized string similar to Telefone Celular.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneCelular_DDD">
+	<summary>
+  Looks up a localized string similar to DDD.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneCelular_Numero">
+	<summary>
+  Looks up a localized string similar to Tel.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneCelular_Observacao">
+	<summary>
+  Looks up a localized string similar to (somente números).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneComercial">
+	<summary>
+  Looks up a localized string similar to Telefone Comercial.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneComercial_DDD">
+	<summary>
+  Looks up a localized string similar to DDD.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneComercial_Numero">
+	<summary>
+  Looks up a localized string similar to Número.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneComercial_Observacao">
+	<summary>
+  Looks up a localized string similar to (somente números).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneComercial_Ramal">
+	<summary>
+  Looks up a localized string similar to Ramal.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneResidencial">
+	<summary>
+  Looks up a localized string similar to Telefone Residencial.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneResidencial_DDD">
+	<summary>
+  Looks up a localized string similar to DDD.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneResidencial_Numero">
+	<summary>
+  Looks up a localized string similar to Tel.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_TelefoneResidencial_Observacao">
+	<summary>
+  Looks up a localized string similar to (somente números).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Campo_UF">
+	<summary>
+  Looks up a localized string similar to UF.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_LinkAlterarSenha">
+	<summary>
+  Looks up a localized string similar to Clique aqui para alterar a sua senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlteraDado_Titulo">
+	<summary>
+  Looks up a localized string similar to Alterar Dados.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlterarSenha_BotaoAlterarSenha">
+	<summary>
+  Looks up a localized string similar to Alterar Senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlterarSenha_CamposObrigatórios">
+	<summary>
+  Looks up a localized string similar to * Campos de preenchimento obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlterarSenha_Campo_ConfirmeNovaSenha">
+	<summary>
+  Looks up a localized string similar to Confirme a Senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlterarSenha_Campo_NovaSenha">
+	<summary>
+  Looks up a localized string similar to Nova Senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlterarSenha_Campo_NovaSenha_Observacao">
+	<summary>
+  Looks up a localized string similar to (alfanumérica entre 6 e 10 caracteres).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlterarSenha_Mensagem_Sucesso">
+	<summary>
+  Looks up a localized string similar to Senha alterada com sucesso.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.AlterarSenha_Titulo">
+	<summary>
+  Looks up a localized string similar to Alterar Senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Alerta_TermosCondicoes">
+	<summary>
+  Looks up a localized string similar to Para prosseguir, é necessário concordar com os Termos e Condições de uso..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_CamposObrigatorios">
+	<summary>
+  Looks up a localized string similar to * Campos de preenchimento obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Bairro">
+	<summary>
+  Looks up a localized string similar to Bairro.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_BotaoCriarConta">
+	<summary>
+  Looks up a localized string similar to Criar conta.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_CEP">
+	<summary>
+  Looks up a localized string similar to CEP.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_CEP_LinkCorreios">
+	<summary>
+  Looks up a localized string similar to Não sabe seu CEP?.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Cidade">
+	<summary>
+  Looks up a localized string similar to Cidade.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_CNPJ">
+	<summary>
+  Looks up a localized string similar to CNPJ.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Complemento">
+	<summary>
+  Looks up a localized string similar to Complemento.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_ConfirmeSenha">
+	<summary>
+  Looks up a localized string similar to Confirme a Senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_CPF">
+	<summary>
+  Looks up a localized string similar to CPF.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_CPF_CNPJ_Observacao">
+	<summary>
+  Looks up a localized string similar to (somente números).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_DataNascimento">
+	<summary>
+  Looks up a localized string similar to Data de Nascimento.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Email">
+	<summary>
+  Looks up a localized string similar to Email.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_EuSou">
+	<summary>
+  Looks up a localized string similar to Eu sou.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_EuSou_PessoaFisica">
+	<summary>
+  Looks up a localized string similar to Pessoa Física.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_EuSou_PessoaJuridica">
+	<summary>
+  Looks up a localized string similar to Pessoa Jurídica.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Logradouro">
+	<summary>
+  Looks up a localized string similar to Logradouro.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Nome">
+	<summary>
+  Looks up a localized string similar to Nome.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_NomeUsuario">
+	<summary>
+  Looks up a localized string similar to Nome de usuário.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_NomeUsuario_Observacao">
+	<summary>
+  Looks up a localized string similar to (alfanumérico entre 6 e 10 caracteres).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Numero">
+	<summary>
+  Looks up a localized string similar to Número.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Pais">
+	<summary>
+  Looks up a localized string similar to País.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_RazaoSocial">
+	<summary>
+  Looks up a localized string similar to Razão Social.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Senha">
+	<summary>
+  Looks up a localized string similar to Senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Senha_Observacao">
+	<summary>
+  Looks up a localized string similar to (alfanumérica entre 6 e 10 caracteres).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Sexo">
+	<summary>
+  Looks up a localized string similar to Sexo.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Sexo_Feminino">
+	<summary>
+  Looks up a localized string similar to Feminino.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_Sexo_Masculino">
+	<summary>
+  Looks up a localized string similar to Masculino.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneCelular">
+	<summary>
+  Looks up a localized string similar to Telefone Celular.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneCelular_DDD">
+	<summary>
+  Looks up a localized string similar to DDD.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneCelular_Numero">
+	<summary>
+  Looks up a localized string similar to Tel.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneCelular_Observacao">
+	<summary>
+  Looks up a localized string similar to (somente números).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneComercial">
+	<summary>
+  Looks up a localized string similar to Telefone Comercial.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneComercial_DDD">
+	<summary>
+  Looks up a localized string similar to DDD.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneComercial_Numero">
+	<summary>
+  Looks up a localized string similar to Tel.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneComercial_Observacao">
+	<summary>
+  Looks up a localized string similar to (somente números).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneComercial_Ramal">
+	<summary>
+  Looks up a localized string similar to Ramal.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneResidencial">
+	<summary>
+  Looks up a localized string similar to Telefone Residencial.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneResidencial_DDD">
+	<summary>
+  Looks up a localized string similar to DDD.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneResidencial_Numero">
+	<summary>
+  Looks up a localized string similar to Tel.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TelefoneResidencial_Observacao">
+	<summary>
+  Looks up a localized string similar to (somente números).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_TermosCondicoes">
+	<summary>
+  Looks up a localized string similar to Li e entendi os Termos e Condições de uso..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Campo_UF">
+	<summary>
+  Looks up a localized string similar to UF.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_EmailConfirmacao_Assunto">
+	<summary>
+  Looks up a localized string similar to Cadastro no Evimail.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_EmailConfirmacao_Conteudo">
+	<summary>
+  Looks up a localized string similar to Você está recebendo este e-mail pois iniciou o processo de cadastramento no site Evimail.&lt;br /&gt;Para dar prosseguimento com o seu cadastro, clique no link abaixo:&lt;br /&gt;&lt;a href="@@SITECOMPLETO"&gt;Confirmar cadastro&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Atenciosamente,&lt;br /&gt;Equipe Evimail
+    .
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_EmailConfirmacao_Pedido">
+	<summary>
+  Looks up a localized string similar to O número do seu pedido é @@NUMPEDIDO.&lt;p&gt;Atenciosamente,&lt;br /&gt;Equipe Evimail
+    .
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Bairro_Required">
+	<summary>
+  Looks up a localized string similar to O campo bairro é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_CEP_Invalido">
+	<summary>
+  Looks up a localized string similar to CEP inválido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_CEP_Required">
+	<summary>
+  Looks up a localized string similar to O campo CEP é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Cidade_Required">
+	<summary>
+  Looks up a localized string similar to O campo cidade é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_CNPJ_Invalido">
+	<summary>
+  Looks up a localized string similar to CNPJ inválido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_CNPJ_JaUtilizado">
+	<summary>
+  Looks up a localized string similar to CNPJ informado já está cadastrado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_CNPJ_Required">
+	<summary>
+  Looks up a localized string similar to O campo CNPJ é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_ConfirmeSenha_Invalida">
+	<summary>
+  Looks up a localized string similar to Confirmação da senha está inválida.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_ConfirmeSenha_Required">
+	<summary>
+  Looks up a localized string similar to O campo confirme a senha é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_CPF_Invalido">
+	<summary>
+  Looks up a localized string similar to CPF inválido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_CPF_JaUtilizado">
+	<summary>
+  Looks up a localized string similar to CPF informado já está cadastrado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_CPF_Required">
+	<summary>
+  Looks up a localized string similar to O campo CPF é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_DataNascimento_Invalida">
+	<summary>
+  Looks up a localized string similar to Data de nascimento inválida.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_DataNascimento_MaiorHoje">
+	<summary>
+  Looks up a localized string similar to Data de nascimento informada maior que a data atual.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_DataNascimento_Required">
+	<summary>
+  Looks up a localized string similar to O campo data de nascimento é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Email_Invalido">
+	<summary>
+  Looks up a localized string similar to Email inválido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Email_JaUtilizado">
+	<summary>
+  Looks up a localized string similar to Email informado já está sendo utilizado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Email_Obrigatorio">
+	<summary>
+  Looks up a localized string similar to Campo e-mail inválido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Email_Required">
+	<summary>
+  Looks up a localized string similar to O campo email é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Logradouro_Required">
+	<summary>
+  Looks up a localized string similar to O campo logradouro é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_NomeUsuario_Invalido">
+	<summary>
+  Looks up a localized string similar to O nome de usuário deve ter entre 6 e 10 caracteres.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_NomeUsuario_JaUtilizado">
+	<summary>
+  Looks up a localized string similar to Nome de usuário já cadastrado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_NomeUsuario_Requried">
+	<summary>
+  Looks up a localized string similar to O campo nome de usuário é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Nome_Required">
+	<summary>
+  Looks up a localized string similar to O campo nome é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Numero_Required">
+	<summary>
+  Looks up a localized string similar to O campo número é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Pais_Required">
+	<summary>
+  Looks up a localized string similar to O campo país é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_RazaoSocial_Required">
+	<summary>
+  Looks up a localized string similar to O campo razão social é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Senha_Invalida">
+	<summary>
+  Looks up a localized string similar to A senha deve ter entre 6 e 10 caracteres.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Senha_Required">
+	<summary>
+  Looks up a localized string similar to O campo senha é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_Sexo_Required">
+	<summary>
+  Looks up a localized string similar to Selecione um sexo.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_TelefoneCelular_DDD_Invalido">
+	<summary>
+  Looks up a localized string similar to DDD do telefone celular inválido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_TelefoneCelular_DDD_Required">
+	<summary>
+  Looks up a localized string similar to O campo DDD do telefone celular é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_TelefoneCelular_Numero_Invalido">
+	<summary>
+  Looks up a localized string similar to Telefone celular inválido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_TelefoneCelular_Numero_Required">
+	<summary>
+  Looks up a localized string similar to O campo telefone celular é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_TelefoneComercial_Invalido">
+	<summary>
+  Looks up a localized string similar to Telefone comercial inválido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_TelefoneResidencial_Invalido">
+	<summary>
+  Looks up a localized string similar to Telefone residencial inválido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_TipoPessoa_Required">
+	<summary>
+  Looks up a localized string similar to Selecione um tipo de pessoa.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_ErroForm_UF_Required">
+	<summary>
+  Looks up a localized string similar to O campo UF é obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Mensagem_Sucesso">
+	<summary>
+  Looks up a localized string similar to Você receberá um email com instruções de ativação de cadastro..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cadastro_Titulo">
+	<summary>
+  Looks up a localized string similar to Cadastre-se.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cancela_Renova_Plano_Erro">
+	<summary>
+  Looks up a localized string similar to Erro ao cancelar renovação. Por favor, tente novamente mais tarde..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Cancela_Renova_Plano_Sucesso">
+	<summary>
+  Looks up a localized string similar to Renovação cancelada com sucesso..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarCadastro_Identificador_Invalido">
+	<summary>
+  Looks up a localized string similar to Identificador inválido..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarCadastro_Identificador_Required">
+	<summary>
+  Looks up a localized string similar to Identificador não informado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarCadastro_Sucesso">
+	<summary>
+  Looks up a localized string similar to Sua conta foi ativada com sucesso..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_Alerta_IdentificadorInvalido">
+	<summary>
+  Looks up a localized string similar to Não foi possível obter os detalhes do email. Identificador inválido..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_BotaoConfirmar">
+	<summary>
+  Looks up a localized string similar to Confirmar.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_BotaoEnviarCopia">
+	<summary>
+  Looks up a localized string similar to enviar cópia.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_BotaoVisualizarEmail">
+	<summary>
+  Looks up a localized string similar to VISUALIZAR EMAIL.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_ErroForm_Captcha_Invalido">
+	<summary>
+  Looks up a localized string similar to Código informado não corresponde com o código da figura.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_ErroForm_Captcha_Required">
+	<summary>
+  Looks up a localized string similar to Informe o código da figura.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_ErroForm_ConfirmacaoLeitura_Required">
+	<summary>
+  Looks up a localized string similar to Selecione a opção de confirmação de leitura do email.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_LabelCaptcha">
+	<summary>
+  Looks up a localized string similar to Digite o código ao lado:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_MensagemConfirmacao">
+	<summary>
+  Looks up a localized string similar to Por favor confirme as informações abaixo:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_MensagemEmailRecebido">
+	<summary>
+  Looks up a localized string similar to Você recebeu o email "@@ASSUNTO" no endereço eletronico @@EMAIL de @@REMETENTE.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_Mensagem_ConfirmacaoSucesso">
+	<summary>
+  Looks up a localized string similar to Leitura de email confirmada..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_Opcao_ConfirmacaoAnexos">
+	<summary>
+  Looks up a localized string similar to Li e entendi o(s) anexo(s) do email "@@ASSUNTO", enviado em @@DATAENVIO às @@HORAENVIO por @@REMETENTE..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_Opcao_ConfirmacaoLeitura">
+	<summary>
+  Looks up a localized string similar to Entendi o conteúdo do email "@@ASSUNTO", enviado em @@DATAENVIO às @@HORAENVIO por @@REMETENTE..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_ReenviarEmail_Mensagem_Falha">
+	<summary>
+  Looks up a localized string similar to Ocorreu uma falha ao enviar uma cópia para o seu email..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_ReenviarEmail_Mensagem_Sucesso">
+	<summary>
+  Looks up a localized string similar to Uma cópia foi enviada para o seu email..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ConfirmarEmail_Titulo">
+	<summary>
+  Looks up a localized string similar to confirmação de leitura.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ContratarServico_ErroForm_DataValidade_Invalida">
+	<summary>
+  Looks up a localized string similar to Data de validade inválida.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.ContratarServico_ErroForm_DataValidade_MenorHoje">
+	<summary>
+  Looks up a localized string similar to Data de validade informada é menor do que hoje.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Default_Banner">
+	<summary>
+  Looks up a localized string similar to ../img/site/home_banner.jpg.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Default_BlocoDireita_Conteudo1">
+	<summary>
+  Looks up a localized string similar to &lt;li&gt;Diminuição no uso de papel.&lt;/li&gt;&lt;li&gt;Notificações automáticas quando o destinatário recebe e lê seu e-mail.&lt;/li&gt;&lt;li&gt;Emissão de laudo técnico que comprova o envio, recebimento e leitura do e-mail, assim como a data e hora exata dos eventos.&lt;/li&gt;&lt;li&gt;Gerenciamento de e-mails adicionais. Você pode utilizar o Evimail com até quatro endereços eletrônicos diferentes em uma só assinatura.&lt;/li&gt;.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Default_BlocoDireita_Conteudo2">
+	<summary>
+  Looks up a localized string similar to &lt;p class="color1"&gt;O Evimail possui duas modalidades de assinatura:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="color1"&gt;Créditos Unitários&lt;/span&gt; - para quem envia poucas mensagens. Dessa forma você pode contratar um pacote com número pré-definido de e-mails que atenda sua necessidade.&lt;/li&gt;&lt;li&gt;&lt;span class="color1"&gt;Por Períodos&lt;/span&gt; - Para quem trabalha com grande volume de e-mails. Nessa modalidade você poderá, dentro do período contratado, enviar um número ilimitado de mensagens; sem preocupar-se com o limite de créditos ou  [rest of string was truncated]";.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Default_BlocoDireita_Titulo1">
+	<summary>
+  Looks up a localized string similar to Vantagens para você e sua empresa.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Default_BlocoDireita_Titulo2">
+	<summary>
+  Looks up a localized string similar to Escolha o melhor plano.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Default_BlocoEsquerda_Conteudo">
+	<summary>
+  Looks up a localized string similar to &lt;p&gt;O Evimail é uma plataforma que possibilita evidenciar as comunicações realizadas por meio de correio-eletrônico de forma simples.&lt;/p&gt;&lt;p&gt;É possível gerar um comprovante legal de que os destinatários receberam e leram suas mensagens.&lt;/p&gt;&lt;p&gt;Você pode manter um histórico permanente dos seus e-mails enviados e recebidos, bem como os anexos contidos nessas mensagens.&lt;/p&gt;.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Default_BlocoEsquerda_Titulo">
+	<summary>
+  Looks up a localized string similar to O que é o Evimail?.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_LinkVoltarMenu">
+	<summary>
+  Looks up a localized string similar to voltar para consulta.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_DataConfirmacaoHeader">
+	<summary>
+  Looks up a localized string similar to Data de Confirmação.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_EmailHeader">
+	<summary>
+  Looks up a localized string similar to Lista de Destinatários.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_Legenda_Confirmado">
+	<summary>
+  Looks up a localized string similar to confirmado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_Legenda_Pendente">
+	<summary>
+  Looks up a localized string similar to confirmação pendente.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_LeituraAnexoHeader">
+	<summary>
+  Looks up a localized string similar to Leitura de Anexos.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_LeituraConteudoHeader">
+	<summary>
+  Looks up a localized string similar to Leitura do Conteúdo.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_RecebimentoHeader">
+	<summary>
+  Looks up a localized string similar to Recebimento.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_StatusHeader">
+	<summary>
+  Looks up a localized string similar to Status do email.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_Status_NaoRecebido">
+	<summary>
+  Looks up a localized string similar to não recebido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_ListaDestinatarios_Status_Recebido">
+	<summary>
+  Looks up a localized string similar to recebido.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_TituloAssunto">
+	<summary>
+  Looks up a localized string similar to Assunto do Email:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_TituloMenu">
+	<summary>
+  Looks up a localized string similar to Consultar Histórico de Emails.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.DetalheEmail_TituloPagina">
+	<summary>
+  Looks up a localized string similar to Detalhes do Email.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.EsqueciSenha_BotaoEnviar">
+	<summary>
+  Looks up a localized string similar to Enviar.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.EsqueciSenha_Campo_Email">
+	<summary>
+  Looks up a localized string similar to Informe seu e-mail:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.EsqueciSenha_EmailEnviado">
+	<summary>
+  Looks up a localized string similar to Sua senha foi enviada para o email cadastrado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.EsqueciSenha_EmailNaoEncontrado">
+	<summary>
+  Looks up a localized string similar to Endereço de email não encontrado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.EsqueciSenha_Email_Assunto">
+	<summary>
+  Looks up a localized string similar to Recuperação de senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.EsqueciSenha_Email_Conteudo">
+	<summary>
+  Looks up a localized string similar to .
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.EsqueciSenha_Email_Nao_Informado">
+	<summary>
+  Looks up a localized string similar to Um e-mail deve ser informado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.EsqueciSenha_ErroEnviarEmail">
+	<summary>
+  Looks up a localized string similar to Ocorreu um erro ao tentar enviar a senha por email.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_BotaoEnviar">
+	<summary>
+  Looks up a localized string similar to Enviar.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_CampoInvalido">
+	<summary>
+  Looks up a localized string similar to * Foram encontrados os seguintes erros.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_CampoObrigatorio">
+	<summary>
+  Looks up a localized string similar to * Campos de preenchimento obrigatório.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_Campo_Assunto">
+	<summary>
+  Looks up a localized string similar to Assunto.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_Campo_Email">
+	<summary>
+  Looks up a localized string similar to Email.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_Campo_Mensagem">
+	<summary>
+  Looks up a localized string similar to Mensagem.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_Campo_Mensagem_Acima_Limite">
+	<summary>
+  Looks up a localized string similar to A mensagem excedeu o limite de 1024 caracteres.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_Campo_Nome">
+	<summary>
+  Looks up a localized string similar to Nome.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_Campo_ReceberCopia">
+	<summary>
+  Looks up a localized string similar to Receber cópia.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_Manchete">
+	<summary>
+  Looks up a localized string similar to Obrigado por se comunicar com o Evimail.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.FaleConosco_Mensagem_Sucesso">
+	<summary>
+  Looks up a localized string similar to Sua mensagem foi enviada com sucesso.&lt;br /&gt;Entraremos em contato..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Geral_Alerta_Falha">
+	<summary>
+  Looks up a localized string similar to Falha ao realizar operação.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Login_Alerta_Invalido">
+	<summary>
+  Looks up a localized string similar to Login Inválido!.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Login_BotaoLogin">
+	<summary>
+  Looks up a localized string similar to Entrar.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Login_Campo_Identificacao">
+	<summary>
+  Looks up a localized string similar to Identificação:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Login_Campo_Senha">
+	<summary>
+  Looks up a localized string similar to Senha:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Login_ErroForm_Identificacao_Required">
+	<summary>
+  Looks up a localized string similar to Informe o login.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Login_ErroForm_Senha_Required">
+	<summary>
+  Looks up a localized string similar to Informe a senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Login_LinkEsqueciSenha">
+	<summary>
+  Looks up a localized string similar to Esqueci minha senha.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Login_Titulo">
+	<summary>
+  Looks up a localized string similar to LOGIN.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Credito_BotaoAdquirirCreditos">
+	<summary>
+  Looks up a localized string similar to Adquirir Créditos.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Credito_CreditosEsgotados">
+	<summary>
+  Looks up a localized string similar to Seus créditos se esgotaram..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Credito_MensagemSaldoRestanteParte1">
+	<summary>
+  Looks up a localized string similar to Você possui.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Credito_MensagemSaldoRestanteParte2">
+	<summary>
+  Looks up a localized string similar to créditos.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Credito_NaoPossui">
+	<summary>
+  Looks up a localized string similar to Você não possui créditos..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Credito_ObservacaoSaldo">
+	<summary>
+  Looks up a localized string similar to (cada crédito corresponde a 1 email).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Credito_ServicoContratadoTitulo">
+	<summary>
+  Looks up a localized string similar to Último serviço contratado:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Credito_UltimoServicoContratadoTitulo">
+	<summary>
+  Looks up a localized string similar to Último serviço contratado:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_DataUltimaCompraTitulo">
+	<summary>
+  Looks up a localized string similar to Data da última compra:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_ListaEmailsEnviados_AssuntoHeader">
+	<summary>
+  Looks up a localized string similar to ASSUNTO.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_ListaEmailsEnviados_DataHeader">
+	<summary>
+  Looks up a localized string similar to DATA.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_ListaEmailsEnviados_MensagemPaginacao">
+	<summary>
+  Looks up a localized string similar to Mostrando @@REGINICIO a @@REGFIM de @@REGTOTAL emails.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_ListaEmailsEnviados_NenhumEncontrado">
+	<summary>
+  Looks up a localized string similar to Nenhum e-mail enviado para o plano corrente.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_ListaEmailsEnviados_SaldoHeader">
+	<summary>
+  Looks up a localized string similar to SALDO.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_ListaEmailsEnviados_TextoPaginas">
+	<summary>
+  Looks up a localized string similar to Págs:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Plano_BotaoAdquirirPlano">
+	<summary>
+  Looks up a localized string similar to Adquirir Plano.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Plano_DataExpiracaoTitulo">
+	<summary>
+  Looks up a localized string similar to Data de expiração:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Plano_DataRenovaTitulo">
+	<summary>
+  Looks up a localized string similar to Data de renovação:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Plano_MensagemSaldoRestanteParte1">
+	<summary>
+  Looks up a localized string similar to Você ainda tem.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Plano_MensagemSaldoRestanteParte2">
+	<summary>
+  Looks up a localized string similar to para utilizar o Evimail.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Plano_ServicoContratadoTitulo">
+	<summary>
+  Looks up a localized string similar to Serviço contratado:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_QtdEmailsEnviadosTitulo">
+	<summary>
+  Looks up a localized string similar to Quantidade de emails enviados:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.MinhaConta_Titulo">
+	<summary>
+  Looks up a localized string similar to Minha Conta.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Paginacao_Tooltip_PaginaAnterior">
+	<summary>
+  Looks up a localized string similar to Anterior.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Paginacao_Tooltip_PrimeiraPagina">
+	<summary>
+  Looks up a localized string similar to Primeira.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Paginacao_Tooltip_ProximaPagina">
+	<summary>
+  Looks up a localized string similar to Próxima.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Paginacao_Tooltip_UltimaPagina">
+	<summary>
+  Looks up a localized string similar to Última.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.plano_Expirado">
+	<summary>
+  Looks up a localized string similar to Seu plano expirou.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.Remover_Email_Sucesso">
+	<summary>
+  Looks up a localized string similar to Email removido com sucesso..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_Arquivo">
+	<summary>
+  Looks up a localized string similar to email-confirmacao.htm.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_Assunto">
+	<summary>
+  Looks up a localized string similar to Conteúdo de e-mail confirmado.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_BotaoSite_AtributoAlt">
+	<summary>
+  Looks up a localized string similar to ir para o site.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_BotaoSite_NomeFigura">
+	<summary>
+  Looks up a localized string similar to botao.jpg.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_Footer_AtributoAlt">
+	<summary>
+  Looks up a localized string similar to Transforme seu email em EVIDÊNCIA - www.evimail.com.br.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_Footer_NomeFigura">
+	<summary>
+  Looks up a localized string similar to rodape.jpg.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_Manchete">
+	<summary>
+  Looks up a localized string similar to Seu cadastro foi efetuado com sucesso!.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_MensagemLeituraAnexos">
+	<summary>
+  Looks up a localized string similar to O conteúdo dos anexos do e-mail "@@ASSUNTO" foi confirmado por @@CONFIRMADOR..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_MensagemLeituraEmail">
+	<summary>
+  Looks up a localized string similar to O conteúdo do e-mail "@@ASSUNTO" foi confirmado por @@CONFIRMADOR..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_MensagemLeituraEmailAnexos">
+	<summary>
+  Looks up a localized string similar to O conteúdo e os anexos do e-mail "@@ASSUNTO" foi confirmado  por @@CONFIRMADOR..
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_TituloHtml">
+	<summary>
+  Looks up a localized string similar to Email confirmado - Evimail.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_Topo_AtributoAlt">
+	<summary>
+  Looks up a localized string similar to Evimail - Solicitação de Confirmação.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.TemplateEmail_ConfirmacaoEmail_Topo_NomeFigura">
+	<summary>
+  Looks up a localized string similar to topo.jpg.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucDetalhesEmail_Anexos">
+	<summary>
+  Looks up a localized string similar to anexos:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucDetalhesEmail_BotaoGerarPDF">
+	<summary>
+  Looks up a localized string similar to GERAR PDF.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucDetalhesEmail_Corpo">
+	<summary>
+  Looks up a localized string similar to corpo:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucDetalhesEmail_IPDestino">
+	<summary>
+  Looks up a localized string similar to IP Destino:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucDetalhesEmail_IPOrigem">
+	<summary>
+  Looks up a localized string similar to Cabeçalho:.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_BotaoCadastrar">
+	<summary>
+  Looks up a localized string similar to Cadastre-se.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_BotaoLogin">
+	<summary>
+  Looks up a localized string similar to Faça seu login.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_BotaoSair">
+	<summary>
+  Looks up a localized string similar to Sair.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_Menu_FaleConosco">
+	<summary>
+  Looks up a localized string similar to Fale Conosco.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_Menu_FAQ">
+	<summary>
+  Looks up a localized string similar to Perguntas Frequentes.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_Menu_Home">
+	<summary>
+  Looks up a localized string similar to Home.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_Menu_QuemSomos">
+	<summary>
+  Looks up a localized string similar to Quem Somos.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_TituloBotaoCadastar">
+	<summary>
+  Looks up a localized string similar to Novo usuário?.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_TituloBotaoLogin">
+	<summary>
+  Looks up a localized string similar to Já é cliente?.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_UsuarioCreditos">
+	<summary>
+  Looks up a localized string similar to Você possui &lt;span&gt;@@SALDO&lt;/span&gt; crédito(s).
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_UsuarioPlanos">
+	<summary>
+  Looks up a localized string similar to Você ainda tem &lt;span&gt;@@SALDO @@INTERVALO&lt;/span&gt; para utilizar o Evimail.
+</summary>
+</member><member name="P:WebSiteFrontEnd.Resources.Evimail.wucHeader_UsuarioSemServico">
+	<summary>
+  Looks up a localized string similar to Você não possui um serviço contratado.
+</summary>
+</member><member name="T:WebSiteFrontEnd.Resources.Evimail">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:WebSiteFrontEnd.Mensagem.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Mensagem.lblMensagem">
+	<summary>
+lblMensagem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Mensagem.lnkOk">
+	<summary>
+lnkOk control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoPedido.pchConfirmaCompra">
+	<summary>
+pchConfirmaCompra control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoPedido.lblConfirmaCompra">
+	<summary>
+lblConfirmaCompra control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoPedido.ltlNumPedido">
+	<summary>
+ltlNumPedido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoPedido.ltlEmailPedido">
+	<summary>
+ltlEmailPedido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoPedido.ltlTxtPedido">
+	<summary>
+ltlTxtPedido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoPedido.btnIrConta">
+	<summary>
+btnIrConta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Master.ContentPlaceHolder_Head">
+	<summary>
+ContentPlaceHolder_Head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Master.body">
+	<summary>
+body control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Master.formMain">
+	<summary>
+formMain control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Master.ucHeader">
+	<summary>
+ucHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Master.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Master.ContentPlaceHolder_Body">
+	<summary>
+ContentPlaceHolder_Body control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Master.ucFooter">
+	<summary>
+ucFooter control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.xml">
+	<summary>
+xml control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.vldsmyHistorico">
+	<summary>
+vldsmyHistorico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lblDirecao">
+	<summary>
+lblDirecao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.ddlDirecao">
+	<summary>
+ddlDirecao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lblAssunto">
+	<summary>
+lblAssunto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.txtAssunto">
+	<summary>
+txtAssunto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.pnlRemetente">
+	<summary>
+pnlRemetente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lblRemetente">
+	<summary>
+lblRemetente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.txtRemetente">
+	<summary>
+txtRemetente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lblDestinatario">
+	<summary>
+lblDestinatario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.txtDestinatario">
+	<summary>
+txtDestinatario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lblAnexos">
+	<summary>
+lblAnexos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.ddlAnexos">
+	<summary>
+ddlAnexos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lblStatus">
+	<summary>
+lblStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.ddlStatus">
+	<summary>
+ddlStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lblDataIni">
+	<summary>
+lblDataIni control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.txtDataInicial">
+	<summary>
+txtDataInicial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.calendar_ini">
+	<summary>
+calendar_ini control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.CalendarExtender1">
+	<summary>
+CalendarExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.RegularExpressionValidator1">
+	<summary>
+RegularExpressionValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lblDataFim">
+	<summary>
+lblDataFim control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.txtDataFinal">
+	<summary>
+txtDataFinal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.calendar_fim">
+	<summary>
+calendar_fim control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.CalendarExtender2">
+	<summary>
+CalendarExtender2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.RegularExpressionValidator2">
+	<summary>
+RegularExpressionValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lblErro">
+	<summary>
+lblErro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.btnProcurar">
+	<summary>
+btnProcurar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.ltrSemResultados">
+	<summary>
+ltrSemResultados control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.lstHistorico">
+	<summary>
+lstHistorico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.ltrMensagemPaginacao">
+	<summary>
+ltrMensagemPaginacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.pnlLegenda">
+	<summary>
+pnlLegenda control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.ltrLegendaPendente">
+	<summary>
+ltrLegendaPendente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.ltrLegendaConfirmado">
+	<summary>
+ltrLegendaConfirmado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.ltrTextoPaginas">
+	<summary>
+ltrTextoPaginas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConsultarHistorico.dpgMinhaConta">
+	<summary>
+dpgMinhaConta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.uppContratarServico">
+	<summary>
+uppContratarServico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pchMainContent">
+	<summary>
+pchMainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pnlAlertaServico">
+	<summary>
+pnlAlertaServico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pchOptions">
+	<summary>
+pchOptions control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.lblMsgCredUvaia">
+	<summary>
+lblMsgCredUvaia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.hdnServicoSelecionado">
+	<summary>
+hdnServicoSelecionado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pnlPlano">
+	<summary>
+pnlPlano control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.rblPlanosDisp">
+	<summary>
+rblPlanosDisp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.btnSaibaMaisSobrePlanos">
+	<summary>
+btnSaibaMaisSobrePlanos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pnlCreditos">
+	<summary>
+pnlCreditos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.rblCreditosDisp">
+	<summary>
+rblCreditosDisp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.btnSaibaMaisSobreCreditos">
+	<summary>
+btnSaibaMaisSobreCreditos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pnlPlanosIndisp">
+	<summary>
+pnlPlanosIndisp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.rblPlanosIndisp">
+	<summary>
+rblPlanosIndisp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.HyperLink1">
+	<summary>
+HyperLink1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pnlCreditosIndisp">
+	<summary>
+pnlCreditosIndisp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.rblCreditosIndisp">
+	<summary>
+rblCreditosIndisp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.HyperLink2">
+	<summary>
+HyperLink2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pchCreditOnly">
+	<summary>
+pchCreditOnly control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.rblBandeiraCartao">
+	<summary>
+rblBandeiraCartao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.plchldrCartao">
+	<summary>
+plchldrCartao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.lblNomeCartao">
+	<summary>
+lblNomeCartao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.tbNomeCartao">
+	<summary>
+tbNomeCartao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pchNaoSelect">
+	<summary>
+pchNaoSelect control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.ltlFormPagamento">
+	<summary>
+ltlFormPagamento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.lblFormPagamento">
+	<summary>
+lblFormPagamento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pchComFormPag">
+	<summary>
+pchComFormPag control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.ltlServico">
+	<summary>
+ltlServico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.lblServico">
+	<summary>
+lblServico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.cbxRenovar">
+	<summary>
+cbxRenovar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.pchComCredUvaia">
+	<summary>
+pchComCredUvaia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.lblUserUvaia">
+	<summary>
+lblUserUvaia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.txtUserUvaia">
+	<summary>
+txtUserUvaia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.lblPassUvaia">
+	<summary>
+lblPassUvaia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.txtPassUvaia">
+	<summary>
+txtPassUvaia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.lblMsgCielo">
+	<summary>
+lblMsgCielo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.btnConcluirCompra">
+	<summary>
+btnConcluirCompra control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ContratarServico.ctvContratar">
+	<summary>
+ctvContratar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.upFaleConosco">
+	<summary>
+upFaleConosco control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.lblCampoObrigatorio">
+	<summary>
+lblCampoObrigatorio control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.lblNome">
+	<summary>
+lblNome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.txtNome">
+	<summary>
+txtNome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.lblEmail">
+	<summary>
+lblEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.lblAssunto">
+	<summary>
+lblAssunto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.txtAssunto">
+	<summary>
+txtAssunto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.ddlAssunto">
+	<summary>
+ddlAssunto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.lblMensagem">
+	<summary>
+lblMensagem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.txtMensagem">
+	<summary>
+txtMensagem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.chkReceberCopia">
+	<summary>
+chkReceberCopia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.lblReceberCopia">
+	<summary>
+lblReceberCopia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.btnEnviar">
+	<summary>
+btnEnviar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.FaleConosco.ctvFale">
+	<summary>
+ctvFale control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucFooter.ltlAno">
+	<summary>
+ltlAno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.DetalheEmail.ltrTituloMenu">
+	<summary>
+ltrTituloMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.DetalheEmail.ltrTituloPagina">
+	<summary>
+ltrTituloPagina control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.DetalheEmail.lnkVoltar">
+	<summary>
+lnkVoltar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.DetalheEmail.lblTituloAssunto">
+	<summary>
+lblTituloAssunto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.DetalheEmail.ltrTextoAssunto">
+	<summary>
+ltrTextoAssunto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.DetalheEmail.lsvDestinatarios">
+	<summary>
+lsvDestinatarios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.DetalheEmail.ltrPendente">
+	<summary>
+ltrPendente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.DetalheEmail.ltrConfirmado">
+	<summary>
+ltrConfirmado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.DetalheEmail.ucDetalhesEmail">
+	<summary>
+ucDetalhesEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.EmitirLaudo.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:WebSiteFrontEnd.Login.EfetuarLogin">
+	<summary></summary>
+	<parameters></parameters>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Login.TratarRetornoLogin(VOL.EvimailContext.Usuario@)">
+	<summary></summary>
+	<parameters></parameters>
+	<remarks></remarks>
+</member><member name="F:WebSiteFrontEnd.CancelarRenovacao.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.CancelarRenovacao.lblCancelaRenovacao">
+	<summary>
+lblCancelaRenovacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.CancelarRenovacao.btnSim">
+	<summary>
+btnSim control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.EsqueciSenha.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.EsqueciSenha.lblEmail">
+	<summary>
+lblEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.EsqueciSenha.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.EsqueciSenha.btnEnviar">
+	<summary>
+btnEnviar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AbrePdf.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTitulo">
+	<summary>
+lblTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.ltrMensagemCamposObrigatorios">
+	<summary>
+ltrMensagemCamposObrigatorios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.upCadastroCima">
+	<summary>
+upCadastroCima control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblEuSou">
+	<summary>
+lblEuSou control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.rblTipoPessoa">
+	<summary>
+rblTipoPessoa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblNome">
+	<summary>
+lblNome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtNome">
+	<summary>
+txtNome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblEmail">
+	<summary>
+lblEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.phCPF">
+	<summary>
+phCPF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblCPF">
+	<summary>
+lblCPF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtCPF">
+	<summary>
+txtCPF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblCPFObservacao">
+	<summary>
+lblCPFObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblSexo">
+	<summary>
+lblSexo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.rblSexo">
+	<summary>
+rblSexo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblDataNascimento">
+	<summary>
+lblDataNascimento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtDataNascimento">
+	<summary>
+txtDataNascimento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.phCNPJ">
+	<summary>
+phCNPJ control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblCNPJ">
+	<summary>
+lblCNPJ control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtCNPJ">
+	<summary>
+txtCNPJ control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblCNPJObservacao">
+	<summary>
+lblCNPJObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblRazaoSocial">
+	<summary>
+lblRazaoSocial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtRazaoSocial">
+	<summary>
+txtRazaoSocial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblPais">
+	<summary>
+lblPais control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.ddlPais">
+	<summary>
+ddlPais control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblCEP">
+	<summary>
+lblCEP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtCEP">
+	<summary>
+txtCEP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lnkCEPCorreios">
+	<summary>
+lnkCEPCorreios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblCidade">
+	<summary>
+lblCidade control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtCidade">
+	<summary>
+txtCidade control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblUF">
+	<summary>
+lblUF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.ddlUF">
+	<summary>
+ddlUF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblLogradouro">
+	<summary>
+lblLogradouro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtLogradouro">
+	<summary>
+txtLogradouro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblNumero">
+	<summary>
+lblNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtNumero">
+	<summary>
+txtNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblComplemento">
+	<summary>
+lblComplemento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtComplemento">
+	<summary>
+txtComplemento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblBairro">
+	<summary>
+lblBairro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtBairro">
+	<summary>
+txtBairro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneCelular">
+	<summary>
+lblTelefoneCelular control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneCelularDDD">
+	<summary>
+lblTelefoneCelularDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtTelefoneCelularDDD">
+	<summary>
+txtTelefoneCelularDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneCelularNumero">
+	<summary>
+lblTelefoneCelularNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtTelefoneCelularNumero">
+	<summary>
+txtTelefoneCelularNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneCelularObservacao">
+	<summary>
+lblTelefoneCelularObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneResidencial">
+	<summary>
+lblTelefoneResidencial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneResidencialDDD">
+	<summary>
+lblTelefoneResidencialDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtTelefoneResidencialDDD">
+	<summary>
+txtTelefoneResidencialDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneResidencialNumero">
+	<summary>
+lblTelefoneResidencialNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtTelefoneResidencialNumero">
+	<summary>
+txtTelefoneResidencialNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneResidencialObservacao">
+	<summary>
+lblTelefoneResidencialObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneComercial">
+	<summary>
+lblTelefoneComercial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneComercialDDD">
+	<summary>
+lblTelefoneComercialDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtTelefoneComercialDDD">
+	<summary>
+txtTelefoneComercialDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneComercialNumero">
+	<summary>
+lblTelefoneComercialNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtTelefoneComercialNumero">
+	<summary>
+txtTelefoneComercialNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneComercialRamal">
+	<summary>
+lblTelefoneComercialRamal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtTelefoneComercialRamal">
+	<summary>
+txtTelefoneComercialRamal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblTelefoneComercialObservacao">
+	<summary>
+lblTelefoneComercialObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblNomeUsuario">
+	<summary>
+lblNomeUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtNomeUsuario">
+	<summary>
+txtNomeUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblNomeUsuarioObservacao">
+	<summary>
+lblNomeUsuarioObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.updSenha">
+	<summary>
+updSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblSenha">
+	<summary>
+lblSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtSenha">
+	<summary>
+txtSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblSenhaObservacao">
+	<summary>
+lblSenhaObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lblConfirmeSenha">
+	<summary>
+lblConfirmeSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtConfirmeSenha">
+	<summary>
+txtConfirmeSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.uppnlCondicoes">
+	<summary>
+uppnlCondicoes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.txtTermosCondicoes">
+	<summary>
+txtTermosCondicoes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.chkTermoCondicoes">
+	<summary>
+chkTermoCondicoes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.lnkCriarConta">
+	<summary>
+lnkCriarConta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Cadastro.ctvCadastro">
+	<summary>
+ctvCadastro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Erro.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:WebSiteFrontEnd.wucHead.ConfigurarControlesResource">
+	<sumary>Configura comunicação de acordo com idioma</sumary>
+</member><member name="M:WebSiteFrontEnd.wucHead.IdentificarUsuario">
+	<sumary>Configura layout da página de acordo com estado (Logado/Não Logado) do usuário.</sumary>
+</member><member name="M:WebSiteFrontEnd.LeituraEmails.LogarOperacao(System.String)">
+	<summary>
+ Método que loga todos os passos em um arquivo de log e exibe o status da aplicação na tela
+ </summary>
+	<param name="texto">Texto que será logado e exibido na tela</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.LeituraEmails.ExcluirArquivosInvalidos">
+	<summary>
+ Método que exclui os arquivos inválidos. Que não possuem a extensão .pdf ou .xml
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.ltlTitulo">
+	<summary>
+ltlTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.UpdatePanelEmailAdicional">
+	<summary>
+UpdatePanelEmailAdicional control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.lblNumEmailAdd">
+	<summary>
+lblNumEmailAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.ltlBodyInfo">
+	<summary>
+ltlBodyInfo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.lblEmailTitular">
+	<summary>
+lblEmailTitular control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.ltlEmailTitular">
+	<summary>
+ltlEmailTitular control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.ListViewEmails">
+	<summary>
+ListViewEmails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.pnlEmailAdicional">
+	<summary>
+pnlEmailAdicional control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.lblEmailAdicional">
+	<summary>
+lblEmailAdicional control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.txtEmailAdicional">
+	<summary>
+txtEmailAdicional control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.lnkCadastrar">
+	<summary>
+lnkCadastrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.geraEmailAdicional.ctvGerenciarEmails">
+	<summary>
+ctvGerenciarEmails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.header">
+	<summary>
+header control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.logo">
+	<summary>
+logo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.menuHeader">
+	<summary>
+menuHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.pnlNaoLogado">
+	<summary>
+pnlNaoLogado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.ltlTituloBotaoLogin">
+	<summary>
+ltlTituloBotaoLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.lnkLogar">
+	<summary>
+lnkLogar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.ltlTituloBotaoCadastrar">
+	<summary>
+ltlTituloBotaoCadastrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.lnkCadastrar">
+	<summary>
+lnkCadastrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.pnlLogado">
+	<summary>
+pnlLogado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.lnkSair">
+	<summary>
+lnkSair control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.ltrUsuario">
+	<summary>
+ltrUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.ltrCredito">
+	<summary>
+ltrCredito control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.menuUsrLogado">
+	<summary>
+menuUsrLogado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.ulsrLogado">
+	<summary>
+ulsrLogado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.menuUsrLogado_Conta">
+	<summary>
+menuUsrLogado_Conta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.menuUsrLogado_Dados">
+	<summary>
+menuUsrLogado_Dados control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.menuUsrLogado_Emails">
+	<summary>
+menuUsrLogado_Emails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.menuUsrLogado_Contratar">
+	<summary>
+menuUsrLogado_Contratar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucHead.menuUsrLogado_Historico">
+	<summary>
+menuUsrLogado_Historico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.upMinhaConta">
+	<summary>
+upMinhaConta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.xml">
+	<summary>
+xml control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrTitulo">
+	<summary>
+ltrTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pchMainContent">
+	<summary>
+pchMainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrMensagemSaldoRestanteParte1">
+	<summary>
+ltrMensagemSaldoRestanteParte1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblSaldoRestante">
+	<summary>
+lblSaldoRestante control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrMensagemSaldoRestanteParte2">
+	<summary>
+ltrMensagemSaldoRestanteParte2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrObservacaoCredito">
+	<summary>
+ltrObservacaoCredito control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pchComCredito">
+	<summary>
+pchComCredito control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrServicoContratadoTitulo">
+	<summary>
+ltrServicoContratadoTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblServicoContratado">
+	<summary>
+lblServicoContratado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrQtdEmailsEnviadosTitulo">
+	<summary>
+ltrQtdEmailsEnviadosTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblQtdEmailsEnviados">
+	<summary>
+lblQtdEmailsEnviados control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrQtdRestante">
+	<summary>
+ltrQtdRestante control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblEmailRestante">
+	<summary>
+lblEmailRestante control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrDataUltimaCompraTitulo">
+	<summary>
+ltrDataUltimaCompraTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblDataUltimaCompra">
+	<summary>
+lblDataUltimaCompra control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrDataExpiracaoTitulo">
+	<summary>
+ltrDataExpiracaoTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblDataExpiracao">
+	<summary>
+lblDataExpiracao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrDataRenovacao">
+	<summary>
+ltrDataRenovacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblDataRenovacao">
+	<summary>
+lblDataRenovacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.btnAdquirirPlanoCredito">
+	<summary>
+btnAdquirirPlanoCredito control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pnlRenovacao">
+	<summary>
+pnlRenovacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.btnCancelarRenovar">
+	<summary>
+btnCancelarRenovar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.btnRenovar">
+	<summary>
+btnRenovar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pnlCancelarRenovacao">
+	<summary>
+pnlCancelarRenovacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblCancelaRenovacao">
+	<summary>
+lblCancelaRenovacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.btnSim">
+	<summary>
+btnSim control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.btnNao">
+	<summary>
+btnNao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pchSemCredito">
+	<summary>
+pchSemCredito control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrUltimoServicoContratadoTitulo">
+	<summary>
+ltrUltimoServicoContratadoTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblUltimoServicoContratado">
+	<summary>
+lblUltimoServicoContratado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrQtdEmailsEnviadosSemCredito">
+	<summary>
+ltrQtdEmailsEnviadosSemCredito control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblQtdEmailsEnviadosSemCredito">
+	<summary>
+lblQtdEmailsEnviadosSemCredito control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.Literal1">
+	<summary>
+Literal1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrUltimoDataCompraTitulo">
+	<summary>
+ltrUltimoDataCompraTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblUltimoDataCompra">
+	<summary>
+lblUltimoDataCompra control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.btnContratarServico">
+	<summary>
+btnContratarServico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pchCreditoEsgotado">
+	<summary>
+pchCreditoEsgotado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrUltimoServicoContratadoTitulo2">
+	<summary>
+ltrUltimoServicoContratadoTitulo2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblUltimoServicoContratado2">
+	<summary>
+lblUltimoServicoContratado2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.Literal2">
+	<summary>
+Literal2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrUltimoDataCompraTitulo2">
+	<summary>
+ltrUltimoDataCompraTitulo2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblUltimoDataCompra2">
+	<summary>
+lblUltimoDataCompra2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pnlPlanoExpirado">
+	<summary>
+pnlPlanoExpirado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pnlDataRenovacao">
+	<summary>
+pnlDataRenovacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrDataRenovacaoTitulo">
+	<summary>
+ltrDataRenovacaoTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblDataRenovacaoTitulo">
+	<summary>
+lblDataRenovacaoTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblMsgNaoRenova">
+	<summary>
+lblMsgNaoRenova control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pnlDataExpiracao">
+	<summary>
+pnlDataExpiracao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrDataExpiracaoTitulo2">
+	<summary>
+ltrDataExpiracaoTitulo2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lblDataExpiracaoTitulo2">
+	<summary>
+lblDataExpiracaoTitulo2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.btnContratarEsgotado">
+	<summary>
+btnContratarEsgotado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.uptPanelListaEmails">
+	<summary>
+uptPanelListaEmails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lstEmailsEnviados">
+	<summary>
+lstEmailsEnviados control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrMensagemPaginacao">
+	<summary>
+ltrMensagemPaginacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltrTextoPaginas">
+	<summary>
+ltrTextoPaginas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.dpgMinhaConta">
+	<summary>
+dpgMinhaConta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.pchMsgContent">
+	<summary>
+pchMsgContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.ltlMsgContent">
+	<summary>
+ltlMsgContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.MinhaConta.lnbContratarServico">
+	<summary>
+lnbContratarServico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:WebSiteFrontEnd.MinhaConta.ConfigurarControlesResource">
+	<summary>
+ Exibição dos controles de acordo com o serviço contratado
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WebSiteFrontEnd._Default1.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:WebSiteFrontEnd.Master.spuPageClass(System.String)">
+	<summary>
+ Metodo para mudar a class do elemento body de acordo com a página
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.lblIPOrigem">
+	<summary>
+lblIPOrigem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.lblIPOrigemValue">
+	<summary>
+lblIPOrigemValue control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.lblIPDestino">
+	<summary>
+lblIPDestino control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.lblIPDestinoValue">
+	<summary>
+lblIPDestinoValue control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.lblEviMail">
+	<summary>
+lblEviMail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.ltrData">
+	<summary>
+ltrData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.ltrHora">
+	<summary>
+ltrHora control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.pnlAnexo">
+	<summary>
+pnlAnexo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.lblCorpo">
+	<summary>
+lblCorpo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.ltlCorpoEmail">
+	<summary>
+ltlCorpoEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.lblArquivos">
+	<summary>
+lblArquivos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.ltlAnexosValue">
+	<summary>
+ltlAnexosValue control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.lsvAnexos">
+	<summary>
+lsvAnexos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.pnlGerarPdf">
+	<summary>
+pnlGerarPdf control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.wucDetalhesEmail.lnkGerarPDF">
+	<summary>
+lnkGerarPDF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.VisualizarDetalhesEmail.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.VisualizarDetalhesEmail.ucDetalhesEmail">
+	<summary>
+ucDetalhesEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTitulo">
+	<summary>
+lblTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.ltrMensagemCamposObrigatorios">
+	<summary>
+ltrMensagemCamposObrigatorios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.upAlteracaoDados">
+	<summary>
+upAlteracaoDados control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblNome">
+	<summary>
+lblNome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtNome">
+	<summary>
+txtNome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblEmail">
+	<summary>
+lblEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.rblTipoPessoa">
+	<summary>
+rblTipoPessoa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtCPFCNPJ">
+	<summary>
+txtCPFCNPJ control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.phCPF">
+	<summary>
+phCPF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblSexo">
+	<summary>
+lblSexo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.rblSexo">
+	<summary>
+rblSexo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblDataNascimento">
+	<summary>
+lblDataNascimento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtDataNascimento">
+	<summary>
+txtDataNascimento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.phCNPJ">
+	<summary>
+phCNPJ control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblRazaoSocial">
+	<summary>
+lblRazaoSocial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtRazaoSocial">
+	<summary>
+txtRazaoSocial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblPais">
+	<summary>
+lblPais control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.ddlPais">
+	<summary>
+ddlPais control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblCEP">
+	<summary>
+lblCEP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtCEP">
+	<summary>
+txtCEP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lnkCEPCorreios">
+	<summary>
+lnkCEPCorreios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblCidade">
+	<summary>
+lblCidade control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtCidade">
+	<summary>
+txtCidade control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblUF">
+	<summary>
+lblUF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.ddlUF">
+	<summary>
+ddlUF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblLogradouro">
+	<summary>
+lblLogradouro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtLogradouro">
+	<summary>
+txtLogradouro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblNumero">
+	<summary>
+lblNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtNumero">
+	<summary>
+txtNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblComplemento">
+	<summary>
+lblComplemento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtComplemento">
+	<summary>
+txtComplemento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblBairro">
+	<summary>
+lblBairro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtBairro">
+	<summary>
+txtBairro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneCelular">
+	<summary>
+lblTelefoneCelular control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneCelularDDD">
+	<summary>
+lblTelefoneCelularDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtTelefoneCelularDDD">
+	<summary>
+txtTelefoneCelularDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneCelularNumero">
+	<summary>
+lblTelefoneCelularNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtTelefoneCelularNumero">
+	<summary>
+txtTelefoneCelularNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneCelularObservacao">
+	<summary>
+lblTelefoneCelularObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneResidencial">
+	<summary>
+lblTelefoneResidencial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneResidencialDDD">
+	<summary>
+lblTelefoneResidencialDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtTelefoneResidencialDDD">
+	<summary>
+txtTelefoneResidencialDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneResidencialNumero">
+	<summary>
+lblTelefoneResidencialNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtTelefoneResidencialNumero">
+	<summary>
+txtTelefoneResidencialNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneResidencialObservacao">
+	<summary>
+lblTelefoneResidencialObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelfoneComercial">
+	<summary>
+lblTelfoneComercial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneComercialDDD">
+	<summary>
+lblTelefoneComercialDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtTelefoneComercialDDD">
+	<summary>
+txtTelefoneComercialDDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneComercialNumero">
+	<summary>
+lblTelefoneComercialNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtTelefoneComercialNumero">
+	<summary>
+txtTelefoneComercialNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneComercialRamal">
+	<summary>
+lblTelefoneComercialRamal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtTelefoneComercialRamal">
+	<summary>
+txtTelefoneComercialRamal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblTelefoneComercialObservacao">
+	<summary>
+lblTelefoneComercialObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lblNomeUsuario">
+	<summary>
+lblNomeUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.txtNomeUsuario">
+	<summary>
+txtNomeUsuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lnkAlterarSenha">
+	<summary>
+lnkAlterarSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.lnkSalvarAlteracao">
+	<summary>
+lnkSalvarAlteracao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlteraDado.ctvAlterarDados">
+	<summary>
+ctvAlterarDados control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Alerta.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Alerta.lblMensagem">
+	<summary>
+lblMensagem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Alerta.lnkOk">
+	<summary>
+lnkOk control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:WebSiteFrontEnd.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:WebSiteFrontEnd.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:WebSiteFrontEnd.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:WebSiteFrontEnd.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:WebSiteFrontEnd.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:WebSiteFrontEnd.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:WebSiteFrontEnd.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:WebSiteFrontEnd.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModal(System.String,System.String,System.String,System.Web.UI.Page)">
+	<summary>
+ Função utilizada para abrir um lightbox (colorbox) a partir do code-behind.
+ </summary>
+	<param name="pagina">Caminho e nome da página a ser aberta.</param>
+	<param name="width">Largura do lightbox.</param>
+	<param name="height">Altura do lightbox.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModal(System.String,System.String,System.String,System.String,System.Web.UI.Page)">
+	<summary>
+ Função utilizada para abrir um lightbox (colorbox) a partir do code-behind.
+ </summary>
+	<param name="pagina">Caminho e nome da página a ser aberta.</param>
+	<param name="width">Largura do lightbox.</param>
+	<param name="height">Altura do lightbox.</param>
+	<param name="onClosed">Função javascript para ser executada quando o lightbox for fechado.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalPageLoad(System.String,System.String,System.String,System.String,System.Web.UI.Page)">
+	<summary>
+ Função utilizada para abrir um lightbox (colorbox) a partir do code-behind no Page_Load.
+ </summary>
+	<param name="pagina">Caminho e nome da página a ser aberta.</param>
+	<param name="width">Largura do lightbox.</param>
+	<param name="height">Altura do lightbox.</param>
+	<param name="onClosed">Função javascript para ser executada quando o lightbox for fechado.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalPageLoad(System.String,System.String,System.String,System.Web.UI.Page)">
+	<summary>
+ Função utilizada para abrir um lightbox (colorbox) a partir do code-behind no Page_Load.
+ </summary>
+	<param name="pagina">Caminho e nome da página a ser aberta.</param>
+	<param name="width">Largura do lightbox.</param>
+	<param name="height">Altura do lightbox.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalAlerta(System.String,System.Web.UI.Page)">
+	<summary>
+ Função utilizada para abrir o lightbox (colorbox) de Alerta a partir do code-behind.
+ </summary>
+	<param name="resourceKey">ResourceKey que será utilizado para obter a mensagem.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalExterno(System.Web.UI.Page,System.String,System.String,System.String)">
+	<summary>
+ Função utilizada para abrir o lightbox (colorbox) de mensagens em páginas próprias
+ </summary>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalMensagem(System.String,System.Web.UI.Page)">
+	<summary>
+ Função utilizada para abrir o lightbox (colorbox) de Mensagem a partir do code-behind.
+ </summary>
+	<param name="resourceKey">ResourceKey que será utilizado para obter a mensagem.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalMensagem(System.String,System.String,System.Web.UI.Page)">
+	<summary>
+ Função utilizada para abrir o lightbox (colorbox) de Mensagem a partir do code-behind.
+ </summary>
+	<param name="resourceKey">ResourceKey que será utilizado para obter a mensagem.</param>
+	<param name="paginaRedirect">Caminho e nome da página para onde será redirecionada ao clicar no botão OK.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalMensagem(System.String,System.String,System.Web.UI.Page,System.Int32,System.Int32)">
+	<summary>
+ Função utilizada para abrir o lightbox (colorbox) de Mensagem a partir do code-behind.
+ </summary>
+	<param name="resourceKey">ResourceKey que será utilizado para obter a mensagem.</param>
+	<param name="paginaRedirect">Caminho e nome da página para onde será redirecionada ao clicar no botão OK.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<param name="Width">Largura da lightbox</param>
+	<param name="Height">Altura da lightbox</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalMensagem(System.String,System.String,System.Web.UI.Page,System.String)">
+	<summary>
+ Função utilizada para abrir o lightbox (colorbox) de Mensagem a partir do code-behind.
+ </summary>
+	<param name="resourceKey">ResourceKey que será utilizado para obter a mensagem.</param>
+	<param name="paginaRedirect">Caminho e nome da página para onde será redirecionada ao clicar no botão OK.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<param name="onClosed">Função javascript para ser executada quando o lightbox for fechado.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalMensagem(System.String,System.String,System.String,System.Web.UI.Page)">
+	<summary>
+ Função utilizada para abrir o lightbox (colorbox) de Mensagem a partir do code-behind.
+ </summary>
+	<param name="resourceKey">ResourceKey que será utilizado para obter a mensagem.</param>
+	<param name="nomeClasse">Nome da classe que contém o método que será executado ao clicar no botão OK.</param>
+	<param name="nomeMetodo">Nome do método que será executado ao clicar no botão OK.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="M:WebSiteFrontEnd.Util.ExibirModalMensagem(System.String,System.String,System.String,System.String,System.Web.UI.Page)">
+	<summary>
+ Função utilizada para abrir o lightbox (colorbox) de Mensagem a partir do code-behind.
+ </summary>
+	<param name="resourceKey">ResourceKey que será utilizado para obter a mensagem.</param>
+	<param name="nomeClasse">Nome da classe que contém o método que será executado ao clicar no botão OK.</param>
+	<param name="nomeMetodo">Nome do método que será executado ao clicar no botão OK.</param>
+	<param name="paginaRedirect">Caminho e nome da página para onde será redirecionada ao clicar no botão OK.</param>
+	<param name="page">Page que irá hospedar o lightbox.</param>
+	<remarks></remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoCadastro.upConfirmacaoCadastro">
+	<summary>
+upConfirmacaoCadastro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoCadastro.phConfirmacaoComChave">
+	<summary>
+phConfirmacaoComChave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoCadastro.ltrMensagemAtivacao">
+	<summary>
+ltrMensagemAtivacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoCadastro.phConfirmacaoSemChave">
+	<summary>
+phConfirmacaoSemChave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoCadastro.lblChaveAtivacao">
+	<summary>
+lblChaveAtivacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoCadastro.txtChaveAtivacao">
+	<summary>
+txtChaveAtivacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmacaoCadastro.lnkConfirmar">
+	<summary>
+lnkConfirmar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Laudo.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Laudo.lblTituloAssunto">
+	<summary>
+lblTituloAssunto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Laudo.ltrTextoAssunto">
+	<summary>
+ltrTextoAssunto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Laudo.lsvDestinatarios">
+	<summary>
+lsvDestinatarios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Laudo.ltrPendente">
+	<summary>
+ltrPendente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Laudo.ltrConfirmado">
+	<summary>
+ltrConfirmado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Laudo.ucDetalhesEmail">
+	<summary>
+ucDetalhesEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.#ctor">
+	<remarks/>
+</member><member name="E:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaiaCompleted">
+	<remarks/>
+</member><member name="E:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.AutorizarCompraCreditoCompleted">
+	<remarks/>
+</member><member name="E:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ConfirmarCompraCreditoCompleted">
+	<remarks/>
+</member><member name="E:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.RegistrarCompraDinheiroCompleted">
+	<remarks/>
+</member><member name="E:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ConfirmarCompraDinheiroCompleted">
+	<remarks/>
+</member><member name="E:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.LiberarCompraDinheiroCompleted">
+	<remarks/>
+</member><member name="E:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.CancelarCompraDinheiroCompleted">
+	<remarks/>
+</member><member name="E:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ObterCodLojaPeloCnpjCompleted">
+	<remarks/>
+</member><member name="E:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ValidarUsuarioESenhaCompleted">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaiaAsync(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaiaAsync(System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.AutorizarCompraCredito(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Decimal,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.AutorizarCompraCreditoAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Decimal,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.AutorizarCompraCreditoAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Decimal,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ConfirmarCompraCredito(System.String,System.String,System.Decimal,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ConfirmarCompraCreditoAsync(System.String,System.String,System.Decimal,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ConfirmarCompraCreditoAsync(System.String,System.String,System.Decimal,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.RegistrarCompraDinheiro(System.String,System.String,System.Decimal,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.RegistrarCompraDinheiroAsync(System.String,System.String,System.Decimal,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.RegistrarCompraDinheiroAsync(System.String,System.String,System.Decimal,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ConfirmarCompraDinheiro(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ConfirmarCompraDinheiroAsync(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ConfirmarCompraDinheiroAsync(System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.LiberarCompraDinheiro(System.String,System.String,System.Decimal,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.LiberarCompraDinheiroAsync(System.String,System.String,System.Decimal,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.LiberarCompraDinheiroAsync(System.String,System.String,System.Decimal,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.CancelarCompraDinheiro(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.CancelarCompraDinheiroAsync(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.CancelarCompraDinheiroAsync(System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ObterCodLojaPeloCnpj(System.String)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ObterCodLojaPeloCnpjAsync(System.String)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ObterCodLojaPeloCnpjAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ValidarUsuarioESenha(System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ValidarUsuarioESenhaAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ValidarUsuarioESenhaAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.Integracao">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.VerificarClienteUvaiaResult.ehClienteUvaia">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.VerificarClienteUvaiaResult.CreditosUsuario">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.VerificarClienteUvaiaResult">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.CancelarCompraResult.CompraCancelada">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.CancelarCompraResult.Motivo">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.CancelarCompraResult">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.LiberarCompraResult.CompraLiberada">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.LiberarCompraResult.Motivo">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.LiberarCompraResult">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.RegistrarCompraResult.CompraRegistrada">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.RegistrarCompraResult.Motivo">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.RegistrarCompraResult">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.ConfirmarCompraResult.CompraConfirmada">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.ConfirmarCompraResult.Motivo">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.ConfirmarCompraResult">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.AutorizarCompraResult.CompraAutorizada">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.AutorizarCompraResult.Motivo">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.AutorizarCompraResult">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.VerificarClienteUvaiaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.VerificarClienteUvaiaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.VerificarClienteUvaiaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.AutorizarCompraCreditoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.AutorizarCompraCreditoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.AutorizarCompraCreditoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.ConfirmarCompraCreditoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.ConfirmarCompraCreditoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.ConfirmarCompraCreditoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.RegistrarCompraDinheiroCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.RegistrarCompraDinheiroCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.RegistrarCompraDinheiroCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.ConfirmarCompraDinheiroCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.ConfirmarCompraDinheiroCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.ConfirmarCompraDinheiroCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.LiberarCompraDinheiroCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.LiberarCompraDinheiroCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.LiberarCompraDinheiroCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.CancelarCompraDinheiroCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.CancelarCompraDinheiroCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.CancelarCompraDinheiroCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.ObterCodLojaPeloCnpjCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.ObterCodLojaPeloCnpjCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.ObterCodLojaPeloCnpjCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.ValidarUsuarioESenhaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebSiteFrontEnd.wsUvaiaIntegracao.ValidarUsuarioESenhaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebSiteFrontEnd.wsUvaiaIntegracao.ValidarUsuarioESenhaCompletedEventArgs">
+	<remarks/>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.lblNovaSenha">
+	<summary>
+lblNovaSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.txtNovaSenha">
+	<summary>
+txtNovaSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.lblNovaSenhaObservacao">
+	<summary>
+lblNovaSenhaObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.rfvNovaSenha">
+	<summary>
+rfvNovaSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.revNovaSenha">
+	<summary>
+revNovaSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.lblConfirmeNovaSenha">
+	<summary>
+lblConfirmeNovaSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.txtConfirmeNovaSenha">
+	<summary>
+txtConfirmeNovaSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.rfvConfirmeNovaSenha">
+	<summary>
+rfvConfirmeNovaSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.cpvConfirmeNovaSenha">
+	<summary>
+cpvConfirmeNovaSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.ctvAlterarSenha">
+	<summary>
+ctvAlterarSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.lnkAlterarSenha">
+	<summary>
+lnkAlterarSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.AlterarSenha.vsAlterarSenha">
+	<summary>
+vsAlterarSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.upConfirmarEmail">
+	<summary>
+upConfirmarEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.ltrTitulo">
+	<summary>
+ltrTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.ltrMensagemEmailRecebido">
+	<summary>
+ltrMensagemEmailRecebido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.phEnviarCopia">
+	<summary>
+phEnviarCopia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.lnkEnviarCopia">
+	<summary>
+lnkEnviarCopia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.phVisualizarEmail">
+	<summary>
+phVisualizarEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.lnkVisualizarEmail">
+	<summary>
+lnkVisualizarEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.phLogin">
+	<summary>
+phLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.ltrTituloLogin">
+	<summary>
+ltrTituloLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.lblIdentificacao">
+	<summary>
+lblIdentificacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.txtIdentificacao">
+	<summary>
+txtIdentificacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.rfvLogin">
+	<summary>
+rfvLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.lblSenha">
+	<summary>
+lblSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.txtSenha">
+	<summary>
+txtSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.rfvSenha">
+	<summary>
+rfvSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.lnkEsqueciSenha">
+	<summary>
+lnkEsqueciSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.btnLogin">
+	<summary>
+btnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.ValidationLogin">
+	<summary>
+ValidationLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.phConfirmar">
+	<summary>
+phConfirmar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.vsConfirmarEmail">
+	<summary>
+vsConfirmarEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.ltrMensagemConfirmacao">
+	<summary>
+ltrMensagemConfirmacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.cblConfirmaEmail">
+	<summary>
+cblConfirmaEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.phCaptcha">
+	<summary>
+phCaptcha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.lblCodigoCaptcha">
+	<summary>
+lblCodigoCaptcha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.txtCodigoCaptcha">
+	<summary>
+txtCodigoCaptcha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.xctCaptchaBox">
+	<summary>
+xctCaptchaBox control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.ctvConfirmarEmail">
+	<summary>
+ctvConfirmarEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ConfirmaEmail.lnkConfirmar">
+	<summary>
+lnkConfirmar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Login.upLogin">
+	<summary>
+upLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Login.ltrTitulo">
+	<summary>
+ltrTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Login.lblIdentificacao">
+	<summary>
+lblIdentificacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Login.txtIdentificacao">
+	<summary>
+txtIdentificacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Login.lblSenha">
+	<summary>
+lblSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Login.txtSenha">
+	<summary>
+txtSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Login.lnkEsqueciSenha">
+	<summary>
+lnkEsqueciSenha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Login.btnLogin">
+	<summary>
+btnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.Login.ctvLogin">
+	<summary>
+ctvLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.ltrTituloBloco1">
+	<summary>
+ltrTituloBloco1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.ltrConteudoBloco1">
+	<summary>
+ltrConteudoBloco1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.imgTxt">
+	<summary>
+imgTxt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.lnkSlide">
+	<summary>
+lnkSlide control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.imgSlide1">
+	<summary>
+imgSlide1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.imgSlide2">
+	<summary>
+imgSlide2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.imgSlide3">
+	<summary>
+imgSlide3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.imgSlide4">
+	<summary>
+imgSlide4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.imgSlide5">
+	<summary>
+imgSlide5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.lnkVantagem">
+	<summary>
+lnkVantagem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.lnkPlano">
+	<summary>
+lnkPlano control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.lnkLaudo">
+	<summary>
+lnkLaudo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.Literal1">
+	<summary>
+Literal1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.lblPapel">
+	<summary>
+lblPapel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.lblPeso">
+	<summary>
+lblPeso control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.lblParceiro">
+	<summary>
+lblParceiro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd._Default.lnkImgUvaia">
+	<summary>
+lnkImgUvaia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebSiteFrontEnd.ExibeAnexo.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

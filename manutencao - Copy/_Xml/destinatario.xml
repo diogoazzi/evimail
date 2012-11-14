@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<root>
+    <item email="fulanodetal@terra.com.br" status="recebido" conteudo="confirmado" anexos="confirmado" data="07/07/2010"></item>
+    <item email="fulanodetal@uol.com.br" status="recebido" conteudo="confirmado" anexos="pendente" data="07/07/2010"></item>
+    <item email="fulanodetal@globo.com" status="não recebido" conteudo="confirmado" anexos="pendente" data="07/07/2010"></item>
+    <item email="fulanodetal@gmail.com" status="não recebido" conteudo="confirmado" anexos="pendente" data="07/07/2010"></item>
+    <item email="fulanodetal@yahoo.com.br" status="recebido" conteudo="confirmado" anexos="pendente" data="07/07/2010"></item>
+</root>
+

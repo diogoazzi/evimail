@@ -1,0 +1,14 @@
+2011-06-09 15:38:21,631 DEBUG LogInFile CodPedido:394 
+2011-06-09 15:38:22,120 DEBUG LogInFile CodPedido:394 
+2011-06-09 16:41:40,982 DEBUG LogInFile CodPedido:395 
+2011-06-09 16:41:41,614 DEBUG LogInFile CodPedido:395 
+2011-06-09 18:40:47,159 DEBUG LogInFile CodPedido:396 
+2011-06-09 18:40:48,190 DEBUG LogInFile não há tag <tid> no xml de reposta 
+2011-06-09 18:40:48,190 DEBUG LogInFile não há tag <url-autenticacao> no xml de reposta 
+2011-06-09 18:40:48,475 DEBUG LogInFile CodPedido:396 
+2011-06-09 18:40:48,519 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<erro xmlns="http://ecommerce.cbmp.com.br"><codigo>001</codigo><mensagem><![CDATA[
+O XML informado não é valido:
+- String: '' does not match pattern for tidType in namespace http://ecommerce.cbmp.com.br: '<xml-fragment/>'
+]]></mensagem></erro>
+ 

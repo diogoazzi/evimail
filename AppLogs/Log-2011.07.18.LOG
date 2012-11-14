@@ -1,0 +1,12 @@
+2011-07-18 15:01:36,318 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-18 15:02:00,752 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-18 15:02:31,204 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-18 15:03:32,809 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-18 15:04:02,378 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-18 15:04:16,766 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-18 15:04:52,839 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-18 15:06:37,680 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-18 15:07:27,436 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-18 15:07:51,953 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-18 15:08:30,672 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-18 15:10:31,070 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Object reference not set to an instance of an object. 

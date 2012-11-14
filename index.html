@@ -1,0 +1,196 @@
+﻿	<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head runat="server">
+		<title>Evimail</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+		<link href=“/img/favicon.ico“ rel=“shortcut icon” />
+		<link href="/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="/css/temp.css" rel="stylesheet" type="text/css" />
+		<link href="/css/colorbox.css" rel="stylesheet" type="text/css" />
+		<script src="/js/lib/jquery.js" type="text/javascript"></script>
+		<script src="/js/cufon/cufon.js" type="text/javascript"></script>
+		<script src="/js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
+		<script src="/js/cufon-fonts.js" type="text/javascript"></script>
+		<script src="/js/base.js" type="text/javascript"></script>
+		<script src="/js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+		<script src="/js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+		
+		<!--[if IE]> 
+			<link href="/css/ie.css" rel="stylesheet" type="text/css" />
+			<script src="/js/DD_rounded.js" type="text/javascript"></script>
+			<script type="text/javascript">   
+				DD_roundies.addRule('.validation_summary', '10px');
+			</script> 
+		<![endif]-->
+		<!--[if IE 6]> 
+			<script type="text/javascript" src="../js/lib/DD_belatedPNG.js"></script> 
+			<script type="text/javascript"> DD_belatedPNG.fix('*'); </script> 
+		<![endif]-->
+
+		<script type="text/javascript" language="javascript">
+			$(document).ready(function () {
+				//Examples of how to assign the ColorBox event to elements
+				$(".modalAlerta").colorbox({ width: "80%", height: "80%", iframe: true });
+				$(".esqueciSenha").colorbox({ width: "470px", height: "200px", iframe: true });
+			});
+
+			//function closeColorbox() {
+				//alert('1');
+				//$.fn.colorbox.close();
+			//}
+		</script>
+		
+	    <script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22354822-1']);
+		_gaq.push(['_setDomainName', 'none']);
+		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	    </script>
+
+
+		<asp:ContentPlaceHolder ID="ContentPlaceHolder_Head" runat="server">
+		</asp:ContentPlaceHolder>
+	</head>
+	<body id="body" runat="server">
+		<form id="formMain" runat="server">
+    <div id="headerCont">
+        <h1 id="logo" runat="server"><a href="../Webforms/Default.aspx">Evimail Evidência</a></h1>
+        <div ID="menuHeader" runat="server" IncludeStyleBlock="False" SkipLinkText="">
+            <ul>
+                <li Value="Home" NavigateUrl="~/Webforms/Default.aspx" />
+                <li Value="Quem Somos" NavigateUrl="~/Webforms/QuemSomos.aspx" />
+                <li Value="Perguntas Frequentes" NavigateUrl="~/Webforms/PerguntasFrequentes.aspx" />
+                <li Value="Fale Conosco" NavigateUrl="~/Webforms/FaleConosco.aspx" />
+            </ul>
+        </div>
+        <asp:Panel ID="pnlNaoLogado" runat="server" Visible="false">
+            <div class="left">
+                <span><asp:Literal runat="server" ID="ltlTituloBotaoLogin"></asp:Literal></span>
+                <asp:HyperLink ID="lnkLogar" runat="server" NavigateUrl="~/Webforms/Login.aspx" />
+            </div>
+            <div class="right">
+                <span><asp:Literal runat="server" ID="ltlTituloBotaoCadastrar"></asp:Literal></span>
+                <asp:HyperLink ID="lnkCadastrar" runat="server" NavigateUrl="~/Webforms/Cadastro.aspx" />
+            </div>
+        </asp:Panel>
+        <asp:Panel ID="pnlLogado" runat="server" Visible="false">
+            <div id="divLogadoCont">
+                <asp:LinkButton ID="lnkSair" runat="server" />
+                <p class="firstChild">Olá,&nbsp;<asp:Literal ID="ltrUsuario" runat="server" /></p>
+                <p><asp:Literal ID="ltrCredito" runat="server" /></p>
+            </div>
+        </asp:Panel>
+    </div>
+    <!--/#headerCont-->
+    <div id="menuUsrLogado" runat="server" visible="false">
+        <ul id="ulsrLogado" runat="server">
+            <li id="menuUsrLogado_Conta" runat="server"><a href="MinhaConta.aspx"><span>Minha Conta</span></a></li>
+            <li id="menuUsrLogado_Dados" runat="server"><a href="AlteraDado.aspx"><span>Alterar Dados</span></a></li>
+            <li id="menuUsrLogado_Emails" runat="server"><!-- class="selected"--><a href="GerenciarEmails.aspx"><span>Gerenciar Emails Adicionais</span></a></li>
+            <li id="menuUsrLogado_Contratar" runat="server"><a href="ContratarServico.aspx"><span>Contratar um Serviço</span></a></li>
+            <li id="menuUsrLogado_Historico" runat="server"><a href="ConsultarHistorico.aspx"><span>Consultar Histórico de Emails</span></a></li>
+        </ul>
+    </div>
+		<!--/#header-->
+	<div id="container">
+		<div id="wrapper">
+			<!--<asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" />
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder_Body" runat="server">
+			</asp:ContentPlaceHolder>-->
+<script type="text/javascript">
+    $(function () {
+        $('#lnkSlide').click(function (e) { e.preventDefault(); $('#slideContentInit').fadeOut(); });
+
+        /* slide */
+        var ulContent = $('#slidePasso1 .slideContent'),
+            liContent = $('#slidePasso1 .slideContent li'),
+            ulContentWidth = liContent.length * liContent.width(),
+            ulNav = $('#slidePasso1 .slideNav'),
+            liNav = $('#slidePasso1 .slideNav li');
+
+        ulContent.css('width', ulContentWidth);
+
+        ulNav.find('a').bind('click', function (e) {
+            e.preventDefault();
+            var indexLi = $(this).parent('li').index();
+            var leftValue = (liContent.width() * indexLi) * -1
+
+            ulContent.animate({ left: leftValue }, 1000);
+            $(this).parent('li').siblings().find('a').removeClass('hover');
+            $(this).addClass('hover');
+        });
+        /* end slide */
+    });
+</script>
+
+        <div id="homeBloco1">
+            <h2 class="titleHome"><asp:Literal ID="ltrTituloBloco1" runat="server" /></h2>
+            <asp:Literal ID="ltrConteudoBloco1" runat="server" /> 
+        </div>
+
+        <div id="homeBloco2">
+           <div id="slideContentInit" class="slide">
+               <img ID="imgTxt" class="imgTxt" src="/img/txtHome1.png" />
+               <asp:HyperLink ID="lnkSlide" ClientIDMode="Static" src="/img/btnSlide.png" NavigateUrl="#" runat="server"></asp:HyperLink>
+           </div>   
+           <div id="slidePasso1" class="slide">
+               <ul class="slideContent">
+                    <li><img ID="imgSlide1" ClientIDMode="Static" src="/img/slidePs1.png" runat="server" /></li>
+                    <li><img ID="imgSlide2" ClientIDMode="Static" src="/img/slidePs2.png" runat="server" /></li>
+                    <li><img ID="imgSlide3" ClientIDMode="Static" src="/img/slidePs3.png" runat="server" /></li>
+                    <li><img ID="imgSlide4" ClientIDMode="Static" src="/img/slidePs4.png" runat="server" /></li>
+                    <li><img ID="imgSlide5" ClientIDMode="Static" src="/img/slidePs5.png" runat="server" /></li>               
+               </ul>
+               <ul class="slideNav">
+                    <li><a href="#" class="hover">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+               </ul>
+           </div>          
+        </div>
+
+        <div id="homeBloco3">
+            <ul>
+                <li><asp:HyperLink ID="lnkVantagem" NavigateUrl="Vantagens.aspx" CssClass="linkHome" runat="server" Text="Vantagens pra você e sua empresa"></asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkPlano" NavigateUrl="MelhorPlano.aspx" CssClass="linkHome" runat="server" Text="Escolha o melhor plano"></asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkLaudo" NavigateUrl="ModeloLaudo.aspx" CssClass="linkHome" runat="server" Text="Veja o modelo de laudo"></asp:HyperLink></li>
+            </ul>
+        </div>
+
+        <div id="homeBloco4" class="rounded_a">
+            <h4><asp:Literal ID="Literal1" runat="server" Text="Nós ajudamos o meio ambiente"></asp:Literal></h4>
+            <ul>
+                <li>
+                    <asp:Label ID="lblPapel" runat="server" Text="Total de papel economizado"></asp:Label>
+                    <asp:Label ID="lblPeso" runat="server" ></asp:Label>
+                </li>
+                <li>
+                    <asp:Label ID="lblParceiro" CssClass="marginHome" runat="server" Text="Um parceiro"></asp:Label>
+                    <asp:HyperLink ID="lnkImgUvaia" runat="server" src="/img/logoUvaia.jpg" Target="_blank"></asp:HyperLink>
+                   
+                </li>
+                
+            </ul>
+        </div>
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	<uc2:footer runat="server" ID="ucFooter" />
+	<!--/#footer-->
+	</form>
+	<script type="text/javascript">        Cufon.now(); </script>
+</body>
+</html>

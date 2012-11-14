@@ -1,0 +1,189 @@
+2011-07-22 15:11:14,102 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-22 15:18:40,872 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-22 15:19:03,036 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-22 15:25:59,767 ERROR LogInFile EfetuarLogin (DalUsuario): Object reference not set to an instance of an object. 
+2011-07-22 15:43:06,775 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'. 
+2011-07-22 15:45:57,291 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'. 
+2011-07-22 15:46:03,015 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'. 
+2011-07-22 15:56:38,831 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 15:56:56,144 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 15:56:56,150 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 15:56:56,151 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 15:57:13,789 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 15:57:13,789 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 15:57:13,789 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:04:16,915 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:04:16,916 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:04:16,917 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:04:19,612 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:04:19,613 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:04:19,613 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:04:23,496 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:04:27,880 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:04:27,881 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:04:27,881 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:21:52,952 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:08,923 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:08,923 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:22:08,924 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:17,516 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:17,516 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:22:17,517 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:31,462 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:32,209 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:32,210 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:22:32,210 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:33,034 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:33,035 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:22:33,035 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:43,884 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:49,132 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:53,125 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:56,851 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:22:56,930 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:23:03,567 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:23:03,567 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:23:03,568 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:23:30,774 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:23:36,814 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:23:36,820 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:23:36,820 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:24:43,073 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:24:57,734 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:24:57,734 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:24:57,735 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:25:14,172 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:25:14,173 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:25:14,173 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:25:59,880 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:26:02,734 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:26:02,734 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:26:02,735 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:26:08,362 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:26:11,082 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 16:26:11,083 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 16:26:11,083 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 17:00:55,375 ERROR LogInFile ObterUsuarioPorEmailTitular (DalUsuario): Login failed for user 'usrEvimailProd'. 
+2011-07-22 17:00:55,675 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 17:01:02,000 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 17:01:02,001 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 17:01:02,001 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrEvimailProd'. 
+2011-07-22 17:01:02,139 ERROR LogInFile CalcularPeso (Default): Login failed for user 'usrEvimailProd'. 
+2011-07-22 17:02:55,369 ERROR LogInFile DalGenerics (BuscarTodos): Cannot open database "evimail" requested by the login. The login failed.
+Login failed for user 'usrEvimail'. 
+2011-07-22 17:02:55,392 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 17:02:55,394 ERROR LogInFile DalGenerics (BuscarTodos): Cannot open database "evimail" requested by the login. The login failed.
+Login failed for user 'usrEvimail'. 
+2011-07-22 17:03:10,479 ERROR LogInFile DalGenerics (BuscarTodos): Cannot open database "evimail" requested by the login. The login failed.
+Login failed for user 'usrEvimail'. 
+2011-07-22 17:03:10,480 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 17:03:10,480 ERROR LogInFile DalGenerics (BuscarTodos): Cannot open database "evimail" requested by the login. The login failed.
+Login failed for user 'usrEvimail'. 
+2011-07-22 17:06:41,519 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrusrProdEvimail'. 
+2011-07-22 17:06:41,541 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 17:06:41,542 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrusrProdEvimail'. 
+2011-07-22 17:08:03,166 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrusrProdEvimail'. 
+2011-07-22 17:08:06,088 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrusrProdEvimail'. 
+2011-07-22 17:08:06,089 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 17:08:06,089 ERROR LogInFile DalGenerics (BuscarTodos): Login failed for user 'usrusrProdEvimail'. 
+2011-07-22 17:08:11,829 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrusrProdEvimail'. 
+2011-07-22 17:08:17,988 ERROR LogInFile EfetuarLogin (DalUsuario): Login failed for user 'usrusrProdEvimail'. 
+2011-07-22 17:08:40,441 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-22 17:08:40,463 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 17:08:40,464 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-22 17:09:04,848 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-22 17:09:04,849 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 17:09:04,849 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-22 17:13:43,632 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-22 17:13:43,655 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 17:13:43,657 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-22 17:13:53,533 ERROR LogInFile CalcularPeso (Default): Object reference not set to an instance of an object. 
+2011-07-22 17:14:01,311 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-22 17:14:01,312 ERROR LogInFile ObterUFsOrdenadas (BllEstado): The method or operation is not implemented. 
+2011-07-22 17:14:01,312 ERROR LogInFile DalGenerics (BuscarTodos): Object reference not set to an instance of an object. 
+2011-07-22 17:32:46,066 DEBUG LogInFile CodPedido:328 
+2011-07-22 17:34:00,466 DEBUG LogInFile CodPedido:328 
+2011-07-22 17:34:00,980 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000401001</tid>
+  <pan>9OJWOrwgqsV2AfvZtNR2Ka2Qb57jF2x2RfammNYMB0o=</pan>
+  <dados-pedido>
+    <numero>64766003</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-07-22T17:32:08.605-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-07-22T17:33:21.040-03:00</data-hora>
+    <valor>10000</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-07-22T17:33:21.058-03:00</data-hora>
+    <valor>10000</valor>
+    <lr>00</lr>
+    <arp>093151</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-07-22T17:33:21.417-03:00</data-hora>
+    <valor>10000</valor>
+  </captura>
+</transacao>
+
+ 
+2011-07-22 17:36:46,968 DEBUG LogInFile CodPedido:329 
+2011-07-22 17:37:12,740 DEBUG LogInFile CodPedido:329 
+2011-07-22 17:37:13,168 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10302087750000411001</tid>
+  <pan>9OJWOrwgqsV2AfvZtNR2Ka2Qb57jF2x2RfammNYMB0o=</pan>
+  <dados-pedido>
+    <numero>14797841</numero>
+    <valor>1000</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-07-22T17:36:09.045-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-07-22T17:36:33.359-03:00</data-hora>
+    <valor>1000</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-07-22T17:36:33.366-03:00</data-hora>
+    <valor>1000</valor>
+    <lr>00</lr>
+    <arp>022647</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-07-22T17:36:33.831-03:00</data-hora>
+    <valor>1000</valor>
+  </captura>
+</transacao>
+
+ 

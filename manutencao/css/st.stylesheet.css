@@ -1,0 +1,124 @@
+﻿/*---------------------------------------------------------------------------*/
+/* Reset */
+/*---------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height:100%;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+:focus {
+	outline: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input, textarea, select, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/* Standard */
+/*---------------------------------------------------------------------------*/
+label {cursor:pointer}
+
+
+/*---------------------------------------------------------------------------*/
+/* Overflow */
+/*---------------------------------------------------------------------------*/
+html{overflow-x:hidden;overflow-y:auto;}
+body {}
+textarea {overflow:auto}
+
+
+/*---------------------------------------------------------------------------*/
+/* General Class */
+/*---------------------------------------------------------------------------*/
+ul.circle {list-style-type:circle}
+ul.disc {list-style-type:disc}
+ul.square {list-style-type:square}
+ol.decimal {list-style-type:decimal}
+ol.decimal-leading-zero {list-style-type:decimal-leading-zero}
+ol.lower-roman {list-style-type:lower-roman}
+ol.upper-roman {list-style-type:upper-roman}
+ol.lower-alpha {list-style-type:lower-alpha}
+ol.upper-alpha {list-style-type:upper-alpha}
+
+.row {float:left;width:100%;}
+
+.clear {clear:both}
+.clear-left {clear:left}
+.clear-right {clear:right}
+.clear:after {content:".";display:block;clear:both;visibility:hidden;height:0;overflow:hidden;}
+
+.right {float:right!important}
+.left {float:left!important}
+
+ul.child-left li {float:left}
+ul.child-right li {float:right}
+
+.hide, .none {display: none}
+.show, .block {display: block}
+
+.w50p {width:50%}
+.w50p-left {width:49.9%;float:left;}
+.w50p-right {width:49.9%;float:right;}
+.w100p {width:100%}
+
+.absolute {position:absolute}
+.fixed {position:fixed}
+.relative {position:relative}
+.static {position:static}
+
+.v-bottom {vertical-align:bottom}
+.v-top {vertical-align:top}
+
+.aligncenter {text-align:center}
+.alignleft {text-align:left}
+.alignright {text-align:right}
+
+.bold {font-weight:bold}
+.italic {font-style:italic}
+.normal {font-style:normal}
+
+.font9 {font-size:9px}
+.font10 {font-size:10px}
+.font11 {font-size:11px}
+.font12 {font-size:12px}
+.font13 {font-size:13px}
+.font14 {font-size:14px}
+.font15 {font-size:15px}
+.font16 {font-size:16px}
+.font17 {font-size:17px}
+.font18 {font-size:18px}
+.font19 {font-size:19px}
+.font20 {font-size:20px}
+.font21 {font-size:21px}
+.font22 {font-size:22px}
+.font23 {font-size:23px}
+.font24 {font-size:24px}
+.font25 {font-size:25px}
+.font26 {font-size:26px}

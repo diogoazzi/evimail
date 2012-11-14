@@ -1,0 +1,102 @@
+<%@ Master Language="VB" CodeBehind="Site.master.vb" Inherits="Manutencao.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Evimail - Administração</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <meta name="TITLE" content="Evimail - Administração" />
+    <link rel="stylesheet" type="text/css" href="~/superfish.css" media="screen" />
+
+    <script src="/Scripts/jquery-1.2.6.min.js" type="text/javascript"></script>
+
+    <script src="/Scripts/superfish.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        // initialise plugins
+        jQuery(function() {
+            jQuery('ul.sf-menu').superfish();
+        });
+
+    </script>
+    <!--[if IE]>
+        <link rel="Stylesheet" href="/css/screen_ie.css" />  
+        <script type="text/javascript" src="/js/DD_rounded.js"></script>
+        <script type="text/javascript">
+          DD_roundies.addRule('.button', '5px');            
+          DD_roundies.addRule('.aux_menu', '10px');            
+          DD_roundies.addRule('.aux_box_title', '10px');            
+          DD_roundies.addRule('.fieldBox', '5px');            
+          DD_roundies.addRule('.box_rounded', '5px'); 
+        </script>
+    <![endif]-->
+</head>
+<body class="template">
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="header">
+            <h1>
+                <a title="Página inicial da Evimail" href="/">Evimail</a> <span>Administração
+                    de Conteúdo</span></h1>
+        </div>
+        <div class="menu">
+            <asp:Repeater ID="rptMenu" runat="server">
+                <HeaderTemplate>
+                    <ul>
+                </HeaderTemplate>
+                <ItemTemplate>
+                    <li class="menu_item"><a href='<%#DataBinder.Eval(Container.DataItem, "Manutencao.UrlManutencao")%>'>
+                        <%#DataBinder.Eval(Container.DataItem, "Manutencao.NomeManutencao")%></a>
+                        <asp:Repeater ID="rptMenu2" runat="server">
+                            <HeaderTemplate>
+                                <ul>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <li class="menu_item"><a href='<%#DataBinder.Eval(Container.DataItem, "UrlManutencao")%>'>
+                                    <%#DataBinder.Eval(Container.DataItem, "NomeManutencao")%></a></li>
+                            </ItemTemplate>
+                            <FooterTemplate>
+                                </ul>
+                            </FooterTemplate>
+                        </asp:Repeater>
+                    </li>
+                </ItemTemplate>
+                <FooterTemplate>
+                        <li class="menu_item"><asp:HyperLink runat="server" ID="lnkAlterarSenha" Text="Alterar Senha" Visible="false" /></li>
+                    </ul>
+                </FooterTemplate>
+            </asp:Repeater>
+            
+        </div>
+        <div class="content">
+            <div class="bread_crumb">
+                <asp:LinkButton ID="lnkLogout" OnClick="EfetuarLogout" OnClientClick="return confirm('Deseja realmente sair?');"
+                    runat="server" Text="Sair" CssClass="logout"></asp:LinkButton>
+                <a href="/">Principal</a> - <span>
+                    <asp:Literal ID="ltlMigalha" runat="server"></asp:Literal></span>
+            </div>
+            <asp:ScriptManager AsyncPostBackTimeout="99999" ID="ScriptManager1" runat="server"
+                EnablePartialRendering="true" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="v-outer" id="footer">
+            <div class="v-middle">
+                <p class="v-inner">
+                    Copyright © <asp:Literal ID="ltlAno" runat="server"></asp:Literal> Evimail - Design e Desenvolvimento: <a href="http://www.maarlin.com.br" target="_blank">Marlin</a>
+                </p>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        jQuery('.detailstable tr:last').ready(function() {
+            jQuery('.detailstable tr:last td a:first').addClass('botao_link');
+            jQuery('.detailstable tr:last td a:last').addClass('botao_link');
+        });
+        </script>
+
+    </div>
+    </form>
+</body>
+</html>

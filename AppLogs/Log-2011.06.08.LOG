@@ -1,0 +1,204 @@
+2011-06-08 10:03:47,353 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 451
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 32
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 10:09:26,286 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 451
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 32
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 10:25:44,950 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 451
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 32
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 10:29:57,194 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 454
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 35
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 10:30:47,421 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 454
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 35
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 10:34:44,048 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 454
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 35
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 10:41:27,902 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 454
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 35
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 11:01:56,112 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 454
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 35
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 11:19:51,389 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 454
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 35
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 11:36:34,401 ERROR LogInFile Erro configurando página: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 454
+   at WsIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 35
+   --- End of inner exception stack trace ---   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.VerificarClienteUvaia(String CNP, Int32 CodLoja) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 120
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 399
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 306 
+2011-06-08 14:04:32,963 DEBUG LogInFile CodPedido:390 
+2011-06-08 14:05:45,452 DEBUG LogInFile CodPedido:390 
+2011-06-08 14:05:45,782 DEBUG LogInFile XML de resposta final da cielo: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao id="1" versao="1.1.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>103020877500003B1001</tid>
+  <pan>La//eU0LnhcRAFbx2TBXrRpS0aztcpZks+nrcFt8PxU=</pan>
+  <dados-pedido>
+    <numero>439736693</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2011-06-08T14:05:18.503-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2011-06-08T14:06:28.540-03:00</data-hora>
+    <valor>100</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2011-06-08T14:06:28.554-03:00</data-hora>
+    <valor>100</valor>
+    <lr>00</lr>
+    <arp>042672</arp>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2011-06-08T14:06:30.103-03:00</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
+
+ 
+2011-06-08 14:38:13,991 ERROR LogInFile Erro realizando compra (contratar servico): System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 455
+   at WsIntegracao.Integracao.AutorizarCompraCredito(String Login, String Senha, String Cep, String Endereco, String numero, String Cidade, String UF, Decimal Valor, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 59
+   --- End of inner exception stack trace --- 
+2011-06-08 14:39:03,707 ERROR LogInFile Erro realizando compra (contratar servico): System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 455
+   at WsIntegracao.Integracao.AutorizarCompraCredito(String Login, String Senha, String Cep, String Endereco, String numero, String Cidade, String UF, Decimal Valor, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 59
+   --- End of inner exception stack trace --- 
+2011-06-08 14:41:26,117 ERROR LogInFile Erro realizando compra (contratar servico): System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 455
+   at WsIntegracao.Integracao.AutorizarCompraCredito(String Login, String Senha, String Cep, String Endereco, String numero, String Cidade, String UF, Decimal Valor, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 59
+   --- End of inner exception stack trace --- 
+2011-06-08 14:41:51,597 ERROR LogInFile Erro realizando compra (contratar servico): System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 455
+   at WsIntegracao.Integracao.AutorizarCompraCredito(String Login, String Senha, String Cep, String Endereco, String numero, String Cidade, String UF, Decimal Valor, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 59
+   --- End of inner exception stack trace --- 
+2011-06-08 14:42:01,861 ERROR LogInFile Erro realizando compra (contratar servico): System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.NotImplementedException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_LOGEVENTO_LOJA". The conflict occurred in database "uvaiah", table "dbo.LOJA", column 'IdLoja'.
+The statement has been terminated.
+   at DAL.Generics.Incluir[T](T& entity) in C:\inetpub\wwwroot\Uvaia\DAL\Generics.vb:line 14
+   at BLL.bllLogEvento.GravaLogUsuario(LOGEVENTO obj) in C:\inetpub\wwwroot\Uvaia\BLL\bllLogEvento.vb:line 5
+   at WsIntegracao.Integracao.GravaLogLoja(Int32 idLoja, Int32 idDetalhe) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 455
+   at WsIntegracao.Integracao.AutorizarCompraCredito(String Login, String Senha, String Cep, String Endereco, String numero, String Cidade, String UF, Decimal Valor, Int32 CodLoja) in C:\inetpub\wwwroot\Uvaia\WsIntegracao\Integracao.asmx.vb:line 59
+   --- End of inner exception stack trace --- 
+2011-06-08 16:19:25,455 DEBUG LogInFile CodPedido:391 
+2011-06-08 16:19:25,980 DEBUG LogInFile CodPedido:391 
+2011-06-08 16:24:04,971 DEBUG LogInFile CodPedido:392 
+2011-06-08 16:24:05,248 DEBUG LogInFile CodPedido:392 
+2011-06-08 18:49:14,554 DEBUG LogInFile CodPedido:393 
+2011-06-08 18:49:15,158 DEBUG LogInFile CodPedido:393 

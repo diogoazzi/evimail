@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VOL
+</name>
+</assembly>
+<members>
+<member name="P:VOL.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:VOL.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:VOL.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:VOL.Util.ConverterListas``2(System.Collections.Generic.List{``0})">
+	<summary>
+ Converte uma lista de objetos de uma classe para uma lista de objetos de outra classe.
+ É necessário que as propriedades tenham o mesmo nome em ambas as classes.
+ </summary>
+	<typeparam name="T1">Classe de origem.</typeparam>
+	<typeparam name="T2">Classe de destino.</typeparam>
+	<param name="listaOrigem">Lista do tipo da classe de origem.</param>
+	<returns>Retorna uma lista de objetos da classe de destino.</returns>
+	<remarks></remarks>
+</member><member name="M:VOL.Util.ConverterObjetos``2(``0)">
+	<summary>
+ Converte um objeto de uma classe para um objeto de outra classe.
+ É necessário que as propriedades tenham o mesmo nome em ambas as classes.
+ </summary>
+	<typeparam name="T1">Classe de origem.</typeparam>
+	<typeparam name="T2">Classe de destino.</typeparam>
+	<param name="objOrigem">Objeto do tipo da classe de origem.</param>
+	<returns>Retorna um objeto da classe de destino.</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

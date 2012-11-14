@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Evimail
+</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<link href="../img/favicon.ico" rel="shortcut icon" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" /><link href="../css/temp.css" rel="stylesheet" type="text/css" /><link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+	<script src="../js/lib/jquery.js" type="text/javascript"></script>
+	<script src="../js/cufon/cufon.js" type="text/javascript"></script>
+	<script src="../js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
+	<script src="../js/cufon-fonts.js" type="text/javascript"></script>
+	<script src="../js/base.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+	
+	<!--[if IE]> 
+		<link href="../css/ie.css" rel="stylesheet" type="text/css" />
+		<script src="../js/DD_rounded.js" type="text/javascript"></script>
+		<script type="text/javascript">   
+			DD_roundies.addRule('.validation_summary', '10px');
+		</script> 
+	<![endif]-->
+	<!--[if IE 6]> 
+		<script type="text/javascript" src="../js/lib/DD_belatedPNG.js"></script> 
+		<script type="text/javascript"> DD_belatedPNG.fix('*'); </script> 
+	<![endif]-->
+
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function () {
+			//Examples of how to assign the ColorBox event to elements
+			$(".modalAlerta").colorbox({ width: "80%", height: "80%", iframe: true });
+			$(".esqueciSenha").colorbox({ width: "470px", height: "200px", iframe: true });
+		});
+
+		//function closeColorbox() {
+			//alert('1');
+			//$.fn.colorbox.close();
+		//}
+	</script>
+        
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22354822-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+	
+<script type="text/javascript">
+    $(function () {
+        $('#lnkSlide').click(function (e) { e.preventDefault(); $('#slideContentInit').fadeOut(); });
+
+        /* slide */
+        var ulContent = $('#slidePasso1 .slideContent'),
+            liContent = $('#slidePasso1 .slideContent li'),
+            ulContentWidth = liContent.length * liContent.width(),
+            ulNav = $('#slidePasso1 .slideNav'),
+            liNav = $('#slidePasso1 .slideNav li');
+
+        ulContent.css('width', ulContentWidth);
+
+        ulNav.find('a').bind('click', function (e) {
+            e.preventDefault();
+            var indexLi = $(this).parent('li').index();
+            var leftValue = (liContent.width() * indexLi) * -1
+
+            ulContent.animate({ left: leftValue }, 1000);
+            $(this).parent('li').siblings().find('a').removeClass('hover');
+            $(this).addClass('hover');
+        });
+        /* end slide */
+    });
+</script>
+</head>
+<body id="body" class="frontPage home">
+	<form method="post" action="Default.aspx" id="formMain">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTE3NzU0OTI3D2QWAmYPZBYCAgMPFgIeBWNsYXNzBQ5mcm9udFBhZ2UgaG9tZRYCAgEPZBYGAgEPZBYCZg8PFgQeCENzc0NsYXNzBQ9oZWFkZXJOYW9Mb2dhZG8eBF8hU0ICAmQWBAIDDzwrAA0BDBQrAAVkFCsAAhYEHghTZWxlY3RlZGceBFRleHQFBEhvbWVkFCsAAhYCHwQFClF1ZW0gU29tb3NkFCsAAhYCHwQFFFBlcmd1bnRhcyBGcmVxdWVudGVzZBQrAAIWAh8EBQxGYWxlIENvbm9zY29kZAIFDw8WAh4HVmlzaWJsZWdkFgYCAQ8WAh8EBQ9Kw6Egw6kgY2xpZW50ZT9kAgMPDxYCHwQFD0Zhw6dhIHNldSBsb2dpbmRkAgUPFgIfBAUOTm92byB1c3XDoXJpbz9kAgUPZBYGAgEPFgIfBAUTTyBxdWUgw6kgbyBFdmltYWlsP2QCAw8WAh8EBfsCPHA+TyBFdmltYWlsIMOpIHVtYSBwbGF0YWZvcm1hIHF1ZSBwb3NzaWJpbGl0YSBldmlkZW5jaWFyIGFzIGNvbXVuaWNhw6fDtWVzIHJlYWxpemFkYXMgcG9yIG1laW8gZGUgY29ycmVpby1lbGV0csO0bmljbyBkZSBmb3JtYSBzaW1wbGVzLjwvcD48cD7DiSBwb3Nzw612ZWwgZ2VyYXIgdW0gY29tcHJvdmFudGUgbGVnYWwgZGUgcXVlIG9zIGRlc3RpbmF0w6FyaW9zIHJlY2ViZXJhbSBlIGxlcmFtIHN1YXMgbWVuc2FnZW5zLjwvcD48cD5Wb2PDqiBwb2RlIG1hbnRlciB1bSBoaXN0w7NyaWNvIHBlcm1hbmVudGUgZG9zIHNldXMgZS1tYWlscyBlbnZpYWRvcyBlIHJlY2ViaWRvcywgYmVtIGNvbW8gb3MgYW5leG9zIGNvbnRpZG9zIG5lc3NhcyBtZW5zYWdlbnMuPC9wPmQCIQ8PFgIeC05hdmlnYXRlVXJsBRhodHRwOi8vd3d3LnV2YWlhLmNvbS5ici9kZAIHD2QWAgIBDxYCHwQFBDIwMTJkGAEFGWN0bDAwJHVjSGVhZGVyJG1lbnVIZWFkZXIPD2QFBEhvbWVke6OqDeHC1AlbZhXelGrzdQ3df22LiIqKKP0SiquDGIE=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formMain'];
+if (!theForm) {
+    theForm = document.formMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebSite/WebResource.axd?d=O8sTR6YvNXq6JxW5yXfQoglWgWKMP8t8zQ0GPbhPwqal-AGA3cMoIgzjsNnFf31d--pNlvsmtWGMWFDiO2ae7sF4kK8aiS3irEOMdT9hXOE1&amp;t=634635494780000000" type="text/javascript"></script>
+
+
+<script src="/WebSite/ScriptResource.axd?d=R6TwmAUsWifoDFx8uyWNBLoNiBz4bQcQiOyg_fzfZrZ0nlFPY7E5cdMPD0hxIoBqvTWDUhWhXdXsBcmgnQlbFbqXd2bTOZlpaRoD2w-i69kl-prDbvY1emG6-DDjHgoog9ALrMHrGMDsKelb8Yri4g2&amp;t=ffffffffa8ca332f" type="text/javascript"></script>
+<script src="/WebSite/ScriptResource.axd?d=-WL51Q-HHLxbKVcei5WfNpJ5oWKjDlRH2w2oiCsoX9cn3uZ5VUgfG-7QS67Ja4Rfn0gPSrWI_zh-4qL8Im5uXPbCX95TjvbXo00fm8T32LIGUWQDL_KfGYZAJ79rFVxhvO7tHEsY795z8kVQozUlIMqnOnqaQegbv9r6pAjluar282GVPH7dsHJ-wFqiASBQ0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/WebSite/ScriptResource.axd?d=89N6s64s5xmKovIWyNOIU7usuxPLqaQbRXZlFE9UUfsStqNZ9xIvKoiI3EjfdKEFNycGZdZwOnY3xbGLVSbIOgbglnhWjeZuz-jTGX7ZRSJbOPD0fLaA_F7BI8BSyC8eZYXhgV1M_E-ZYD8-fOxNr57viJmxIO1pCA4IAtySIIcx3VtXU14EwHWJg1OVP2VX0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+	<div id="header" class="headerNaoLogado">
+	
+    <div id="headerCont">
+        <h1 id="logo"><a href="../Webforms/Default.aspx">Evimail Evidência</a></h1>
+        <div id="menuHeader">
+		<ul class="level1">
+			<li><a class="level1 selected" href="Default.aspx">Home</a></li><li><a class="level1" href="QuemSomos.aspx">Quem Somos</a></li><li><a class="level1" href="PerguntasFrequentes.aspx">Perguntas Frequentes</a></li><li><a class="level1" href="FaleConosco.aspx">Fale Conosco</a></li>
+		</ul>
+	</div>
+        <div id="pnlNaoLogado">
+		
+            <div class="left">
+                <span>Já é cliente?</span>
+                <a id="lnkLogar" href="Login.aspx">Faça seu login</a>
+            </div>
+            <div class="right">
+                <span>Novo usuário?</span>
+                <a id="lnkCadastrar" href="Cadastro.aspx"></a>
+            </div>
+        
+	</div>
+        
+    </div>
+    <!--/#headerCont-->
+    
+
+</div>
+	<!--/#header-->
+	<div id="container">
+		<div id="wrapper">
+			<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+			
+
+        <div id="homeBloco1">
+            <h2 class="titleHome">O que é o Evimail?</h2>
+            <p>O Evimail é uma plataforma que possibilita evidenciar as comunicações realizadas por meio de correio-eletrônico de forma simples.</p><p>É possível gerar um comprovante legal de que os destinatários receberam e leram suas mensagens.</p><p>Você pode manter um histórico permanente dos seus e-mails enviados e recebidos, bem como os anexos contidos nessas mensagens.</p> 
+        </div>
+
+        <div id="homeBloco2">
+           <div id="slideContentInit" class="slide">
+               <img id="ContentPlaceHolder_Body_imgTxt" class="imgTxt" src="../img/txtHome1.png" />
+               <a id="lnkSlide" href="#"><img src="../img/btnSlide.png" alt="" /></a>
+           </div>   
+           <div id="slidePasso1" class="slide">
+               <ul class="slideContent">
+                    <li><img id="imgSlide1" src="../img/slidePs1.png" /></li>
+                    <li><img id="imgSlide2" src="../img/slidePs2.png" /></li>
+                    <li><img id="imgSlide3" src="../img/slidePs3.png" /></li>
+                    <li><img id="imgSlide4" src="../img/slidePs4.png" /></li>
+                    <li><img id="imgSlide5" src="../img/slidePs5.png" /></li>               
+               </ul>
+               <ul class="slideNav">
+                    <li><a href="#" class="hover">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+               </ul>
+           </div>          
+        </div>
+
+        <div id="homeBloco3">
+            <ul>
+                <li><a id="ContentPlaceHolder_Body_lnkVantagem" class="linkHome" href="Vantagens.aspx">Vantagens pra você e sua empresa</a></li>
+                <li><a id="ContentPlaceHolder_Body_lnkPlano" class="linkHome" href="MelhorPlano.aspx">Escolha o melhor plano</a></li>
+                <li><a id="ContentPlaceHolder_Body_lnkLaudo" class="linkHome" href="ModeloLaudo.aspx">Veja o modelo de laudo</a></li>
+            </ul>
+        </div>
+
+        <div id="homeBloco4" class="rounded_a">
+            <h4>Nós ajudamos o meio ambiente</h4>
+            <ul>
+                <li>
+                    <span id="ContentPlaceHolder_Body_lblPapel">Total de papel economizado</span>
+                    <span id="ContentPlaceHolder_Body_lblPeso"></span>
+                </li>
+                <li>
+                    <span id="ContentPlaceHolder_Body_lblParceiro" class="marginHome">Um parceiro</span>
+                    <a id="ContentPlaceHolder_Body_lnkImgUvaia" href="http://www.uvaia.com.br/" target="_blank"><img src="../img/logoUvaia.jpg" alt="" /></a>
+                   
+                </li>
+                
+            </ul>
+        </div>
+
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<div id="footer">
+    <div id="footerCont">
+        <ul>
+            <li><a href="PoliticaPrivacidade.aspx">Política de Privacidade</a></li>
+            <li>|</li>
+            <li><a href="TermosCondicoes.aspx">Termos e Condições de Uso</a></li>
+        </ul>
+        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
+    </div>
+</div>
+	<!--/#footer-->
+	
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'menuHeader', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script></form>
+	<script type="text/javascript">        Cufon.now(); </script>
+</body>
+</html>

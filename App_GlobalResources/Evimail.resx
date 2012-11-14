@@ -1,0 +1,890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Cadastro_Campo_Bairro" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="Cadastro_Campo_BotaoCriarConta" xml:space="preserve">
+    <value>Criar conta</value>
+  </data>
+  <data name="Cadastro_Campo_CEP" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="Cadastro_Campo_CEP_LinkCorreios" xml:space="preserve">
+    <value>Não sabe seu CEP?</value>
+  </data>
+  <data name="Cadastro_Campo_Cidade" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="Cadastro_Campo_CNPJ" xml:space="preserve">
+    <value>CNPJ</value>
+  </data>
+  <data name="Cadastro_Campo_Complemento" xml:space="preserve">
+    <value>Complemento</value>
+  </data>
+  <data name="Cadastro_Campo_ConfirmeSenha" xml:space="preserve">
+    <value>Confirme a Senha</value>
+  </data>
+  <data name="Cadastro_Campo_CPF" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="Cadastro_Campo_CPF_CNPJ_Observacao" xml:space="preserve">
+    <value>(somente números)</value>
+  </data>
+  <data name="Cadastro_Campo_DataNascimento" xml:space="preserve">
+    <value>Data de Nascimento</value>
+  </data>
+  <data name="Cadastro_Campo_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Cadastro_Campo_EuSou" xml:space="preserve">
+    <value>Tipo de Pessoa</value>
+  </data>
+  <data name="Cadastro_Campo_EuSou_PessoaFisica" xml:space="preserve">
+    <value>Pessoa Física</value>
+  </data>
+  <data name="Cadastro_Campo_EuSou_PessoaJuridica" xml:space="preserve">
+    <value>Pessoa Jurídica</value>
+  </data>
+  <data name="Cadastro_Campo_Logradouro" xml:space="preserve">
+    <value>Logradouro</value>
+  </data>
+  <data name="Cadastro_Campo_Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Cadastro_Campo_NomeUsuario" xml:space="preserve">
+    <value>Nome de usuário</value>
+  </data>
+  <data name="Cadastro_Campo_NomeUsuario_Observacao" xml:space="preserve">
+    <value>(alfanumérico entre 6 e 10 caracteres)</value>
+  </data>
+  <data name="Cadastro_Campo_Numero" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="Cadastro_Campo_RazaoSocial" xml:space="preserve">
+    <value>Razão Social</value>
+  </data>
+  <data name="Cadastro_Campo_Senha" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="Cadastro_Campo_Senha_Observacao" xml:space="preserve">
+    <value>(alfanumérica entre 6 e 10 caracteres)</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneCelular" xml:space="preserve">
+    <value>Telefone Celular</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneCelular_DDD" xml:space="preserve">
+    <value>DDD</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneCelular_Numero" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneCelular_Observacao" xml:space="preserve">
+    <value>(somente números)</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneComercial" xml:space="preserve">
+    <value>Telefone Comercial</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneComercial_DDD" xml:space="preserve">
+    <value>DDD</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneComercial_Numero" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneComercial_Observacao" xml:space="preserve">
+    <value>(somente números)</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneComercial_Ramal" xml:space="preserve">
+    <value>Ramal</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneResidencial" xml:space="preserve">
+    <value>Telefone Residencial</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneResidencial_DDD" xml:space="preserve">
+    <value>DDD</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneResidencial_Numero" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="Cadastro_Campo_TelefoneResidencial_Observacao" xml:space="preserve">
+    <value>(somente números)</value>
+  </data>
+  <data name="Cadastro_Campo_TermosCondicoes" xml:space="preserve">
+    <value>Li e entendi os Termos e Condições de uso.</value>
+  </data>
+  <data name="Cadastro_Campo_UF" xml:space="preserve">
+    <value>UF</value>
+  </data>
+  <data name="Cadastro_Titulo" xml:space="preserve">
+    <value>Cadastre-se</value>
+  </data>
+  <data name="Default_Banner" xml:space="preserve">
+    <value>../img/site/home_banner.jpg</value>
+  </data>
+  <data name="Default_BlocoDireita_Conteudo1" xml:space="preserve">
+    <value>&lt;li&gt;Diminuição no uso de papel.&lt;/li&gt;&lt;li&gt;Notificações automáticas quando o destinatário recebe e lê seu e-mail.&lt;/li&gt;&lt;li&gt;Emissão de laudo técnico que comprova o envio, recebimento e leitura do e-mail, assim como a data e hora exata dos eventos.&lt;/li&gt;&lt;li&gt;Gerenciamento de e-mails adicionais. Você pode utilizar o Evimail com até quatro endereços eletrônicos diferentes em uma só assinatura.&lt;/li&gt;</value>
+  </data>
+  <data name="Default_BlocoDireita_Conteudo2" xml:space="preserve">
+    <value>&lt;p class="color1"&gt;O Evimail possui duas modalidades de assinatura:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="color1"&gt;Créditos Unitários&lt;/span&gt; - para quem envia poucas mensagens. Dessa forma você pode contratar um pacote com número pré-definido de e-mails que atenda sua necessidade.&lt;/li&gt;&lt;li&gt;&lt;span class="color1"&gt;Por Períodos&lt;/span&gt; - Para quem trabalha com grande volume de e-mails. Nessa modalidade você poderá, dentro do período contratado, enviar um número ilimitado de mensagens; sem preocupar-se com o limite de créditos ou gastos extras.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="Default_BlocoDireita_Titulo1" xml:space="preserve">
+    <value>Vantagens para você e sua empresa</value>
+  </data>
+  <data name="Default_BlocoDireita_Titulo2" xml:space="preserve">
+    <value>Escolha o melhor plano</value>
+  </data>
+  <data name="Default_BlocoEsquerda_Conteudo" xml:space="preserve">
+    <value>&lt;p&gt;O Evimail é uma plataforma que possibilita evidenciar as comunicações realizadas por meio de correio-eletrônico de forma simples.&lt;/p&gt;&lt;p&gt;É possível gerar um comprovante legal de que os destinatários receberam e leram suas mensagens.&lt;/p&gt;&lt;p&gt;Você pode manter um histórico permanente dos seus e-mails enviados e recebidos, bem como os anexos contidos nessas mensagens.&lt;/p&gt;</value>
+  </data>
+  <data name="Default_BlocoEsquerda_Titulo" xml:space="preserve">
+    <value>O que é o Evimail?</value>
+  </data>
+  <data name="wucHeader_BotaoCadastrar" xml:space="preserve">
+    <value>Cadastre-se</value>
+  </data>
+  <data name="wucHeader_BotaoLogin" xml:space="preserve">
+    <value>Faça seu login</value>
+  </data>
+  <data name="wucHeader_BotaoSair" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="wucHeader_Menu_FaleConosco" xml:space="preserve">
+    <value>Fale Conosco</value>
+  </data>
+  <data name="wucHeader_Menu_FAQ" xml:space="preserve">
+    <value>Perguntas Frequentes</value>
+  </data>
+  <data name="wucHeader_Menu_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="wucHeader_Menu_QuemSomos" xml:space="preserve">
+    <value>Quem Somos</value>
+  </data>
+  <data name="wucHeader_UsuarioCreditos" xml:space="preserve">
+    <value>Você possui &lt;span&gt;@@SALDO&lt;/span&gt; crédito(s)</value>
+  </data>
+  <data name="wucHeader_UsuarioPlanos" xml:space="preserve">
+    <value>Você ainda tem &lt;span&gt;@@SALDO @@INTERVALO&lt;/span&gt; para utilizar o Evimail</value>
+  </data>
+  <data name="wucHeader_UsuarioSemServico" xml:space="preserve">
+    <value>Você não possui um serviço contratado</value>
+  </data>
+  <data name="wucHeader_TituloBotaoCadastar" xml:space="preserve">
+    <value>Novo usuário?</value>
+  </data>
+  <data name="wucHeader_TituloBotaoLogin" xml:space="preserve">
+    <value>Já é cliente?</value>
+  </data>
+  <data name="Cadastro_Campo_Sexo" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="Cadastro_Campo_Sexo_Feminino" xml:space="preserve">
+    <value>Feminino</value>
+  </data>
+  <data name="Cadastro_Campo_Sexo_Masculino" xml:space="preserve">
+    <value>Masculino</value>
+  </data>
+  <data name="Cadastro_Campo_Pais" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="Cadastro_Alerta_TermosCondicoes" xml:space="preserve">
+    <value>Para prosseguir, é necessário concordar com os Termos e Condições de uso.</value>
+  </data>
+  <data name="Cadastro_Mensagem_Sucesso" xml:space="preserve">
+    <value>Você receberá um email com instruções de ativação de cadastro.</value>
+  </data>
+  <data name="Geral_Alerta_Falha" xml:space="preserve">
+    <value>Falha ao realizar operação</value>
+  </data>
+  <data name="Cadastro_EmailConfirmacao_Assunto" xml:space="preserve">
+    <value>Cadastro no Evimail</value>
+  </data>
+  <data name="Cadastro_EmailConfirmacao_Conteudo" xml:space="preserve">
+    <value>Você está recebendo este e-mail pois iniciou o processo de cadastramento no site Evimail.&lt;br /&gt;Para dar prosseguimento com o seu cadastro, clique no link abaixo:&lt;br /&gt;&lt;a href="@@SITECOMPLETO"&gt;Confirmar cadastro&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Atenciosamente,&lt;br /&gt;Equipe Evimail
+    </value>
+  </data>
+  <data name="Cadastro_ErroForm_Bairro_Required" xml:space="preserve">
+    <value>O campo bairro é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_CEP_Invalido" xml:space="preserve">
+    <value>CEP inválido</value>
+  </data>
+  <data name="Cadastro_ErroForm_CEP_Required" xml:space="preserve">
+    <value>O campo CEP é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_Cidade_Required" xml:space="preserve">
+    <value>O campo cidade é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_CNPJ_Invalido" xml:space="preserve">
+    <value>CNPJ inválido</value>
+  </data>
+  <data name="Cadastro_ErroForm_CNPJ_Required" xml:space="preserve">
+    <value>O campo CNPJ é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_ConfirmeSenha_Invalida" xml:space="preserve">
+    <value>Confirmação da senha está inválida</value>
+  </data>
+  <data name="Cadastro_ErroForm_ConfirmeSenha_Required" xml:space="preserve">
+    <value>O campo confirme a senha é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_CPF_Invalido" xml:space="preserve">
+    <value>CPF inválido</value>
+  </data>
+  <data name="Cadastro_ErroForm_CPF_Required" xml:space="preserve">
+    <value>O campo CPF é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_DataNascimento_Invalida" xml:space="preserve">
+    <value>Data de nascimento inválida</value>
+  </data>
+  <data name="Cadastro_ErroForm_DataNascimento_Required" xml:space="preserve">
+    <value>O campo data de nascimento é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_Email_Invalido" xml:space="preserve">
+    <value>Email inválido</value>
+  </data>
+  <data name="Cadastro_ErroForm_Email_Required" xml:space="preserve">
+    <value>O campo email é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_Logradouro_Required" xml:space="preserve">
+    <value>O campo logradouro é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_NomeUsuario_Invalido" xml:space="preserve">
+    <value>O nome de usuário deve ter entre 6 e 10 caracteres</value>
+  </data>
+  <data name="Cadastro_ErroForm_NomeUsuario_Requried" xml:space="preserve">
+    <value>O campo nome de usuário é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_Nome_Required" xml:space="preserve">
+    <value>O campo nome é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_Numero_Required" xml:space="preserve">
+    <value>O campo número é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_Pais_Required" xml:space="preserve">
+    <value>O campo país é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_RazaoSocial_Required" xml:space="preserve">
+    <value>O campo razão social é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_Senha_Invalida" xml:space="preserve">
+    <value>A senha deve ter entre 6 e 10 caracteres</value>
+  </data>
+  <data name="Cadastro_ErroForm_Senha_Required" xml:space="preserve">
+    <value>O campo senha é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_Sexo_Required" xml:space="preserve">
+    <value>Selecione um sexo</value>
+  </data>
+  <data name="Cadastro_ErroForm_TelefoneCelular_Numero_Invalido" xml:space="preserve">
+    <value>Telefone celular inválido</value>
+  </data>
+  <data name="Cadastro_ErroForm_TelefoneCelular_Numero_Required" xml:space="preserve">
+    <value>O campo telefone celular é obrigatório</value>
+  </data>
+  <data name="Cadastro_ErroForm_TelefoneComercial_Invalido" xml:space="preserve">
+    <value>Telefone comercial inválido</value>
+  </data>
+  <data name="Cadastro_ErroForm_TelefoneResidencial_Invalido" xml:space="preserve">
+    <value>Telefone residencial inválido</value>
+  </data>
+  <data name="Cadastro_ErroForm_TipoPessoa_Required" xml:space="preserve">
+    <value>Selecione um tipo de pessoa</value>
+  </data>
+  <data name="Cadastro_ErroForm_UF_Required" xml:space="preserve">
+    <value>O campo UF é obrigatório</value>
+  </data>
+  <data name="ConfirmarCadastro_Identificador_Invalido" xml:space="preserve">
+    <value>Identificador inválido.</value>
+  </data>
+  <data name="ConfirmarCadastro_Identificador_Required" xml:space="preserve">
+    <value>Identificador não informado</value>
+  </data>
+  <data name="ConfirmarCadastro_Sucesso" xml:space="preserve">
+    <value>Sua conta foi ativada com sucesso.</value>
+  </data>
+  <data name="EsqueciSenha_BotaoEnviar" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="FaleConosco_BotaoEnviar" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="FaleConosco_CampoObrigatorio" xml:space="preserve">
+    <value>* Campos de preenchimento obrigatório</value>
+  </data>
+  <data name="FaleConosco_CampoInvalido" xml:space="preserve">
+    <value>* Foram encontrados os seguintes erros</value>
+  </data>
+  <data name="FaleConosco_Campo_Assunto" xml:space="preserve">
+    <value>Assunto</value>
+  </data>
+  <data name="FaleConosco_Campo_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FaleConosco_Campo_Mensagem" xml:space="preserve">
+    <value>Mensagem</value>
+  </data>
+  <data name="FaleConosco_Campo_Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="FaleConosco_Campo_ReceberCopia" xml:space="preserve">
+    <value>Receber cópia</value>
+  </data>
+  <data name="EsqueciSenha_EmailEnviado" xml:space="preserve">
+    <value>Sua senha foi enviada para o email cadastrado</value>
+  </data>
+  <data name="EsqueciSenha_EmailNaoEncontrado" xml:space="preserve">
+    <value>Endereço de email não encontrado</value>
+  </data>
+  <data name="EsqueciSenha_Email_Assunto" xml:space="preserve">
+    <value>Recuperação de senha</value>
+  </data>
+  <data name="EsqueciSenha_Email_Conteudo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EsqueciSenha_ErroEnviarEmail" xml:space="preserve">
+    <value>Ocorreu um erro ao tentar enviar a senha por email</value>
+  </data>
+  <data name="EsqueciSenha_Campo_Email" xml:space="preserve">
+    <value>Informe seu e-mail:</value>
+  </data>
+  <data name="Login_BotaoLogin" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="Login_Campo_Identificacao" xml:space="preserve">
+    <value>Identificação:</value>
+  </data>
+  <data name="Login_Campo_Senha" xml:space="preserve">
+    <value>Senha:</value>
+  </data>
+  <data name="Login_LinkEsqueciSenha" xml:space="preserve">
+    <value>Esqueci minha senha</value>
+  </data>
+  <data name="Login_Titulo" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="MinhaConta_Plano_MensagemSaldoRestanteParte1" xml:space="preserve">
+    <value>Você ainda tem</value>
+  </data>
+  <data name="MinhaConta_Titulo" xml:space="preserve">
+    <value>Minha Conta</value>
+  </data>
+  <data name="AlteraDado_Botao_SalvarAlteracoes" xml:space="preserve">
+    <value>Salvar Alterações</value>
+  </data>
+  <data name="AlteraDado_Campo_CEP" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="AlteraDado_Campo_Cidade" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="AlteraDado_Campo_Complemento" xml:space="preserve">
+    <value>Complemento</value>
+  </data>
+  <data name="AlteraDado_Campo_DataNascimento" xml:space="preserve">
+    <value>Data de Nascimento</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneCelular_DDD" xml:space="preserve">
+    <value>DDD</value>
+  </data>
+  <data name="AlteraDado_Campo_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="AlteraDado_Campo_Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="AlteraDado_Campo_Numero" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneComercial_Ramal" xml:space="preserve">
+    <value>Ramal</value>
+  </data>
+  <data name="AlteraDado_Campo_Logradouro" xml:space="preserve">
+    <value>Logradouro</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneCelular_Numero" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="AlteraDado_Campo_UF" xml:space="preserve">
+    <value>UF</value>
+  </data>
+  <data name="AlteraDado_Campo_NomeUsuario" xml:space="preserve">
+    <value>Nome do Usuário</value>
+  </data>
+  <data name="AlteraDado_Campo_CEP_LinkCorreios" xml:space="preserve">
+    <value>Não sabe seu CEP?</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneResidencial" xml:space="preserve">
+    <value>Telefone Residencial</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneComercial" xml:space="preserve">
+    <value>Telefone Comercial</value>
+  </data>
+  <data name="Cadastro_ErroForm_Email_JaUtilizado" xml:space="preserve">
+    <value>Email informado já está sendo utilizado</value>
+  </data>
+  <data name="Paginacao_Tooltip_PaginaAnterior" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="Paginacao_Tooltip_PrimeiraPagina" xml:space="preserve">
+    <value>Primeira</value>
+  </data>
+  <data name="Paginacao_Tooltip_ProximaPagina" xml:space="preserve">
+    <value>Próxima</value>
+  </data>
+  <data name="Paginacao_Tooltip_UltimaPagina" xml:space="preserve">
+    <value>Última</value>
+  </data>
+  <data name="MinhaConta_Credito_BotaoAdquirirCreditos" xml:space="preserve">
+    <value>Adquirir Créditos</value>
+  </data>
+  <data name="MinhaConta_Credito_MensagemSaldoRestanteParte1" xml:space="preserve">
+    <value>Você possui</value>
+  </data>
+  <data name="MinhaConta_Credito_MensagemSaldoRestanteParte2" xml:space="preserve">
+    <value>créditos</value>
+  </data>
+  <data name="MinhaConta_Credito_ServicoContratadoTitulo" xml:space="preserve">
+    <value>Último serviço contratado:</value>
+  </data>
+  <data name="MinhaConta_Credito_UltimoServicoContratadoTitulo" xml:space="preserve">
+    <value>Último serviço contratado:</value>
+  </data>
+  <data name="MinhaConta_DataUltimaCompraTitulo" xml:space="preserve">
+    <value>Data da última compra:</value>
+  </data>
+  <data name="MinhaConta_ListaEmailsEnviados_AssuntoHeader" xml:space="preserve">
+    <value>ASSUNTO</value>
+  </data>
+  <data name="MinhaConta_ListaEmailsEnviados_DataHeader" xml:space="preserve">
+    <value>DATA</value>
+  </data>
+  <data name="MinhaConta_ListaEmailsEnviados_MensagemPaginacao" xml:space="preserve">
+    <value>Mostrando @@REGINICIO a @@REGFIM de @@REGTOTAL emails</value>
+  </data>
+  <data name="MinhaConta_ListaEmailsEnviados_SaldoHeader" xml:space="preserve">
+    <value>SALDO</value>
+  </data>
+  <data name="MinhaConta_ListaEmailsEnviados_TextoPaginas" xml:space="preserve">
+    <value>Págs:</value>
+  </data>
+  <data name="MinhaConta_Plano_BotaoAdquirirPlano" xml:space="preserve">
+    <value>Adquirir Plano</value>
+  </data>
+  <data name="MinhaConta_Plano_DataExpiracaoTitulo" xml:space="preserve">
+    <value>Data de expiração:</value>
+  </data>
+  <data name="MinhaConta_Plano_DataRenovaTitulo" xml:space="preserve">
+    <value>Data de renovação:</value>
+  </data>
+  <data name="MinhaConta_Plano_MensagemSaldoRestanteParte2" xml:space="preserve">
+    <value>para utilizar o Evimail</value>
+  </data>
+  <data name="MinhaConta_Plano_ServicoContratadoTitulo" xml:space="preserve">
+    <value>Serviço contratado:</value>
+  </data>
+  <data name="MinhaConta_QtdEmailsEnviadosTitulo" xml:space="preserve">
+    <value>Quantidade de emails enviados:</value>
+  </data>
+  <data name="MinhaConta_Credito_ObservacaoSaldo" xml:space="preserve">
+    <value>(cada crédito corresponde a 1 email)</value>
+  </data>
+  <data name="MinhaConta_ListaEmailsEnviados_NenhumEncontrado" xml:space="preserve">
+    <value>Nenhum e-mail enviado para o plano corrente</value>
+  </data>
+  <data name="AlteraDado_CamposObrigatorios" xml:space="preserve">
+    <value>* Campos de preenchimento obrigatório</value>
+  </data>
+  <data name="AlteraDado_Campo_Bairro" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="AlteraDado_Campo_Pais" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneCelular" xml:space="preserve">
+    <value>Telefone Celular</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneCelular_Observacao" xml:space="preserve">
+    <value>(somente números)</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneComercial_DDD" xml:space="preserve">
+    <value>DDD</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneComercial_Numero" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneComercial_Observacao" xml:space="preserve">
+    <value>(somente números)</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneResidencial_DDD" xml:space="preserve">
+    <value>DDD</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneResidencial_Numero" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="AlteraDado_Campo_TelefoneResidencial_Observacao" xml:space="preserve">
+    <value>(somente números)</value>
+  </data>
+  <data name="AlteraDado_LinkAlterarSenha" xml:space="preserve">
+    <value>Clique aqui para alterar a sua senha</value>
+  </data>
+  <data name="AlteraDado_Titulo" xml:space="preserve">
+    <value>Alterar Dados</value>
+  </data>
+  <data name="AlterarSenha_BotaoAlterarSenha" xml:space="preserve">
+    <value>Alterar Senha</value>
+  </data>
+  <data name="AlterarSenha_CamposObrigatórios" xml:space="preserve">
+    <value>* Campos de preenchimento obrigatório</value>
+  </data>
+  <data name="AlterarSenha_Campo_ConfirmeNovaSenha" xml:space="preserve">
+    <value>Confirme a Senha</value>
+  </data>
+  <data name="AlterarSenha_Campo_NovaSenha" xml:space="preserve">
+    <value>Nova Senha</value>
+  </data>
+  <data name="AlterarSenha_Campo_NovaSenha_Observacao" xml:space="preserve">
+    <value>(alfanumérica entre 6 e 10 caracteres)</value>
+  </data>
+  <data name="AlterarSenha_Titulo" xml:space="preserve">
+    <value>Alterar Senha</value>
+  </data>
+  <data name="Cadastro_CamposObrigatorios" xml:space="preserve">
+    <value>* Campos de preenchimento obrigatório</value>
+  </data>
+  <data name="AlteraDados_Mensagem_Sucesso" xml:space="preserve">
+    <value>Alterações realizadas com sucesso</value>
+  </data>
+  <data name="Cadastro_ErroForm_CNPJ_JaUtilizado" xml:space="preserve">
+    <value>CNPJ informado já está cadastrado</value>
+  </data>
+  <data name="Cadastro_ErroForm_CPF_JaUtilizado" xml:space="preserve">
+    <value>CPF informado já está cadastrado</value>
+  </data>
+  <data name="Cadastro_ErroForm_DataNascimento_MaiorHoje" xml:space="preserve">
+    <value>Data de nascimento informada maior que a data atual</value>
+  </data>
+  <data name="Cadastro_ErroForm_NomeUsuario_JaUtilizado" xml:space="preserve">
+    <value>Nome de usuário já cadastrado</value>
+  </data>
+  <data name="AlterarSenha_Mensagem_Sucesso" xml:space="preserve">
+    <value>Senha alterada com sucesso</value>
+  </data>
+  <data name="DetalheEmail_LinkVoltarMenu" xml:space="preserve">
+    <value>voltar para consulta</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_DataConfirmacaoHeader" xml:space="preserve">
+    <value>Data de Confirmação</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_EmailHeader" xml:space="preserve">
+    <value>Lista de Destinatários</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_Legenda_Confirmado" xml:space="preserve">
+    <value>confirmado</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_Legenda_Pendente" xml:space="preserve">
+    <value>confirmação pendente</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_LeituraAnexoHeader" xml:space="preserve">
+    <value>Leitura de Anexos</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_LeituraConteudoHeader" xml:space="preserve">
+    <value>Leitura do Conteúdo</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_RecebimentoHeader" xml:space="preserve">
+    <value>Recebimento</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_StatusHeader" xml:space="preserve">
+    <value>Status do email</value>
+  </data>
+  <data name="DetalheEmail_TituloAssunto" xml:space="preserve">
+    <value>Assunto do Email:</value>
+  </data>
+  <data name="DetalheEmail_TituloMenu" xml:space="preserve">
+    <value>Consultar Histórico de Emails</value>
+  </data>
+  <data name="DetalheEmail_TituloPagina" xml:space="preserve">
+    <value>Detalhes do Email</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_Status_NaoRecebido" xml:space="preserve">
+    <value>não recebido</value>
+  </data>
+  <data name="DetalheEmail_ListaDestinatarios_Status_Recebido" xml:space="preserve">
+    <value>recebido</value>
+  </data>
+  <data name="wucDetalhesEmail_Anexos" xml:space="preserve">
+    <value>anexos:</value>
+  </data>
+  <data name="wucDetalhesEmail_BotaoGerarPDF" xml:space="preserve">
+    <value>GERAR PDF</value>
+  </data>
+  <data name="wucDetalhesEmail_Corpo" xml:space="preserve">
+    <value>corpo:</value>
+  </data>
+  <data name="wucDetalhesEmail_IPDestino" xml:space="preserve">
+    <value>IP Destino:</value>
+  </data>
+  <data name="wucDetalhesEmail_IPOrigem" xml:space="preserve">
+    <value>Cabeçalho:</value>
+  </data>
+  <data name="ConfirmarEmail_BotaoConfirmar" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="ConfirmarEmail_BotaoEnviarCopia" xml:space="preserve">
+    <value>enviar cópia</value>
+  </data>
+  <data name="ConfirmarEmail_BotaoVisualizarEmail" xml:space="preserve">
+    <value>VISUALIZAR EMAIL</value>
+  </data>
+  <data name="ConfirmarEmail_LabelCaptcha" xml:space="preserve">
+    <value>Digite o código ao lado:</value>
+  </data>
+  <data name="ConfirmarEmail_MensagemConfirmacao" xml:space="preserve">
+    <value>Por favor confirme as informações abaixo:</value>
+  </data>
+  <data name="ConfirmarEmail_MensagemEmailRecebido" xml:space="preserve">
+    <value>Você recebeu o email "@@ASSUNTO" no endereço eletronico @@EMAIL de @@REMETENTE</value>
+  </data>
+  <data name="ConfirmarEmail_Opcao_ConfirmacaoAnexos" xml:space="preserve">
+    <value>Li e entendi o(s) anexo(s) do email "@@ASSUNTO", enviado em @@DATAENVIO às @@HORAENVIO por @@REMETENTE.</value>
+  </data>
+  <data name="ConfirmarEmail_Opcao_ConfirmacaoLeitura" xml:space="preserve">
+    <value>Entendi o conteúdo do email "@@ASSUNTO", enviado em @@DATAENVIO às @@HORAENVIO por @@REMETENTE.</value>
+  </data>
+  <data name="ConfirmarEmail_Titulo" xml:space="preserve">
+    <value>confirmação de leitura</value>
+  </data>
+  <data name="Login_ErroForm_Identificacao_Required" xml:space="preserve">
+    <value>Informe o login</value>
+  </data>
+  <data name="Login_ErroForm_Senha_Required" xml:space="preserve">
+    <value>Informe a senha</value>
+  </data>
+  <data name="Cadastro_ErroForm_TelefoneCelular_DDD_Invalido" xml:space="preserve">
+    <value>DDD do telefone celular inválido</value>
+  </data>
+  <data name="Cadastro_ErroForm_TelefoneCelular_DDD_Required" xml:space="preserve">
+    <value>O campo DDD do telefone celular é obrigatório</value>
+  </data>
+  <data name="ConfirmarEmail_Alerta_IdentificadorInvalido" xml:space="preserve">
+    <value>Não foi possível obter os detalhes do email. Identificador inválido.</value>
+  </data>
+  <data name="ConfirmarEmail_ErroForm_Captcha_Invalido" xml:space="preserve">
+    <value>Código informado não corresponde com o código da figura</value>
+  </data>
+  <data name="ConfirmarEmail_ErroForm_Captcha_Required" xml:space="preserve">
+    <value>Informe o código da figura</value>
+  </data>
+  <data name="ConfirmarEmail_ErroForm_ConfirmacaoLeitura_Required" xml:space="preserve">
+    <value>Selecione a opção de confirmação de leitura do email</value>
+  </data>
+  <data name="ConfirmarEmail_Mensagem_ConfirmacaoSucesso" xml:space="preserve">
+    <value>Leitura de email confirmada.</value>
+  </data>
+  <data name="ConfirmarEmail_ReenviarEmail_Mensagem_Falha" xml:space="preserve">
+    <value>Ocorreu uma falha ao enviar uma cópia para o seu email.</value>
+  </data>
+  <data name="ConfirmarEmail_ReenviarEmail_Mensagem_Sucesso" xml:space="preserve">
+    <value>Uma cópia foi enviada para o seu email.</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_Arquivo" xml:space="preserve">
+    <value>email-confirmacao.htm</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_Assunto" xml:space="preserve">
+    <value>Conteúdo de e-mail confirmado</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_BotaoSite_AtributoAlt" xml:space="preserve">
+    <value>ir para o site</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_BotaoSite_NomeFigura" xml:space="preserve">
+    <value>botao.jpg</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_Footer_AtributoAlt" xml:space="preserve">
+    <value>Transforme seu email em EVIDÊNCIA - www.evimail.com.br</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_Footer_NomeFigura" xml:space="preserve">
+    <value>rodape.jpg</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_Manchete" xml:space="preserve">
+    <value>Seu cadastro foi efetuado com sucesso!</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_MensagemLeituraAnexos" xml:space="preserve">
+    <value>O conteúdo dos anexos do e-mail "@@ASSUNTO" foi confirmado por @@CONFIRMADOR.</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_MensagemLeituraEmail" xml:space="preserve">
+    <value>O conteúdo do e-mail "@@ASSUNTO" foi confirmado por @@CONFIRMADOR.</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_MensagemLeituraEmailAnexos" xml:space="preserve">
+    <value>O conteúdo e os anexos do e-mail "@@ASSUNTO" foi confirmado  por @@CONFIRMADOR.</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_TituloHtml" xml:space="preserve">
+    <value>Email confirmado - Evimail</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_Topo_AtributoAlt" xml:space="preserve">
+    <value>Evimail - Solicitação de Confirmação</value>
+  </data>
+  <data name="TemplateEmail_ConfirmacaoEmail_Topo_NomeFigura" xml:space="preserve">
+    <value>topo.jpg</value>
+  </data>
+  <data name="FaleConosco_Mensagem_Sucesso" xml:space="preserve">
+    <value>Sua mensagem foi enviada com sucesso.&lt;br /&gt;Entraremos em contato.</value>
+  </data>
+  <data name="Login_Alerta_Invalido" xml:space="preserve">
+    <value>Login Inválido!</value>
+  </data>
+  <data name="MinhaConta_Credito_CreditosEsgotados" xml:space="preserve">
+    <value>Seus créditos se esgotaram.</value>
+  </data>
+  <data name="MinhaConta_Credito_NaoPossui" xml:space="preserve">
+    <value>Você não possui créditos.</value>
+  </data>
+  <data name="Cadastro_EmailConfirmacao_Pedido" xml:space="preserve">
+    <value>O número do seu pedido é @@NUMPEDIDO.&lt;p&gt;Atenciosamente,&lt;br /&gt;Equipe Evimail
+    </value>
+  </data>
+  <data name="ContratarServico_ErroForm_DataValidade_MenorHoje" xml:space="preserve">
+    <value>Data de validade informada é menor do que hoje</value>
+  </data>
+  <data name="ContratarServico_ErroForm_DataValidade_Invalida" xml:space="preserve">
+    <value>Data de validade inválida</value>
+  </data>
+  <data name="FaleConosco_Manchete" xml:space="preserve">
+    <value>Obrigado por se comunicar com o Evimail</value>
+  </data>
+  <data name="plano_Expirado" xml:space="preserve">
+    <value>Seu plano expirou</value>
+  </data>
+  <data name="Cancela_Renova_Plano_Sucesso" xml:space="preserve">
+    <value>Renovação cancelada com sucesso.</value>
+  </data>
+  <data name="Cancela_Renova_Plano_Erro" xml:space="preserve">
+    <value>Erro ao cancelar renovação. Por favor, tente novamente mais tarde.</value>
+  </data>
+  <data name="Remover_Email_Sucesso" xml:space="preserve">
+    <value>Email removido com sucesso.</value>
+  </data>
+  <data name="Cadastro_ErroForm_Email_Obrigatorio" xml:space="preserve">
+    <value>Campo e-mail inválido</value>
+  </data>
+  <data name="FaleConosco_Campo_Mensagem_Acima_Limite" xml:space="preserve">
+    <value>A mensagem excedeu o limite de 1024 caracteres</value>
+  </data>
+  <data name="EsqueciSenha_Email_Nao_Informado" xml:space="preserve">
+    <value>Um e-mail deve ser informado</value>
+  </data>
+</root>

@@ -1,0 +1,4 @@
+2011-12-12 16:58:09,213 DEBUG LogInFile CodPedido:393 
+2011-12-12 16:58:17,294 DEBUG LogInFile CodPedido:394 
+2011-12-12 16:58:44,267 DEBUG LogInFile CodPedido:394 
+2011-12-12 16:58:44,594 ERROR LogInFile Erro na confirmaçao do pedido: (ConfirmacaoPedido_Load, ConfirmacaoPedido.aspx): Thread was being aborted. 

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<requisicao-transacao id="1" versao="1.1.0">
+    <dados-ec><!--o número e chave da loja são os efetivos fornecidos pela cielo-->
+        <numero>1030208775</numero>
+        <!--numero oficial:1030208775 -->
+        <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+    </dados-ec>
+    <dados-portador>
+        <numero>{NumeroPortador}</numero>
+        <validade>{ValidadePortador}</validade>
+        <indicador>{IndicadorPortador}</indicador>
+        <codigo-seguranca>{CodSegPortador}</codigo-seguranca>
+        <nome-portador />
+    </dados-portador>
+    <dados-pedido>
+        <numero>{NumeroPedido}</numero>
+        <valor>{ValorPedido}</valor>
+        <moeda>{MoedaPedido}</moeda>
+        <data-hora>{DataHoraPedido}</data-hora>
+        <idioma>{IdiomaPedido}</idioma>
+    </dados-pedido>
+    <forma-pagamento>
+        <bandeira>{BandeiraFormaPgto}</bandeira>
+        <produto>{ProdutoFormaPgto}</produto>
+        <parcelas>{ParcelasFormaPgto}</parcelas>
+    </forma-pagamento>
+    <url-retorno>{UrlRetorno}</url-retorno>
+    <autorizar>{AutorizarTranzacao}</autorizar>
+    <capturar>{CapturarTransacao}</capturar>
+    <campo-livre />
+    <bin />
+</requisicao-transacao>

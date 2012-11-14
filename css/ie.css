@@ -1,0 +1,47 @@
+/*
+    If browser IE 
+*/
+
+/*---------------------------------------------------------------------------*/
+/* Header */
+/*---------------------------------------------------------------------------*/
+#menuHeader li a { background-position:left 3px; }
+#menuHeader li a.selected { background-position:left 5px; }
+
+/* Cancelar Renovação */
+
+body.minhaConta div#cboxClose {
+    bottom: 38px;
+    right: 25px;
+}
+
+* + html/*/ * /**/ body.minhaConta div#cboxClose {
+    bottom: 37px;
+}
+
+#formaPagamento fieldset.formPagamentoCard .boxTip {
+    margin-top: 13px;
+}
+
+* + html/*/ * /**/ body #formaPagamentoLeft ol li span {  
+    left: 0;
+}
+
+* + html/*/ * /**/ body span.icoFolha {
+    margin: 0 5px 0 0;
+}
+
+* + html/*/ * /**/ body .btn_sn {margin-top: -25px;}
+
+.msgMensagem {
+    padding: 0;
+}
+
+.desabilita1_box {
+    top:-2px; 
+}
+
+ 
+.desabilita2_box {
+   top:-2px; 
+}

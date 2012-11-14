@@ -1,0 +1,137 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BLL
+</name>
+</assembly>
+<members>
+<member name="M:BLL.BllServico.BuscarPorTipo(System.Int32)">
+	<summary>Retorna todos os serviços do tipo especificado.</summary>
+	<param name="pCodTipoServico">1 - Planos por Período | 2 - Pacotes de Créditos</param>
+</member><member name="M:BLL.BllParametro.ObterDetalhesParametro(System.Int32)">
+	<summary>Obtém os detalhes de um parãmetro</summary>
+	<param name="pCodParametro">Identificação do usuário</param>
+</member><member name="M:BLL.BllUsuarioManutencao.InserirUsuario(VOL.EvimailContext.UsuarioManutencao)">
+	<summary>
+ Insere um usuário da manutenção
+ </summary>
+	<param name="objUsuario">Objeto preenchido com as informações do usuário que será incluído</param>
+</member><member name="M:BLL.BllUsuarioManutencao.ValidarRegrasUsuario(System.String,System.Int32)">
+	<summary>
+ Método que aplica as regras de negócio para validação de um usuário
+ </summary>
+	<param name="EmailUsuario"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.BllUsuarioManutencao.ObterDetalhesUsuario(System.Int32)">
+	<summary>
+ Obtém as informações detalhadas do usuário
+ </summary>
+	<param name="CodUsuario">Código do usuário que deseja obter as informações</param>
+</member><member name="M:BLL.BllUsuarioManutencao.ObterDetalhesUsuario(System.String)">
+	<summary>
+ Obtém as informações detalhadas do usuário
+ </summary>
+	<param name="Identificacao">Identificação do usuário que deseja obter as informações</param>
+</member><member name="M:BLL.BllUsuarioManutencao.VerificarLogin(System.String,System.Int32)">
+	<summary>
+ Verifica se o login já está sendo utilizado por outro usuário
+ </summary>
+	<param name="Identificacao">Identificação que irá consultar</param>
+	<param name="CodUsuario">Código do usuário. Importante para alterações de dados, onde deve-se verificar se o login está sendo utilizado por outro usuário que não possua o CodUsuario informado.</param>
+</member><member name="M:BLL.BllUsuarioManutencao.IncluirRecurso(VOL.EvimailContext.Permissao)">
+	<summary>
+ Inclui um recurso da manutenção
+ </summary>
+	<param name="objUsuarioRecurso">Objeto preenchido com as informações do usuário e do recurso que será includído</param>
+</member><member name="M:BLL.BllUsuarioManutencao.ExcluirRecurso(VOL.EvimailContext.Permissao)">
+	<summary>
+ Excluir um recurso da manutenção
+ </summary>
+	<param name="objUsuarioRecurso">Objeto contendo as informações do usuário e do recurso que será excluído</param>
+</member><member name="M:BLL.BllUsuarioManutencao.ExcluirPermissoes(System.Int32)">
+	<summary>
+ Excluir todas permissões de acesso à manutenção
+ </summary>
+	<param name="CodUsuario">Código do usuário que terá as permissões excluídas</param>
+</member><member name="M:BLL.BllUsuarioManutencao.VerificarEmail(System.String,System.Int32)">
+	<summary>
+ Verifica se o e-mail já está sendo utilizado por outro usuário
+ </summary>
+	<param name="Email">E-mail que irá consultar</param>
+	<param name="CodUsuario">Código do usuário. Importante para alterações de dados, onde deve-se verificar se o e-mail está sendo utilizado por outro usuário que não possua o CodUsuario informado.</param>
+</member><member name="M:BLL.BllUsuarioManutencao.ObterDadosPorEmail(System.String)">
+	<summary>
+ Obtém as informações detalhadas do usuário
+ </summary>
+	<param name="email">e-mail do usuário que deseja obter as informações</param>
+</member><member name="M:BLL.BllUsuario.EfetuarLogin(System.String,System.String)">
+	<summary></summary>
+	<param name="pLogin">Login do usuário</param>
+	<param name="pSenha">Senha do usuário não criptografada</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.BllUsuario.SaldoPorUsuario(System.Int32)">
+	<summary>Retorna Saldo em Créditos e/ou Período em Meses, Dias, Anos. Dependendo do serviço contratado pelo usuário.</summary>
+	<param name="pCodUsuario">[dbo].[Usuarios].[CodUsuario]</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.BllUsuario.BuscarEmail(System.Int32,System.Nullable{VOL.Enumeracao.EnumDirecaoEmail},System.String,System.String,System.String,System.Nullable{VOL.Enumeracao.EnumStatusAnexoEmail},System.Nullable{VOL.Enumeracao.EnumStatusEmail},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+	<summary></summary>
+	<param name="pCodUsuario">Código do usuário logado. Que está realizando a busca.</param>
+	<param name="pDirecao"></param>
+	<param name="pRemetente"></param>
+	<param name="pDestinatario"></param>
+	<param name="pAssunto"></param>
+	<param name="pAnexos"></param>
+	<param name="pStatusEmail"></param>
+	<param name="pDataInicial"></param>
+	<param name="pDataFinal"></param>
+	<param name="pPaginaAtual">Define página atual dos resultados.</param>
+	<param name="pTamanhoPagina">Define número de resultados por página.</param>
+	<param name="pRegistros">Retorna o númrero TOTAL de registros (considera todas as páginas) da consulta.</param>
+</member><member name="M:BLL.BllUsuario.BuscarEmailDestinatarioIndividual(System.Int32,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+	<summary></summary>
+	<param name="pCodUsuario">Código do usuário logado. Que está realizando a busca.</param>
+	<param name="pDirecao"></param>
+	<param name="pRemetente"></param>
+	<param name="pDestinatario"></param>
+	<param name="pAssunto"></param>
+	<param name="pAnexos"></param>
+	<param name="pStatusEmail"></param>
+	<param name="pDataInicial"></param>
+	<param name="pDataFinal"></param>
+	<param name="pPaginaAtual">Define página atual dos resultados.</param>
+	<param name="pTamanhoPagina">Define número de resultados por página.</param>
+	<param name="pRegistros">Retorna o númrero TOTAL de registros (considera todas as páginas) da consulta.</param>
+</member><member name="M:BLL.BllRecurso.ListarRecursos(System.String)">
+	<summary>
+ Lista todos os recursos disponíveis para um usuário da manutenção
+ </summary>
+	<param name="Identificacao">Identificação do usuário</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.BllRecurso.ListarRecursosDisponiveis(System.Int32)">
+	<summary>
+ Lista todos os recursos que podem ser associados a um usuário
+ </summary>
+	<param name="CodUsuario">Código do usuário</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BLL.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:BLL.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:BLL.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

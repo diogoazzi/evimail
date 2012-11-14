@@ -1,0 +1,3 @@
+2011-09-15 11:27:52,435 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2528&idusu=133 
+2011-09-15 11:28:02,160 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): Could not save the PDF document. License expired.. 
+2011-09-15 15:19:30,227 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2527&idusu=154 

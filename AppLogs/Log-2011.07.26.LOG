@@ -1,0 +1,13 @@
+2011-07-26 15:34:27,780 ERROR LogInFile Erro configurando página: The request failed with HTTP status 401: Unauthorized.   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at WebSiteFrontEnd.wsUvaiaIntegracao.Integracao.ObterCodLojaPeloCnpj(String cnpj) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Web References\wsUvaiaIntegracao\Reference.vb:line 309
+   at WebSiteFrontEnd.ContratarServico.get_CodLojaEvimail() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 57
+   at WebSiteFrontEnd.ContratarServico.get_IsClienteUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 70
+   at WebSiteFrontEnd.ContratarServico.HabilitarCreditosUvaia() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 393
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-07-26 16:32:42,241 ERROR LogInFile Email (SendMail): Mailbox unavailable. The server response was: 5.7.1 Unable to relay for alexandre@uvaia.com.br   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at VOL.Email.SendMail() in C:\inetpub\wwwroot\Evimail\VOL\Email.vb:line 201 
+2011-07-26 18:34:39,488 ERROR LogInFile Email (SendMail): Mailbox unavailable. The server response was: 5.7.1 Unable to relay for sramalho@marlin.com.br   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at VOL.Email.SendMail() in C:\inetpub\wwwroot\Evimail\VOL\Email.vb:line 201 

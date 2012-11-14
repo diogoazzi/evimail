@@ -1,0 +1,6 @@
+2012-01-26 10:30:59,259 ERROR LogInFile Email (SendMail): Failure sending mail.   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at VOL.Email.SendMail() in C:\inetpub\wwwroot\Evimail\VOL\Email.vb:line 201 
+2012-01-26 10:36:53,366 ERROR LogInFile Email (SendMail): Failure sending mail.   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at VOL.Email.SendMail() in C:\inetpub\wwwroot\Evimail\VOL\Email.vb:line 201 
+2012-01-26 10:37:06,985 ERROR LogInFile Email (SendMail): Failure sending mail.   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at VOL.Email.SendMail() in C:\inetpub\wwwroot\Evimail\VOL\Email.vb:line 201 

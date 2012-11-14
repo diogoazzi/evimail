@@ -1,0 +1,96 @@
+2011-08-18 13:59:36,766 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 14:01:23,218 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 14:24:20,236 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 14:24:22,201 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 14:24:25,903 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 14:24:27,531 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 14:59:07,283 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-18 14:59:16,856 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-08-18 15:09:03,150 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 15:17:00,461 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 15:17:22,449 DEBUG LogInFile CodPedido:348 
+2011-08-18 15:17:23,159 DEBUG LogInFile CodPedido:348 
+2011-08-18 15:17:58,673 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 16:33:52,810 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 16:52:07,376 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 17:15:53,641 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 17:26:58,912 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 17:32:51,319 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 
+2011-08-18 17:47:48,576 DEBUG LogInFile urlCompleta: http://www.evimail.com.br/WebForms/Laudo.aspx?CodEmail=2519&idusu=154 
+2011-08-18 17:47:56,153 ERROR LogInFile EmitirLaudo.aspx.vb (ConvertURLToPDF): The remote host closed the connection. The error code is 0x80070057. 
+2011-08-18 17:47:57,126 ERROR LogInFile Erro configurando página: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Web.UI.WebControls.ListItemCollection.get_Item(Int32 index)
+   at WebSiteFrontEnd.ContratarServico.AtribuiValoresListaRadio(RadioButtonList radiobuttonList, List`1 servico) in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 333
+   at WebSiteFrontEnd.ContratarServico.DefinePrecosServicos() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 318
+   at WebSiteFrontEnd.ContratarServico.ConfigurarPagina() in C:\inetpub\wwwroot\Evimail\WebSiteFrontEnd\Webforms\ContratarServico.aspx.vb:line 301 

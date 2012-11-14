@@ -1,0 +1,2 @@
+﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="Decimal_Range.ascx.vb" Inherits="Manutencao.Decimal_Range" %>
+<asp:TextBox ID="tbMin" runat="server" Width="50px"></asp:TextBox> to <asp:TextBox ID="tbMax" runat="server" Width="50px"></asp:TextBox>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Default_Banner" xml:space="preserve">
+    <value>../img/site/home_banner.jpg</value>
+  </data>
+  <data name="Default_BlocoDireita_Conteudo1" xml:space="preserve">
+    <value>&lt;li&gt;Reduction in paper use.&lt;/li&gt;&lt;li&gt;Automatic notification when the recipient receives and reads your e-mail.&lt;/li&gt;&lt;li&gt;Issuing a technical report which proves the sending, receiving and reading e-mail, as well as the exact date and time of events.&lt;/li&gt;&lt;li&gt;Management of additional emails. You can use the Evimail with up to four different email addresses into a single account.&lt;/li&gt;</value>
+  </data>
+  <data name="Default_BlocoDireita_Conteudo2" xml:space="preserve">
+    <value>&lt;p class="color1"&gt;O Evimail possui duas modalidades de assinatura:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="color1"&gt;Créditos Unitários&lt;/span&gt; - para quem envia poucas mensagens. Dessa forma você pode contratar um pacote com número pré-definido de e-mails que atenda sua necessidade.&lt;/li&gt;&lt;li&gt;&lt;span class="color1"&gt;Por Períodos&lt;/span&gt; - Para quem trabalha com grande volume de e-mails. Nessa modalidade você poderá, dentro do período contratado, enviar um número ilimitado de mensagens; sem preocupar-se com o limite de créditos ou gastos extras.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="Default_BlocoDireita_Titulo1" xml:space="preserve">
+    <value>Benefits for you and your business</value>
+  </data>
+  <data name="Default_BlocoDireita_Titulo2" xml:space="preserve">
+    <value>Choose the best plan</value>
+  </data>
+  <data name="Default_BlocoEsquerda_Conteudo" xml:space="preserve">
+    <value>&lt;p&gt;O Evimail é uma plataforma que possibilita evidenciar as comunicações realizadas por meio de correio-eletrônico de forma simples.&lt;/p&gt;&lt;p&gt;É possível gerar um comprovante legal de que os destinatários receberam e leram suas mensagens.&lt;/p&gt;&lt;p&gt;Você pode manter um histórico permanente dos seus e-mails enviados e recebidos, bem como os anexos contidos nessas mensagens.&lt;/p&gt;</value>
+  </data>
+  <data name="Default_BlocoEsquerda_Titulo" xml:space="preserve">
+    <value>What is Evimail?</value>
+  </data>
+  <data name="wucHeader_BotaoCadastrar" xml:space="preserve">
+    <value>Cadastre-se</value>
+  </data>
+  <data name="wucHeader_BotaoLogin" xml:space="preserve">
+    <value>Faça seu login</value>
+  </data>
+  <data name="wucHeader_BotaoSair" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="wucHeader_Menu_FaleConosco" xml:space="preserve">
+    <value>Fale Conosco</value>
+  </data>
+  <data name="wucHeader_Menu_FAQ" xml:space="preserve">
+    <value>Perguntas Frequentes</value>
+  </data>
+  <data name="wucHeader_Menu_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="wucHeader_Menu_QuemSomos" xml:space="preserve">
+    <value>Quem Somos</value>
+  </data>
+  <data name="wucHeader_UsuarioCreditos" xml:space="preserve">
+    <value>Você possui &lt;span&gt;@@SALDO&lt;/span&gt; créditos</value>
+  </data>
+  <data name="wucHeader_UsuarioPlano" xml:space="preserve">
+    <value>Você ainda tem &lt;span&gt;@@SALDO dias&lt;/span&gt; para utilizar o Evimail</value>
+  </data>
+  <data name="wucHeader_UsuarioSemPlano" xml:space="preserve">
+    <value>Você não possui um serviço contratado</value>
+  </data>
+  <data name="wucHeader_TituloBotaoCadastar" xml:space="preserve">
+    <value>Novo usuário?</value>
+  </data>
+  <data name="wucHeader_TituloBotaoLogin" xml:space="preserve">
+    <value>Já é cliente?</value>
+  </data>
+</root>

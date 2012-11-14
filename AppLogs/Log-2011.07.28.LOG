@@ -1,0 +1,22 @@
+2011-07-28 10:26:40,681 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Procedure or function procBuscarEmailDestinatarioIndividual has too many arguments specified. 
+2011-07-28 10:26:40,742 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-07-28 10:30:13,979 ERROR LogInFile BuscarEmailDestinatarioIndividual (DalUsuario): Procedure or function procBuscarEmailDestinatarioIndividual has too many arguments specified. 
+2011-07-28 10:30:13,980 ERROR LogInFile BuscarEmailDestinatarioIndividual (BllUsuario): Value cannot be null.
+Parameter name: source 
+2011-07-28 11:20:48,811 DEBUG LogInFile CodPedido:342 
+2011-07-28 11:20:49,395 DEBUG LogInFile CodPedido:342 
+2011-07-28 11:20:49,579 ERROR LogInFile Email (SendMail): Mailbox unavailable. The server response was: 5.7.1 Unable to relay for sramalho@marlin.com.br   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at VOL.Email.SendMail() in C:\inetpub\wwwroot\Evimail\VOL\Email.vb:line 201 
+2011-07-28 11:45:49,933 DEBUG LogInFile CodPedido:343 
+2011-07-28 11:45:50,677 DEBUG LogInFile CodPedido:343 
+2011-07-28 16:22:14,924 ERROR LogInFile InserirEmail (DalUsuarioEmails): Violation of UNIQUE KEY constraint 'UQ1_UsuarioEmails'. Cannot insert duplicate key in object 'dbo.UsuarioEmails'.
+The statement has been terminated. 
+2011-07-28 16:22:17,223 ERROR LogInFile InserirEmail (DalUsuarioEmails): Violation of UNIQUE KEY constraint 'UQ1_UsuarioEmails'. Cannot insert duplicate key in object 'dbo.UsuarioEmails'.
+The statement has been terminated. 
+2011-07-28 16:22:17,848 ERROR LogInFile InserirEmail (DalUsuarioEmails): Violation of UNIQUE KEY constraint 'UQ1_UsuarioEmails'. Cannot insert duplicate key in object 'dbo.UsuarioEmails'.
+The statement has been terminated. 
+2011-07-28 17:59:06,493 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-07-28 17:59:06,769 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
+2011-07-28 17:59:16,279 ERROR LogInFile Erro exibindo anexo: (Page_load, ExibeAnexo)Thread was being aborted. 
