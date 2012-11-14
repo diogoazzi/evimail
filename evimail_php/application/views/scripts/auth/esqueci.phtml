@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Evimail
+</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="/img/favicon.ico" rel="shortcut icon" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" /><link href="/css/temp.css" rel="stylesheet" type="text/css" /><link href="/css/colorbox.css" rel="stylesheet" type="text/css" />
+	<script src="/js/lib/jquery.js" type="text/javascript"></script>
+	<script src="/js/cufon/cufon.js" type="text/javascript"></script>
+	<script src="/js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
+	<script src="/js/cufon-fonts.js" type="text/javascript"></script>
+	<script src="/js/base.js" type="text/javascript"></script>
+	<script src="/js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+	<script src="/js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+	
+	<!--[if IE]> 
+		<link href="/css/ie.css" rel="stylesheet" type="text/css" />
+		<script src="/js/DD_rounded.js" type="text/javascript"></script>
+		<script type="text/javascript">   
+			DD_roundies.addRule('.validation_summary', '10px');
+		</script> 
+	<![endif]-->
+	<!--[if IE 6]> 
+		<script type="text/javascript" src="/js/lib/DD_belatedPNG.js"></script> 
+		<script type="text/javascript"> DD_belatedPNG.fix('*'); </script> 
+	<![endif]-->
+
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function () {
+			//Examples of how to assign the ColorBox event to elements
+			$(".modalAlerta").colorbox({ width: "80%", height: "80%", iframe: true });
+			$(".esqueciSenha").colorbox({ width: "470px", height: "200px", iframe: true });
+		});
+
+		//function closeColorbox() {
+			//alert('1');
+			//$.fn.colorbox.close();
+		//}
+	</script>
+        
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22354822-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</head>
+<body id="body">
+
+	<?php
+	echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth));
+	?>
+	<!--/#header-->
+	<div id="container">
+		<div id="wrapper">
+		<form method="post" action="/auth/reenviasenha" id="formMain" name="formMain">
+    	<div id="ContentPlaceHolder_Body_upLogin">
+			
+            <div class="content content_login">
+                <div class="inner">
+        			<div class="esqSenha">
+			        <p>
+			            <label for="txtEmail" id="lblEmail">Informe seu e-mail:</label>
+			            <input name="email" type="text" maxlength="50" id="iptTxtLogin" class="txtBox" />
+			            <a id="btnEnviar" class="button" href="javascript:document.formMain.submit()"><span>Enviar</span></a>
+			        </p> 
+    				</div>
+    				<div class="ttp" <?php if($this->actionErrors) echo "style='display:block;'"; else echo "style='display:none;'"; ?>>
+						<label class="error" generated="true"><?php echo $this->actionErrors[0]?></label>
+					</div>	
+                </div>
+            </div>
+		</div>
+		</form>
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<div id="footer">
+        <div id="footerCont">
+        <ul>
+            <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
+            <li>|</li>
+            <li><a href="TermosCondicoes.html">Termos e Condições de Uso</a></li>
+        </ul>
+        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
+    </div>
+</div>
+	<!--/#footer-->
+
+</body>
+</html>

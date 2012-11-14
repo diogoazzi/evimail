@@ -1,0 +1,667 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Evimail
+</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<link href="../img/favicon.ico" rel="shortcut icon" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" /><link href="../css/temp.css" rel="stylesheet" type="text/css" /><link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+	<script src="../js/lib/jquery.js" type="text/javascript"></script>
+	<script src="../js/cufon/cufon.js" type="text/javascript"></script>
+	<script src="../js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
+	<script src="../js/cufon-fonts.js" type="text/javascript"></script>
+	<script src="../js/base.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+	
+	<!--[if IE]> 
+		<link href="../css/ie.css" rel="stylesheet" type="text/css" />
+		<script src="../js/DD_rounded.js" type="text/javascript"></script>
+		<script type="text/javascript">   
+			DD_roundies.addRule('.validation_summary', '10px');
+		</script> 
+	<![endif]-->
+	<!--[if IE 6]> 
+		<script type="text/javascript" src="../js/lib/DD_belatedPNG.js"></script> 
+		<script type="text/javascript"> DD_belatedPNG.fix('*'); </script> 
+	<![endif]-->
+
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function () {
+			//Examples of how to assign the ColorBox event to elements
+			$(".modalAlerta").colorbox({ width: "80%", height: "80%", iframe: true });
+			$(".esqueciSenha").colorbox({ width: "470px", height: "200px", iframe: true });
+		});
+
+		//function closeColorbox() {
+			//alert('1');
+			//$.fn.colorbox.close();
+		//}
+	</script>
+        
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22354822-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+	
+    <script type="text/javascript" language="javascript">
+        function fnCustomValidator(source, args) {
+            args.IsValid = true;
+        };
+    </script>
+</head>
+<body id="body" class="inner cadastro">
+	<form method="post" action="Cadastro.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="formMain">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTI1ODA3MDI0Nw9kFgJmD2QWAgIDDxYCHgVjbGFzcwUOaW5uZXIgY2FkYXN0cm8WAgIBD2QWBgIBD2QWAmYPDxYEHghDc3NDbGFzcwUPaGVhZGVyTmFvTG9nYWRvHgRfIVNCAgJkFgQCAw88KwANAQwUKwAFZBQrAAIWAh4EVGV4dAUESG9tZWQUKwACFgIfAwUKUXVlbSBTb21vc2QUKwACFgIfAwUUUGVyZ3VudGFzIEZyZXF1ZW50ZXNkFCsAAhYCHwMFDEZhbGUgQ29ub3Njb2RkAgUPDxYCHgdWaXNpYmxlZ2QWBgIBDxYCHwMFD0rDoSDDqSBjbGllbnRlP2QCAw8PFgIfAwUPRmHDp2Egc2V1IGxvZ2luZGQCBQ8WAh8DBQ5Ob3ZvIHVzdcOhcmlvP2QCBQ9kFg4CAQ8PFgIfAwULQ2FkYXN0cmUtc2VkZAIDDxYCHwMFJiogQ2FtcG9zIGRlIHByZWVuY2hpbWVudG8gb2JyaWdhdMOzcmlvZAIFD2QWAmYPZBZKAgEPDxYCHwMFLVRpcG8gZGUgUGVzc29hPHNwYW4gY2xhc3M9J2NvckFzdGVyJz4qPC9zcGFuPmRkAgMPEGQPFgJmAgEWAhAFDlBlc3NvYSBGw61zaWNhBQExZxAFEFBlc3NvYSBKdXLDrWRpY2EFATJnFgBkAgUPDxYCHwMFI05vbWU8c3BhbiBjbGFzcz0nY29yQXN0ZXInPio8L3NwYW4+ZGQCCQ8PFgIfAwUkRW1haWw8c3BhbiBjbGFzcz0nY29yQXN0ZXInPio8L3NwYW4+ZGQCDQ9kFg4CAQ8PFgIfAwUiQ1BGPHNwYW4gY2xhc3M9J2NvckFzdGVyJz4qPC9zcGFuPmRkAgIPD2QWBB4Kb25LZXlQcmVzcwUgcmV0dXJuIERpZ1NvbWVudGVOdW1lcm9zKGV2ZW50KTseB29uS2V5VXAFEU1hc2NhcmFDUEYodGhpcyk7ZAIDDw8WAh8DBRIoc29tZW50ZSBuw7ptZXJvcylkZAIFDw8WAh8DBSNTZXhvPHNwYW4gY2xhc3M9J2NvckFzdGVyJz4qPC9zcGFuPmRkAgYPEGQPFgJmAgEWAhAFCU1hc2N1bGlubwUBTWcQBQhGZW1pbmlubwUBRmcWAGQCCA8PFgIfAwUxRGF0YSBkZSBOYXNjaW1lbnRvPHNwYW4gY2xhc3M9J2NvckFzdGVyJz4qPC9zcGFuPmRkAgkPD2QWBB8FBSByZXR1cm4gRGlnU29tZW50ZU51bWVyb3MoZXZlbnQpOx8GBRJNYXNjYXJhRGF0YSh0aGlzKTtkAg8PZBYIAgEPDxYCHwMFI0NOUEo8c3BhbiBjbGFzcz0nY29yQXN0ZXInPio8L3NwYW4+ZGQCAg8PZBYEHwUFIHJldHVybiBEaWdTb21lbnRlTnVtZXJvcyhldmVudCk7HwYFEk1hc2NhcmFDTlBKKHRoaXMpO2QCAw8PFgIfAwUSKHNvbWVudGUgbsO6bWVyb3MpZGQCBQ8PFgIfAwUsUmF6w6NvIFNvY2lhbDxzcGFuIGNsYXNzPSdjb3JBc3Rlcic+Kjwvc3Bhbj5kZAIRDw8WAh8DBSRQYcOtczxzcGFuIGNsYXNzPSdjb3JBc3Rlcic+Kjwvc3Bhbj5kZAITDxAPFgYeDURhdGFUZXh0RmllbGQFCE5vbWVQYWlzHg5EYXRhVmFsdWVGaWVsZAUHQ29kUGFpcx4LXyFEYXRhQm91bmRnZBAV9QEJU2VsZWNpb25lDEFmZWdhbmlzdMOjbw7DgWZyaWNhIGRvIFN1bA3DhWxhbmQsIElsaGFzCEFsYsOibmlhCEFsZW1hbmhhB0FuZG9ycmEGQW5nb2xhCEFuZ3VpbGxhC0FudMOhcmN0aWRhEUFudGlndWEgZSBCYXJidWRhE0FudGlsaGFzIEhvbGFuZGVzYXMPQXLDoWJpYSBTYXVkaXRhCEFyZ8OpbGlhCUFyZ2VudGluYQhBcm3DqW5pYQVBcnViYQpBdXN0csOhbGlhCMOBdXN0cmlhC0F6ZXJiZWlqw6NvB0JhaGFtYXMHQmFocmFpbgpCYW5nbGFkZXNoCEJhcmJhZG9zCELDqWxnaWNhBkJlbGl6ZQVCZW5pbgdCZXJtdWRhDUJpZWxvLVLDunNzaWEIQm9sw612aWETQsOzc25pYS1IZXJ6ZWdvdmluYQhCb3Rzd2FuYQxCb3V2ZXQsIElsaGEGQnJhc2lsBkJydW5laQlCdWxnw6FyaWEMQnVya2luYSBGYXNvB0J1cnVuZGkGQnV0w6NvCkNhYm8gVmVyZGUIQ2FtYm9kamEJQ2FtYXLDtWVzB0NhbmFkw6ENQ2F5bWFuLCBJbGhhcwxDYXphcXVpc3TDo28bQ2VudHJvLWFmcmljYW5hLCBSZXDDumJsaWNhBUNoYWRlEUNoZWNhLCBSZXDDumJsaWNhBUNoaWxlBUNoaW5hBkNoaXByZQ9DaHJpc3RtYXMsIElsaGEMQ29jb3MsIElsaGFzCUNvbMO0bWJpYQdDb21vcmVzFENvbmdvLCBSZXDDumJsaWNhIGRvIUNvbmdvLCBSZXDDumJsaWNhIERlbW9jcsOhdGljYSBkbwtDb29rLCBJbGhhcw1Db3JlaWEgZG8gU3VsIkNvcmVpYSwgUmVww7pibGljYSBEZW1vY3LDoXRpY2EgZGEPQ29zdGEgZG8gTWFyZmltCkNvc3RhIFJpY2EIQ3Jvw6FjaWEEQ3ViYQlEaW5hbWFyY2EIRGppYm91dGkIRG9taW5pY2EWRG9taW5pY2FuYSwgUmVww7pibGljYQZFZ2lwdG8LRWwgU2FsdmFkb3IXRW1pcmF0b3Mgw4FyYWJlcyBVbmlkb3MHRXF1YWRvcghFcml0cmVpYQtFc2xvdsOhcXVpYQpFc2xvdsOpbmlhB0VzcGFuaGEaRXN0YWRvcyBVbmlkb3MgZGEgQW3DqXJpY2EIRXN0w7NuaWEIRXRpw7NwaWEMRmFyb2UsIElsaGFzBEZpamkJRmlsaXBpbmFzCkZpbmzDom5kaWEHRnJhbsOnYQZHYWLDo28HR8OibWJpYQRHYW5hCEdlw7NyZ2lhKEdlw7NyZ2lhIGRvIFN1bCBlIFNhbmR3aWNoIGRvIFN1bCwgSWxoYXMJR2licmFsdGFyB0dyw6ljaWEHR3JlbmFkYQxHcm9uZWzDom5kaWEKR3VhZGVsb3VwZQRHdWFtCUd1YXRlbWFsYQhHdWVybnNleQZHdWlhbmEPR3VpYW5hIEZyYW5jZXNhDUd1aW7DqS1CaXNzYXUOR3VpbsOpLUNvbmFjcmkRR3VpbsOpIEVxdWF0b3JpYWwFSGFpdGkcSGVhcmQgZSBJbGhhcyBNY0RvbmFsZCwgSWxoYQhIb25kdXJhcwlIb25nIEtvbmcHSHVuZ3JpYQZJw6ltZW4Gw41uZGlhCkluZG9uw6lzaWEGSXJhcXVlBUlyw6NvB0lybGFuZGEJSXNsw6JuZGlhBklzcmFlbAdJdMOhbGlhB0phbWFpY2EGSmFww6NvBkplcnNleQlKb3Jkw6JuaWEIS2lyaWJhdGkGS3V3YWl0BExhb3MGTGVzb3RvCExldMOzbmlhB0zDrWJhbm8ITGliw6lyaWEGTMOtYmlhDUxpZWNodGVuc3RlaW4JTGl0dcOibmlhCkx1eGVtYnVyZ28FTWFjYXUZTWFjZWTDs25pYSwgUmVww7pibGljYSBkYQtNYWRhZ8Ohc2NhcghNYWzDoXNpYQZNYWxhd2kITWFsZGl2YXMETWFsaQVNYWx0YQ9NYWx2aW5hcywgSWxoYXMMTWFuLCBJbGhhIGRlFk1hcmlhbmFzIFNldGVudHJpb25haXMITWFycm9jb3MPTWFyc2hhbGwsIElsaGFzCU1hcnRpbmljYQlNYXVyw61jaWELTWF1cml0w6JuaWEHTWF5b3R0ZStNZW5vcmVzIERpc3RhbnRlcyBkb3MgRXN0YWRvcyBVbmlkb3MsIElsaGFzB03DqXhpY28HTXlhbm1hciFNaWNyb27DqXNpYSwgRXN0YWRvcyBGZWRlcmFkb3MgZGELTW/Dp2FtYmlxdWUJTW9sZMOhdmlhB03Ds25hY28JTW9uZ8OzbGlhCk1vbnRlbmVncm8KTW9udHNlcnJhdAhOYW3DrWJpYQVOYXVydQVOZXBhbApOaWNhcsOhZ3VhBk7DrWdlcghOaWfDqXJpYQROaXVlDU5vcmZvbGssIElsaGEHTm9ydWVnYQ9Ob3ZhIENhbGVkw7NuaWEOTm92YSBaZWzDom5kaWEET21hbg5QYcOtc2VzIEJhaXhvcwVQYWxhdQlQYWxlc3RpbmEHUGFuYW3DoRFQYXB1YS1Ob3ZhIEd1aW7DqQpQYXF1aXN0w6NvCFBhcmFndWFpBFBlcnUIUGl0Y2Fpcm4TUG9saW7DqXNpYSBGcmFuY2VzYQhQb2zDs25pYQpQb3J0byBSaWNvCFBvcnR1Z2FsBVFhdGFyB1F1w6luaWEMUXVpcmd1aXN0w6NvL1JlaW5vIFVuaWRvIGRhIEdyw6MtQnJldGFuaGEgZSBJcmxhbmRhIGRvIE5vcnRlCFJldW5pw6NvCFJvbcOpbmlhBlJ1YW5kYQdSw7pzc2lhD1NhYXJhIE9jaWRlbnRhbA9TYW1vYSBBbWVyaWNhbmEFU2Ftb2EYU2FpbnQgUGllcnJlIGV0IE1pcXVlbG9uD1NhbG9tw6NvLCBJbGhhcxlTw6NvIENyaXN0w7N2w6NvIGUgTsOpdmlzClNhbiBNYXJpbm8WU8OjbyBUb23DqSBlIFByw61uY2lwZRlTw6NvIFZpY2VudGUgZSBHcmFuYWRpbmFzDFNhbnRhIEhlbGVuYQxTYW50YSBMw7pjaWEHU2VuZWdhbApTZXJyYSBMZW9hB1PDqXJ2aWEKU2V5Y2hlbGxlcwlTaW5nYXB1cmEGU8OtcmlhCFNvbcOhbGlhCVNyaSBMYW5rYQxTdWF6aWzDom5kaWEGU3Vkw6NvB1N1w6ljaWEHU3XDrcOnYQhTdXJpbmFtZRRTdmFsYmFyZCBlIEphbiBNYXllbgpUYWlsw6JuZGlhBlRhaXdhbgxUYWppcXVpc3TDo28JVGFuesOibmlhJ1RlcnJhcyBBdXN0cmFpcyBlIEFudMOhcnRpY2FzIEZyYW5jZXNhcyhUZXJyaXTDs3JpbyBCcml0w6JuaWNvIGRvIE9jZWFubyDDjW5kaWNvC1RpbW9yLUxlc3RlBFRvZ28IVG9xdWVsYXUFVG9uZ2ERVHJpbmRhZGUgZSBUb2JhZ28IVHVuw61zaWEOVHVya3MgZSBDYWljb3MPVHVycXVlbWVuaXN0w6NvB1R1cnF1aWEGVHV2YWx1CFVjcsOibmlhBlVnYW5kYQdVcnVndWFpDFVzYmVxdWlzdMOjbwdWYW51YXR1CFZhdGljYW5vCVZlbmV6dWVsYQhWaWV0bmFtZRlWaXJnZW5zIEFtZXJpY2FuYXMsIElsaGFzGlZpcmdlbnMgQnJpdMOibmljYXMsIElsaGFzD1dhbGxpcyBlIEZ1dHVuYQdaw6JtYmlhCFppbWJhYndlFfUBATABNAM3MTADMjQ4ATgDMjc2AjIwAjI0AzY2MAIxMAIyOAM1MzADNjgyAjEyAjMyAjUxAzUzMwIzNgI0MAIzMQI0NAI0OAI1MAI1MgI1NgI4NAMyMDQCNjADMTEyAjY4AjcwAjcyAjc0Ajc2Ajk2AzEwMAM4NTQDMTA4AjY0AzEzMgMxMTYDMTIwAzEyNAMxMzYDMzk4AzE0MAMxNDgDMjAzAzE1MgMxNTYDMTk2AzE2MgMxNjYDMTcwAzE3NAMxNzgDMTgwAzE4NAM0MTADNDA4AzM4NAMxODgDMTkxAzE5MgMyMDgDMjYyAzIxMgMyMTQDODE4AzIyMgM3ODQDMjE4AzIzMgM3MDMDNzA1AzcyNAM4NDADMjMzAzIzMQMyMzQDMjQyAzYwOAMyNDYDMjUwAzI2NgMyNzADMjg4AzI2OAMyMzkDMjkyAzMwMAMzMDgDMzA0AzMxMgMzMTYDMzIwAzgzMQMzMjgDMjU0AzYyNAMzMjQDMjI2AzMzMgMzMzQDMzQwAzM0NAMzNDgDODg3AzM1NgMzNjADMzY4AzM2NAMzNzIDMzUyAzM3NgMzODADMzg4AzM5MgM4MzIDNDAwAzI5NgM0MTQDNDE4AzQyNgM0MjgDNDIyAzQzMAM0MzQDNDM4AzQ0MAM0NDIDNDQ2AzgwNwM0NTADNDU4AzQ1NAM0NjIDNDY2AzQ3MAMyMzgDODMzAzU4MAM1MDQDNTg0AzQ3NAM0ODADNDc4AzE3NQM1ODEDNDg0AzEwNAM1ODMDNTA4AzQ5OAM0OTIDNDk2AzQ5OQM1MDADNTE2AzUyMAM1MjQDNTU4AzU2MgM1NjYDNTcwAzU3NAM1NzgDNTQwAzU1NAM1MTIDNTI4AzU4NQMyNzUDNTkxAzU5OAM1ODYDNjAwAzYwNAM2MTIDMjU4AzYxNgM2MzADNjIwAzYzNAM0MDQDNDE3AzgyNgM2MzgDNjQyAzY0NgM2NDMDNzMyAjE2Azg4MgM2NjYCOTADNjU5AzY3NAM2NzgDNjcwAzY1NAM2NjIDNjg2AzY5NAM2ODgDNjkwAzcwMgM3NjADNzA2AzE0NAM3NDgDNzM2Azc1MgM3NTYDNzQwAzc0NAM3NjQDMTU4Azc2MgM4MzQDMjYwAjg2AzYyNgM3NjgDNzcyAzc3NgM3ODADNzg4Azc5NgM3OTUDNzkyAzc5OAM4MDQDODAwAzg1OAM4NjADNTQ4AzMzNgM4NjIDNzA0Azg1MAI5MgM4NzYDODk0AzcxNhQrA/UBZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIVDw8WAh8DBSJDRVA8c3BhbiBjbGFzcz0nY29yQXN0ZXInPio8L3NwYW4+ZGQCFw8PZBYEHwUFIHJldHVybiBEaWdTb21lbnRlTnVtZXJvcyhldmVudCk7HwYFEU1hc2NhcmFDRVAodGhpcyk7ZAIZDw8WAh8DBRJOw6NvIHNhYmUgc2V1IENFUD9kZAIbDw8WAh8DBSVDaWRhZGU8c3BhbiBjbGFzcz0nY29yQXN0ZXInPio8L3NwYW4+ZGQCHw8PFgIfAwUhVUY8c3BhbiBjbGFzcz0nY29yQXN0ZXInPio8L3NwYW4+ZGQCIQ8QDxYGHwcFC1NpZ2xhRXN0YWRvHwgFCUNvZEVzdGFkbx8JZ2QQFRwCLS0CQUMCQUwCQU0CQVACQkECQ0UCREYCRVMCR08CTUECTUcCTVMCTVQCUEECUEICUEUCUEkCUFICUkoCUk4CUk8CUlICUlMCU0MCU0UCU1ACVE8VHAEwATcCMjABNgIxMAIyMQIxNQE1AjI0ATICMTMCMjMBNAEzAjEyAjE3AjE4AjE0AjI1ATECMTYBOAE5AjI3AjI2AjE5AjIyAjExFCsDHGdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIjDw8WAh8DBSlMb2dyYWRvdXJvPHNwYW4gY2xhc3M9J2NvckFzdGVyJz4qPC9zcGFuPmRkAicPDxYCHwMFJk7Dum1lcm88c3BhbiBjbGFzcz0nY29yQXN0ZXInPio8L3NwYW4+ZGQCKw8PFgIfAwULQ29tcGxlbWVudG9kZAIvDw8WAh8DBSVCYWlycm88c3BhbiBjbGFzcz0nY29yQXN0ZXInPio8L3NwYW4+ZGQCMw8PFgIfAwUvVGVsZWZvbmUgQ2VsdWxhcjxzcGFuIGNsYXNzPSdjb3JBc3Rlcic+Kjwvc3Bhbj5kZAI1Dw8WAh8DBQNERERkZAI3Dw9kFgIfBQUgcmV0dXJuIERpZ1NvbWVudGVOdW1lcm9zKGV2ZW50KTtkAjkPDxYCHwMFA1RlbGRkAjsPD2QWBB8FBSByZXR1cm4gRGlnU29tZW50ZU51bWVyb3MoZXZlbnQpOx8GBRFNYXNjYXJhVGVsKHRoaXMpO2QCPQ8PFgIfAwUSKHNvbWVudGUgbsO6bWVyb3MpZGQCPw8PFgIfAwUUVGVsZWZvbmUgUmVzaWRlbmNpYWxkZAJBDw8WAh8DBQNERERkZAJDDw9kFgIfBQUgcmV0dXJuIERpZ1NvbWVudGVOdW1lcm9zKGV2ZW50KTtkAkUPDxYCHwMFA1RlbGRkAkcPD2QWBB8FBSByZXR1cm4gRGlnU29tZW50ZU51bWVyb3MoZXZlbnQpOx8GBRFNYXNjYXJhVGVsKHRoaXMpO2QCSQ8PFgIfAwUSKHNvbWVudGUgbsO6bWVyb3MpZGQCSw8PFgIfAwUSVGVsZWZvbmUgQ29tZXJjaWFsZGQCTQ8PFgIfAwUDREREZGQCTw8PZBYCHwUFIHJldHVybiBEaWdTb21lbnRlTnVtZXJvcyhldmVudCk7ZAJRDw8WAh8DBQNUZWxkZAJTDw9kFgQfBQUgcmV0dXJuIERpZ1NvbWVudGVOdW1lcm9zKGV2ZW50KTsfBgURTWFzY2FyYVRlbCh0aGlzKTtkAlUPDxYCHwMFBVJhbWFsZGQCWQ8PFgIfAwUSKHNvbWVudGUgbsO6bWVyb3MpZGQCBw8PFgIfAwUvTm9tZSBkZSB1c3XDoXJpbzxzcGFuIGNsYXNzPSdjb3JBc3Rlcic+Kjwvc3Bhbj5kZAILDw8WAh8DBScoYWxmYW51bcOpcmljbyBlbnRyZSA2IGUgMTAgY2FyYWN0ZXJlcylkZAIND2QWAmYPZBYGAgEPDxYCHwMFJFNlbmhhPHNwYW4gY2xhc3M9J2NvckFzdGVyJz4qPC9zcGFuPmRkAgUPDxYCHwMFJyhhbGZhbnVtw6lyaWNhIGVudHJlIDYgZSAxMCBjYXJhY3RlcmVzKWRkAgcPDxYCHwMFL0NvbmZpcm1lIGEgU2VuaGE8c3BhbiBjbGFzcz0nY29yQXN0ZXInPio8L3NwYW4+ZGQCDw9kFgJmD2QWBgIBDw8WAh8DBY8QVGVybW9zIGUgQ29uZGnDp8O1ZXMgZGUgVXNvDQ1Mb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0LiBFdGlhbSBzZWQgdXJuYSBpbiBzZW0gdWx0cmljaWVzIHByZXRpdW0uIE1hZWNlbmFzIGxhb3JlZXQgY29uc2VxdWF0IGR1aSBuZWMgZmFjaWxpc2lzLiBDdW0gc29jaWlzIG5hdG9xdWUgcGVuYXRpYnVzIGV0IG1hZ25pcyBkaXMgcGFydHVyaWVudCBtb250ZXMsIG5hc2NldHVyIHJpZGljdWx1cyBtdXMuIER1aXMgYWMgZnJpbmdpbGxhIHNlbS4gVmVzdGlidWx1bSBudWxsYSB0b3J0b3IsIGxvYm9ydGlzIGluIGJsYW5kaXQgZXUsIGZlcm1lbnR1bSBpZCBuaXNpLiBFdGlhbSBhIG51bGxhIGV1IGxvcmVtIHJob25jdXMgY29uZ3VlIHF1aXMgYWMgbWFnbmEuIFNlZCBibGFuZGl0IGJsYW5kaXQgcXVhbSBpbiBzY2VsZXJpc3F1ZS4gVml2YW11cyBzZW1wZXIgZWxpdCB2aXRhZSBsaWJlcm8gYWxpcXVldCBldCBzb2RhbGVzIG1hc3NhIHJob25jdXMuIEludGVnZXIgYWMgYmliZW5kdW0gZXJhdC4NDUxvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LCBjb25zZWN0ZXR1ciBhZGlwaXNjaW5nIGVsaXQuIEV0aWFtIHNlZCB1cm5hIGluIHNlbSB1bHRyaWNpZXMgcHJldGl1bS4gTWFlY2VuYXMgbGFvcmVldCBjb25zZXF1YXQgZHVpIG5lYyBmYWNpbGlzaXMuIEN1bSBzb2NpaXMgbmF0b3F1ZSBwZW5hdGlidXMgZXQgbWFnbmlzIGRpcyBwYXJ0dXJpZW50IG1vbnRlcywgbmFzY2V0dXIgcmlkaWN1bHVzIG11cy4gRHVpcyBhYyBmcmluZ2lsbGEgc2VtLiBWZXN0aWJ1bHVtIG51bGxhIHRvcnRvciwgbG9ib3J0aXMgaW4gYmxhbmRpdCBldSwgZmVybWVudHVtIGlkIG5pc2kuIEV0aWFtIGEgbnVsbGEgZXUgbG9yZW0gcmhvbmN1cyBjb25ndWUgcXVpcyBhYyBtYWduYS4gU2VkIGJsYW5kaXQgYmxhbmRpdCBxdWFtIGluIHNjZWxlcmlzcXVlLiBWaXZhbXVzIHNlbXBlciBlbGl0IHZpdGFlIGxpYmVybyBhbGlxdWV0IGV0IHNvZGFsZXMgbWFzc2EgcmhvbmN1cy4gSW50ZWdlciBhYyBiaWJlbmR1bSBlcmF0Lg0NTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4gRXRpYW0gc2VkIHVybmEgaW4gc2VtIHVsdHJpY2llcyBwcmV0aXVtLiBNYWVjZW5hcyBsYW9yZWV0IGNvbnNlcXVhdCBkdWkgbmVjIGZhY2lsaXNpcy4gQ3VtIHNvY2lpcyBuYXRvcXVlIHBlbmF0aWJ1cyBldCBtYWduaXMgZGlzIHBhcnR1cmllbnQgbW9udGVzLCBuYXNjZXR1ciByaWRpY3VsdXMgbXVzLiBEdWlzIGFjIGZyaW5naWxsYSBzZW0uIFZlc3RpYnVsdW0gbnVsbGEgdG9ydG9yLCBsb2JvcnRpcyBpbiBibGFuZGl0IGV1LCBmZXJtZW50dW0gaWQgbmlzaS4gRXRpYW0gYSBudWxsYSBldSBsb3JlbSByaG9uY3VzIGNvbmd1ZSBxdWlzIGFjIG1hZ25hLiBTZWQgYmxhbmRpdCBibGFuZGl0IHF1YW0gaW4gc2NlbGVyaXNxdWUuIFZpdmFtdXMgc2VtcGVyIGVsaXQgdml0YWUgbGliZXJvIGFsaXF1ZXQgZXQgc29kYWxlcyBtYXNzYSByaG9uY3VzLiBJbnRlZ2VyIGFjIGJpYmVuZHVtIGVyYXQuDQ1Mb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0LiBFdGlhbSBzZWQgdXJuYSBpbiBzZW0gdWx0cmljaWVzIHByZXRpdW0uIE1hZWNlbmFzIGxhb3JlZXQgY29uc2VxdWF0IGR1aSBuZWMgZmFjaWxpc2lzLiBDdW0gc29jaWlzIG5hdG9xdWUgcGVuYXRpYnVzIGV0IG1hZ25pcyBkaXMgcGFydHVyaWVudCBtb250ZXMsIG5hc2NldHVyIHJpZGljdWx1cyBtdXMuIER1aXMgYWMgZnJpbmdpbGxhIHNlbS4gVmVzdGlidWx1bSBudWxsYSB0b3J0b3IsIGxvYm9ydGlzIGluIGJsYW5kaXQgZXUsIGZlcm1lbnR1bSBpZCBuaXNpLiBFdGlhbSBhIG51bGxhIGV1IGxvcmVtIHJob25jdXMgY29uZ3VlIHF1aXMgYWMgbWFnbmEuIFNlZCBibGFuZGl0IGJsYW5kaXQgcXVhbSBpbiBzY2VsZXJpc3F1ZS4gVml2YW11cyBzZW1wZXIgZWxpdCB2aXRhZSBsaWJlcm8gYWxpcXVldCBldCBzb2RhbGVzIG1hc3NhIHJob25jdXMuIEludGVnZXIgYWMgYmliZW5kdW0gZXJhdC5kZAIDDxAPFgQfAwUsTGkgZSBlbnRlbmRpIG9zIFRlcm1vcyBlIENvbmRpw6fDtWVzIGRlIHVzby4eB0NoZWNrZWRoZGRkZAIFDw8WBB8DBRg8c3Bhbj5DcmlhciBjb250YTwvc3Bhbj4fBGhkZAIHD2QWAgIBDxYCHwMFBDIwMTJkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBS9jdGwwMCRDb250ZW50UGxhY2VIb2xkZXJfQm9keSRjaGtUZXJtb0NvbmRpY29lc121yfdnovIjV3EfZaMeCmLQ4hVhofuNbouYKZ8rqX95" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formMain'];
+if (!theForm) {
+    theForm = document.formMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pYi-1yPyfj6-ZVqQVaJqt6xCxM8HP-Uf8KO8ZL_WxaL5Z4aB2RKtjao8m-9bNS5WG6V8yH-026Bn0l1OzHLUXWP392xgSiHkqbQS78sFkE41&amp;t=634635510940000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=BWd0jzbNchrMRu3cylIzmG2-I-1ViwWf2sl7Lh_coA4pkvIVgiAjtMLJWd5PsfpoqRE4hQXQWF4b5raf4c4pg6HH1B76R9ZIqsSoXSamhTKSsBIO6wOpcakZzOi1BuozqLpaOXHk-qBBBnLKBGPi-w2&amp;t=57d51992" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=FSq42yTuwVGNTe1ZDQM8lypie3QZ4RhEx-NWB5IJcs2dBhmHIF_DJB3yIW0Y7cpQ85WGtWOtonO9xFqRNnp3tr7tV-yWR2rNN58Xx0R_undrpUcBZGWf_sEaHjG2_xW2gOKlRvlgFF07R4zLPP_n3ohQvNnN7JtYkfONGmiuHyw1&amp;t=57d51992" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=MWKZiVNn975l4EU7UMFNOD67K9-a9paiHNmpLMOgH3TpeqJJ-_yiAhfxRzKXzAsdQ53E7bUdq6ttu8XNwzN44j4yokVG8zunAdqnWVwpNgx_2qWRAjWzwX1eHJL-FX4-DaAEI2MGQIyXiKk_ammTUY---QdHKEwkXZmkeP_MSNsOTu9SzpWEz-zRgSpK-cBw0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=AE_03CR8liGX6c9l4bbU-69Kb64xtTGarEPM6FQkDO3eGTnwLtzwaYhcBg4XxPyv8TuIXy54ZylE9B5YWQR-XXARrVrRgPZJ3NOzw12qyjR2sNH6ZHxY4Kkew_eQdAyV97tBODlGQxtuzE3S1kBrlzpO_fTO_3VZM-b4Sq1-DfdY6k591QFYfXoIH8IO70fy0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+	<div id="header" class="headerNaoLogado">
+	
+    <div id="headerCont">
+        <h1 id="logo"><a href="../Webforms/Default.aspx">Evimail Evidência</a></h1>
+        <div id="menuHeader">
+		<ul class="level1">
+			<li><a class="level1" href="Default.aspx">Home</a></li><li><a class="level1" href="QuemSomos.aspx">Quem Somos</a></li><li><a class="level1" href="PerguntasFrequentes.aspx">Perguntas Frequentes</a></li><li><a class="level1" href="FaleConosco.aspx">Fale Conosco</a></li>
+		</ul>
+	</div>
+        <div id="pnlNaoLogado">
+		
+            <div class="left">
+                <span>Já é cliente?</span>
+                <a id="lnkLogar" href="Login.aspx">Faça seu login</a>
+            </div>
+            <div class="right">
+                <span>Novo usuário?</span>
+                <a id="lnkCadastrar" href="Cadastro.aspx"></a>
+            </div>
+        
+	</div>
+        
+    </div>
+    <!--/#headerCont-->
+    
+
+</div>
+	<!--/#header-->
+	<div id="container">
+		<div id="wrapper">
+			<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', ['fctl00$ContentPlaceHolder_Body$upCadastroCima','ContentPlaceHolder_Body_upCadastroCima','tctl00$ContentPlaceHolder_Body$updSenha','ContentPlaceHolder_Body_updSenha','tctl00$ContentPlaceHolder_Body$uppnlCondicoes','ContentPlaceHolder_Body_uppnlCondicoes'], ['ctl00$ContentPlaceHolder_Body$rblTipoPessoa','ContentPlaceHolder_Body_rblTipoPessoa','ctl00$ContentPlaceHolder_Body$chkTermoCondicoes','ContentPlaceHolder_Body_chkTermoCondicoes'], [], 90, 'ctl00');
+//]]>
+</script>
+
+			
+    <div id="content">
+        <h2 class="title">
+            <span id="ContentPlaceHolder_Body_lblTitulo">Cadastre-se</span></h2>
+        <p class="campoObrig">
+            * Campos de preenchimento obrigatório</p>
+        <div class="formRounded_a rounded_a">
+            <div id="ContentPlaceHolder_Body_upCadastroCima">
+	
+                    <fieldset>
+                        <!-- Campo Eu sou -->
+                        <p>
+                            <label for="ContentPlaceHolder_Body_rblTipoPessoa" id="ContentPlaceHolder_Body_lblEuSou">Tipo de Pessoa<span class='corAster'>*</span></label>
+                            <span id="ContentPlaceHolder_Body_rblTipoPessoa"><input id="ContentPlaceHolder_Body_rblTipoPessoa_0" type="radio" name="ctl00$ContentPlaceHolder_Body$rblTipoPessoa" value="1" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblTipoPessoa$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblTipoPessoa_0">Pessoa Física</label><input id="ContentPlaceHolder_Body_rblTipoPessoa_1" type="radio" name="ctl00$ContentPlaceHolder_Body$rblTipoPessoa" value="2" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblTipoPessoa$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblTipoPessoa_1">Pessoa Jurídica</label></span>
+                        </p>
+                        <!-- Campo Nome -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtNome" id="ContentPlaceHolder_Body_lblNome">Nome<span class='corAster'>*</span></label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtNome" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtNome" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo Email -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtEmail" id="ContentPlaceHolder_Body_lblEmail">Email<span class='corAster'>*</span></label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtEmail" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtEmail" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo CPF -->
+                        
+                        <!-- Campo CNPJ -->
+                        
+                    </fieldset>
+                    <fieldset>
+                        <!-- Campo País -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_ddlPais" id="ContentPlaceHolder_Body_lblPais">País<span class='corAster'>*</span></label>
+                            <select name="ctl00$ContentPlaceHolder_Body$ddlPais" id="ContentPlaceHolder_Body_ddlPais">
+		<option value="0">Selecione</option>
+		<option value="4">Afeganist&#227;o</option>
+		<option value="710">&#193;frica do Sul</option>
+		<option value="248">&#197;land, Ilhas</option>
+		<option value="8">Alb&#226;nia</option>
+		<option value="276">Alemanha</option>
+		<option value="20">Andorra</option>
+		<option value="24">Angola</option>
+		<option value="660">Anguilla</option>
+		<option value="10">Ant&#225;rctida</option>
+		<option value="28">Antigua e Barbuda</option>
+		<option value="530">Antilhas Holandesas</option>
+		<option value="682">Ar&#225;bia Saudita</option>
+		<option value="12">Arg&#233;lia</option>
+		<option value="32">Argentina</option>
+		<option value="51">Arm&#233;nia</option>
+		<option value="533">Aruba</option>
+		<option value="36">Austr&#225;lia</option>
+		<option value="40">&#193;ustria</option>
+		<option value="31">Azerbeij&#227;o</option>
+		<option value="44">Bahamas</option>
+		<option value="48">Bahrain</option>
+		<option value="50">Bangladesh</option>
+		<option value="52">Barbados</option>
+		<option value="56">B&#233;lgica</option>
+		<option value="84">Belize</option>
+		<option value="204">Benin</option>
+		<option value="60">Bermuda</option>
+		<option value="112">Bielo-R&#250;ssia</option>
+		<option value="68">Bol&#237;via</option>
+		<option value="70">B&#243;snia-Herzegovina</option>
+		<option value="72">Botswana</option>
+		<option value="74">Bouvet, Ilha</option>
+		<option value="76">Brasil</option>
+		<option value="96">Brunei</option>
+		<option value="100">Bulg&#225;ria</option>
+		<option value="854">Burkina Faso</option>
+		<option value="108">Burundi</option>
+		<option value="64">But&#227;o</option>
+		<option value="132">Cabo Verde</option>
+		<option value="116">Cambodja</option>
+		<option value="120">Camar&#245;es</option>
+		<option value="124">Canad&#225;</option>
+		<option value="136">Cayman, Ilhas</option>
+		<option value="398">Cazaquist&#227;o</option>
+		<option value="140">Centro-africana, Rep&#250;blica</option>
+		<option value="148">Chade</option>
+		<option value="203">Checa, Rep&#250;blica</option>
+		<option value="152">Chile</option>
+		<option value="156">China</option>
+		<option value="196">Chipre</option>
+		<option value="162">Christmas, Ilha</option>
+		<option value="166">Cocos, Ilhas</option>
+		<option value="170">Col&#244;mbia</option>
+		<option value="174">Comores</option>
+		<option value="178">Congo, Rep&#250;blica do</option>
+		<option value="180">Congo, Rep&#250;blica Democr&#225;tica do</option>
+		<option value="184">Cook, Ilhas</option>
+		<option value="410">Coreia do Sul</option>
+		<option value="408">Coreia, Rep&#250;blica Democr&#225;tica da</option>
+		<option value="384">Costa do Marfim</option>
+		<option value="188">Costa Rica</option>
+		<option value="191">Cro&#225;cia</option>
+		<option value="192">Cuba</option>
+		<option value="208">Dinamarca</option>
+		<option value="262">Djibouti</option>
+		<option value="212">Dominica</option>
+		<option value="214">Dominicana, Rep&#250;blica</option>
+		<option value="818">Egipto</option>
+		<option value="222">El Salvador</option>
+		<option value="784">Emiratos &#193;rabes Unidos</option>
+		<option value="218">Equador</option>
+		<option value="232">Eritreia</option>
+		<option value="703">Eslov&#225;quia</option>
+		<option value="705">Eslov&#233;nia</option>
+		<option value="724">Espanha</option>
+		<option value="840">Estados Unidos da Am&#233;rica</option>
+		<option value="233">Est&#243;nia</option>
+		<option value="231">Eti&#243;pia</option>
+		<option value="234">Faroe, Ilhas</option>
+		<option value="242">Fiji</option>
+		<option value="608">Filipinas</option>
+		<option value="246">Finl&#226;ndia</option>
+		<option value="250">Fran&#231;a</option>
+		<option value="266">Gab&#227;o</option>
+		<option value="270">G&#226;mbia</option>
+		<option value="288">Gana</option>
+		<option value="268">Ge&#243;rgia</option>
+		<option value="239">Ge&#243;rgia do Sul e Sandwich do Sul, Ilhas</option>
+		<option value="292">Gibraltar</option>
+		<option value="300">Gr&#233;cia</option>
+		<option value="308">Grenada</option>
+		<option value="304">Gronel&#226;ndia</option>
+		<option value="312">Guadeloupe</option>
+		<option value="316">Guam</option>
+		<option value="320">Guatemala</option>
+		<option value="831">Guernsey</option>
+		<option value="328">Guiana</option>
+		<option value="254">Guiana Francesa</option>
+		<option value="624">Guin&#233;-Bissau</option>
+		<option value="324">Guin&#233;-Conacri</option>
+		<option value="226">Guin&#233; Equatorial</option>
+		<option value="332">Haiti</option>
+		<option value="334">Heard e Ilhas McDonald, Ilha</option>
+		<option value="340">Honduras</option>
+		<option value="344">Hong Kong</option>
+		<option value="348">Hungria</option>
+		<option value="887">I&#233;men</option>
+		<option value="356">&#205;ndia</option>
+		<option value="360">Indon&#233;sia</option>
+		<option value="368">Iraque</option>
+		<option value="364">Ir&#227;o</option>
+		<option value="372">Irlanda</option>
+		<option value="352">Isl&#226;ndia</option>
+		<option value="376">Israel</option>
+		<option value="380">It&#225;lia</option>
+		<option value="388">Jamaica</option>
+		<option value="392">Jap&#227;o</option>
+		<option value="832">Jersey</option>
+		<option value="400">Jord&#226;nia</option>
+		<option value="296">Kiribati</option>
+		<option value="414">Kuwait</option>
+		<option value="418">Laos</option>
+		<option value="426">Lesoto</option>
+		<option value="428">Let&#243;nia</option>
+		<option value="422">L&#237;bano</option>
+		<option value="430">Lib&#233;ria</option>
+		<option value="434">L&#237;bia</option>
+		<option value="438">Liechtenstein</option>
+		<option value="440">Litu&#226;nia</option>
+		<option value="442">Luxemburgo</option>
+		<option value="446">Macau</option>
+		<option value="807">Maced&#243;nia, Rep&#250;blica da</option>
+		<option value="450">Madag&#225;scar</option>
+		<option value="458">Mal&#225;sia</option>
+		<option value="454">Malawi</option>
+		<option value="462">Maldivas</option>
+		<option value="466">Mali</option>
+		<option value="470">Malta</option>
+		<option value="238">Malvinas, Ilhas</option>
+		<option value="833">Man, Ilha de</option>
+		<option value="580">Marianas Setentrionais</option>
+		<option value="504">Marrocos</option>
+		<option value="584">Marshall, Ilhas</option>
+		<option value="474">Martinica</option>
+		<option value="480">Maur&#237;cia</option>
+		<option value="478">Maurit&#226;nia</option>
+		<option value="175">Mayotte</option>
+		<option value="581">Menores Distantes dos Estados Unidos, Ilhas</option>
+		<option value="484">M&#233;xico</option>
+		<option value="104">Myanmar</option>
+		<option value="583">Micron&#233;sia, Estados Federados da</option>
+		<option value="508">Mo&#231;ambique</option>
+		<option value="498">Mold&#225;via</option>
+		<option value="492">M&#243;naco</option>
+		<option value="496">Mong&#243;lia</option>
+		<option value="499">Montenegro</option>
+		<option value="500">Montserrat</option>
+		<option value="516">Nam&#237;bia</option>
+		<option value="520">Nauru</option>
+		<option value="524">Nepal</option>
+		<option value="558">Nicar&#225;gua</option>
+		<option value="562">N&#237;ger</option>
+		<option value="566">Nig&#233;ria</option>
+		<option value="570">Niue</option>
+		<option value="574">Norfolk, Ilha</option>
+		<option value="578">Noruega</option>
+		<option value="540">Nova Caled&#243;nia</option>
+		<option value="554">Nova Zel&#226;ndia</option>
+		<option value="512">Oman</option>
+		<option value="528">Pa&#237;ses Baixos</option>
+		<option value="585">Palau</option>
+		<option value="275">Palestina</option>
+		<option value="591">Panam&#225;</option>
+		<option value="598">Papua-Nova Guin&#233;</option>
+		<option value="586">Paquist&#227;o</option>
+		<option value="600">Paraguai</option>
+		<option value="604">Peru</option>
+		<option value="612">Pitcairn</option>
+		<option value="258">Polin&#233;sia Francesa</option>
+		<option value="616">Pol&#243;nia</option>
+		<option value="630">Porto Rico</option>
+		<option value="620">Portugal</option>
+		<option value="634">Qatar</option>
+		<option value="404">Qu&#233;nia</option>
+		<option value="417">Quirguist&#227;o</option>
+		<option value="826">Reino Unido da Gr&#227;-Bretanha e Irlanda do Norte</option>
+		<option value="638">Reuni&#227;o</option>
+		<option value="642">Rom&#233;nia</option>
+		<option value="646">Ruanda</option>
+		<option value="643">R&#250;ssia</option>
+		<option value="732">Saara Ocidental</option>
+		<option value="16">Samoa Americana</option>
+		<option value="882">Samoa</option>
+		<option value="666">Saint Pierre et Miquelon</option>
+		<option value="90">Salom&#227;o, Ilhas</option>
+		<option value="659">S&#227;o Crist&#243;v&#227;o e N&#233;vis</option>
+		<option value="674">San Marino</option>
+		<option value="678">S&#227;o Tom&#233; e Pr&#237;ncipe</option>
+		<option value="670">S&#227;o Vicente e Granadinas</option>
+		<option value="654">Santa Helena</option>
+		<option value="662">Santa L&#250;cia</option>
+		<option value="686">Senegal</option>
+		<option value="694">Serra Leoa</option>
+		<option value="688">S&#233;rvia</option>
+		<option value="690">Seychelles</option>
+		<option value="702">Singapura</option>
+		<option value="760">S&#237;ria</option>
+		<option value="706">Som&#225;lia</option>
+		<option value="144">Sri Lanka</option>
+		<option value="748">Suazil&#226;ndia</option>
+		<option value="736">Sud&#227;o</option>
+		<option value="752">Su&#233;cia</option>
+		<option value="756">Su&#237;&#231;a</option>
+		<option value="740">Suriname</option>
+		<option value="744">Svalbard e Jan Mayen</option>
+		<option value="764">Tail&#226;ndia</option>
+		<option value="158">Taiwan</option>
+		<option value="762">Tajiquist&#227;o</option>
+		<option value="834">Tanz&#226;nia</option>
+		<option value="260">Terras Austrais e Ant&#225;rticas Francesas</option>
+		<option value="86">Territ&#243;rio Brit&#226;nico do Oceano &#205;ndico</option>
+		<option value="626">Timor-Leste</option>
+		<option value="768">Togo</option>
+		<option value="772">Toquelau</option>
+		<option value="776">Tonga</option>
+		<option value="780">Trindade e Tobago</option>
+		<option value="788">Tun&#237;sia</option>
+		<option value="796">Turks e Caicos</option>
+		<option value="795">Turquemenist&#227;o</option>
+		<option value="792">Turquia</option>
+		<option value="798">Tuvalu</option>
+		<option value="804">Ucr&#226;nia</option>
+		<option value="800">Uganda</option>
+		<option value="858">Uruguai</option>
+		<option value="860">Usbequist&#227;o</option>
+		<option value="548">Vanuatu</option>
+		<option value="336">Vaticano</option>
+		<option value="862">Venezuela</option>
+		<option value="704">Vietname</option>
+		<option value="850">Virgens Americanas, Ilhas</option>
+		<option value="92">Virgens Brit&#226;nicas, Ilhas</option>
+		<option value="876">Wallis e Futuna</option>
+		<option value="894">Z&#226;mbia</option>
+		<option value="716">Zimbabwe</option>
+
+	</select>
+                        </p>
+                        <!-- Campo CEP -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtCEP" id="ContentPlaceHolder_Body_lblCEP">CEP<span class='corAster'>*</span></label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtCEP" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtCEP" class="widthM txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraCEP(this);" />
+                            <span class="legendForm">
+                                <a id="ContentPlaceHolder_Body_lnkCEPCorreios" class="legendForm" href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">Não sabe seu CEP?</a>
+                            </span>
+                        </p>
+                        <div class="clear">
+                        </div>
+                        <!-- Campo Cidade -->
+                        <p class="floatLeft clear">
+                            <label for="ContentPlaceHolder_Body_txtCidade" id="ContentPlaceHolder_Body_lblCidade">Cidade<span class='corAster'>*</span></label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtCidade" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtCidade" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo UF -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_ddlUF" id="ContentPlaceHolder_Body_lblUF">UF<span class='corAster'>*</span></label>
+                            <select name="ctl00$ContentPlaceHolder_Body$ddlUF" id="ContentPlaceHolder_Body_ddlUF">
+		<option value="0">--</option>
+		<option value="7">AC</option>
+		<option value="20">AL</option>
+		<option value="6">AM</option>
+		<option value="10">AP</option>
+		<option value="21">BA</option>
+		<option value="15">CE</option>
+		<option value="5">DF</option>
+		<option value="24">ES</option>
+		<option value="2">GO</option>
+		<option value="13">MA</option>
+		<option value="23">MG</option>
+		<option value="4">MS</option>
+		<option value="3">MT</option>
+		<option value="12">PA</option>
+		<option value="17">PB</option>
+		<option value="18">PE</option>
+		<option value="14">PI</option>
+		<option value="25">PR</option>
+		<option value="1">RJ</option>
+		<option value="16">RN</option>
+		<option value="8">RO</option>
+		<option value="9">RR</option>
+		<option value="27">RS</option>
+		<option value="26">SC</option>
+		<option value="19">SE</option>
+		<option value="22">SP</option>
+		<option value="11">TO</option>
+
+	</select>
+                        </p>
+                        <!-- Campo Logradouro -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtLogradouro" id="ContentPlaceHolder_Body_lblLogradouro">Logradouro<span class='corAster'>*</span></label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtLogradouro" type="text" maxlength="255" id="ContentPlaceHolder_Body_txtLogradouro" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo Número -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtNumero" id="ContentPlaceHolder_Body_lblNumero">Número<span class='corAster'>*</span></label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtNumero" type="text" maxlength="10" id="ContentPlaceHolder_Body_txtNumero" class="txtBox widthPP" />
+                        </p>
+                        <!-- Campo Complemento -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtComplemento" id="ContentPlaceHolder_Body_lblComplemento">Complemento</label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtComplemento" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtComplemento" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo Bairro -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtBairro" id="ContentPlaceHolder_Body_lblBairro">Bairro<span class='corAster'>*</span></label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtBairro" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtBairro" class="txtBox widthM" />
+                        </p>
+                        <!-- Campo Telefone celular -->
+                        <dl>
+                            <dt>
+                                
+                                <label for="ContentPlaceHolder_Body_txtTelefoneCelularDDD" id="ContentPlaceHolder_Body_lblTelefoneCelular">Telefone Celular<span class='corAster'>*</span></label></dt>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneCelularDDD" id="ContentPlaceHolder_Body_lblTelefoneCelularDDD">DDD</label>
+                                <input name="ctl00$ContentPlaceHolder_Body$txtTelefoneCelularDDD" type="text" maxlength="2" id="ContentPlaceHolder_Body_txtTelefoneCelularDDD" class="txtBox widthPP" onKeyPress="return DigSomenteNumeros(event);" />
+                            </dd>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneCelularNumero" id="ContentPlaceHolder_Body_lblTelefoneCelularNumero">Tel</label>
+                                <input name="ctl00$ContentPlaceHolder_Body$txtTelefoneCelularNumero" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtTelefoneCelularNumero" class="txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraTel(this);" />
+                                <span id="ContentPlaceHolder_Body_lblTelefoneCelularObservacao" class="legendForm">(somente números)</span>
+                            </dd>
+                        </dl>
+                        <!-- Campo Telefone Residencial -->
+                        <dl>
+                            <dt>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneResidencialDDD" id="ContentPlaceHolder_Body_lblTelefoneResidencial">Telefone Residencial</label></dt>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneResidencialDDD" id="ContentPlaceHolder_Body_lblTelefoneResidencialDDD">DDD</label>
+                                <input name="ctl00$ContentPlaceHolder_Body$txtTelefoneResidencialDDD" type="text" maxlength="2" id="ContentPlaceHolder_Body_txtTelefoneResidencialDDD" class="txtBox widthPP" onKeyPress="return DigSomenteNumeros(event);" />
+                            </dd>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneResidencialNumero" id="ContentPlaceHolder_Body_lblTelefoneResidencialNumero">Tel</label>
+                                <input name="ctl00$ContentPlaceHolder_Body$txtTelefoneResidencialNumero" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtTelefoneResidencialNumero" class="txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraTel(this);" />
+                                <span id="ContentPlaceHolder_Body_lblTelefoneResidencialObservacao" class="legendForm">(somente números)</span>
+                            </dd>
+                        </dl>
+                        <!-- Campo Telefone Comercial -->
+                        <dl>
+                            <dt>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneComercialDDD" id="ContentPlaceHolder_Body_lblTelefoneComercial">Telefone Comercial</label></dt>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneComercialDDD" id="ContentPlaceHolder_Body_lblTelefoneComercialDDD">DDD</label>
+                                <input name="ctl00$ContentPlaceHolder_Body$txtTelefoneComercialDDD" type="text" maxlength="2" id="ContentPlaceHolder_Body_txtTelefoneComercialDDD" class="txtBox widthPP" onKeyPress="return DigSomenteNumeros(event);" />
+                            </dd>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneComercialNumero" id="ContentPlaceHolder_Body_lblTelefoneComercialNumero">Tel</label>
+                                <input name="ctl00$ContentPlaceHolder_Body$txtTelefoneComercialNumero" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtTelefoneComercialNumero" class="txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraTel(this);" />
+                            </dd>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneComercialRamal" id="ContentPlaceHolder_Body_lblTelefoneComercialRamal">Ramal</label>
+                                <input name="ctl00$ContentPlaceHolder_Body$txtTelefoneComercialRamal" type="text" maxlength="2" id="ContentPlaceHolder_Body_txtTelefoneComercialRamal" class="txtBox widthPP" />
+                                <span id="ContentPlaceHolder_Body_lblTelefoneComercialObservacao" class="legendForm">(somente números)</span>
+                            </dd>
+                        </dl>
+                    </fieldset>
+                
+</div>
+            <fieldset class="final">
+                <!-- Campo Nome de usuário -->
+                <p>
+                    <label for="ContentPlaceHolder_Body_txtNomeUsuario" id="ContentPlaceHolder_Body_lblNomeUsuario">Nome de usuário<span class='corAster'>*</span></label>
+                    <input name="ctl00$ContentPlaceHolder_Body$txtNomeUsuario" type="text" maxlength="10" id="ContentPlaceHolder_Body_txtNomeUsuario" class="txtBox widthMM" />
+                    <span id="ContentPlaceHolder_Body_lblNomeUsuarioObservacao" class="legendForm">(alfanumérico entre 6 e 10 caracteres)</span>
+                </p>
+                <div id="ContentPlaceHolder_Body_updSenha">
+	
+                    <p class="floatLeft">
+                        <label for="ContentPlaceHolder_Body_txtSenha" id="ContentPlaceHolder_Body_lblSenha">Senha<span class='corAster'>*</span></label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtSenha" type="password" maxlength="10" id="ContentPlaceHolder_Body_txtSenha" class="txtBox" />
+                        <span id="ContentPlaceHolder_Body_lblSenhaObservacao" class="legendForm">(alfanumérica entre 6 e 10 caracteres)</span>
+                    </p>
+                    <!-- Campo Confirme a senha -->
+                    <p class="floatLeft">
+                        <label for="ContentPlaceHolder_Body_txtConfirmeSenha" id="ContentPlaceHolder_Body_lblConfirmeSenha">Confirme a Senha<span class='corAster'>*</span></label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtConfirmeSenha" type="password" maxlength="10" id="ContentPlaceHolder_Body_txtConfirmeSenha" class="txtBox widthMM" />
+                    </p>
+                    
+</div>
+            </fieldset>
+            <!-- Campo Senha -->
+            <!-- Termo e Condições -->
+            <br />
+            <div id="ContentPlaceHolder_Body_uppnlCondicoes">
+	
+                    <textarea name="ctl00$ContentPlaceHolder_Body$txtTermosCondicoes" rows="20" cols="110" readonly="readonly" id="ContentPlaceHolder_Body_txtTermosCondicoes" class="boxWdt">
+Termos e Condi&#231;&#245;es de Uso
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem ultricies pretium. Maecenas laoreet consequat dui nec facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac fringilla sem. Vestibulum nulla tortor, lobortis in blandit eu, fermentum id nisi. Etiam a nulla eu lorem rhoncus congue quis ac magna. Sed blandit blandit quam in scelerisque. Vivamus semper elit vitae libero aliquet et sodales massa rhoncus. Integer ac bibendum erat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem ultricies pretium. Maecenas laoreet consequat dui nec facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac fringilla sem. Vestibulum nulla tortor, lobortis in blandit eu, fermentum id nisi. Etiam a nulla eu lorem rhoncus congue quis ac magna. Sed blandit blandit quam in scelerisque. Vivamus semper elit vitae libero aliquet et sodales massa rhoncus. Integer ac bibendum erat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem ultricies pretium. Maecenas laoreet consequat dui nec facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac fringilla sem. Vestibulum nulla tortor, lobortis in blandit eu, fermentum id nisi. Etiam a nulla eu lorem rhoncus congue quis ac magna. Sed blandit blandit quam in scelerisque. Vivamus semper elit vitae libero aliquet et sodales massa rhoncus. Integer ac bibendum erat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem ultricies pretium. Maecenas laoreet consequat dui nec facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac fringilla sem. Vestibulum nulla tortor, lobortis in blandit eu, fermentum id nisi. Etiam a nulla eu lorem rhoncus congue quis ac magna. Sed blandit blandit quam in scelerisque. Vivamus semper elit vitae libero aliquet et sodales massa rhoncus. Integer ac bibendum erat.</textarea>
+                    <p class="termoCondicao">
+                        <input id="ContentPlaceHolder_Body_chkTermoCondicoes" type="checkbox" name="ctl00$ContentPlaceHolder_Body$chkTermoCondicoes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$chkTermoCondicoes\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_chkTermoCondicoes">Li e entendi os Termos e Condições de uso.</label>
+                    </p>
+                    <p class="line">
+                    </p>
+                    <p class="botoes">
+                        <a href="javascript:;" id="lnkCriarConta" class="button" /><span>Cadastrar</span></a>
+                    </p>
+                
+</div>
+            <span id="ContentPlaceHolder_Body_ctvCadastro" style="display:none;"></span>
+        </div>
+    </div>
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<div id="footer">
+    <div id="footerCont">
+        <ul>
+            <li><a href="PoliticaPrivacidade.aspx">Política de Privacidade</a></li>
+            <li>|</li>
+            <li><a href="TermosCondicoes.aspx">Termos e Condições de Uso</a></li>
+        </ul>
+        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
+    </div>
+</div>
+	<!--/#footer-->
+	
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder_Body_ctvCadastro"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder_Body_ctvCadastro = document.all ? document.all["ContentPlaceHolder_Body_ctvCadastro"] : document.getElementById("ContentPlaceHolder_Body_ctvCadastro");
+ContentPlaceHolder_Body_ctvCadastro.display = "None";
+ContentPlaceHolder_Body_ctvCadastro.validationGroup = "Cadastro";
+ContentPlaceHolder_Body_ctvCadastro.evaluationfunction = "CustomValidatorEvaluateIsValid";
+ContentPlaceHolder_Body_ctvCadastro.clientvalidationfunction = "fnCustomValidator";
+//]]>
+</script>
+
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'menuHeader', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ContentPlaceHolder_Body_ctvCadastro').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_ctvCadastro'));
+}
+//]]>
+</script>
+</form>
+	<script type="text/javascript">        Cufon.now(); </script>
+</body>
+</html>

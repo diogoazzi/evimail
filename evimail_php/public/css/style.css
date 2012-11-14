@@ -1,0 +1,1696 @@
+﻿/*---------------------------------------------------------------------------*/
+/* Import */
+/*---------------------------------------------------------------------------*/
+@import url("st.stylesheet.css");
+
+
+/*---------------------------------------------------------------------------*/
+/* Font & Color */
+/*---------------------------------------------------------------------------*/
+html, body, td, th, input, textarea, select , button
+{ color:#576470; font:14px 'Trebuchet MS', Arial, sans-serif; }
+
+
+/*---------------------------------------------------------------------------*/
+/* Link */
+/*---------------------------------------------------------------------------*/
+a:link, a:visited, a:active { color:#000; cursor:pointer; text-decoration:none; }
+a:hover { text-decoration:none; }
+
+
+/*---------------------------------------------------------------------------*/
+/* Structure */
+/*---------------------------------------------------------------------------*/
+html, body { width:100%; }
+body {
+	text-align:center;
+}
+#container {
+	width:100%;
+	padding:0 0 75px;
+	overflow:hidden;
+}
+#header {
+    width:100%;
+	overflow:hidden;
+    position:relative;
+    background:url(../img/header_background.gif) repeat-x 0 0;
+}
+#header.headerNaoLogado { height:147px; }
+#header.headerLogado { height:183px; }
+#content {
+    float:left;
+    width:100%;    
+}
+#footer {
+    width:100%;
+    height:22px;
+    padding:10px 0 0;
+	overflow:hidden;
+    background:url(../img/footer_background.gif) repeat-x 0 0;
+}
+#wrapper,
+#headerCont,
+#footerCont {
+    /*width:931px;*/
+    width:945px;
+    margin:0 auto;
+    position:relative;
+    text-align:left;
+}
+
+/*---------------------------------------------------------------------------*/
+/* General Elements */
+/*---------------------------------------------------------------------------*/
+.textbox, select, textarea { border:1px solid #ccd3db; background-color:#f9f9fb; }
+select { padding:1px; }
+.textbox, textarea { padding:4px; }
+
+.mensagem-erro { display: block; padding-top: 10px; padding-left: 30px; overflow: hidden; /*float: left;*/ font-size: 11px; margin-top: 10px; color: #c60001 !important; min-height: 20px; }
+
+#minhaContaDetails span.msgAviso {
+    font-weight: normal;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+/*.erro-campo { background-color: #ffdfe0; margin-right: 10px; }*/
+
+.color1 { color:#262f37; } /*pages: home*/
+
+.alert { height:17px; padding:3px 25px 0 0; position:absolute; bottom:8px; right:0px; background:url(../img/ico_alert.gif) no-repeat right top; }
+
+/* title */
+.title { color:#f75d00; font-size:33px; text-transform:uppercase; }
+.inner .title { padding-bottom:3px; border-bottom:1px solid #ccd3db; }
+.title_1 { color:#262f37; font-size:18px; }
+.titleHome { color:#f75d00; font-size: 40px; text-transform:uppercase; margin-bottom: 10px; }
+
+/*box*/
+.rounded_a { position:relative; border:2px solid #e8ecee; }
+.rounded_a .rd_tl, .rounded_a .rd_tr,
+.rounded_a .rd_bl, .rounded_a .rd_br { position:absolute; z-index:1; width:12px; height:12px; background:#fff url(../img/rounded_background.gif) no-repeat; }
+.rounded_a .rd_tl { top:-2px; left:-2px; background-position:left top; }
+.rounded_a .rd_tr { top:-2px; right:-2px; background-position:right top; }
+.rounded_a .rd_bl { bottom:-2px; left:-2px; background-position:left bottom; }
+.rounded_a .rd_br { bottom:-2px; right:-2px; background-position:right bottom; }
+
+.boxrounded_a { width:359px; background:url(../img/box-style_mid.gif) repeat-y; }
+.boxroundedCont_a { padding:22px 16px 5px; background:url(../img/box-style_top.gif) no-repeat 0 0; }
+.boxrounded_a h4 { padding:0 3px 5px; border-bottom:1px solid #e8ecee; color:#262f37; font-size:14px; font-weight:bold; }
+.boxroundedBot_a { width:359px; height:16px; background:url(../img/box-style_bot.gif) no-repeat; }
+
+.boxTip { display:none; width:343px; min-height:150px; position:absolute; z-index:9999; background:url(../img/box-tip_top.gif) no-repeat left top; }
+.boxTipCont { margin:34px 0 0; padding:0 20px 15px 23px; background:url(../img/box-tip_bot.gif) no-repeat left bottom; color:#262f37; font-size:12px; }
+.closeBoxTip { width:17px; height:17px; position:absolute; top:17px; right:4px; text-indent:-9999px; line-height:0px; }
+.boxTip p { line-height:120%; }
+
+.boxMsg {
+    padding: 10px;
+    margin: 80px auto 0 auto;
+    width: 50%;
+}
+
+.boxMsg p {
+    color: #262f37;
+    font-size: 18px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/*table*/
+.tableStyle { width:100%; border:1px solid #b9c5cc; border-collapse:collapse; }
+.tableStyle th,
+.tableStyle td { padding:5px 9px; }
+.tableStyle th { border:solid #b9c5cc; border-width:0 1px 1px 0; background-color:#dee3e5; color:#262f37; font-size:13px; font-weight:bold; text-transform:uppercase; }
+.tableStyle td { border-left:1px solid #b9c5cc; border-bottom:1px dotted #747474; }
+.tableStyle tbody tr { background-color:#fff; }
+.tableStyle tbody tr.striped { background-color:#f6f8fa; }
+.tableStyle td a {
+    text-decoration: underline;
+}
+.tableStyle td a:hover {
+    text-decoration: none;
+}
+
+/*pagination*/
+.pagination { padding:8px 0 0; }
+.paginationMsg { float:left; width:auto; padding:6px 0 0; color:#262f37; font-size:12px; }
+.paginationPg { float:right; width:auto; }
+.paginationPg small { font-size:12px; vertical-align:middle; }
+.paginationPg .curPg,
+.paginationPg .numPg { display:inline-block; padding:3px 5px; border:1px solid #b9c5cc; font-size:13px; }
+.paginationPg .curPg { color:#f75d00; }
+.paginationPg .numPg { color:#3b4652; }
+.paginationPg .prevPg { background: url(../img/ico_pagination_right_arrow.gif) no-repeat; }
+.paginationPg .nextPg { background: url(../img/ico_pagination_right_arrow.gif) no-repeat; }
+
+/*button*/
+.button { display:inline-block; height:40px; padding:0 0 0 12px; background:url(../img/button_left.png) no-repeat; }
+.button span { display:block;  height:40px; padding:10px 18px 0 6px; background:url(../img/button_right.png) no-repeat right top; color:#fff; font-size:15px; font-weight:bold; text-align:center; text-transform:uppercase; }
+
+.btnContLine { padding-top:12px; border-top:1px solid #e8ecee; overflow: hidden;}
+.btnAdquirirPlano { display:block; width:164px; height:40px; background:url(../img/btn_adquirir-plano.gif) no-repeat; cursor:pointer; text-indent:-9999px; line-height:0px; }
+.btnProcurar { display:block; width:117px; height:40px; background:url(../img/btn_procurar.gif) no-repeat; cursor:pointer; text-indent:-9999px; line-height:0px; }
+.btnConcluirCompra { display:block; width:182px; height:40px; background:url(../img/btn_concluir-comprar.gif) no-repeat; cursor:pointer; text-indent:-9999px; line-height:0px; }
+.btnSaibaMais { display:block; height:15px; padding:5px 0 0 25px; background:url(../img/ico_more.gif) no-repeat; color:#576470; font-size:12px; }
+
+.btnContratarServico, .btnCancelarRenovar, .btnRenovar, .btnIrConta, .btnGerarPDF {
+    display:block; 
+    cursor:pointer; 
+    text-indent:-9999px; 
+    line-height:0px;
+    }
+
+.btnContratarServico {
+    width:214px; 
+    height:40px; 
+    background:url(../img/btnContrataServico.png) no-repeat; 
+    float: right; 
+    }
+
+.btnCancelarRenovar {
+    width:193px; 
+    height:40px; 
+    background:url(../img/btnCancelaRenovar.png) no-repeat; 
+    float: left; 
+    }
+
+.btnRenovar {
+    width:164px; 
+    height:40px; 
+    background:url(../img/btnRenovar.png) no-repeat; 
+    float: right; 
+    }
+
+.btnIrConta {
+    width:194px; 
+    height:41px; 
+    background:url(../img/btnVoltarConta.png) no-repeat; 
+    float: left; 
+} 
+
+.btnGerarPDF {
+    width:121px; 
+    height:40px; 
+    background:url(../img/btnGerarPDF.png) no-repeat; 
+    float: right; 
+}
+
+/*calendar*/
+/*.calendar { display:inline-block; width:32px; height:28px; margin:0 9px 0 0; background:url("../img/ico_calendar.gif") no-repeat 0 0; vertical-align:bottom; }
+.calendar.ini {}
+.calendar.fim {}*/
+
+.ajax_calendar_container { width: 200px !important; }
+.ajax_calendar_body { width: 200px !important; }
+.ajax__calendar_today { visibility:hidden; display:none;}
+
+/* Validações */
+
+.validation_summary {
+    border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+    color: #b50000;
+    font-size: 14px;
+    border: 1px solid #b50000;
+    text-align: center;
+    margin: 0 0 20px 0;
+    padding: 20px 0;
+    background-color: #ffffff;
+    behavior: url(ie-css3.htc);
+}
+
+.validation_ajuste {
+    margin: 60px 0 0 0;
+}
+.formRounded_a { margin:30px 80px 0; padding:30px 30px; }
+
+
+/*---------------------------------------------------------------------------*/
+/* Header */
+/*---------------------------------------------------------------------------*/
+#logo { position:absolute; top:8px; left:0px; background-repeat:no-repeat; }
+#logo a { display:block; text-indent:-9999px; line-height:0px; }
+#header #logo, 
+#header #logo a { width:307px; height:145px; }
+#header #logo { background-image:url(../img/evimail-logo_nao-logado.png); }
+
+#menuHeader { position:absolute; top:17px; right:33px; float:none!important; }
+#menuHeader li { float:left; width:auto; margin:0 0 0 20px; display:inline; }
+#menuHeader li a { display:block; padding:0 0 0 14px; background:url(../img/header-menu_off.gif) no-repeat left 2px; color:#fff; font-size:16px; text-transform:uppercase; }
+#menuHeader li a.selected { padding-left:18px; background-image:url(../img/header-menu_on.gif); background-position:left 4px; }
+
+#pnlNaoLogado { float:right; width:488px; margin:62px 53px 0 0; border-left:1px solid #4f575f; text-align:center; }
+#pnlNaoLogado div { width:210px; }
+#pnlNaoLogado span { display:block; color:White; font-size:19px; }
+#pnlNaoLogado .left { padding-left:57px; border-left:1px solid #9eaab4; }
+#lnkLogar, 
+#lnkCadastrar { display:inline-block; width:200px; height:50px; margin:0 auto; background:url(../img/btn_nao-logado_stripe.png) no-repeat; text-indent:-9999px; }
+#lnkLogar { background-position:left top; }
+#lnkCadastrar { background-position:right top; }
+
+#pnlLogado { float:right; width:500px; position:relative; margin:65px 42px 0 0; border-left:1px solid #4f575f; }
+#divLogadoCont { padding-left:20px; border-left:1px solid #9eaab4; }
+#divLogadoCont p { padding:8px 0; color:white; font-size:15px; margin: 0; }
+#divLogadoCont p.firstChild { padding-bottom:12px; border-bottom:1px dotted #a4abb2; }
+#divLogadoCont p span { font-size:18px; font-weight:bold; }
+#lnkSair { position:absolute; top:0px; right:0px; width:48px; height:17px; background:url(../img/btn_sair.gif) no-repeat 0 0; text-indent:-9999px; line-height:0px; }
+
+#menuUsrLogado { position:absolute; left:0px; bottom:0px; width:100%; height:37px; background:url(../img/menu-usr-logado_background.gif) repeat-x 0 0; text-align:center; }
+#menuUsrLogado ul { width:931px!important; margin:0 auto; float:none!important; }
+#menuUsrLogado ul li { float:left; width:auto; }
+#menuUsrLogado ul li a { display:block; padding:12px 0 0; border-right:1px solid #white; color:#3b4652; font-size:14px; text-transform:uppercase; }
+#menuUsrLogado ul li a span { display:block; padding:0 15px; border-right:1px solid #8e97a0; }
+#menuUsrLogado ul li.selected { height:44px; margin-top:-7px; background:url(../img/menu-usr-logado_on_mid.gif) repeat-x; }
+#menuUsrLogado ul li.selected a { height:44px; padding:0 0; border-right:none; background:url(../img/menu-usr-logado_on_left.gif) no-repeat left top; }
+#menuUsrLogado ul li.selected a span { height:21px; padding-top:19px; border-right:none; background:url(../img/menu-usr-logado_on_right.gif) no-repeat right top; }
+
+
+/*---------------------------------------------------------------------------*/
+/* Home */
+/*---------------------------------------------------------------------------*/
+.home #container { background:url(../img/container_home_background.gif) repeat-x 0 0; }
+
+#homeBanner { width:926px; height:264px; margin:32px 0 0; padding:10px 13px; background:url(../img/home-banner_background.png) no-repeat 0 0; }
+
+#homeBloco1 { float:left; width:390px; margin:30px 0 50px 0; display:inline-block; height: 290px;}
+#homeBloco1 p { padding: 0 0 20px 0; font-size:19px; line-height:110%; }
+
+#homeBloco2 { float:right; width:539px; height: 340px; margin:35px 0 0 0; display:inline; background: url(../img/homeTV.jpg) top left no-repeat;}
+#homeBloco2 h2 { margin:0 0 7px; padding:0 0 10px; border-bottom:1px solid #ccd3db; color:#262f37; font-size:18px; text-transform:uppercase; }
+#homeBloco2 ul {}
+#homeBloco2 p,
+#homeBloco2 ul li { padding-top:5px; font-size:12px; line-height:125%; }
+#homeBloco2 ul li { padding-left:10px; background:url(../img/list_li.gif) no-repeat 0 10px; }
+#homeBloco2 ul.firstChild { margin:0 0 30px; }
+
+#homeBloco3 {
+    clear: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 341px;
+    float: left;
+}
+
+#homeBloco3 ul {
+    margin: 0;
+    padding: 0;
+}
+
+#homeBloco3 ul li:first-child {
+    border: 0;
+}
+
+#homeBloco3 ul li {
+    border-top: 1px dashed #ccd3db;
+    padding: 8px 0;
+}
+
+#homeBloco3 ul li a {
+    display: block;
+    background: url(../img/homeSeta.gif) center left no-repeat;
+    padding: 7px 0 4px 40px;
+    color: #3e5c78;
+}
+
+#homeBloco3 ul li a:hover {
+    background: url(../img/homeSetaOver.gif) center left no-repeat;
+}
+
+.linkHome {
+    font-size: 18px;    
+    text-transform: uppercase;
+}
+
+#homeBloco4 {
+    width: 515px;
+    float: right;
+    margin-top: 20px;
+    padding: 20px 10px;
+}
+
+#homeBloco4 h4 {
+    font-size: 17px;
+    color: #404754;
+    font-weight: bold;
+    background: #ffffff url(../img/homeAmbiente.gif) top left no-repeat;
+    padding: 5px 0 12px 51px;
+    width: 212px;
+    margin: -35px auto 10px auto;
+}
+
+#homeBloco4 ul {
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#homeBloco4 ul li:first-child {
+    border: none;
+}
+
+#homeBloco4 ul li {
+    float: left;
+    border-left: 1px solid #d5d7da;
+    padding: 0 18px;
+}
+
+#homeBloco4 ul li span {
+    background: url(../img/homebalanca.gif) bottom no-repeat;
+    color: #f75d00;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 11px 33px 11px;
+    margin-left: 15px;
+}
+
+#homeBloco4 ul li span:first-child {
+    background: url(../img/homeIcoSeta.gif) center right no-repeat;
+    display: inline-block;
+    padding: 10px 15px 10px 0;
+    text-align: right;
+    width: 90px; 
+    font-size: 14px;
+    color: #576470;
+    font-weight: normal;
+    float: left;
+    margin: 0;
+}
+
+#homeBloco4 ul li img {
+    display: block;
+    float: left;
+}
+
+#homeBloco4 ul li span.marginHome {
+    margin: 10px 10px 0 0;
+    width: 70px;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Slide Home */
+/*---------------------------------------------------------------------------*/
+#homeBloco2 {position:relative}
+
+#homeBloco2 #slideContentInit {
+    background: url(../img/telaAzul.jpg) top left no-repeat;
+    padding: 0;
+    z-index:1000;
+}
+#homeBlock2 #slidePasso1{
+    z-index:100;    
+}
+#homeBloco2 .slide {
+    width: 367px;
+    height: 236px;
+    background: url(../img/telaLaranja.jpg) top left no-repeat;
+    top: 20px;
+    left: 87px;
+    position: absolute;
+    padding: 10px 0;
+}
+
+#homeBloco2 .slide .imgTxt {
+    margin: 0 auto;
+    display: block;
+    padding: 35px 0 29px 0;
+}
+
+#homeBloco2 #slideContentInit a {
+    display: block;
+    margin: 19px 0;
+    text-align: center;
+}
+
+#homeBloco2 .slide ul.slideNav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+    bottom: 30px;
+    right: 5px;
+}
+
+#homeBloco2 .slide ul.slideNav li {
+    float: left;
+    background: none;
+    padding: 0;
+    line-height: normal;
+    font-size: 14px;
+    margin-right: 5px
+}
+
+#homeBloco2 .slide ul.slideNav li a {
+    display: block;
+    background: url(../img/btnOff.png) center no-repeat;
+    padding: 10px;
+    color: #8c4223;
+    font-weight: bold;
+}
+
+#homeBloco2 .slide ul.slideNav li a.hover, #homeBloco2 .slide ul.slideNav li a:hover {
+    background: url(../img/btnOn.png) center no-repeat;
+    color: #000000;
+}
+
+#slidePasso1.slide {overflow:hidden;}
+#slidePasso1 .slideContent {position:absolute;top:0px;left:0px;margin:10px 0 0;padding:0px;}
+#slidePasso1 .slideContent,
+#slidePasso1 .slideContent li {height:200px;background:none;}
+#slidePasso1 .slideContent li {float:left;width:367px;margin:0px;padding:0px;}
+
+/*---------------------------------------------------------------------------*/
+/* Inner */
+/*---------------------------------------------------------------------------*/
+.inner #container { padding-top:55px;}
+
+
+/*---------------------------------------------------------------------------*/
+/* Content */
+/*---------------------------------------------------------------------------*/
+.entryContent { padding:10px 0 0; }
+.entryContent h3 { color:#262f37; font-size:18px; margin-bottom: 15px; }
+.entryContent p { margin: 0 0 15px 0; padding:0 0 5px; line-height:140%; }  
+
+
+/*---------------------------------------------------------------------------*/
+/* QuemSomos */
+/*---------------------------------------------------------------------------*/
+.quemSomos .entryContent,
+.perguntasFrequentes .entryContent { padding-bottom:37px; border-bottom:1px solid #ccd3db; }
+
+
+/*---------------------------------------------------------------------------*/
+/* PerguntasFrequentes */
+/*---------------------------------------------------------------------------*/
+.entryContent dt {  margin-bottom: 20px; padding-left: 15px; background-image: url(../img/seta.gif); background-position: bottom left; background-repeat: no-repeat; color: #262f37; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+.entryContent dt.on { background-position: top left; }
+.entryContent dd { margin-bottom: 20px; padding: 0 15px 20px 15px; border-bottom: 2px dotted #CCCCCC; }
+
+
+/*---------------------------------------------------------------------------*/
+/* MinhaConta */
+/*---------------------------------------------------------------------------*/
+.minhaConta .usrAlert { margin:20px 0 30px; color:#262f37; font-size:18px; }
+.minhaConta .usrAlert span { font-size:24px; font-weight:bold; padding: 0 5px; }
+
+/*rounded*/
+#minhaContaDetails { float:left; width:397px; padding:20px 12px 7px 12px; }
+#minhaContaDetails span { color:#171e26; font-weight:bold; }
+#minhaContaDetails p { margin:0 0 15px; padding:0 10px; }
+#minhaContaDetails .btnAdquirirPlano { float:right; }
+
+/*table*/
+#minhaContaTable { float:right; width:461px; }
+
+
+/*---------------------------------------------------------------------------*/
+/* AlterarDados */
+/*---------------------------------------------------------------------------*/
+#content .alterForm { padding: 0 110px; }
+#content .alterForm > input { display: block; margin: 20px 0 0 auto; }
+.alteraDado #content .alterForm > p {
+    margin: 20px 0 0 0;
+    text-align: right;
+}
+
+.alteraDado #content .campoObrig { color: #b50000; font-size: 0.75em; font-weight: bold; margin: 10px 0; }
+
+.alteraDado #content fieldset:first-child { border: 0; }
+.alteraDado #content fieldset { border-top: 2px dotted #CCCCCC; padding: 35px 0 12px 0; margin: 0; }
+.alteraDado #content fieldset.final { border-bottom: 1px solid #ccd3db; }
+
+.alteraDado #content p { margin: 0 20px 23px 0; }
+.alteraDado #content p.botoes {
+    text-align: right;
+    margin-top: 20px;
+}
+.alteraDado #content p > label, 
+.alteraDado #content p > span { color: #576470; font-size: 1.2em; font-weight: bold; display: block; margin: 0 0 2px 0; }
+.alteraDado #content p > span.radioSex label {
+    font-size: 0.88em;
+    font-weight: normal;
+    margin-right: 10px;
+}
+.alteraDado #content span.legendForm { display: inline; font-size: 0.75em; font-weight: normal; margin-left: 5px; }
+.alteraDado #content p span > span { margin-right: 10px; }
+.alteraDado #content p > input.aspNetDisabled { background-color: #e4eaed; color: #89949e; }
+.alteraDado #content p > span label {
+    padding-left: 5px;
+}
+
+.alteraDado #content dl { overflow: hidden; margin-bottom: 23px; }
+.alteraDado #content dt { color: #576470; font-size: 0.88em; font-weight: bold; margin: 0 0 5px 0; }
+.alteraDado #content dd { float: left; margin: 0 20px 0 0; }
+.alteraDado #content dd span, .alteraDado #content dd label { display: block; font-size:0.75em; margin-bottom:3px; }
+.alteraDado .txtBox { background-color: #f9f9fb; border: 1px solid #ccd3db; color: #576470; font-size: 0.88em; padding: 3px; }
+
+.alteraDado .legendForm a { color: #6d7983; text-decoration: underline; }
+.alteraDado #content a:hover { text-decoration: none; }
+.alteraDado .widthG { width: 315px; }
+.alteraDado .widthM { width: 120px; }
+.alteraDado .widthP { width: 70px; }
+.alteraDado .widthPP { width: 30px; }
+.alteraDado .floatLeft { float: left; }
+.alteraDado fieldset dl { clear: both; }
+
+.alteraDado #content dd span.corAster, .alteraDado #content dd label.corAster {
+    display: inline;
+}
+
+.corAster {
+    color: #b50000;
+}
+
+.final p a.acionaLightBox {
+    display: block;
+    margin-top:5px;
+}
+
+/*---------------------------------------------------------------------------*/
+/* DetalhesDoEmail */
+/*---------------------------------------------------------------------------*/
+
+.geraEmailAdd .body {
+    margin: 30px auto 0 auto;
+    padding: 0;    
+    width: 548px;
+}
+ 
+.geraEmailAdd .body > p {
+    text-align: left;
+    font-size: 18px;
+    color: #262f37;
+    border: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.geraEmailAdd .body fieldset {
+    background: url(../img/bgBorder.gif) top left repeat-y;
+    width: 548px;
+    color: #576470;
+}
+
+.geraEmailAdd .body fieldset > div {
+    padding: 10px;    
+}
+
+.geraEmailAdd .body fieldset > div .info {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #e8ecee;
+    padding-bottom: 20px;
+}
+
+.geraEmailAdd .body fieldset > div p.emailAdd {
+    margin: 0 30px;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.geraEmailAdd .body fieldset > div div.emailAdd {
+    border-top: 1px dotted #a1aeb9;
+    margin: 0 30px;
+    padding: 20px 0;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+ div.emailAdd p {
+    float: left;
+    font-weight: bold;
+ }
+
+ div.emailAdd p span {
+    font-weight: normal;
+ }
+
+div.emailAdd a {
+    float: right;
+}
+
+div.emailAdd a.remove {
+    display: block;
+    background: #d3dade url(../img/bgRemoverEmail.gif) center right no-repeat;
+    padding: 3px 20px 3px 5px;
+    text-transform: uppercase;
+    color: #262f37;
+    font-size: 12px;
+  }
+
+div.emailAdd .txtBox {
+    width: 255px;
+    margin: 6px 10px 0 0;
+    padding: 3px 5px;
+    border: 1px solid #ccd3db;
+    background-color: #f9f9fb;
+    color: #576470;
+}
+
+.geraEmailAdd .body .bordaTop {
+    background: url(../img/bgBorderTop.gif) top left no-repeat;
+    width: 548px;
+    height: 13px;
+    padding: 0;
+}
+
+.geraEmailAdd .body .bordaBottom {
+    background: url(../img/bgBorderBottom.gif) bottom left no-repeat;
+    width: 548px;
+    height: 13px;
+    padding: 0;
+}
+
+/*---------------------------------------------------------------------------*/
+/* ConsultarHistorico */
+/*---------------------------------------------------------------------------*/
+#procurarEmail { width:545px; margin:30px auto 60px; }
+#procurarEmail .title_1 { margin:0 0 10px 1px; }
+#procurarEmail fieldset { padding:30px 0 10px; }
+/*#procurarEmail fieldset div { margin:0 12px 0; padding-bottom:10px; }*/
+#procurarEmail fieldset div.campoHistorico { margin:0 12px 0; padding-bottom:10px; }
+#procurarEmail fieldset div.divCheckbox { padding-left:115px; }
+#procurarEmail .lblCheckbox { margin-right:30px; } 
+#procurarEmail .lblTextbox { display:inline-block; width:110px; text-align:right; } 
+#procurarEmail .textbox { display:inline-block; width:375px; } 
+#procurarEmail .checkbox,
+#procurarEmail .checkbox input { vertical-align:bottom; } 
+#procurarEmail .txtDataIni, 
+#procurarEmail .txtDataFim { width:80px; }
+#procurarEmail .btnProcurar { float:right; }
+#procurarEmail .btnContLine { margin-top:15px; } 
+
+/*---------------------------------------------------------------------------*/
+/* DetalhesDoEmail */
+/*---------------------------------------------------------------------------*/
+
+.head {
+    border-bottom: 1px solid #CCD3DB;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.head h3.title {
+    border: 0;
+    font-size: 14px;
+    color: #858f96;
+}
+
+.head h2.title {
+    border: 0;
+    float: left;
+    font-size: 24px;
+}
+
+.head p.title {
+    float: right;
+    border: 0;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.head p.title a {
+    background: url(../img/bulletVoltar.gif) center left no-repeat;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #3b4652; 
+}
+
+.body { 
+    padding:0 110px;
+
+}
+
+.body > div:first-child {
+    border: 0;
+}
+
+.body > div {
+    padding: 20px 0;
+    border-top: 1px dotted #262f37;
+    overflow: hidden;
+}
+
+.body > p {
+    text-align: right;
+    border-top: 1px solid #ccd3db;
+    padding-top: 20px;
+}
+
+.body .assunto {
+    border: 3px solid #dbe0e3;
+    padding: 15px;
+    font-size: 17px;
+    text-align:left;
+}
+
+.body .assunto span {
+    display: block;
+    font-weight: bold;
+    color: #262f37;
+    margin-bottom: 10px;
+}
+
+.body .tableStyle {
+    margin-top: 30px;
+}
+
+.body .tableStyle th {
+    text-align: center;
+}
+
+.body .tableStyle tr.subTitle th {
+    font-size: 12px;
+}
+
+.body .tableStyle td {
+    text-align: center;
+}
+
+.body .tableStyle td:first-child {
+    text-align: left;
+}
+
+.legendDetalhe {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.legendDetalhe span {
+    display: inline-block;
+    margin-left: 20px;
+    background: url(../img/ico_sim.gif) center left no-repeat;
+    padding: 5px 0 5px 25px;
+}
+
+.legendDetalhe span:first-child {
+    background: url(../img/ico_nao.gif) center left no-repeat;
+}
+
+.confirmado {
+    background: url(../img/ico_sim.gif) top left no-repeat;
+    width: 18px;
+    height: 18px;
+    text-indent: -9999px;
+    display: block;
+    margin: 0 auto;
+}
+
+.pendente {
+    background: url(../img/ico_nao.gif) top left no-repeat;
+    width: 18px;
+    height: 18px;
+    text-indent: -9999px;
+    display: block;
+    margin: 0 auto;
+}
+
+.box p {
+    margin-bottom: 20px;
+    color: #596670;    
+    font-size: 14px;
+    overflow: hidden; 
+    text-align: left;
+}
+
+.box > p span:first-child {
+    color: #262f37; 
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+.box > p span {
+    float: left;
+    display: block;
+    width: 610px;
+    line-height: 1.3em;
+    text-align: left;
+}
+
+.box > p span.textPlus {
+    margin: 20px 0 0 100px;
+}
+
+.box div {
+    border: 3px solid #c6cbd3;
+    background: #ededed url(../img/seloEvimail.gif) 20px center no-repeat; 
+    padding: 20px 20px 20px 159px;
+    margin: 0 100px;
+}
+
+.box div > p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.box div > p span {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.box div > span {
+    font-size: 13px;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Login */
+/*---------------------------------------------------------------------------*/
+.content_login .inner { width: auto; margin: 140px auto; }
+.content_login h2 { 
+    color: #f75d00; 
+    font-size: 2.31em; 
+    font-weight: bold; 
+    font-family: Helvetica, Arial; 
+    border-bottom: 1px solid #a5b2bd;
+    padding-bottom: 9px;
+    }
+.content_login h2 span {
+    background: url(../img/login.gif) top left no-repeat; 
+    width: 82px; 
+    height: 26px;
+    display: block;
+    text-indent: -9999px;
+    }
+    
+.content_login fieldset { width: 498px; height: 164px; margin: 3px auto; padding: 38px 35px; background: url(../img/fundoBoxLogin.gif) top left no-repeat;}
+.content_login .fields { padding: 45px 0;}
+.content_login .fields li { float: left; margin-right: 20px; }
+.content_login .fields li label { font-size: 1.18em; display: block; margin-bottom: 0.4em; }
+.content_login .fields .buttons { margin-right: 0px;}
+.content_login .btn_ok { background: url('../img/btnEntrar.gif') no-repeat 0 0; display: block; width: 99px; height: 41px; margin: 19px 0 0; text-indent: -9999px; }
+
+.content_login .esqueci_senha {}
+.content_login .esqueci_senha a { color: #376225; font-size: 1.08em; font-weight: bold; background: url('../img/bullet_arrow.png') no-repeat 0 3px; padding-left: 13px;}
+.content_login .disclaimer { font-size: 12px; text-align: center; color: #376225; }
+
+.fields { overflow: hidden; }
+.fields li { margin-right: 10px; margin-bottom: 0.81em; float: none;}
+    * html .fields li { height: 1%; }
+.fields li div.col { float: left; margin: 0 0.3em 0 0; padding: 0; }
+.fields li .error { color: #fff !important; font-size: 0.81em !important; width: 10px; height: 10px; float: left; text-indent: -9999px; }
+.fields li a { float: left; }
+.fields li > span { float: left; }
+.fields li.divisor { border-bottom: 1px solid #c0dd93; margin-bottom: 15px; padding-top: 15px; clear: both; }
+
+fieldset { margin-bottom: 20px; }
+fieldset legend {font-size:1.38em;color: #1c3910; }
+
+.fieldbox { clear:left; width: 170px; float: left;}
+.fieldbox .textbox { width: 166px; }
+.fieldbox.erro { border: 1px solid #fe5422; }
+.fieldbox.fL { margin-right: 5px; }
+
+.fields p {
+    margin: 10px 0 0 0;
+    clear: both;
+    padding: 5px 0 0;    
+}
+.fields p a, .acionaLightBox {
+    float: none;
+    background: url(../img/bulletEsqueceuSenha.png) center left no-repeat;
+    padding-left: 10px;
+    font-size: 0.85em;
+    color: #576470;
+}
+.fields p a:hover {
+    text-decoration: underline;
+}
+
+.f_login .fonte700 {
+    text-transform: uppercase;
+    padding: 0;
+}
+ 
+
+/*---------------------------------------------------------------------------*/
+/* ContratarServico */
+/*---------------------------------------------------------------------------*/
+#tipoServico { float:left; width:100%; margin:23px 0 0; padding:0 0 33px; border-bottom:1px dotted #ccd3db; position:relative; }
+#tipoServicoLeft { float:left; width:435px; padding-right:40px; border-right:1px solid #c2c9d2; }
+#tipoServicoLeft1 { float:left; width:435px; padding-right:40px; border-right:1px solid #c2c9d2; }
+#tipoServicoRight { float:right; width:435px; }
+#tipoServicoRight2 { float:right; width:435px; }
+#tipoServico .title_1 { margin:0 0 23px; }
+#tipoServico span { line-height:120%; }
+#tipoServico .opcao { height:70px; padding:20px 0 0 72px; background-repeat:no-repeat; }
+#tipoServico .opcao h3 { margin-bottom:6px; color:#262f37; font-size:24px; text-transform:uppercase; }
+#tipoServico .opcao1 { background-image:url(../img/opcao-1_background.gif); }
+#tipoServico .opcao2 { background-image:url(../img/opcao-2_background.gif); }
+#tipoServico fieldset { 
+    padding:12px 3px 0;  
+    margin: 0;
+}
+#tipoServico .radioList li, #contratarCredito .radioList li {  
+    margin-bottom:10px; 
+}
+#tipoServico .radioList li .credUvaia, #contratarCredito .radioList li .credUvaia {
+    color: #f75d00;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    background: url(../img/folha.jpg) center right no-repeat;
+    padding-right: 17px;    
+}
+#tipoServico .radioList li .semCredUvaia, #contratarCredito .radioList li .semCredUvaia {
+    color: #f75d00;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 17px;    
+}
+#tipoServico .radioList li input, #contratarCredito .radioList li input { margin-right:2px; }
+#tipoServico .boxrounded_a { margin:0 0 0 70px; }
+#tipoServico .btnSaibaMais { }
+#tipoServico .btnSaibaMais { margin:5px 0 0 74px; }
+
+#formaPagamento { float:left; width:100%; margin:25px 0 0; }
+#formaPagamento .title_1 { margin:0 0 16px; }
+#formaPagamento .boxrounded_a { width: 474px; background: url(../img/box-style_mid2.gif) repeat-y; /*margin:0 0 0 70px;*/ }
+#formaPagamento .boxroundedBot_a { width: 474px; background: url(../img/box-style_bot2.gif) repeat-y;}
+#formaPagamento .boxroundedCont_a { background: url(../img/box-style_top2.gif) no-repeat;}
+#formaPagamento fieldset { padding:15px 10px 0; margin-bottom: 0; }
+#contratarCredito fieldset { margin-bottom: 0; padding:15px 10px 0 10px;}
+#formaPagamento .btnContLine { float:left; width:100%; margin:45px 0 0; border-top-color:#ccd3db; }
+#formaPagamento .btnConcluirCompra { float:right; }
+#formaPagamento fieldset.formPagamentoCard {
+    padding: 15px 10px 0 0;
+    position: relative;
+}
+
+#formaPagamentoLeft { float:left; width:435px; }
+#formaPagamentoLeft ol li { 
+    float:left;
+    margin:0 0 0 15px; 
+    padding:45px 10px 10px 0; 
+    border-right:1px solid #e8ecee; 
+    position:relative; 
+    }
+
+#formaPagamentoLeft ol li span { width:60px; height:40px; position:absolute; top:0px; display: block; width: 90%; }
+#formaPagamentoLeft ol.bandeiraCartao li {
+    width: 118px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#formaPagamentoLeft ol.bandeiraCartao li input {
+    margin-right: 3px;
+}
+#formaPagamentoLeft ol li span.aspNetDisabled {
+    display: inherit;
+    position: static;
+    width: auto;
+    height: auto;
+    color: #bcc1c6;
+}
+
+#formaPagamentoRight { float:right; width:460px; }
+#formaPagamentoRight fieldset div { padding-bottom:6px; } 
+#formaPagamentoRight fieldset span { font-size:12px; }
+#formaPagamentoRight .lblTextbox { display:inline-block; width:145px; color:#576470; font-size:12px; text-align:right; padding:0 15px 0 13px } 
+#formaPagamentoRight .textbox { display:inline-block; width:200px; } 
+#formaPagamentoRight .textbox.textboxSmall { width:73px; }
+
+#formaPagamentoRight .formPagamento {
+    padding: 0 30px;
+}
+
+#formaPagamentoRight .formPagamento p {
+    color: #576470;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+
+#formaPagamentoRight .formPagamento p span {
+    color: #262f37;    
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#formaPagamentoRight .formPagamento .cbxRenovar {
+    display: block;
+    margin-top: 15px;
+}
+
+#formaPagamentoRight .formPagamento .cbxRenovar input {
+    margin-right: 5px;
+}
+
+#formaPagamentoRight .formPagamento .loginUvaia {
+    border-top: 1px solid #ccd3db;
+    margin: 20px 0 0;
+    padding: 20px 0 0;
+    overflow: hidden;
+}
+
+#formaPagamentoRight .formPagamento .loginUvaia p {
+    float: right;
+}
+
+#formaPagamentoRight .formPagamento .loginUvaia p:first-child {
+    float: left;
+}
+
+#formaPagamentoRight .formPagamento .loginUvaia p label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+#formaPagamentoRight .formPagamento .loginUvaia p input {
+    border: 1px solid #ccd3db;
+    background-color: #f9f9fb;
+    width: 170px;
+}
+
+span.msgCielo {
+    display: block;
+    float: left;
+    margin-top: 12px;
+    text-align: right;
+    width: 730px;
+    background: url(../img/setaCielo.jpg) center right no-repeat;
+    color: #8f98a0;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+#contratarCredito {
+    margin:23px 0 0; 
+    padding:0 0 33px; 
+    border-bottom:1px dotted #ccd3db;
+}
+
+#contratarCredito .title_1 {
+    margin-top: 50px;
+}
+
+#contratarCredito > span {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+span.icoFolha {
+    background: url(../img/folha.jpg) top left no-repeat;
+    width: 12px;
+    height: 15px;
+    display: inline-block;
+}
+
+#contratarCredito > p {
+    margin: 30px 0;
+}
+
+#contratarCredito .btnSaibaMais {
+    margin: 5px 0 0 0;
+}
+
+a.linkUvaia {
+    display: block;
+    position: absolute;
+    left: 13px;
+    top: 65px;
+    color: #576470;
+    font-size: 12px;
+    font-weight: bold;
+    background: url(../img/seta.gif) bottom right no-repeat;
+    padding: 0 13px 1px 0;
+}
+
+/* Confirmar Compra */
+
+.confirmaCompra {
+    width: 60%;
+    margin: 80px auto 0 auto;
+}
+
+.confirmaCompra > div {
+    padding: 25px 20px 15px 20px;
+}
+
+.confirmaCompra > span {
+    color: #262f37;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.confirmaCompra div p {
+    margin-bottom: 30px;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Footer */
+/*---------------------------------------------------------------------------*/
+#footer.customFooter { position:absolute; bottom:0px; left:0px; }
+#footer, #footer a { color:white; font-size:12px; }
+#footer a { text-decoration:underline; }
+#footer ul { float:left; width:auto; }
+#footer ul li { float:left; width:auto; margin:0 4px; }
+#copyright { float:right; width:auto; }
+
+
+/*---------------------------------------------------------------------------*/
+/* Fale Conosco */
+/*---------------------------------------------------------------------------*/
+#faleConoscoForm { position:relative; }
+#faleConoscoForm .campo_obrigatorio { position:absolute; top:8px; left:0px; color:#b50000; font-size:12px; font-weight:bold; }
+#faleConoscoForm fieldset { width:700px; padding:40px 0 0 105px; }
+#faleConoscoForm fieldset div { margin-bottom:30px; }
+#faleConoscoForm fieldset label { display:block; margin-bottom:6px; font-size:18px; }
+#faleConoscoForm fieldset label span { color:#de0000; }
+#faleConoscoForm fieldset .textbox { width:300px; }
+#faleConoscoForm fieldset .textarea { width:692px; height:90px; }
+#faleConoscoForm fieldset .textbox,
+#faleConoscoForm fieldset .textarea { padding:4px; border:1px solid #a5b2bd; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
+#faleConoscoForm fieldset .lblCheckbox { display:inline; margin-top:-5px; font-size:14px; }
+#faleConoscoForm fieldset .button { float:right; }
+
+/*---------------------------------------------------------------------------*/
+/* Cadastro */
+/*---------------------------------------------------------------------------*/
+
+.cadastro #content .campoObrig {
+    color: #b50000;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#content .alterForm {
+    padding: 0 110px; 
+}
+
+#content .alterForm > input {
+    display: block;
+    margin: 20px 0 0 auto;
+}
+
+.cadastro #content fieldset:first-child {
+    border: 0;
+}
+
+.cadastro #content fieldset {
+    border-top: 2px dotted #CCCCCC;
+    /*padding: 35px 0 12px 0;*/
+    padding: 15px 0px 10px 0px;
+    margin: 0;
+    float:left;
+    width:100%;
+}
+
+.cadastro #content fieldset.final {
+    margin-bottom:5px;
+}
+
+
+.cadastro #content p {
+    margin: 0 20px 23px 0;
+}
+
+.cadastro #content p > label, .cadastro #content p > span {
+    color: #576470;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    margin: 0 0 2px 0;
+}
+
+.cadastro #content p > span label {
+    margin-right: 10px;
+    padding-left:5px;
+}
+
+.cadastro #content span.legendForm { 
+    display: inline;
+    font-size: 0.75em;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.cadastro #content p span > span {
+    margin-right: 10px;
+}
+
+.cadastro #content dl { 
+    overflow: hidden;
+    margin-bottom: 23px;
+}
+
+.cadastro #content dt {
+    color: #576470;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.cadastro #content dd {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.cadastro #content dd span, .cadastro #content dd label {
+    display: block;
+    font-size:0.75em;
+    margin-bottom:3px;
+}
+
+.cadastro .txtBox {
+    background-color: #f9f9fb;
+    border: 1px solid #ccd3db;
+    color: #576470;
+    font-size: 0.88em;
+    padding: 1px 5px;
+}
+
+.cadastro #content p > input.aspNetDisabled {
+    background-color: #e4eaed;
+    color: #89949e;
+}
+
+.cadastro .legendForm a {
+    color: #6d7983;
+    text-decoration: underline;
+}
+
+.cadastro #content a:hover {
+    text-decoration: none;
+}
+
+.cadastro .widthG {
+    width: 315px;
+}
+
+.cadastro .widthMM {
+    width: 140px;
+}
+
+.cadastro .widthM {
+    width: 120px;
+}
+
+.cadastro .widthP {
+    width: 70px;
+}
+
+.cadastro .widthPP {
+    width: 57px;
+}
+
+.cadastro .floatLeft {
+    float: left;
+}
+
+.cadastro fieldset dl {
+    clear: both;
+}
+
+.cadastro #content .boxEuSou {
+    margin: 0 0 23px 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.cadastro #content .boxEuSou p:first-child {
+    float: left;
+    margin: 0;
+}
+
+.cadastro #content .boxEuSou p {
+    margin: 0 0 0 250px;
+    float: none;
+}
+
+.cadastro #content p.botoes {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.cadastro #content p.termoCondicao {
+    margin: 10px 0 0 0;
+}
+
+.cadastro #content p.termoCondicao label {
+    display: inline;
+    margin-left: 10px;
+}
+
+textarea.boxWdt {
+	width:99%;
+}
+
+.cadastro #content p.line{
+	border-bottom:1px solid #CCD3DB;
+	margin-top:30px;
+	}
+
+/*---------------------------------------------------------------------------*/
+/* ConfirmarEmail */
+/*---------------------------------------------------------------------------*/
+
+.confirmaEmail h2.title {
+    font-size: 24px;
+}
+
+.confirmaEmail .head {
+    overflow: hidden;
+    border: 0;
+    margin: 20px 0;
+    height: 70px; 
+}
+
+.confirmaEmail .head p:first-child {
+    float: left;
+    color: #262f37;
+    font-size: 17px;
+}
+
+.confirmaEmail .head p {
+    float: right;
+}
+
+.confirmaEmail .head p a {
+    display: block;
+    padding: 5px 35px 5px 5px;
+    text-transform: uppercase;
+    color: #262f37;
+    font-size: 12px;
+}
+
+.confirmaEmail .head p a.emailClose {
+    background: #d3dade url(../img/emailClose.gif) center right no-repeat;
+}
+
+.confirmaEmail .head p a.emailOpen {
+    background: #d3dade url(../img/emailOpen.gif) center right no-repeat;
+}
+
+.confirmaEmail .body {
+    margin: 30px auto 0 auto;
+    padding: 0;    
+    width: 548px;
+}
+ 
+.confirmaEmail .body > p {
+    text-align: left;
+    font-size: 16px;
+    color: #576470;
+    border: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.confirmaEmail .body fieldset {
+    background: url(../img/bgBorder.gif) top left repeat-y;
+    width: 548px;
+    color: #576470;
+}
+
+.confirmaEmail .body fieldset > div {
+    padding: 20px 30px;    
+}
+
+.confirmaEmail .body fieldset > div ul li {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.confirmaEmail .body fieldset > div ul li input {
+    float: left;
+    width: 20px;
+}
+
+.confirmaEmail .body fieldset > div ul li label {
+    margin-left: 25px;
+    display: block;
+}
+
+.confirmaEmail .body fieldset > div > div {
+    border-top: 1px dashed #a1aeb9;
+}
+
+.confirmaEmail .body fieldset > div > p {
+    border-top: 1px solid #e8ecee;    
+    text-align: right;
+    padding-top: 20px;
+} 
+
+.confirmaEmail .body .bordaTop {
+    background: url(../img/bgBorderTop.gif) top left no-repeat;
+    width: 548px;
+    height: 13px;
+    padding: 0;
+}
+
+.confirmaEmail .body .bordaBottom {
+    background: url(../img/bgBorderBottom.gif) bottom left no-repeat;
+    width: 548px;
+    height: 13px;
+    padding: 0;
+}
+
+.captchaBox {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.captchaBox > div:first-child {
+    float: left;
+}
+
+.captchaBox > div {
+    float: right;
+}
+
+.captchaBox .txtBox {
+    width: 140px;
+    margin: 6px 10px 0 0;
+    padding: 3px 5px;
+    border: 1px solid #ccd3db;
+    background-color: #f9f9fb;
+    color: #576470;
+}
+
+.captchaBox > div:first-child label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Light Box */
+/*---------------------------------------------------------------------------*/
+
+/* Esqueci Senha */
+
+.esqSenha p {
+    text-align: left;
+    margin: 25px 15px;
+}
+.esqSenha label {
+    color: #576470;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 0 0 2px 0;
+}
+.esqSenha .txtBox {
+    float: left;
+    width: 270px;
+    margin:6px 10px 0 0;
+    padding: 3px 5px;
+    border: 1px solid #ccd3db;
+    background-color: #f9f9fb;
+    color: #576470;
+    font-size: 1.0em;
+}
+.esqSenha .btnEmail {
+    float: left;
+    margin-left: 20px;
+}
+
+/* Alterar Senha */
+
+.altSenha {
+    text-align: left;
+    padding: 20px;
+}
+
+.altSenha .txtBox {
+    background-color: #f9f9fb; 
+    border: 1px solid #ccd3db; 
+    color: #576470; 
+    font-size: 0.88em; 
+    padding: 1px 5px;
+}
+
+.altSenha .alterForm {
+    margin: 45px 80px 0 80px;
+}
+
+.altSenha .alterForm p {
+    margin-bottom: 15px;
+}
+
+.altSenha .alterForm p label {
+    display: block;  
+}
+
+.altSenha .legendForm {
+    font-size: 0.75em; 
+    font-weight: normal; 
+    margin-left: 5px;
+}
+
+.altSenha .bordaAltSenha {
+    border-top: 1px solid #CCD3DB;
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.sumario {
+    color: #b50000;
+    font-size: 0.75em; 
+    font-weight: bold;
+    display: block;
+    margin: 8px; 
+}
+
+/* Alerta */
+
+.msgAlert {
+    padding:40px 0 0;
+}
+
+.msgAlert p {
+    color: #576470;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Mensagem */
+
+.msgMensagem {
+    padding: 6px 0 0 0;
+}
+
+.msgMensagem > span {
+    
+    display: inline-block;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    margin: 25px 10px 0 0;  
+}
+
+.msgMensagem div{text-align:left; text-indent:30px;  padding:1px 0;font-weight:normal; font-size:16px;}
+
+/* Cancelar Renovação */
+
+body.minhaConta div#cboxClose {
+    /*background: url(../img/btnNao.png) top left no-repeat;*/
+    width: 25px;
+    height: 25px;
+    bottom: 42px;
+    right: 25px;
+}
+
+.msgCancelaRenova {
+    text-align: left;
+    padding: 30px 30px 0 30px;
+}
+
+.msgCancelaRenova h3 {
+    color: #262f37;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.msgCancelaRenova p {
+    color: #596670;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.msgCancelaRenova span {
+    border-bottom: 1px dotted #262f37;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.desabilita1_box {
+    filter:alpha(opacity=50); 
+    opacity:0.6; 
+    height:329px; 
+    width:435px; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    z-index:1;
+    background-color:#fff;
+}
+
+ 
+.desabilita2_box {
+    filter:alpha(opacity=50); 
+    opacity:0.6; 
+    height:329px; 
+    width:435px; 
+    position:absolute; 
+    top:0; 
+    right:0; 
+    z-index:1;
+    background-color:#fff;
+}
+
+
+.relative {position:relative;}
+
+
+.btn_sn {
+    float:right;  
+    margin-top: -11px;
+}
+
+.msgMensagem {
+    padding: 0;
+}
+
+#CalendarExtender1 {
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/*---------------------------------------------------------------------------*/
+/* LaudoPDF */
+/*---------------------------------------------------------------------------*/
+#laudoPDF { width:840px; margin:30px 50px 0; padding:0 0 140px; overflow:hidden; background:url(../img/laudo_pdf_marcadagua.jpg) no-repeat left bottom; }
+#laudoPDF h3 { width:840px; height:135px; margin:0 0 77px; background:url(../img/laudo_pdf_header.jpg) no-repeat; text-indent:-9999px; line-height:0px; }
+#laudoPDF h4 { width:100%; height:33px; margin:0 0 45px; padding:0 0 8px; border-bottom:2px solid #262f37; background:url(../img/laudo_pdf_tit.jpg) no-repeat; text-indent:-9999px; line-height:0px; }
+#laudoPDF .assunto { border:none; padding:0px 0px 15px; }
+#laudoPDF .assunto span { text-transform:uppercase; }
+#laudoPDF .legendDetalhe { border-top:none; }
+#laudoPDF .box { border-top:none; }
+#laudoPDF .box > p span:first-child { text-align:left; }
+
+/*---------------------------------------------------------------------------*/
+/* Legenda */
+/*---------------------------------------------------------------------------*/
+
+.legendaConfirmacao { display: inline !important; margin-left: 29px !important; }
+.legendaConfirmacao .imagem_icoSim { margin-left:30px !important; }

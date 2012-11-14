@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Evimail
+</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<link href="../img/favicon.ico" rel="shortcut icon" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" /><link href="../css/temp.css" rel="stylesheet" type="text/css" /><link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+	<script src="../js/lib/jquery.js" type="text/javascript"></script>
+	<script src="../js/cufon/cufon.js" type="text/javascript"></script>
+	<script src="../js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
+	<script src="../js/cufon-fonts.js" type="text/javascript"></script>
+	<script src="../js/base.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+	
+	<!--[if IE]> 
+		<link href="../css/ie.css" rel="stylesheet" type="text/css" />
+		<script src="../js/DD_rounded.js" type="text/javascript"></script>
+		<script type="text/javascript">   
+			DD_roundies.addRule('.validation_summary', '10px');
+		</script> 
+	<![endif]-->
+	<!--[if IE 6]> 
+		<script type="text/javascript" src="../js/lib/DD_belatedPNG.js"></script> 
+		<script type="text/javascript"> DD_belatedPNG.fix('*'); </script> 
+	<![endif]-->
+
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function () {
+			//Examples of how to assign the ColorBox event to elements
+			$(".modalAlerta").colorbox({ width: "80%", height: "80%", iframe: true });
+			$(".esqueciSenha").colorbox({ width: "470px", height: "200px", iframe: true });
+		});
+
+		//function closeColorbox() {
+			//alert('1');
+			//$.fn.colorbox.close();
+		//}
+	</script>
+        
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22354822-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+	
+<script type="text/javascript" language="javascript">
+    function fnCustomValidator(source, args) {
+        args.IsValid = true;
+    };
+</script>
+</head>
+<body id="body" class="inner geraEmailAdd">
+	<form method="post" action="GerenciarEmails.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="formMain">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ElPPa392mIauCMdKJRyJ4UWxYI9hKM/Ba1RIAoRAPFE5+Vou1jsqdAdacbJTeSZoK3Bul0TSHvugOpmJH+VzKbnZ4e5KDAuflCiw2bgQiIQsQBs+KymcpP4WtawqfTmNIHDNVlRG/RjjOtpNftoDj3tdpYWqk+12MyYcFEA3oapp3uR2dJ7UCalhE+HmotMxgvsySOLSbeiubVuvsIO+GXmKOSpRLsoXhY/SfOiDjEJ0GH+jfD+6BTn2lGUirT+aOO+c2LWEnwGoY/CxkorlBQa4ihGl60wrkE7bepJ7Tcl6rzSO/gfi5oWUjLhmigUfCMRTuicga9rGxzc8slBpl2Ho1IjRbbJJC3prPUD2kjCJ7LMBQeoii1zxNVuEyUfI3SwJxEBo7QwfYdGlrUgTjAp5fERzUBp9rS6u5j5RDWqWcwQKDsQ/Bqe7WoaMLKIUHnWiCZDrC3gQt3yHbn94NH/FndAQ/rdFXL0N5FvT0x+kK5ZFbUovHTSmHAnYHVXtdbI8GmYzSfe70vIbSD5wQPAUdVYfDr2Z4P4eJR4APIt21m+sG2jSiVn7FbjcEWfgxWfEf0UFo77n/LI3YsWT2RTFZ/htz5VQC4JwboWP6MHZTqovyXhgjMzl+IpunRxqWHjaz6XoKhUcuGsxINDIS0e/9BHytVm6y8RVoABbGGF1fhIWhRm0kz/xhbVDmVqFTmldUpkeNn9mdV1gP7rOtV6TXcuGFT/91BQVfwwNjuCmdptu0JO9BLQcLvGQBO2Eg9Ks1uDVKmK0gGmw5UARvIp7K03qnj4xTaerEUvwDudRBLrt0LlJKhb3mc/rh3HO7CLnVE0jLsDb6/5km1hSKNqnvxBzB5P4tzHDYx/L+5BcDq6jM/6xuzUt98LMMh/pTQyOgvaAjDY+6ohmaNPPmqGfxTJpHEQ1FgWeF29P44R2MleZmau43CTUgooC6V+gfh4b5oILfSJK7gIVJkxw9fITOFSxdJbJEKniVWzTw7mIW9YQY8m9fx8gLvkG4nIpYkKljqPqmJ0xWBgyhQ4M/HIVdg5O66NRa/mU/YjStP99ndsGA0QKx/uyOC/8y0R7PGZ/vZ5setarnWFxUMOCkPPaLkSGwDPPNYXOqEQ9hEhwJu5VxJaiu0VMzU6DNSDv" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formMain'];
+if (!theForm) {
+    theForm = document.formMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pYi-1yPyfj6-ZVqQVaJqt6xCxM8HP-Uf8KO8ZL_WxaL5Z4aB2RKtjao8m-9bNS5WG6V8yH-026Bn0l1OzHLUXWP392xgSiHkqbQS78sFkE41&amp;t=634635510940000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=BWd0jzbNchrMRu3cylIzmG2-I-1ViwWf2sl7Lh_coA4pkvIVgiAjtMLJWd5PsfpoqRE4hQXQWF4b5raf4c4pg6HH1B76R9ZIqsSoXSamhTKSsBIO6wOpcakZzOi1BuozqLpaOXHk-qBBBnLKBGPi-w2&amp;t=57d51992" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=FSq42yTuwVGNTe1ZDQM8lypie3QZ4RhEx-NWB5IJcs2dBhmHIF_DJB3yIW0Y7cpQ85WGtWOtonO9xFqRNnp3tr7tV-yWR2rNN58Xx0R_undrpUcBZGWf_sEaHjG2_xW2gOKlRvlgFF07R4zLPP_n3ohQvNnN7JtYkfONGmiuHyw1&amp;t=57d51992" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=MWKZiVNn975l4EU7UMFNOD67K9-a9paiHNmpLMOgH3TpeqJJ-_yiAhfxRzKXzAsdQ53E7bUdq6ttu8XNwzN44j4yokVG8zunAdqnWVwpNgx_2qWRAjWzwX1eHJL-FX4-DaAEI2MGQIyXiKk_ammTUY---QdHKEwkXZmkeP_MSNsOTu9SzpWEz-zRgSpK-cBw0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=AE_03CR8liGX6c9l4bbU-69Kb64xtTGarEPM6FQkDO3eGTnwLtzwaYhcBg4XxPyv8TuIXy54ZylE9B5YWQR-XXARrVrRgPZJ3NOzw12qyjR2sNH6ZHxY4Kkew_eQdAyV97tBODlGQxtuzE3S1kBrlzpO_fTO_3VZM-b4Sq1-DfdY6k591QFYfXoIH8IO70fy0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="C/rnRHiETXHgaVvLlEpsDo9iqtR3sxkLgLqZy/MBahHn1zdzuCgnEoZPZx8VsI9QfD0Ht7v1Kz3hKoEJB9F9wmhv4LyZN8Zu+qWWbuc571X22RvDOhH6MEefn6A0Ldhf" />
+</div>
+	<div id="header" class="headerLogado">
+	
+    <div id="headerCont">
+        <h1 id="logo"><a href="../Webforms/Default.aspx">Evimail Evidência</a></h1>
+        <div id="menuHeader">
+		<ul class="level1">
+			<li><a class="level1" href="Default.aspx">Home</a></li><li><a class="level1" href="QuemSomos.aspx">Quem Somos</a></li><li><a class="level1" href="PerguntasFrequentes.aspx">Perguntas Frequentes</a></li><li><a class="level1" href="FaleConosco.aspx">Fale Conosco</a></li>
+		</ul>
+	</div>
+        
+        <div id="pnlLogado">
+		
+            <div id="divLogadoCont">
+                <a id="lnkSair" href="javascript:__doPostBack(&#39;ctl00$ucHeader$lnkSair&#39;,&#39;&#39;)">Sair</a>
+                <p class="firstChild">Olá,&nbsp;Gustavo de Almeida Silva</p>
+                <p>Você possui <span>26</span> crédito(s)</p>
+            </div>
+        
+	</div>
+    </div>
+    <!--/#headerCont-->
+    <div id="menuUsrLogado">
+        <ul id="ulsrLogado">
+            <li id="menuUsrLogado_Conta"><a href="MinhaConta.aspx"><span>Minha Conta</span></a></li>
+            <li id="menuUsrLogado_Dados"><a href="AlteraDado.aspx"><span>Alterar Dados</span></a></li>
+            <li id="menuUsrLogado_Emails" class="selected"><!-- class="selected"--><a href="GerenciarEmails.aspx"><span>Gerenciar Emails Adicionais</span></a></li>
+            <li id="menuUsrLogado_Contratar"><a href="ContratarServico.aspx"><span>Contratar um Serviço</span></a></li>
+            <li id="menuUsrLogado_Historico"><a href="ConsultarHistorico.aspx"><span>Consultar Histórico de Emails</span></a></li>
+        </ul>
+    </div>
+
+</div>
+	<!--/#header-->
+	<div id="container">
+		<div id="wrapper">
+			<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', ['tctl00$ContentPlaceHolder_Body$UpdatePanelEmailAdicional','ContentPlaceHolder_Body_UpdatePanelEmailAdicional'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+			
+<div id="content"> 
+    <h2 class="title">Gerenciar emails adicionais</h2>
+    <div class="body">
+        <div id="ContentPlaceHolder_Body_UpdatePanelEmailAdicional">
+	
+                <p><span id="ContentPlaceHolder_Body_lblNumEmailAdd">Você possui 1 e-mail(s) cadastrado(s)</span></p>
+                <fieldset>
+                    <div class="bordaTop"></div>
+                        <div>
+                            <p class="info">Você pode cadastrar até 3 emails adicionais</p>
+                            <p class="emailAdd">
+                                <label for="ContentPlaceHolder_Body_ltlEmailTitular" id="ContentPlaceHolder_Body_lblEmailTitular">Email Titular: </label>
+                                ffaria@marlin.com.br
+                            </p>
+                            
+                                    <div class="emailAdd">
+                                        <p>
+                                            Email 01: 
+                                            samirakcobain@gmail.com
+                                        </p>
+                                        <a id="ContentPlaceHolder_Body_ListViewEmails_lnkRemover_0" class="remove" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Body$ListViewEmails$ctrl0$lnkRemover&#39;,&#39;&#39;)">Remover</a>
+                                         
+                                    </div>
+                                
+                            <div id="ContentPlaceHolder_Body_pnlEmailAdicional" class="emailAdd">
+		
+                                <p>
+                                    
+                                </p>
+                                <p>
+                                    <label for="ContentPlaceHolder_Body_txtEmailAdicional" id="ContentPlaceHolder_Body_lblEmailAdicional">Email 02:</label>
+                                    <input name="ctl00$ContentPlaceHolder_Body$txtEmailAdicional" type="text" id="ContentPlaceHolder_Body_txtEmailAdicional" class="txtBox" />
+                                   
+                                </p>
+                                <a onclick="return true;" id="ContentPlaceHolder_Body_lnkCadastrar" class="button" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder_Body$lnkCadastrar&quot;, &quot;&quot;, true, &quot;Cadastro&quot;, &quot;&quot;, false, true))"><span>CADASTRAR</span></a>
+                                <span id="ContentPlaceHolder_Body_ctvGerenciarEmails" style="display:none;"></span>
+                            
+	</div>
+                        </div>
+                    <div class="bordaBottom"></div>
+                </fieldset>
+            
+</div>
+    </div>
+</div>
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<div id="footer">
+    <div id="footerCont">
+        <ul>
+            <li><a href="PoliticaPrivacidade.aspx">Política de Privacidade</a></li>
+            <li>|</li>
+            <li><a href="TermosCondicoes.aspx">Termos e Condições de Uso</a></li>
+        </ul>
+        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
+    </div>
+</div>
+	<!--/#footer-->
+	
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder_Body_ctvGerenciarEmails"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder_Body_ctvGerenciarEmails = document.all ? document.all["ContentPlaceHolder_Body_ctvGerenciarEmails"] : document.getElementById("ContentPlaceHolder_Body_ctvGerenciarEmails");
+ContentPlaceHolder_Body_ctvGerenciarEmails.display = "None";
+ContentPlaceHolder_Body_ctvGerenciarEmails.validationGroup = "Cadastro";
+ContentPlaceHolder_Body_ctvGerenciarEmails.evaluationfunction = "CustomValidatorEvaluateIsValid";
+ContentPlaceHolder_Body_ctvGerenciarEmails.clientvalidationfunction = "fnCustomValidator";
+//]]>
+</script>
+
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'menuHeader', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ContentPlaceHolder_Body_ctvGerenciarEmails').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_ctvGerenciarEmails'));
+}
+//]]>
+</script>
+</form>
+	<script type="text/javascript">        Cufon.now(); </script>
+</body>
+</html>

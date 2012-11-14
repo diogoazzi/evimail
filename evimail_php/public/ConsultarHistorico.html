@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Evimail
+</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<link href="../img/favicon.ico" rel="shortcut icon" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" /><link href="../css/temp.css" rel="stylesheet" type="text/css" /><link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+	<script src="../js/lib/jquery.js" type="text/javascript"></script>
+	<script src="../js/cufon/cufon.js" type="text/javascript"></script>
+	<script src="../js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
+	<script src="../js/cufon-fonts.js" type="text/javascript"></script>
+	<script src="../js/base.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+	
+	<!--[if IE]> 
+		<link href="../css/ie.css" rel="stylesheet" type="text/css" />
+		<script src="../js/DD_rounded.js" type="text/javascript"></script>
+		<script type="text/javascript">   
+			DD_roundies.addRule('.validation_summary', '10px');
+		</script> 
+	<![endif]-->
+	<!--[if IE 6]> 
+		<script type="text/javascript" src="../js/lib/DD_belatedPNG.js"></script> 
+		<script type="text/javascript"> DD_belatedPNG.fix('*'); </script> 
+	<![endif]-->
+
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function () {
+			//Examples of how to assign the ColorBox event to elements
+			$(".modalAlerta").colorbox({ width: "80%", height: "80%", iframe: true });
+			$(".esqueciSenha").colorbox({ width: "470px", height: "200px", iframe: true });
+		});
+
+		//function closeColorbox() {
+			//alert('1');
+			//$.fn.colorbox.close();
+		//}
+	</script>
+        
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22354822-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+	
+    <link rel="stylesheet" href="../css/lib/jquery-ui-datepicker.css" />
+    <script type="text/javascript" src="../js/lib/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.ui.datepicker.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.ui.datepicker-pt-BR.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var dates = $('#ContentPlaceHolder1_txtDataIni, #ContentPlaceHolder1_txtDataFim').datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1,
+                onSelect: function (selectedDate) {
+                    var option = this.id == 'ContentPlaceHolder1_txtDataIni' ? 'minDate' : 'maxDate';
+                    var instance = $(this).data('datepicker');
+                    var date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+                    dates.not(this).datepicker('option', option, date);
+                }
+            });
+
+            $('.calendar').click(function () {
+                $(this).prev('.textbox').focus();
+            });
+        });
+
+        function linhaSelecionada(linha, selecionado) {
+            //var tabela = document.getElementById(idTabela);
+            var linha = tabela.getgetElementsByTagName("tr");
+
+
+        }
+        
+        function checkDate(sender, args) {
+            if (sender._selectedDate > new Date()) {
+                alert("Você não pode selecionar uma data futura!");
+                sender._selectedDate = new Date();
+                // seleciona a data atual novamente
+                sender._textbox.set_Value(sender._selectedDate.format(sender._format))
+            }
+        }
+
+        function checkDateTxtBox(sender) {
+
+            var txtdate = sender.val()
+
+            var typedDate = new Date(txtdate)
+            var today = new Date()
+
+            if (typedDate > today) {
+
+                var day = today.getDate()
+                if (day < 10) { day = "0" + day }
+
+                var month = eval(today.getMonth() + 1)
+                if (month < 10) { month = "0" + month }
+
+                var year = today.getFullYear()
+
+                var newTxtDate = day + "/" + month + "/" + year
+
+                sender.val(newTxtDate)
+
+            }
+        }
+
+        $(document).ready(function () {
+            $(".txtDataIni, .txtDataFim").blur(function () {
+                checkDateTxtBox($(this));
+            })
+        })
+
+    </script>
+    <style type="text/css">
+        /*selecionado*/
+        .linhaHistoricoSelecionada
+        {
+            background-color: #f6f8fa !important;
+        }
+        /*desSelecionado*/
+        .linhaHistoricoDesSelecionada
+        {
+            background-color: #ffffff !important;
+        }
+    </style>
+<link href="/WebResource.axd?d=BTZ9Lkd0QDL2MLfrNK3QQjZj-qhAWM-ldib0NRUERBblyQGNMDkFqebDKccvnlDWqptjSx0huDh_5uV6cBC3gnpluDv1bbZkwXfJCCgbQk5ARZzK-MREHaZE_20tcccMlzK9TJf9HitDg4N8MRycNb2g7JItniq4dgsrOI37-Ic1&amp;t=634843043229621812" type="text/css" rel="stylesheet" /></head>
+<body id="body" class="inner consultarHistorico">
+	<form method="post" action="ConsultarHistorico.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="formMain">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTQ3MDc3MDgwNw8WBB4WSGlzdG9yaWNvX0Fic29sdXRlUGFnZQIBHg9IaXN0b3JpY29fUGFnZXMCChYCZg9kFgICAw8WAh4FY2xhc3MFGGlubmVyIGNvbnN1bHRhckhpc3RvcmljbxYCAgEPZBYGAgEPZBYCZg8PFgQeCENzc0NsYXNzBQxoZWFkZXJMb2dhZG8eBF8hU0ICAmQWBgIDDzwrAA0BDBQrAAVkFCsAAhYCHgRUZXh0BQRIb21lZBQrAAIWAh8FBQpRdWVtIFNvbW9zZBQrAAIWAh8FBRRQZXJndW50YXMgRnJlcXVlbnRlc2QUKwACFgIfBQUMRmFsZSBDb25vc2NvZGQCBw8PFgIeB1Zpc2libGVnZBYGAgEPDxYCHwUFBFNhaXJkZAIDDxYCHwUFCVNhbWlyYSBQSmQCBQ8WAh8FBShWb2PDqiBuw6NvIHBvc3N1aSB1bSBzZXJ2acOnbyBjb250cmF0YWRvZAIJDxYCHwZnFgICAQ9kFgICCQ8WAh8CBQhzZWxlY3RlZGQCBQ9kFgQCGg8UKwACZGRkAh4PFCsAAmQQFgAWABYAZAIHD2QWAgIBDxYCHwUFBDIwMTJkGAIFK2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcl9Cb2R5JGRwZ01pbmhhQ29udGEPFCsABGRkAgVmZAUqY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyX0JvZHkkbHN0SGlzdG9yaWNvDzwrAA4CDGYNAgVkbGS+e7l84Zu0G5EFmwonloM64w2hrL1ax3f+GYSh05M=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formMain'];
+if (!theForm) {
+    theForm = document.formMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pYi-1yPyfj6-ZVqQVaJqt6xCxM8HP-Uf8KO8ZL_WxaL5Z4aB2RKtjao8m-9bNS5WG6V8yH-026Bn0l1OzHLUXWP392xgSiHkqbQS78sFkE41&amp;t=634635510940000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=BWd0jzbNchrMRu3cylIzmG2-I-1ViwWf2sl7Lh_coA4pkvIVgiAjtMLJWd5PsfpoqRE4hQXQWF4b5raf4c4pg6HH1B76R9ZIqsSoXSamhTKSsBIO6wOpcakZzOi1BuozqLpaOXHk-qBBBnLKBGPi-w2&amp;t=57d51992" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=FSq42yTuwVGNTe1ZDQM8lypie3QZ4RhEx-NWB5IJcs2dBhmHIF_DJB3yIW0Y7cpQ85WGtWOtonO9xFqRNnp3tr7tV-yWR2rNN58Xx0R_undrpUcBZGWf_sEaHjG2_xW2gOKlRvlgFF07R4zLPP_n3ohQvNnN7JtYkfONGmiuHyw1&amp;t=57d51992" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=MWKZiVNn975l4EU7UMFNOD67K9-a9paiHNmpLMOgH3TpeqJJ-_yiAhfxRzKXzAsdQ53E7bUdq6ttu8XNwzN44j4yokVG8zunAdqnWVwpNgx_2qWRAjWzwX1eHJL-FX4-DaAEI2MGQIyXiKk_ammTUY---QdHKEwkXZmkeP_MSNsOTu9SzpWEz-zRgSpK-cBw0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=AE_03CR8liGX6c9l4bbU-69Kb64xtTGarEPM6FQkDO3eGTnwLtzwaYhcBg4XxPyv8TuIXy54ZylE9B5YWQR-XXARrVrRgPZJ3NOzw12qyjR2sNH6ZHxY4Kkew_eQdAyV97tBODlGQxtuzE3S1kBrlzpO_fTO_3VZM-b4Sq1-DfdY6k591QFYfXoIH8IO70fy0&amp;t=ffffffff868deddc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=_6f4WTQzELk2O7rSheo_9jxtO_zSsEz3SaTV4o4HAwBLoe8RDlQAVzVForW7fLuueMxvfA-1vil162t9LbwxDzB3SKnoO3O-9_UTkYZLPmmjspHfEmK_RHVuaz6P5nlPbSKYgmNJBM_SBoHFuA3R9jO0lpPOkmxNy5sxXYlOUlM1&amp;t=ffffffffc7a6ddb0" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=MYhYZFw8Cs-aWFw0gB52UngGbimwmCm4oGAAldAKZfCquTGaZnZB45wevBV28QSK5tOIFaixx746Vku_qdGCwwrqDasg4IlQHXLlxZFs8jP0IJ8m5tzTxlm7dxD_SFbs1N3ADCFq8ebMHM7Tv0jd2IIs4lSfadQw8grQPz435pE1&amp;t=ffffffffc7a6ddb0" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=lJP9zsI74Iu9XISJ-ZB57S0KTrTccn6f7Oq0lrIGZaXY39xSe8UapS5XN3G7o5-QBAg3CePp1jQwxfeHnTLas0gZhZXls-PbbPEjdufKST6FdnSfo8UDB4cMzpTuzc_dbM7hk8aNGvflQhQhp_Q2OeeAc2T3no6smghIPG54_y01&amp;t=ffffffffc7a6ddb0" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Gfx9x4swThYfebgQfDmFQL8J5wZnCi-t3LzMANo4S4YYUT1lsIoEO27YyyogLsfT6z6__mJG7jsFpS7MoZTJpLIzjkmAdxZKPRtg_fVr3aX7Pefh95W8TKYef9dMlK69XSEzbsN7007woutoorLoozJJjt7TXbzRCs1xcj8y82g1&amp;t=ffffffffc7a6ddb0" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=sPSksuTQk1qQKcTHkqRRf0wYpP10cj-IllLX7FcP8IFp9ZqfnKecrRHYDr3xNHG9RCzs4IOa_KnOk4ECVMWiUwGGHsf7RSl6Bf5oO1B23F5AYF__IwPTzIGopCozwWljFxQ6WcRn9_3chQKf65TRXFJfbbg_UKnTxMc3YlcRMtY1&amp;t=ffffffffc7a6ddb0" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=raTYATPCaWyaQr92SxF2FzF-W-K7i-x8ILvB7i7wiNoGHS2S3Z8tC-jwAo4BvOlmsFUOwfbBZw0c-O9J293EZOc8DjlAt2nS5h8qNJh1XSw0h6OokPX0OrZdF3xOs-BgmulYEABPuIZrw7yfIz-Tsr7j1xQWoUv04OAmGB2EYhI1&amp;t=ffffffffc7a6ddb0" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=tatcpnNBRE453b9XMKUaaoPrmoV-sCdAQbNr7MhQFBXU32phcdcqg3cS12Txp5P0BMYRB9J15KqLd_Gaq0QXMM3sfM9twfBNz0LacM_3g1TTB3nlV9vRAXZCL6bKymOX-sbd943_rqh6Ekb16jUIcRTj4tU4gCbHzMIf7_TuS3Q1&amp;t=ffffffffc7a6ddb0" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dssrP7c5foFaqiCb5x0h_MNmMfYxkIlLV_cr0vtt04AOgQ9OQBgJyOSg0lMpiT3pR7zt0e3U8EMenqDAKAkSAfGm6Mx9gENYE_LHAm3_omW7Va6TTTB2EHgGEMjXJRV5l2dUJ8_Zh6xVZfOOknd3pNBfMjGUj7GePRY8EQkuX301&amp;t=ffffffffc7a6ddb0" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=3N-jtt-QLUI7veoVOz-8hCnIoHtBQ_rqsxFawiPQSJ1yNWQoruN7g6SxtgcC-fUIQSSKBXMJsqpKNJubjDZwKoNbGmCsIEWn5PyPSlgKzU4r0wJCMdZSty9g8ICnXObGUki3YjZfkK7o1BqvWZlR6RqtXUWRyQESeYZAg3nS59M1&amp;t=ffffffffc7a6ddb0" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWFgK9jaTDDALS2bVfAq/R44ABArDR44ABArHR44ABAuDsufEMArrTpfwEAoHP8O0IArOP1J8OAqyP1J8OAq2P1J8OAvGZxbAIAu6ZxbAIAu+ZxbAIAuyZxbAIAu2ZxbAIAuqZxbAIApaTvIgEAuSV2OoIAqrtttwLAt2V5MkHAvbh4f0CBA732f35b41QP3o6BtRokwTu+7srlN8EMpp6xuRXqsU=" />
+</div>
+	<div id="header" class="headerLogado">
+	
+    <div id="headerCont">
+        <h1 id="logo"><a href="../Webforms/Default.aspx">Evimail Evidência</a></h1>
+        <div id="menuHeader">
+		<ul class="level1">
+			<li><a class="level1" href="Default.aspx">Home</a></li><li><a class="level1" href="QuemSomos.aspx">Quem Somos</a></li><li><a class="level1" href="PerguntasFrequentes.aspx">Perguntas Frequentes</a></li><li><a class="level1" href="FaleConosco.aspx">Fale Conosco</a></li>
+		</ul>
+	</div>
+        
+        <div id="pnlLogado">
+		
+            <div id="divLogadoCont">
+                <a id="lnkSair" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ucHeader$lnkSair&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Sair</a>
+                <p class="firstChild">Olá,&nbsp;Samira PJ</p>
+                <p>Você não possui um serviço contratado</p>
+            </div>
+        
+	</div>
+    </div>
+    <!--/#headerCont-->
+    <div id="menuUsrLogado">
+        <ul id="ulsrLogado">
+            <li id="menuUsrLogado_Conta"><a href="MinhaConta.aspx"><span>Minha Conta</span></a></li>
+            <li id="menuUsrLogado_Dados"><a href="AlteraDado.aspx"><span>Alterar Dados</span></a></li>
+            <li id="menuUsrLogado_Emails"><!-- class="selected"--><a href="GerenciarEmails.aspx"><span>Gerenciar Emails Adicionais</span></a></li>
+            <li id="menuUsrLogado_Contratar"><a href="ContratarServico.aspx"><span>Contratar um Serviço</span></a></li>
+            <li id="menuUsrLogado_Historico" class="selected"><a href="ConsultarHistorico.aspx"><span>Consultar Histórico de Emails</span></a></li>
+        </ul>
+    </div>
+
+</div>
+	<!--/#header-->
+	<div id="container">
+		<div id="wrapper">
+			<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+			
+    
+    <div id="content">
+        <h2 class="title">
+            Consultar Histórico de Emails</h2>
+        <div id="procurarEmail">
+            <h5 class="title_1">
+                Procurar e-mail:</h5>
+            <div class="rounded_a">
+                <div id="ContentPlaceHolder_Body_vldsmyHistorico" style="display:none;">
+
+</div>
+                <fieldset>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_ddlDirecao" id="ContentPlaceHolder_Body_lblDirecao" class="lblTextbox">Direção</label>
+                        <select name="ctl00$ContentPlaceHolder_Body$ddlDirecao" id="ContentPlaceHolder_Body_ddlDirecao">
+	<option value="0">Indiferente</option>
+	<option value="1">Enviado</option>
+	<option value="2">Recebido</option>
+
+</select>
+                    </div>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_txtAssunto" id="ContentPlaceHolder_Body_lblAssunto" class="lblTextbox">Assunto:</label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtAssunto" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtAssunto" class="textbox" />
+                    </div>
+                    <div class="campoHistorico">
+                        <div id="ContentPlaceHolder_Body_pnlRemetente">
+	
+                            <label for="ContentPlaceHolder_Body_txtRemetente" id="ContentPlaceHolder_Body_lblRemetente" class="lblTextbox">Remetente:</label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtRemetente" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtRemetente" class="textbox" />
+                        
+</div>
+                    </div>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_txtDestinatario" id="ContentPlaceHolder_Body_lblDestinatario" class="lblTextbox">Destinatário:</label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtDestinatario" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtDestinatario" class="textbox" />
+                    </div>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_ddlAnexos" id="ContentPlaceHolder_Body_lblAnexos" class="lblTextbox">Anexos</label>
+                        <select name="ctl00$ContentPlaceHolder_Body$ddlAnexos" id="ContentPlaceHolder_Body_ddlAnexos">
+	<option value="0">Indiferente</option>
+	<option value="1">Sem Anexos</option>
+	<option value="2">Com Anexos</option>
+
+</select>
+                    </div>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_ddlStatus" id="ContentPlaceHolder_Body_lblStatus" class="lblTextbox">Status:</label>
+                        <select name="ctl00$ContentPlaceHolder_Body$ddlStatus" id="ContentPlaceHolder_Body_ddlStatus">
+	<option value="0">Indiferente</option>
+	<option value="1">Pendente</option>
+	<option value="2">Recebido</option>
+	<option value="3">Confirmado - Conte&#250;do</option>
+	<option value="4">Confirmado - Anexos</option>
+	<option value="5">Confirmado - Conte&#250;do e Anexos</option>
+
+</select>
+                    </div>
+                    <div>
+                        <label for="ContentPlaceHolder_Body_txtDataInicial" id="ContentPlaceHolder_Body_lblDataIni" class="lblTextbox">Período de:</label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtDataInicial" type="text" id="ContentPlaceHolder_Body_txtDataInicial" class="textbox txtDataIni" />
+                        <a id="ContentPlaceHolder_Body_calendar_ini" title="Calendário" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Body$calendar_ini&#39;,&#39;&#39;)"> 
+                            <img src="../img/ico_calendar.gif" width="32" height="28" alt="Calendário" style="margin:0 9px 0 0; vertical-align:bottom; " />                             
+                        </a>
+                        
+                        <span id="ContentPlaceHolder_Body_RegularExpressionValidator1" style="visibility:hidden;">Data inválida</span>
+                        <label for="ContentPlaceHolder_Body_txtDataFinal" id="ContentPlaceHolder_Body_lblDataFim">a</label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtDataFinal" type="text" id="ContentPlaceHolder_Body_txtDataFinal" class="textbox txtDataFim" />
+                        <a id="ContentPlaceHolder_Body_calendar_fim" title="Calendário" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Body$calendar_fim&#39;,&#39;&#39;)">   
+                            <img src="../img/ico_calendar.gif" width="32" height="28" alt="Calendário" style="margin:0 9px 0 0; vertical-align:bottom; " />                        
+                        </a>
+                        
+                        <span id="ContentPlaceHolder_Body_RegularExpressionValidator2" style="visibility:hidden;">Data inválida</span>
+                    </div>
+                    <div class="btnContLine">
+                        <span id="ContentPlaceHolder_Body_lblErro"></span>
+                        <a id="ContentPlaceHolder_Body_btnProcurar" class="btnProcurar" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder_Body$btnProcurar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Procurar</a>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <!--/#procurarEmail-->
+        <div style="text-align: center;">
+            
+        </div>
+        <div class="row">
+            
+            <div class="pagination">
+                <span class="paginationMsg">
+                    
+                    
+                </span>
+                <div class="paginationPg">
+                    <small>
+                        </small>
+                    <span id="ContentPlaceHolder_Body_dpgMinhaConta"></span>
+                </div>
+            </div>
+            <!--/.pagination-->
+        </div>
+        <!--/.row-->
+    </div>
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<div id="footer">
+    <div id="footerCont">
+        <ul>
+            <li><a href="PoliticaPrivacidade.aspx">Política de Privacidade</a></li>
+            <li>|</li>
+            <li><a href="TermosCondicoes.aspx">Termos e Condições de Uso</a></li>
+        </ul>
+        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
+    </div>
+</div>
+	<!--/#footer-->
+	
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("ContentPlaceHolder_Body_vldsmyHistorico"));
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator1"), document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator2"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder_Body_vldsmyHistorico = document.all ? document.all["ContentPlaceHolder_Body_vldsmyHistorico"] : document.getElementById("ContentPlaceHolder_Body_vldsmyHistorico");
+ContentPlaceHolder_Body_vldsmyHistorico.displaymode = "List";
+ContentPlaceHolder_Body_vldsmyHistorico.validationGroup = "Historico";
+var ContentPlaceHolder_Body_RegularExpressionValidator1 = document.all ? document.all["ContentPlaceHolder_Body_RegularExpressionValidator1"] : document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator1");
+ContentPlaceHolder_Body_RegularExpressionValidator1.controltovalidate = "ContentPlaceHolder_Body_txtDataInicial";
+ContentPlaceHolder_Body_RegularExpressionValidator1.errormessage = "Data inválida";
+ContentPlaceHolder_Body_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder_Body_RegularExpressionValidator1.validationexpression = "([0][1-9]|[1|2][0-9]|[3][0|1])[/]([0][1-9]|[1][0-2])[/]([0-9]{4})";
+var ContentPlaceHolder_Body_RegularExpressionValidator2 = document.all ? document.all["ContentPlaceHolder_Body_RegularExpressionValidator2"] : document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator2");
+ContentPlaceHolder_Body_RegularExpressionValidator2.controltovalidate = "ContentPlaceHolder_Body_txtDataFinal";
+ContentPlaceHolder_Body_RegularExpressionValidator2.errormessage = "Data inválida";
+ContentPlaceHolder_Body_RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder_Body_RegularExpressionValidator2.validationexpression = "([0][1-9]|[1|2][0-9]|[3][0|1])[/]([0][1-9]|[1][0-2])[/]([0-9]{4})";
+//]]>
+</script>
+
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'menuHeader', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+
+(function(id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.dispose = function() {
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));
+        }
+        e = null;
+    }
+})('ContentPlaceHolder_Body_vldsmyHistorico');
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ContentPlaceHolder_Body_calendar_ini"),"firstDayOfWeek":0,"format":"dd/MM/yyyy","id":"ContentPlaceHolder_Body_CalendarExtender1","popupPosition":4}, {"dateSelectionChanged":checkDate}, null, $get("ContentPlaceHolder_Body_txtDataInicial"));
+});
+
+document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator1'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ContentPlaceHolder_Body_calendar_fim"),"firstDayOfWeek":0,"format":"dd/MM/yyyy","id":"ContentPlaceHolder_Body_CalendarExtender2","popupPosition":4}, {"dateSelectionChanged":checkDate}, null, $get("ContentPlaceHolder_Body_txtDataFinal"));
+});
+
+document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator2'));
+}
+//]]>
+</script>
+</form>
+	<script type="text/javascript">        Cufon.now(); </script>
+</body>
+</html>

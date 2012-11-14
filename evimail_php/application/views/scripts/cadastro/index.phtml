@@ -1,0 +1,711 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Evimail
+</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="../img/favicon.ico" rel="shortcut icon" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" /><link href="../css/temp.css" rel="stylesheet" type="text/css" /><link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+	<script src="../js/lib/jquery.js" type="text/javascript"></script>
+	<script src="../js/lib/jquery.form.js" type="text/javascript"></script>
+	<script src="../js/lib/jquery.maskedinput-1.3.min.js" type="text/javascript"></script>
+	<script src="../js/lib/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="../js/cufon/cufon.js" type="text/javascript"></script>
+	<script src="../js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
+	<script src="../js/cufon-fonts.js" type="text/javascript"></script>
+	<script src="../js/base.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+	<script src="../js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+	
+	<!--[if IE]> 
+		<link href="../css/ie.css" rel="stylesheet" type="text/css" />
+		<script src="../js/DD_rounded.js" type="text/javascript"></script>
+		<script type="text/javascript">   
+			DD_roundies.addRule('.validation_summary', '10px');
+		</script> 
+	<![endif]-->
+	<!--[if IE 6]> 
+		<script type="text/javascript" src="../js/lib/DD_belatedPNG.js"></script> 
+		<script type="text/javascript"> DD_belatedPNG.fix('*'); </script> 
+	<![endif]-->
+
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function () {
+			//Examples of how to assign the ColorBox event to elements
+			$(".modalAlerta").colorbox({ width: "80%", height: "80%", iframe: true });
+			$(".esqueciSenha").colorbox({ width: "470px", height: "200px", iframe: true });
+		});
+
+		//function closeColorbox() {
+			//alert('1');
+			//$.fn.colorbox.close();
+		//}
+	</script>
+        
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22354822-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</head>
+<body id="body" class="inner cadastro">
+	<?php
+	echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth));
+	?>
+	<div id="container">
+		<div id="wrapper">
+    <div id="content">
+        <h2 class="title">
+            <span id="ContentPlaceHolder_Body_lblTitulo">Cadastre-se</span></h2>
+        <p class="campoObrig">
+            * Campos de preenchimento obrigatório</p>
+        <form method="post" action="/cadastro/inserir" id="formMain">
+        <div class="formRounded_a rounded_a">
+            <div id="ContentPlaceHolder_Body_upCadastroCima">
+            		
+                    <fieldset class="painelCadastro">
+                    <label id="resultAction"></label><br><br>
+                        <!-- Campo Eu sou -->
+                        <p>
+                            <label for="ContentPlaceHolder_Body_forTipoPessoa" id="ContentPlaceHolder_Body_lblEuSou">Tipo de Pessoa<span class='corAster'>*</span></label>
+                            <span id="ContentPlaceHolder_Body_rblTipoPessoa"><input id="ContentPlaceHolder_Body_rblTipoPessoa_0" type="radio" name="usr_type" value="1"/><label for="ContentPlaceHolder_Body_forTipoPessoa_0">Pessoa Física</label><input id="ContentPlaceHolder_Body_rblTipoPessoa_1" type="radio" name="usr_type" value="2" /><label for="ContentPlaceHolder_Body_forTipoPessoa_1">Pessoa Jurídica</label></span>
+                        </p>
+                        <!-- Campo Nome -->
+                        <p class="floatLeft">
+                            <label id="ContentPlaceHolder_Body_lblNome">Nome<span class='corAster'>*</span></label>
+                            <input name="usr_name" type="text" maxlength="50" id="txtNome" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo Email -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtEmail" id="ContentPlaceHolder_Body_lblEmail">Email<span class='corAster'>*</span></label>
+                            <input name="usr_email" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtEmail" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo CPF -->
+                        <div id="phCPF" style="display:none;">
+                        	<div class="boxEuSou">
+                                <p>
+                                	<label for="ContentPlaceHolder_Body_txtCPF" id="ContentPlaceHolder_Body_txtCPF">CPF<span class='corAster'>*</span></label>
+                                    <input name="usr_document_cpf" type="text" maxlength="14" id="txtNome" class="txtBox" />
+                                </p>
+                                <p>
+                                	<label for="ContentPlaceHolder_Body_rblSexo" id="ContentPlaceHolder_Body_rblSexo">Sexo<span class='corAster'>*</span></label>
+                                    <span id="ContentPlaceHolder_Body_usr_gender"><input id="ContentPlaceHolder_Body_usr_gender" type="radio" name="usr_gender" value="M"/><label for="ContentPlaceHolder_Body_usr_gender_0">Masculino</label><input id="ContentPlaceHolder_Body_usr_gender_1" type="radio" name="usr_gender" value="F" /><label for="ContentPlaceHolder_Body_usr_gender_1">Feminino</label></span>
+                                </p>
+                            </div>
+                            <div>
+                                <!-- Campo Data de nascimento -->
+                                <p>
+                                	<label for="ContentPlaceHolder_Body_txtDataNascimento" id="ContentPlaceHolder_Body_txtDataNascimento">Data de Nascimento<span class='corAster'>*</span></label>
+                                    <input name="usr_birthDate" type="text" maxlength="10" id="txtDataNascimento" class="txtBox" />
+                                </p>
+                        	</div>
+                        </div>
+                        <!-- Campo CNPJ -->
+                        <div id="phCNPJ" style="display:none;">
+                        <div class="boxEuSou">
+                                <p>
+                                    <label for="ContentPlaceHolder_Body_txtCNPJ" id="ContentPlaceHolder_Body_txtCNPJ">CNPJ<span class='corAster'>*</span></label>
+                                    <input name="usr_document_cnpj" type="text" maxlength="10" id="txtCNPJ" class="txtBox" />
+                                </p>
+                                <p>
+                                	<label for="ContentPlaceHolder_Body_txtRazaoSocial" id="ContentPlaceHolder_Body_lblNome">Razao Social<span class='corAster'>*</span></label>
+                            		<input name="usr_companyname" type="text" maxlength="255" id="txtNome" class="txtBox widthG" />
+                                </p>
+                        </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="painelCadastro">
+                        <!-- Campo País -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_ddlPais" id="ContentPlaceHolder_Body_lblPais">País<span class='corAster'>*</span></label>
+                            <select name="usr_country" id="ContentPlaceHolder_Body_ddlPais">
+		<option value="">Selecione</option>
+		<option value="4">Afeganist&#227;o</option>
+		<option value="710">&#193;frica do Sul</option>
+		<option value="248">&#197;land, Ilhas</option>
+		<option value="8">Alb&#226;nia</option>
+		<option value="276">Alemanha</option>
+		<option value="20">Andorra</option>
+		<option value="24">Angola</option>
+		<option value="660">Anguilla</option>
+		<option value="10">Ant&#225;rctida</option>
+		<option value="28">Antigua e Barbuda</option>
+		<option value="530">Antilhas Holandesas</option>
+		<option value="682">Ar&#225;bia Saudita</option>
+		<option value="12">Arg&#233;lia</option>
+		<option value="32">Argentina</option>
+		<option value="51">Arm&#233;nia</option>
+		<option value="533">Aruba</option>
+		<option value="36">Austr&#225;lia</option>
+		<option value="40">&#193;ustria</option>
+		<option value="31">Azerbeij&#227;o</option>
+		<option value="44">Bahamas</option>
+		<option value="48">Bahrain</option>
+		<option value="50">Bangladesh</option>
+		<option value="52">Barbados</option>
+		<option value="56">B&#233;lgica</option>
+		<option value="84">Belize</option>
+		<option value="204">Benin</option>
+		<option value="60">Bermuda</option>
+		<option value="112">Bielo-R&#250;ssia</option>
+		<option value="68">Bol&#237;via</option>
+		<option value="70">B&#243;snia-Herzegovina</option>
+		<option value="72">Botswana</option>
+		<option value="74">Bouvet, Ilha</option>
+		<option value="76" selected>Brasil</option>
+		<option value="96">Brunei</option>
+		<option value="100">Bulg&#225;ria</option>
+		<option value="854">Burkina Faso</option>
+		<option value="108">Burundi</option>
+		<option value="64">But&#227;o</option>
+		<option value="132">Cabo Verde</option>
+		<option value="116">Cambodja</option>
+		<option value="120">Camar&#245;es</option>
+		<option value="124">Canad&#225;</option>
+		<option value="136">Cayman, Ilhas</option>
+		<option value="398">Cazaquist&#227;o</option>
+		<option value="140">Centro-africana, Rep&#250;blica</option>
+		<option value="148">Chade</option>
+		<option value="203">Checa, Rep&#250;blica</option>
+		<option value="152">Chile</option>
+		<option value="156">China</option>
+		<option value="196">Chipre</option>
+		<option value="162">Christmas, Ilha</option>
+		<option value="166">Cocos, Ilhas</option>
+		<option value="170">Col&#244;mbia</option>
+		<option value="174">Comores</option>
+		<option value="178">Congo, Rep&#250;blica do</option>
+		<option value="180">Congo, Rep&#250;blica Democr&#225;tica do</option>
+		<option value="184">Cook, Ilhas</option>
+		<option value="410">Coreia do Sul</option>
+		<option value="408">Coreia, Rep&#250;blica Democr&#225;tica da</option>
+		<option value="384">Costa do Marfim</option>
+		<option value="188">Costa Rica</option>
+		<option value="191">Cro&#225;cia</option>
+		<option value="192">Cuba</option>
+		<option value="208">Dinamarca</option>
+		<option value="262">Djibouti</option>
+		<option value="212">Dominica</option>
+		<option value="214">Dominicana, Rep&#250;blica</option>
+		<option value="818">Egipto</option>
+		<option value="222">El Salvador</option>
+		<option value="784">Emiratos &#193;rabes Unidos</option>
+		<option value="218">Equador</option>
+		<option value="232">Eritreia</option>
+		<option value="703">Eslov&#225;quia</option>
+		<option value="705">Eslov&#233;nia</option>
+		<option value="724">Espanha</option>
+		<option value="840">Estados Unidos da Am&#233;rica</option>
+		<option value="233">Est&#243;nia</option>
+		<option value="231">Eti&#243;pia</option>
+		<option value="234">Faroe, Ilhas</option>
+		<option value="242">Fiji</option>
+		<option value="608">Filipinas</option>
+		<option value="246">Finl&#226;ndia</option>
+		<option value="250">Fran&#231;a</option>
+		<option value="266">Gab&#227;o</option>
+		<option value="270">G&#226;mbia</option>
+		<option value="288">Gana</option>
+		<option value="268">Ge&#243;rgia</option>
+		<option value="239">Ge&#243;rgia do Sul e Sandwich do Sul, Ilhas</option>
+		<option value="292">Gibraltar</option>
+		<option value="300">Gr&#233;cia</option>
+		<option value="308">Grenada</option>
+		<option value="304">Gronel&#226;ndia</option>
+		<option value="312">Guadeloupe</option>
+		<option value="316">Guam</option>
+		<option value="320">Guatemala</option>
+		<option value="831">Guernsey</option>
+		<option value="328">Guiana</option>
+		<option value="254">Guiana Francesa</option>
+		<option value="624">Guin&#233;-Bissau</option>
+		<option value="324">Guin&#233;-Conacri</option>
+		<option value="226">Guin&#233; Equatorial</option>
+		<option value="332">Haiti</option>
+		<option value="334">Heard e Ilhas McDonald, Ilha</option>
+		<option value="340">Honduras</option>
+		<option value="344">Hong Kong</option>
+		<option value="348">Hungria</option>
+		<option value="887">I&#233;men</option>
+		<option value="356">&#205;ndia</option>
+		<option value="360">Indon&#233;sia</option>
+		<option value="368">Iraque</option>
+		<option value="364">Ir&#227;o</option>
+		<option value="372">Irlanda</option>
+		<option value="352">Isl&#226;ndia</option>
+		<option value="376">Israel</option>
+		<option value="380">It&#225;lia</option>
+		<option value="388">Jamaica</option>
+		<option value="392">Jap&#227;o</option>
+		<option value="832">Jersey</option>
+		<option value="400">Jord&#226;nia</option>
+		<option value="296">Kiribati</option>
+		<option value="414">Kuwait</option>
+		<option value="418">Laos</option>
+		<option value="426">Lesoto</option>
+		<option value="428">Let&#243;nia</option>
+		<option value="422">L&#237;bano</option>
+		<option value="430">Lib&#233;ria</option>
+		<option value="434">L&#237;bia</option>
+		<option value="438">Liechtenstein</option>
+		<option value="440">Litu&#226;nia</option>
+		<option value="442">Luxemburgo</option>
+		<option value="446">Macau</option>
+		<option value="807">Maced&#243;nia, Rep&#250;blica da</option>
+		<option value="450">Madag&#225;scar</option>
+		<option value="458">Mal&#225;sia</option>
+		<option value="454">Malawi</option>
+		<option value="462">Maldivas</option>
+		<option value="466">Mali</option>
+		<option value="470">Malta</option>
+		<option value="238">Malvinas, Ilhas</option>
+		<option value="833">Man, Ilha de</option>
+		<option value="580">Marianas Setentrionais</option>
+		<option value="504">Marrocos</option>
+		<option value="584">Marshall, Ilhas</option>
+		<option value="474">Martinica</option>
+		<option value="480">Maur&#237;cia</option>
+		<option value="478">Maurit&#226;nia</option>
+		<option value="175">Mayotte</option>
+		<option value="581">Menores Distantes dos Estados Unidos, Ilhas</option>
+		<option value="484">M&#233;xico</option>
+		<option value="104">Myanmar</option>
+		<option value="583">Micron&#233;sia, Estados Federados da</option>
+		<option value="508">Mo&#231;ambique</option>
+		<option value="498">Mold&#225;via</option>
+		<option value="492">M&#243;naco</option>
+		<option value="496">Mong&#243;lia</option>
+		<option value="499">Montenegro</option>
+		<option value="500">Montserrat</option>
+		<option value="516">Nam&#237;bia</option>
+		<option value="520">Nauru</option>
+		<option value="524">Nepal</option>
+		<option value="558">Nicar&#225;gua</option>
+		<option value="562">N&#237;ger</option>
+		<option value="566">Nig&#233;ria</option>
+		<option value="570">Niue</option>
+		<option value="574">Norfolk, Ilha</option>
+		<option value="578">Noruega</option>
+		<option value="540">Nova Caled&#243;nia</option>
+		<option value="554">Nova Zel&#226;ndia</option>
+		<option value="512">Oman</option>
+		<option value="528">Pa&#237;ses Baixos</option>
+		<option value="585">Palau</option>
+		<option value="275">Palestina</option>
+		<option value="591">Panam&#225;</option>
+		<option value="598">Papua-Nova Guin&#233;</option>
+		<option value="586">Paquist&#227;o</option>
+		<option value="600">Paraguai</option>
+		<option value="604">Peru</option>
+		<option value="612">Pitcairn</option>
+		<option value="258">Polin&#233;sia Francesa</option>
+		<option value="616">Pol&#243;nia</option>
+		<option value="630">Porto Rico</option>
+		<option value="620">Portugal</option>
+		<option value="634">Qatar</option>
+		<option value="404">Qu&#233;nia</option>
+		<option value="417">Quirguist&#227;o</option>
+		<option value="826">Reino Unido da Gr&#227;-Bretanha e Irlanda do Norte</option>
+		<option value="638">Reuni&#227;o</option>
+		<option value="642">Rom&#233;nia</option>
+		<option value="646">Ruanda</option>
+		<option value="643">R&#250;ssia</option>
+		<option value="732">Saara Ocidental</option>
+		<option value="16">Samoa Americana</option>
+		<option value="882">Samoa</option>
+		<option value="666">Saint Pierre et Miquelon</option>
+		<option value="90">Salom&#227;o, Ilhas</option>
+		<option value="659">S&#227;o Crist&#243;v&#227;o e N&#233;vis</option>
+		<option value="674">San Marino</option>
+		<option value="678">S&#227;o Tom&#233; e Pr&#237;ncipe</option>
+		<option value="670">S&#227;o Vicente e Granadinas</option>
+		<option value="654">Santa Helena</option>
+		<option value="662">Santa L&#250;cia</option>
+		<option value="686">Senegal</option>
+		<option value="694">Serra Leoa</option>
+		<option value="688">S&#233;rvia</option>
+		<option value="690">Seychelles</option>
+		<option value="702">Singapura</option>
+		<option value="760">S&#237;ria</option>
+		<option value="706">Som&#225;lia</option>
+		<option value="144">Sri Lanka</option>
+		<option value="748">Suazil&#226;ndia</option>
+		<option value="736">Sud&#227;o</option>
+		<option value="752">Su&#233;cia</option>
+		<option value="756">Su&#237;&#231;a</option>
+		<option value="740">Suriname</option>
+		<option value="744">Svalbard e Jan Mayen</option>
+		<option value="764">Tail&#226;ndia</option>
+		<option value="158">Taiwan</option>
+		<option value="762">Tajiquist&#227;o</option>
+		<option value="834">Tanz&#226;nia</option>
+		<option value="260">Terras Austrais e Ant&#225;rticas Francesas</option>
+		<option value="86">Territ&#243;rio Brit&#226;nico do Oceano &#205;ndico</option>
+		<option value="626">Timor-Leste</option>
+		<option value="768">Togo</option>
+		<option value="772">Toquelau</option>
+		<option value="776">Tonga</option>
+		<option value="780">Trindade e Tobago</option>
+		<option value="788">Tun&#237;sia</option>
+		<option value="796">Turks e Caicos</option>
+		<option value="795">Turquemenist&#227;o</option>
+		<option value="792">Turquia</option>
+		<option value="798">Tuvalu</option>
+		<option value="804">Ucr&#226;nia</option>
+		<option value="800">Uganda</option>
+		<option value="858">Uruguai</option>
+		<option value="860">Usbequist&#227;o</option>
+		<option value="548">Vanuatu</option>
+		<option value="336">Vaticano</option>
+		<option value="862">Venezuela</option>
+		<option value="704">Vietname</option>
+		<option value="850">Virgens Americanas, Ilhas</option>
+		<option value="92">Virgens Brit&#226;nicas, Ilhas</option>
+		<option value="876">Wallis e Futuna</option>
+		<option value="894">Z&#226;mbia</option>
+		<option value="716">Zimbabwe</option>
+
+	</select>
+                        </p>
+                        <!-- Campo CEP -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtCEP" id="ContentPlaceHolder_Body_lblCEP">CEP<span class='corAster'>*</span></label>
+                            <input name="usr_cep" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtCEP" class="widthM txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraCEP(this);" />
+                            <span class="legendForm">
+                                <a id="ContentPlaceHolder_Body_lnkCEPCorreios" class="legendForm" href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">Não sabe seu CEP?</a>
+                            </span>
+                        </p>
+                        <div class="clear">
+                        </div>
+                        <!-- Campo Cidade -->
+                        <p class="floatLeft clear">
+                            <label for="ContentPlaceHolder_Body_txtCidade" id="ContentPlaceHolder_Body_lblCidade">Cidade<span class='corAster'>*</span></label>
+                            <input name="usr_cidade" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtCidade" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo UF -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_ddlUF" id="ContentPlaceHolder_Body_lblUF">UF<span class='corAster'>*</span></label>
+                            <select name="usr_estado" id="ContentPlaceHolder_Body_ddlUF">
+		<option value="">--</option>
+		<option value="7">AC</option>
+		<option value="20">AL</option>
+		<option value="6">AM</option>
+		<option value="10">AP</option>
+		<option value="21">BA</option>
+		<option value="15">CE</option>
+		<option value="5">DF</option>
+		<option value="24">ES</option>
+		<option value="2">GO</option>
+		<option value="13">MA</option>
+		<option value="23">MG</option>
+		<option value="4">MS</option>
+		<option value="3">MT</option>
+		<option value="12">PA</option>
+		<option value="17">PB</option>
+		<option value="18">PE</option>
+		<option value="14">PI</option>
+		<option value="25">PR</option>
+		<option value="1">RJ</option>
+		<option value="16">RN</option>
+		<option value="8">RO</option>
+		<option value="9">RR</option>
+		<option value="27">RS</option>
+		<option value="26">SC</option>
+		<option value="19">SE</option>
+		<option value="22">SP</option>
+		<option value="11">TO</option>
+
+	</select>
+                        </p>
+                        <!-- Campo Logradouro -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtLogradouro" id="ContentPlaceHolder_Body_lblLogradouro">Logradouro<span class='corAster'>*</span></label>
+                            <input name="usr_logradouro" type="text" maxlength="255" id="ContentPlaceHolder_Body_txtLogradouro" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo Número -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtNumero" id="ContentPlaceHolder_Body_lblNumero">Número<span class='corAster'>*</span></label>
+                            <input name="usr_numero" type="text" maxlength="10" id="ContentPlaceHolder_Body_txtNumero" class="txtBox widthPP" />
+                        </p>
+                        <!-- Campo Complemento -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtComplemento" id="ContentPlaceHolder_Body_lblComplemento">Complemento</label>
+                            <input name="usr_complemento" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtComplemento" class="txtBox widthG" />
+                        </p>
+                        <!-- Campo Bairro -->
+                        <p class="floatLeft">
+                            <label for="ContentPlaceHolder_Body_txtBairro" id="ContentPlaceHolder_Body_lblBairro">Bairro<span class='corAster'>*</span></label>
+                            <input name="usr_bairro" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtBairro" class="txtBox widthM" />
+                        </p>
+                        <!-- Campo Telefone celular -->
+                        <dl>
+                            <dt>
+                                
+                                <label for="ContentPlaceHolder_Body_txtTelefoneCelularDDD" id="ContentPlaceHolder_Body_lblTelefoneCelular">Telefone Celular<span class='corAster'>*</span></label></dt>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneCelularDDD" id="ContentPlaceHolder_Body_lblTelefoneCelularDDD">DDD</label>
+                                <input name="usr_celularDDD" type="text" maxlength="2" id="ContentPlaceHolder_Body_txtTelefoneCelularDDD" class="txtBox widthPP" onKeyPress="return DigSomenteNumeros(event);" />
+                            </dd>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneCelularNumero" id="ContentPlaceHolder_Body_lblTelefoneCelularNumero">Tel</label>
+                                <input name="usr_celular" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtTelefoneCelularNumero" class="txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraTel(this);" />
+                                <span id="ContentPlaceHolder_Body_lblTelefoneCelularObservacao" class="legendForm">(somente números)</span>
+                            </dd>
+                        </dl>
+                        <!-- Campo Telefone Residencial -->
+                        <dl>
+                            <dt>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneResidencialDDD" id="ContentPlaceHolder_Body_lblTelefoneResidencial">Telefone Residencial</label></dt>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneResidencialDDD" id="ContentPlaceHolder_Body_lblTelefoneResidencialDDD">DDD</label>
+                                <input name="usr_telefoneDDD" type="text" maxlength="2" id="ContentPlaceHolder_Body_txtTelefoneResidencialDDD" class="txtBox widthPP" onKeyPress="return DigSomenteNumeros(event);" />
+                            </dd>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneResidencialNumero" id="ContentPlaceHolder_Body_lblTelefoneResidencialNumero">Tel</label>
+                                <input name="usr_telefone" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtTelefoneResidencialNumero" class="txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraTel(this);" />
+                                <span id="ContentPlaceHolder_Body_lblTelefoneResidencialObservacao" class="legendForm">(somente números)</span>
+                            </dd>
+                        </dl>
+                        <!-- Campo Telefone Comercial -->
+                        <dl>
+                            <dt>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneComercialDDD" id="ContentPlaceHolder_Body_lblTelefoneComercial">Telefone Comercial</label></dt>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneComercialDDD" id="ContentPlaceHolder_Body_lblTelefoneComercialDDD">DDD</label>
+                                <input name="usr_comercialDDD" type="text" maxlength="2" id="ContentPlaceHolder_Body_txtTelefoneComercialDDD" class="txtBox widthPP" onKeyPress="return DigSomenteNumeros(event);" />
+                            </dd>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneComercialNumero" id="ContentPlaceHolder_Body_lblTelefoneComercialNumero">Tel</label>
+                                <input name="usr_comercial" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtTelefoneComercialNumero" class="txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraTel(this);" />
+                            </dd>
+                            <dd>
+                                <label for="ContentPlaceHolder_Body_txtTelefoneComercialRamal" id="ContentPlaceHolder_Body_lblTelefoneComercialRamal">Ramal</label>
+                                <input name="usr_comercialramal" type="text" maxlength="4" id="ContentPlaceHolder_Body_txtTelefoneComercialRamal" class="txtBox widthPP" />
+                                <span id="ContentPlaceHolder_Body_lblTelefoneComercialObservacao" class="legendForm">(somente números)</span>
+                            </dd>
+                        </dl>
+                    </fieldset>
+                
+</div>
+            <fieldset class="final painelCadastro">
+                <!-- Campo Nome de usuário -->
+                <p>
+                    <label for="ContentPlaceHolder_Body_txtNomeUsuario" id="ContentPlaceHolder_Body_lblNomeUsuario">Nome de usuário<span class='corAster'>*</span></label>
+                    <input name="usr_nickname" type="text" maxlength="10" id="ContentPlaceHolder_Body_txtNomeUsuario" class="txtBox widthMM" />
+                    <span id="ContentPlaceHolder_Body_lblNomeUsuarioObservacao" class="legendForm">(alfanumérico entre 6 e 10 caracteres)</span>
+                </p>
+                <div id="ContentPlaceHolder_Body_updSenha">
+	
+                    <p class="floatLeft">
+                        <label for="ContentPlaceHolder_Body_txtSenha" id="ContentPlaceHolder_Body_lblSenha">Senha<span class='corAster'>*</span></label>
+                        <input name="usr_password" type="password" maxlength="10" id="ContentPlaceHolder_Body_txtSenha" class="txtBox" />
+                        <span id="ContentPlaceHolder_Body_lblSenhaObservacao" class="legendForm">(alfanumérica entre 6 e 10 caracteres)</span>
+                    </p>
+                    <!-- Campo Confirme a senha -->
+                    <p class="floatLeft">
+                        <label for="ContentPlaceHolder_Body_txtConfirmeSenha" id="ContentPlaceHolder_Body_lblConfirmeSenha">Confirme a Senha<span class='corAster'>*</span></label>
+                        <input name="usr_password2" type="password" maxlength="10" id="ContentPlaceHolder_Body_txtConfirmeSenha" class="txtBox widthMM" />
+                    </p>
+                    
+</div>
+            </fieldset>
+            <!-- Campo Senha -->
+            <!-- Termo e Condições -->
+            <br />
+            <div id="ContentPlaceHolder_Body_uppnlCondicoes" class="painelCadastro">
+	
+                    <textarea name="ctl00$ContentPlaceHolder_Body$txtTermosCondicoes" rows="20" cols="110" readonly="readonly" id="ContentPlaceHolder_Body_txtTermosCondicoes" class="boxWdt">
+Termos e Condi&#231;&#245;es de Uso
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem ultricies pretium. Maecenas laoreet consequat dui nec facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac fringilla sem. Vestibulum nulla tortor, lobortis in blandit eu, fermentum id nisi. Etiam a nulla eu lorem rhoncus congue quis ac magna. Sed blandit blandit quam in scelerisque. Vivamus semper elit vitae libero aliquet et sodales massa rhoncus. Integer ac bibendum erat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem ultricies pretium. Maecenas laoreet consequat dui nec facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac fringilla sem. Vestibulum nulla tortor, lobortis in blandit eu, fermentum id nisi. Etiam a nulla eu lorem rhoncus congue quis ac magna. Sed blandit blandit quam in scelerisque. Vivamus semper elit vitae libero aliquet et sodales massa rhoncus. Integer ac bibendum erat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem ultricies pretium. Maecenas laoreet consequat dui nec facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac fringilla sem. Vestibulum nulla tortor, lobortis in blandit eu, fermentum id nisi. Etiam a nulla eu lorem rhoncus congue quis ac magna. Sed blandit blandit quam in scelerisque. Vivamus semper elit vitae libero aliquet et sodales massa rhoncus. Integer ac bibendum erat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem ultricies pretium. Maecenas laoreet consequat dui nec facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac fringilla sem. Vestibulum nulla tortor, lobortis in blandit eu, fermentum id nisi. Etiam a nulla eu lorem rhoncus congue quis ac magna. Sed blandit blandit quam in scelerisque. Vivamus semper elit vitae libero aliquet et sodales massa rhoncus. Integer ac bibendum erat.</textarea>
+                    <p class="termoCondicao">
+                        <input id="chkTermoCondicoes" type="checkbox" name="chkTermoCondicoes" /><label for="usr_termos">Li e entendi os Termos e Condições de uso.</label>
+                    </p>
+                    <p class="line">
+                    </p>
+                    <p class="botoes">
+                        <a href="javascript:;" id="lnkCriarConta" class="button"><span>Cadastrar</span></a>
+                    </p>
+ 				               
+		</div>
+            <span id="ContentPlaceHolder_Body_ctvCadastro" style="display:none;"><label>Seu cadastro foi executado com sucesso. Verifique seu email para mais inscrições.</label></span>
+        </div>
+        </form>
+    </div>
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<div id="footer">
+    <div id="footerCont">
+        <ul>
+            <li><a href="PoliticaPrivacidade.aspx">Política de Privacidade</a></li>
+            <li>|</li>
+            <li><a href="TermosCondicoes.aspx">Termos e Condições de Uso</a></li>
+        </ul>
+        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
+    </div>
+</div>
+	<!--/#footer-->
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#txtDataNascimento").mask("99/99/9999");
+	
+	$('#ContentPlaceHolder_Body_rblTipoPessoa_0').click(function(){
+		$("#phCPF").show();
+		$("#phCNPJ").hide();
+	});
+	$('#ContentPlaceHolder_Body_rblTipoPessoa_1').click(function(){
+		$("#phCPF").hide();
+		$("#phCNPJ").show();
+	});
+	
+	$('#lnkCriarConta').click(function(){
+		$("#formMain").submit();
+	});
+	
+	$("#formMain").validate({
+
+		submitHandler: function(form)
+		{
+			addUser();
+			return false;
+		},
+		//errorLabelContainer: $("#resultAction"),
+		//errorContainer: "#errorContainerCadastro",
+		rules: {
+		usr_name: {
+			required: true
+		},
+		usr_nickname: {
+			required: true,
+			minlength: 6,
+			maxlength: 10
+		},
+		usr_email: {
+			required: true,
+			email: true
+		},
+		usr_type: {
+			required: true
+		},
+		usr_country: {
+			required: true
+		},
+		usr_cep: {
+			required: true
+		},
+		usr_cidade: {
+			required: true
+		},
+		usr_estado: {
+			required: true
+		},
+		usr_logradouro: {
+			required: true
+		},
+		usr_numero: {
+			required: true
+		},
+		usr_bairro: {
+			required: true
+		},
+		usr_celularDDD: {
+			required: true
+		},
+		usr_celular: {
+			required: true
+		},
+/*		usr_birthDay: {required: true},
+		usr_birthMonth: {required: true},
+		usr_birthYear: {required: true},*/
+		usr_password: {
+			required: true,
+			minlength: 6,
+			maxlength: 10
+		},
+		usr_password2:  {
+			required: true,
+			minlength: 6,
+			maxlength: 10,
+			equalTo: "#ContentPlaceHolder_Body_txtSenha"
+		},
+		usr_gender: "required",
+		chkTermoCondicoes: "required"
+	},
+	messages:{
+		usr_name: "Nome deve ter mínimo de 4 e máximo de 50 caracteres.<br>",
+		usr_nickname: "Usuário deve ter mínimo de 4 e máximo de 20 caracteres.<br>",
+		usr_email: "E-mail inválido<br>",
+		//usr_birthDay: $("Preencher o dia do nascimento")+".<br>",
+		//usr_birthMonth: $("Preencher o mês de nascimento")+".<br>",
+		//usr_birthYear: $("Preencher o ano de nascimento")+".<br>",
+		usr_gender: "Selecionar Masculino ou Feminino.<br />",
+		usr_type: "Tipo de Pessoa é obrigatório.<br />",
+		usr_country: "País é obrigatório.<br />",
+		usr_cep: "CEP é obrigatório.<br />",
+		usr_cidade: "Cidade é obrigatório.<br />",
+		usr_estado: "Estado é obrigatório.<br />",
+		usr_logradouro: "Logradouro é obrigatório.<br />",
+		usr_numero: "Número é obrigatório.<br />",
+		usr_bairro: "Bairro é obrigatório.<br />",
+		usr_celularDDD: "DDD do Telefone Celular é obrigatório.<br />",
+		usr_celular: "Telefone Celular é obrigatório.<br />",
+		usr_password: "Senha deve ter mínimo de 4 e máximo de 08 caracteres.<br />",
+		usr_password2: "Senhas Diferentes<br>",
+		chkTermoCondicoes: "Você deve aceitar os termos e condições de uso."
+		}
+	});
+});
+
+function addUser(){
+	
+	var optionsForm = { 
+		beforeSubmit:  function(formData, jqForm, options){
+			$('#lnkCriarConta').hide();
+		},
+        success:  function(json, statusText){
+        	if(json.ok == 1)
+        	{
+        		$('.painelCadastro').hide();
+        		$('#ContentPlaceHolder_Body_ctvCadastro').show();
+        	}else{
+        		msg = json.error;
+        		$('#lnkCriarConta').show();
+        	}
+        },
+        error:  function(json){
+        	$('#lnkCriarConta').show();
+        },
+        url: '/cadastro/persistir/',
+        type: 'post',
+        dataType: 'json'
+	};
+	$("#formMain").ajaxSubmit(optionsForm);
+}	
+
+</script>
+
+</body>
+</html>
