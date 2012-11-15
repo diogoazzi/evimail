@@ -512,6 +512,16 @@ $(document).ready(function() {
 	});
 	
 	$("#formMain").validate({
+
+    	invalidHandler: function(f, v) {
+    		var errors = v.numberOfInvalids();
+    		if (errors) {
+    			var invalidElements = v.invalidElements();
+    			alert(invalidElements[0].name);
+    		}
+    	},
+
+		
 		submitHandler: function(form)
 		{
 			alert('xxx');
