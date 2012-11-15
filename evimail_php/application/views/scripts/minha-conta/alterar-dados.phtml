@@ -475,7 +475,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                     <p class="line">
                     </p>
                     <p class="botoes">
-                        <a href="javascript:;" id="lnkCriarConta" class="button"><span>Cadastrar</span></a>
+                        <a href="javascript:;" id="lnkCriarConta" class="button"><span>Alterar</span></a>
                     </p>
  				               
 		</div>
@@ -507,13 +507,14 @@ $(document).ready(function() {
 	});
 	
 	$('#lnkCriarConta').click(function(){
+		alert('xpto');
 		$("#formMain").submit();
 	});
 	
 	$("#formMain").validate({
-
 		submitHandler: function(form)
 		{
+			alert('xxx');
 			addUser();
 			return false;
 		},
@@ -603,7 +604,7 @@ $(document).ready(function() {
 });
 
 function addUser(){
-	
+	alert('yyyyy');
 	var optionsForm = { 
 		beforeSubmit:  function(formData, jqForm, options){
 			$('#lnkCriarConta').hide();
