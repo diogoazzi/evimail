@@ -26,6 +26,10 @@ class MinhaContaController extends Zend_Controller_Action
     public function persistirAction(){
     
     	$POST = $this->getRequest()->getPost();
+    	
+    	echo '<pre>';
+    	print_r($POST);
+    	die();
     
     	$translate = Zend_Registry::get('translate');
     
