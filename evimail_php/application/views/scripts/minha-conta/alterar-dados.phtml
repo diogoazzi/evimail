@@ -36,7 +36,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                             <input name="usr_email" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtEmail" class="txtBox widthG" value="<?php echo $this->user->usr_email;?>" />
                         </p>
                         <!-- Campo CPF -->
-                        <div id="phCPF" style="display:none;">
+                        <div id="phCPF" <?php if($this->user->usr_type == '2') echo "style=\"display:none;\""?> >
                         	<div class="boxEuSou">
                                 <p>
                                 	<label for="ContentPlaceHolder_Body_txtCPF" id="ContentPlaceHolder_Body_txtCPF">CPF<span class='corAster'>*</span></label>
@@ -56,7 +56,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                         	</div>
                         </div>
                         <!-- Campo CNPJ -->
-                        <div id="phCNPJ" style="display:none;">
+                        <div id="phCNPJ"  <?php if($this->user->usr_type == '1') echo "style=\"display:none;\""?>>
                         <div class="boxEuSou">
                                 <p>
                                     <label for="ContentPlaceHolder_Body_txtCNPJ" id="ContentPlaceHolder_Body_txtCNPJ">CNPJ<span class='corAster'>*</span></label>
