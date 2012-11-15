@@ -141,4 +141,20 @@ class MinhaContaController extends Zend_Controller_Action
     	);
     }
     
+    function contratarServicoAction() {
+    	
+    	
+    }
+    
+    function alterarDadosAction() {
+    	$auth = Zend_Auth::getInstance();
+    	$identity = $auth->getIdentity();
+    	$this->view->assign("user",$identity);
+// 		echo '<pre>';
+// 		print_r($identity);
+//     	if(!$identity){
+    		
+//     	}
+    }
+    
 }

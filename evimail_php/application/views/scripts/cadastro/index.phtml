@@ -1,65 +1,4 @@
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head><title>
-	Evimail
-</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<link href="../img/favicon.ico" rel="shortcut icon" />
-	<link href="../css/style.css" rel="stylesheet" type="text/css" /><link href="../css/temp.css" rel="stylesheet" type="text/css" /><link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
-	<script src="../js/lib/jquery.js" type="text/javascript"></script>
-	<script src="../js/lib/jquery.form.js" type="text/javascript"></script>
-	<script src="../js/lib/jquery.maskedinput-1.3.min.js" type="text/javascript"></script>
-	<script src="../js/lib/jquery.validate.min.js" type="text/javascript"></script>
-	<script src="../js/cufon/cufon.js" type="text/javascript"></script>
-	<script src="../js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
-	<script src="../js/cufon-fonts.js" type="text/javascript"></script>
-	<script src="../js/base.js" type="text/javascript"></script>
-	<script src="../js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
-	<script src="../js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
-	
-	<!--[if IE]> 
-		<link href="../css/ie.css" rel="stylesheet" type="text/css" />
-		<script src="../js/DD_rounded.js" type="text/javascript"></script>
-		<script type="text/javascript">   
-			DD_roundies.addRule('.validation_summary', '10px');
-		</script> 
-	<![endif]-->
-	<!--[if IE 6]> 
-		<script type="text/javascript" src="../js/lib/DD_belatedPNG.js"></script> 
-		<script type="text/javascript"> DD_belatedPNG.fix('*'); </script> 
-	<![endif]-->
-
-	<script type="text/javascript" language="javascript">
-		$(document).ready(function () {
-			//Examples of how to assign the ColorBox event to elements
-			$(".modalAlerta").colorbox({ width: "80%", height: "80%", iframe: true });
-			$(".esqueciSenha").colorbox({ width: "470px", height: "200px", iframe: true });
-		});
-
-		//function closeColorbox() {
-			//alert('1');
-			//$.fn.colorbox.close();
-		//}
-	</script>
-        
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-22354822-1']);
-        _gaq.push(['_setDomainName', 'none']);
-        _gaq.push(['_setAllowLinker', true]);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-
-</head>
 <body id="body" class="inner cadastro">
 	<?php
 	echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth));
@@ -70,7 +9,7 @@
         <h2 class="title">
             <span id="ContentPlaceHolder_Body_lblTitulo">Cadastre-se</span></h2>
         <p class="campoObrig">
-            * Campos de preenchimento obrigatório</p>
+            * Campos de preenchimento obrigatÃ³rio</p>
         <form method="post" action="/cadastro/inserir" id="formMain">
         <div class="formRounded_a rounded_a">
             <div id="ContentPlaceHolder_Body_upCadastroCima">
@@ -80,7 +19,7 @@
                         <!-- Campo Eu sou -->
                         <p>
                             <label for="ContentPlaceHolder_Body_forTipoPessoa" id="ContentPlaceHolder_Body_lblEuSou">Tipo de Pessoa<span class='corAster'>*</span></label>
-                            <span id="ContentPlaceHolder_Body_rblTipoPessoa"><input id="ContentPlaceHolder_Body_rblTipoPessoa_0" type="radio" name="usr_type" value="1"/><label for="ContentPlaceHolder_Body_forTipoPessoa_0">Pessoa Física</label><input id="ContentPlaceHolder_Body_rblTipoPessoa_1" type="radio" name="usr_type" value="2" /><label for="ContentPlaceHolder_Body_forTipoPessoa_1">Pessoa Jurídica</label></span>
+                            <span id="ContentPlaceHolder_Body_rblTipoPessoa"><input id="ContentPlaceHolder_Body_rblTipoPessoa_0" type="radio" name="usr_type" value="1"/><label for="ContentPlaceHolder_Body_forTipoPessoa_0">Pessoa FÃ­sica</label><input id="ContentPlaceHolder_Body_rblTipoPessoa_1" type="radio" name="usr_type" value="2" /><label for="ContentPlaceHolder_Body_forTipoPessoa_1">Pessoa JurÃ­dica</label></span>
                         </p>
                         <!-- Campo Nome -->
                         <p class="floatLeft">
@@ -120,16 +59,16 @@
                                     <input name="usr_document_cnpj" type="text" maxlength="10" id="txtCNPJ" class="txtBox" />
                                 </p>
                                 <p>
-                                	<label for="ContentPlaceHolder_Body_txtRazaoSocial" id="ContentPlaceHolder_Body_lblNome">Razao Social<span class='corAster'>*</span></label>
+                                	<label for="ContentPlaceHolder_Body_txtRazaoSocial" id="ContentPlaceHolder_Body_lblNome">RazÃ£o Social<span class='corAster'>*</span></label>
                             		<input name="usr_companyname" type="text" maxlength="255" id="txtNome" class="txtBox widthG" />
                                 </p>
                         </div>
                         </div>
                     </fieldset>
                     <fieldset class="painelCadastro">
-                        <!-- Campo País -->
+                        <!-- Campo Paï¿½s -->
                         <p class="floatLeft">
-                            <label for="ContentPlaceHolder_Body_ddlPais" id="ContentPlaceHolder_Body_lblPais">País<span class='corAster'>*</span></label>
+                            <label for="ContentPlaceHolder_Body_ddlPais" id="ContentPlaceHolder_Body_lblPais">PaÃ­s<span class='corAster'>*</span></label>
                             <select name="usr_country" id="ContentPlaceHolder_Body_ddlPais">
 		<option value="">Selecione</option>
 		<option value="4">Afeganist&#227;o</option>
@@ -384,7 +323,7 @@
                             <label for="ContentPlaceHolder_Body_txtCEP" id="ContentPlaceHolder_Body_lblCEP">CEP<span class='corAster'>*</span></label>
                             <input name="usr_cep" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtCEP" class="widthM txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraCEP(this);" />
                             <span class="legendForm">
-                                <a id="ContentPlaceHolder_Body_lnkCEPCorreios" class="legendForm" href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">Não sabe seu CEP?</a>
+                                <a id="ContentPlaceHolder_Body_lnkCEPCorreios" class="legendForm" href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">NÃ£o sabe seu CEP?</a>
                             </span>
                         </p>
                         <div class="clear">
@@ -434,9 +373,9 @@
                             <label for="ContentPlaceHolder_Body_txtLogradouro" id="ContentPlaceHolder_Body_lblLogradouro">Logradouro<span class='corAster'>*</span></label>
                             <input name="usr_logradouro" type="text" maxlength="255" id="ContentPlaceHolder_Body_txtLogradouro" class="txtBox widthG" />
                         </p>
-                        <!-- Campo Número -->
+                        <!-- Campo Nï¿½mero -->
                         <p class="floatLeft">
-                            <label for="ContentPlaceHolder_Body_txtNumero" id="ContentPlaceHolder_Body_lblNumero">Número<span class='corAster'>*</span></label>
+                            <label for="ContentPlaceHolder_Body_txtNumero" id="ContentPlaceHolder_Body_lblNumero">NÃºmero<span class='corAster'>*</span></label>
                             <input name="usr_numero" type="text" maxlength="10" id="ContentPlaceHolder_Body_txtNumero" class="txtBox widthPP" />
                         </p>
                         <!-- Campo Complemento -->
@@ -461,7 +400,7 @@
                             <dd>
                                 <label for="ContentPlaceHolder_Body_txtTelefoneCelularNumero" id="ContentPlaceHolder_Body_lblTelefoneCelularNumero">Tel</label>
                                 <input name="usr_celular" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtTelefoneCelularNumero" class="txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraTel(this);" />
-                                <span id="ContentPlaceHolder_Body_lblTelefoneCelularObservacao" class="legendForm">(somente números)</span>
+                                <span id="ContentPlaceHolder_Body_lblTelefoneCelularObservacao" class="legendForm">(somente nÃºmeros)</span>
                             </dd>
                         </dl>
                         <!-- Campo Telefone Residencial -->
@@ -475,7 +414,7 @@
                             <dd>
                                 <label for="ContentPlaceHolder_Body_txtTelefoneResidencialNumero" id="ContentPlaceHolder_Body_lblTelefoneResidencialNumero">Tel</label>
                                 <input name="usr_telefone" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtTelefoneResidencialNumero" class="txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraTel(this);" />
-                                <span id="ContentPlaceHolder_Body_lblTelefoneResidencialObservacao" class="legendForm">(somente números)</span>
+                                <span id="ContentPlaceHolder_Body_lblTelefoneResidencialObservacao" class="legendForm">(somente nÃºmeros)</span>
                             </dd>
                         </dl>
                         <!-- Campo Telefone Comercial -->
@@ -493,25 +432,25 @@
                             <dd>
                                 <label for="ContentPlaceHolder_Body_txtTelefoneComercialRamal" id="ContentPlaceHolder_Body_lblTelefoneComercialRamal">Ramal</label>
                                 <input name="usr_comercialramal" type="text" maxlength="4" id="ContentPlaceHolder_Body_txtTelefoneComercialRamal" class="txtBox widthPP" />
-                                <span id="ContentPlaceHolder_Body_lblTelefoneComercialObservacao" class="legendForm">(somente números)</span>
+                                <span id="ContentPlaceHolder_Body_lblTelefoneComercialObservacao" class="legendForm">(somente nÃºmeros)</span>
                             </dd>
                         </dl>
                     </fieldset>
                 
 </div>
             <fieldset class="final painelCadastro">
-                <!-- Campo Nome de usuário -->
+                <!-- Campo Nome de usuï¿½rio -->
                 <p>
-                    <label for="ContentPlaceHolder_Body_txtNomeUsuario" id="ContentPlaceHolder_Body_lblNomeUsuario">Nome de usuário<span class='corAster'>*</span></label>
+                    <label for="ContentPlaceHolder_Body_txtNomeUsuario" id="ContentPlaceHolder_Body_lblNomeUsuario">Nome de usuÃ¡rio<span class='corAster'>*</span></label>
                     <input name="usr_nickname" type="text" maxlength="10" id="ContentPlaceHolder_Body_txtNomeUsuario" class="txtBox widthMM" />
-                    <span id="ContentPlaceHolder_Body_lblNomeUsuarioObservacao" class="legendForm">(alfanumérico entre 6 e 10 caracteres)</span>
+                    <span id="ContentPlaceHolder_Body_lblNomeUsuarioObservacao" class="legendForm">(alfanumÃ©rico entre 6 e 10 caracteres)</span>
                 </p>
                 <div id="ContentPlaceHolder_Body_updSenha">
 	
                     <p class="floatLeft">
                         <label for="ContentPlaceHolder_Body_txtSenha" id="ContentPlaceHolder_Body_lblSenha">Senha<span class='corAster'>*</span></label>
                         <input name="usr_password" type="password" maxlength="10" id="ContentPlaceHolder_Body_txtSenha" class="txtBox" />
-                        <span id="ContentPlaceHolder_Body_lblSenhaObservacao" class="legendForm">(alfanumérica entre 6 e 10 caracteres)</span>
+                        <span id="ContentPlaceHolder_Body_lblSenhaObservacao" class="legendForm">(alfanumÃ©rica entre 6 e 10 caracteres)</span>
                     </p>
                     <!-- Campo Confirme a senha -->
                     <p class="floatLeft">
@@ -522,7 +461,7 @@
 </div>
             </fieldset>
             <!-- Campo Senha -->
-            <!-- Termo e Condições -->
+            <!-- Termo e Condiï¿½ï¿½es -->
             <br />
             <div id="ContentPlaceHolder_Body_uppnlCondicoes" class="painelCadastro">
 	
@@ -537,7 +476,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem u
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem ultricies pretium. Maecenas laoreet consequat dui nec facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ac fringilla sem. Vestibulum nulla tortor, lobortis in blandit eu, fermentum id nisi. Etiam a nulla eu lorem rhoncus congue quis ac magna. Sed blandit blandit quam in scelerisque. Vivamus semper elit vitae libero aliquet et sodales massa rhoncus. Integer ac bibendum erat.</textarea>
                     <p class="termoCondicao">
-                        <input id="chkTermoCondicoes" type="checkbox" name="chkTermoCondicoes" /><label for="usr_termos">Li e entendi os Termos e Condições de uso.</label>
+                        <input id="chkTermoCondicoes" type="checkbox" name="chkTermoCondicoes" /><label for="usr_termos">Li e entendi os Termos e CondiÃ§Ãµes de uso.</label>
                     </p>
                     <p class="line">
                     </p>
@@ -546,7 +485,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem u
                     </p>
  				               
 		</div>
-            <span id="ContentPlaceHolder_Body_ctvCadastro" style="display:none;"><label>Seu cadastro foi executado com sucesso. Verifique seu email para mais inscrições.</label></span>
+            <span id="ContentPlaceHolder_Body_ctvCadastro" style="display:none;"><label>Seu cadastro foi executado com sucesso. Verifique seu email para mais inscriÃ§Ãµes.</label></span>
         </div>
         </form>
     </div>
@@ -556,17 +495,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna in sem u
 	</div>
 	<!--/#container-->
 	
-<div id="footer">
-    <div id="footerCont">
-        <ul>
-            <li><a href="PoliticaPrivacidade.aspx">Política de Privacidade</a></li>
-            <li>|</li>
-            <li><a href="TermosCondicoes.aspx">Termos e Condições de Uso</a></li>
-        </ul>
-        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
-    </div>
-</div>
-	<!--/#footer-->
+<?php
+echo $this->partial('index/footer.phtml');
+?>
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -655,26 +586,26 @@ $(document).ready(function() {
 		chkTermoCondicoes: "required"
 	},
 	messages:{
-		usr_name: "Nome deve ter mínimo de 4 e máximo de 50 caracteres.<br>",
-		usr_nickname: "Usuário deve ter mínimo de 4 e máximo de 20 caracteres.<br>",
-		usr_email: "E-mail inválido<br>",
+		usr_name: "Nome deve ter mï¿½nimo de 4 e mï¿½ximo de 50 caracteres.<br>",
+		usr_nickname: "Usuï¿½rio deve ter mï¿½nimo de 4 e mï¿½ximo de 20 caracteres.<br>",
+		usr_email: "E-mail invï¿½lido<br>",
 		//usr_birthDay: $("Preencher o dia do nascimento")+".<br>",
-		//usr_birthMonth: $("Preencher o mês de nascimento")+".<br>",
+		//usr_birthMonth: $("Preencher o mï¿½s de nascimento")+".<br>",
 		//usr_birthYear: $("Preencher o ano de nascimento")+".<br>",
 		usr_gender: "Selecionar Masculino ou Feminino.<br />",
-		usr_type: "Tipo de Pessoa é obrigatório.<br />",
-		usr_country: "País é obrigatório.<br />",
-		usr_cep: "CEP é obrigatório.<br />",
-		usr_cidade: "Cidade é obrigatório.<br />",
-		usr_estado: "Estado é obrigatório.<br />",
-		usr_logradouro: "Logradouro é obrigatório.<br />",
-		usr_numero: "Número é obrigatório.<br />",
-		usr_bairro: "Bairro é obrigatório.<br />",
-		usr_celularDDD: "DDD do Telefone Celular é obrigatório.<br />",
-		usr_celular: "Telefone Celular é obrigatório.<br />",
-		usr_password: "Senha deve ter mínimo de 4 e máximo de 08 caracteres.<br />",
+		usr_type: "Tipo de Pessoa ï¿½ obrigatï¿½rio.<br />",
+		usr_country: "Paï¿½s ï¿½ obrigatï¿½rio.<br />",
+		usr_cep: "CEP ï¿½ obrigatï¿½rio.<br />",
+		usr_cidade: "Cidade ï¿½ obrigatï¿½rio.<br />",
+		usr_estado: "Estado ï¿½ obrigatï¿½rio.<br />",
+		usr_logradouro: "Logradouro ï¿½ obrigatï¿½rio.<br />",
+		usr_numero: "Nï¿½mero ï¿½ obrigatï¿½rio.<br />",
+		usr_bairro: "Bairro ï¿½ obrigatï¿½rio.<br />",
+		usr_celularDDD: "DDD do Telefone Celular ï¿½ obrigatï¿½rio.<br />",
+		usr_celular: "Telefone Celular ï¿½ obrigatï¿½rio.<br />",
+		usr_password: "Senha deve ter mï¿½nimo de 4 e mï¿½ximo de 08 caracteres.<br />",
 		usr_password2: "Senhas Diferentes<br>",
-		chkTermoCondicoes: "Você deve aceitar os termos e condições de uso."
+		chkTermoCondicoes: "Vocï¿½ deve aceitar os termos e condiï¿½ï¿½es de uso."
 		}
 	});
 });

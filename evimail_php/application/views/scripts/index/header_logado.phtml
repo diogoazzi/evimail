@@ -3,15 +3,16 @@
 <head><title>
 	Evimail
 </title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-	<link href="../img/favicon.ico" rel="shortcut icon" />
-	<link href="../css/style.css" rel="stylesheet" type="text/css" /><link href="../css/temp.css" rel="stylesheet" type="text/css" /><link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
-	<script src="../js/lib/jquery.js" type="text/javascript"></script>
-	<script src="../js/cufon/cufon.js" type="text/javascript"></script>
-	<script src="../js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
-	<script src="../js/cufon-fonts.js" type="text/javascript"></script>
-	<script src="../js/base.js" type="text/javascript"></script>
-	<script src="../js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
-	<script src="../js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="/img/favicon.ico" rel="shortcut icon" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" /><link href="/css/temp.css" rel="stylesheet" type="text/css" /><link href="/css/colorbox.css" rel="stylesheet" type="text/css" />
+	<script src="/js/lib/jquery.js" type="text/javascript"></script>
+	<script src="/js/cufon/cufon.js" type="text/javascript"></script>
+	<script src="/js/cufon/Helvetica_Neue_500_700.font.js" type="text/javascript"></script>
+	<script src="/js/cufon-fonts.js" type="text/javascript"></script>
+	<script src="/js/base.js" type="text/javascript"></script>
+	<script src="/js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+	<script src="/js/colorbox/jquery.colorbox.js" type="text/javascript"></script>
 	
 	<!--[if IE]> 
 		<link href="../css/ie.css" rel="stylesheet" type="text/css" />
@@ -125,7 +126,7 @@ return true;
 	<div id="header" class="headerLogado">
 	
     <div id="headerCont">
-        <h1 id="logo"><a href="../Webforms/Default.aspx">Evimail Evidência</a></h1>
+        <h1 id="logo"><a href="../">Evimail Evidência</a></h1>
         <div id="menuHeader">
 		<ul class="level1">
 			<li><a class="level1" href="Default.aspx">Home</a></li><li><a class="level1" href="QuemSomos.aspx">Quem Somos</a></li><li><a class="level1" href="PerguntasFrequentes.aspx">Perguntas Frequentes</a></li><li><a class="level1" href="FaleConosco.aspx">Fale Conosco</a></li>
@@ -145,11 +146,11 @@ return true;
     <!--/#headerCont-->
     <div id="menuUsrLogado">
         <ul id="ulsrLogado">
-            <li id="menuUsrLogado_Conta" <?php if($this->menu == 'minha-conta') echo 'class="selected"';?>><a href="minha-conta"><span>Minha Conta</span></a></li>
-            <li id="menuUsrLogado_Dados" <?php if($this->menu == 'alterar-dados') echo 'class="selected"';?>><a href="minha-conta/alterar-daodos"><span>Alterar Dados</span></a></li>
-            <li id="menuUsrLogado_Emails" <?php if($this->menu == 'emails') echo 'class="selected"';?>><a href="GerenciarEmails.aspx"><span>Gerenciar Emails Adicionais</span></a></li>
-            <li id="menuUsrLogado_Contratar" <?php if($this->menu == 'contratar') echo 'class="selected"';?>><a href="ContratarServico.aspx"><span>Contratar um Servi�o</span></a></li>
-            <li id="menuUsrLogado_Historico" <?php if($this->menu == 'historico') echo 'class="selected"';?>> <a href="ConsultarHistorico.aspx"><span>Consultar Hist�rico de Emails</span></a></li>
+            <li id="menuUsrLogado_Conta" <?php if($this->menu == 'minha-conta') echo 'class="selected"';?>><a href="/minha-conta"><span>Minha Conta</span></a></li>
+            <li id="menuUsrLogado_Dados" <?php if($this->menu == 'alterar-dados') echo 'class="selected"';?>><a href="/minha-conta/alterar-dados"><span>Alterar Dados</span></a></li>
+            <li id="menuUsrLogado_Emails" <?php if($this->menu == 'emails') echo 'class="selected"';?>><a href="/minha-conta/gerenciar-emails"><span>Gerenciar Emails Adicionais</span></a></li>
+            <li id="menuUsrLogado_Contratar" <?php if($this->menu == 'contratar') echo 'class="selected"';?>><a href="/minha-conta/contratar-servico"><span>Contratar um Serviço</span></a></li>
+            <li id="menuUsrLogado_Historico" <?php if($this->menu == 'historico') echo 'class="selected"';?>> <a href="ConsultarHistorico.aspx"><span>Consultar Histórico de Emails</span></a></li>
         </ul>
     </div>
 
