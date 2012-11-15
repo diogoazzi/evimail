@@ -538,6 +538,9 @@ $(document).ready(function() {
 			required: true,
 			email: true
 		},
+		usr_document_cnpj: {
+			required: "#ContentPlaceHolder_Body_rblTipoPessoa_1:checked"
+		},
 		usr_type: {
 			required: true
 		},
@@ -589,6 +592,7 @@ $(document).ready(function() {
 		usr_name: "Nome deve ter mínimo de 4 e máximo de 50 caracteres.<br>",
 		usr_nickname: "Usuário deve ter mínimo de 4 e máximo de 20 caracteres.<br>",
 		usr_email: "E-mail inválido<br>",
+		usr_document_cnpj: "CNPJ é obrigatório para pessoa jurídica",
 		//usr_birthDay: $("Preencher o dia do nascimento")+".<br>",
 		//usr_birthMonth: $("Preencher o m�s de nascimento")+".<br>",
 		//usr_birthYear: $("Preencher o ano de nascimento")+".<br>",
