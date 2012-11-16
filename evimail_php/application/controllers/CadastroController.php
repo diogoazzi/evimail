@@ -67,9 +67,10 @@ class CadastroController extends Zend_Controller_Action
     		}
     		$POST["usr_password"] = md5($POST["usr_password"]);
     		unset($POST['usr_password2']);
+    		unset($POST['ctl00$ContentPlaceHolder_Body$txtTermosCondicoes']);
     			
     		// executa a inclusão ou alteração
-    		$usrId = $this->userProfileHelper->persistUser($POST);
+    		$usrId = $this->userProfileHelper->persistUser($POST, true);
     			
     		if( empty($POST["usr_id"]) && $usrId){
     
@@ -79,7 +80,7 @@ class CadastroController extends Zend_Controller_Action
     			// atualiza a key
     			$POST["usr_id"] = $usrId;
     			$POST["usr_activeKey"] = $data["key"];
-    			$POST["insert"] = true;
+//     			$POST["insert"] = true;
     
     			$this->userProfileHelper->persistUser($POST);
     				

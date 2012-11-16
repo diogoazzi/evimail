@@ -10,13 +10,13 @@ class Fet_Model_UserRow extends Zend_Db_Table_Row
 	);
 	
 	public function getUserImage(){
-		if($this->img_id){
-			if(!$this->userImage){
-				$photo = new Community_Model_PhotoTable();
-				$this->userImage = $photo->find($this->img_id)->current();
-			}
-			return $this->userImage;
-		}
+// 		if($this->img_id){
+// 			if(!$this->userImage){
+// 				$photo = new Community_Model_PhotoTable();
+// 				$this->userImage = $photo->find($this->img_id)->current();
+// 			}
+// 			return $this->userImage;
+// 		}
 	}
 	
 	
@@ -68,6 +68,12 @@ class Fet_Model_UserRow extends Zend_Db_Table_Row
 	{
 		$month =$this->month[date('m', strtotime($this->usr_birthDate))];
 		return date('d \d\e ', strtotime($this->usr_birthDate))." ".$month." de ".substr($this->usr_birthDate,0,4);
+	}
+	
+	public function getNascimentoShort()
+	{
+		$month =$this->month[date('m', strtotime($this->usr_birthDate))];
+		return date('d \d\e ', strtotime($this->usr_birthDate))."/".$month."/".substr($this->usr_birthDate,0,4);
 	}
 	
 	public function getIdade()

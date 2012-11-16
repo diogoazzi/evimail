@@ -16,11 +16,16 @@ class MinhaContaController extends Zend_Controller_Action
         /* Initialize action controller here */
     	$this->userProfileHelper = $this->_helper->UserProfile;
     	$this->_helper->_acl->allow(null);
+    	
+    	$usr_id = Zend_Auth::getInstance()->getIdentity()->usr_id;
+    	
+    	if(!$usr_id)
+    		$this->_redirect('/');
     }
 
     public function indexAction()
     {
-    	
+
     }
     
     public function persistirAction(){
@@ -150,6 +155,9 @@ class MinhaContaController extends Zend_Controller_Action
     function alterarDadosAction() {
     	$auth = Zend_Auth::getInstance();
     	$identity = $auth->getIdentity();
+    	
+//     	get_class_($identity);
+//     	die();
     	$this->view->assign("user",$identity);
 // 		echo '<pre>';
 // 		print_r($identity);

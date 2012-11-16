@@ -42,7 +42,7 @@ class Fet_Model_UserTable extends Zend_Db_Table
 		->setIntegrityCheck(false)
 		->joinLeft(array('c' => 'city'), 'u.cit_id = c.cit_id', array('cit_name'))
 		->joinLeft(array('e' => 'state'), 'e.sta_id = c.sta_id', array('sta_acronym','sta_name'))
-		->joinLeft(array('pho'=>'photo'), 'u.img_id = pho.pho_id', 'pho.*')
+// 		->joinLeft(array('pho'=>'photo'), 'u.img_id = pho.pho_id', 'pho.*')
 		->joinLeft(array('d'=>'dial'), 'd.usr_id = u.usr_id AND d.dia_deleted = 0', array('dials'=>'count(d.dia_id)'))
 		;//
 	
@@ -242,10 +242,9 @@ class Fet_Model_UserTable extends Zend_Db_Table
 		}
 		
 		$post['usr_birthDate'] = $birthDateF;
-		$post[usr_celular] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post[usr_celular]))));
-		$post[usr_telefone] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post[usr_telefone]))));
-		$post[usr_comercial] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post[usr_comercial]))));
-		
+		$post['usr_celular'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post[usr_celular]))));
+		$post['usr_telefone'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post[usr_telefone]))));
+		$post['usr_comercial'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post[usr_comercial]))));
 		
 		
 		$data = array();
@@ -396,7 +395,7 @@ class Fet_Model_UserTable extends Zend_Db_Table
 // 		}
 		
 		$row->setFromArray($userData);
-		
+
 // 		if( isset($post["usr_activeKey"])){
 // 			$row->usr_activeKey = $post["usr_activeKey"];
 // 		}

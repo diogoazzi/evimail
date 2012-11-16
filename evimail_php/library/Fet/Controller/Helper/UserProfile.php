@@ -17,9 +17,9 @@ class Fet_Controller_Helper_UserProfile extends Zend_Controller_Action_Helper_Ab
 		}else{
 			$data = $userTable->find($post["usr_id"])->current();
 			
-			if($post['fileAvatar50name']){
-				$post[img_id] = $this->createProfileImage($post);
-			}
+// 			if(isset($post['fileAvatar50name'])){
+// 				$post['img_id'] = $this->createProfileImage($post);
+// 			}
 			
 			$userTable->updateUser($post);
 			
@@ -98,9 +98,9 @@ class Fet_Controller_Helper_UserProfile extends Zend_Controller_Action_Helper_Ab
 		}else{
 			$data = $userTable->find($post["usr_id"])->current();
 				
-			if($_SESSION['fileAvatar50name']){
-				$post[img_id] = $this->createProfileImage($post);
-			}
+// 			if($_SESSION['fileAvatar50name']){
+// 				$post[img_id] = $this->createProfileImage($post);
+// 			}
 				
 			$userTable->updateUser($post);
 				

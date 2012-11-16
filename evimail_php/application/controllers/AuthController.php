@@ -118,7 +118,7 @@ class AuthController extends Zend_Controller_Action
 	 */
 	public function logoutAction()
 	{
-		$usr_id = Zend_Auth::getInstance()->getIdentity()->id;
+		$usr_id = Zend_Auth::getInstance()->getIdentity()->usr_id;
 		
 		if($usr_id){
 /* 			$user = new Community_Model_UserTable();
@@ -130,6 +130,8 @@ class AuthController extends Zend_Controller_Action
 			Zend_Auth::getInstance()->clearIdentity();
 		}
 		
+		session_destroy();
+
 		$this->_redirect('/');
 	}
 	
