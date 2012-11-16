@@ -241,15 +241,16 @@ class Fet_Model_UserTable extends Zend_Db_Table
 			$userData["usr_status"] = 0;
 		}
 		
-		$data = array(	'usr_name'=>$userData["usr_name"],
-						'usr_email'=>$userData["usr_email"],
-						'usr_password'=>$userData["usr_password"],
-						'usr_gender'=>$userData["usr_gender"],
-						'usr_status'=>$userData["usr_status"],
-						'usr_nickname'=>$userData["usr_nickname"],
-						'usr_facebookid'=>$userData["facebookId"],
-						'usr_facebooktoken'=>$userData["facebookToken"],
-						'usr_birthDate'=>$birthDateF,
+		$data = array(	
+				'usr_name'=>$userData["usr_name"],
+				'usr_email'=>$userData["usr_email"],
+				'usr_password'=>$userData["usr_password"],
+				'usr_gender'=>$userData["usr_gender"],
+				'usr_status'=>$userData["usr_status"],
+				'usr_nickname'=>$userData["usr_nickname"],
+				'usr_facebookid'=>$userData["facebookId"],
+				'usr_facebooktoken'=>$userData["facebookToken"],
+				'usr_birthDate'=>$birthDateF,
 		);
 		
 		$row->setFromArray($data);

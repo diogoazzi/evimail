@@ -19,7 +19,7 @@
                         <!-- Campo Eu sou -->
                         <p>
                             <label for="ContentPlaceHolder_Body_forTipoPessoa" id="ContentPlaceHolder_Body_lblEuSou">Tipo de Pessoa<span class='corAster'>*</span></label>
-                            <span id="ContentPlaceHolder_Body_rblTipoPessoa"><input id="ContentPlaceHolder_Body_rblTipoPessoa_0" type="radio" name="usr_type" value="1" onclick="alert('xxx');"/><label for="ContentPlaceHolder_Body_forTipoPessoa_0">Pessoa Física</label><input id="ContentPlaceHolder_Body_rblTipoPessoa_1" type="radio" name="usr_type" value="2" /><label for="ContentPlaceHolder_Body_forTipoPessoa_1">Pessoa Jurídica</label></span>
+                            <span id="ContentPlaceHolder_Body_rblTipoPessoa"><input id="ContentPlaceHolder_Body_rblTipoPessoa_0" type="radio" name="usr_type" value="1" /><label for="ContentPlaceHolder_Body_forTipoPessoa_0">Pessoa Física</label><input id="ContentPlaceHolder_Body_rblTipoPessoa_1" type="radio" name="usr_type" value="2" /><label for="ContentPlaceHolder_Body_forTipoPessoa_1">Pessoa Jurídica</label></span>
                         </p>
                         <!-- Campo Nome -->
                         <p class="floatLeft">
@@ -593,12 +593,12 @@ $(document).ready(function() {
 		},
 		usr_gender: {
 			required: "#ContentPlaceHolder_Body_rblTipoPessoa_0:checked"
-		}
+		},
 		chkTermoCondicoes: "required"
 	},
 	messages:{
 		usr_name: "Nome deve ter mínimo de 4 e máximo de 50 caracteres.<br>",
-		usr_nickname: "Usuário deve ter mínimo de 4 e máximo de 20 caracteres.<br>",
+		usr_nickname: "Usuário deve ter mínimo de 6 e máximo de 20 caracteres.<br>",
 		usr_email: "E-mail inválido<br>",
 		usr_document_cnpj: "CNPJ é obrigatório para pessoa jurídica",
 		usr_companyname: "Razão Social é obrigatório para pessoa jurídica",

@@ -513,18 +513,8 @@ $(document).ready(function() {
 	
 	$("#formMain").validate({
 
-    	invalidHandler: function(f, v) {
-    		var errors = v.numberOfInvalids();
-    		if (errors) {
-    			var invalidElements = v.invalidElements();
-    			alert(invalidElements[0].name);
-    		}
-    	},
-
-		
 		submitHandler: function(form)
 		{
-			alert('xxx');
 			addUser();
 			return false;
 		},
@@ -542,6 +532,15 @@ $(document).ready(function() {
 		usr_email: {
 			required: true,
 			email: true
+		},
+		usr_document_cnpj: {
+			required: "#ContentPlaceHolder_Body_rblTipoPessoa_1:checked"
+		},
+		usr_companyname: {
+			required: "#ContentPlaceHolder_Body_rblTipoPessoa_1:checked"
+		},
+		usr_document_cpf: {
+			required: "#ContentPlaceHolder_Body_rblTipoPessoa_0:checked"
 		},
 		usr_type: {
 			required: true
@@ -587,12 +586,18 @@ $(document).ready(function() {
 			maxlength: 10,
 			equalTo: "#ContentPlaceHolder_Body_txtSenha"
 		},
-		usr_gender: "required"
+		usr_gender: {
+			required: "#ContentPlaceHolder_Body_rblTipoPessoa_0:checked"
+		}
+	
 	},
 	messages:{
 		usr_name: "Nome deve ter mínimo de 4 e máximo de 50 caracteres.<br>",
-		usr_nickname: "Usuário deve ter mínimo de 4 e máximo de 20 caracteres.<br>",
+		usr_nickname: "Usuário deve ter mínimo de 6 e máximo de 20 caracteres.<br>",
 		usr_email: "E-mail inválido<br>",
+		usr_document_cnpj: "CNPJ é obrigatório para pessoa jurídica",
+		usr_companyname: "Razão Social é obrigatório para pessoa jurídica",
+		usr_document_cpf: "CPF é obrigatório para pessoa física",
 		//usr_birthDay: $("Preencher o dia do nascimento")+".<br>",
 		//usr_birthMonth: $("Preencher o m�s de nascimento")+".<br>",
 		//usr_birthYear: $("Preencher o ano de nascimento")+".<br>",
