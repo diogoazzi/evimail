@@ -51,7 +51,8 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                                 <!-- Campo Data de nascimento -->
                                 <p>
                                 	<label for="ContentPlaceHolder_Body_txtDataNascimento" id="ContentPlaceHolder_Body_txtDataNascimento">Data de Nascimento<span class='corAster'>*</span></label>
-                                    <input name="usr_birthDate" type="text" maxlength="10" id="txtDataNascimento" class="txtBox" value="<?php echo $this->user->usr_birthDate;?>" />
+                                    <input name="usr_birthDate" type="text" maxlength="10" id="txtDataNascimento" class="txtBox" 
+                                    value="<?php echo $this->user->usr_birthDateFormatado;?>" />
                                 </p>
                         	</div>
                         </div>

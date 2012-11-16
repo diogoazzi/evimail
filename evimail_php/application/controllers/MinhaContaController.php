@@ -156,6 +156,13 @@ class MinhaContaController extends Zend_Controller_Action
     	$auth = Zend_Auth::getInstance();
     	$identity = $auth->getIdentity();
     	
+
+    	
+    	$birthDate = new Zend_Date($identity->usr_birthDate,"YYYY-MM-DD");
+    	$birthDateF = $birthDate->toString('dd/MM/YYYY');
+    	
+    	$identity->usr_birthDateFormatado = $birthDateF;
+    	
 //     	get_class($identity);
 //     	echo '<pre>';
 //     	print_r($identity);
