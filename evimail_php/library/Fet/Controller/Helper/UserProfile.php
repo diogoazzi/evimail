@@ -7,7 +7,7 @@ class Fet_Controller_Helper_UserProfile extends Zend_Controller_Action_Helper_Ab
 	 * @param $name
 	 * @return boolen
 	*/
-	public function persistUser( $post, $log = true ){
+	public function persistUser( $post, $insert = false, $log = true ){
 		
 		$userTable = new Fet_Model_UserTable();
 
@@ -23,7 +23,8 @@ class Fet_Controller_Helper_UserProfile extends Zend_Controller_Action_Helper_Ab
 			
 			$userTable->updateUser($post);
 			
-			if(!$post['insert']){
+			//pra que este if,  jah tem empty$post[usr_id]
+			if(!$insert){
 				$auth = Zend_Auth::getInstance();
 				$data = $auth->getIdentity();
 				$user = $userTable->find($post["usr_id"])->current();

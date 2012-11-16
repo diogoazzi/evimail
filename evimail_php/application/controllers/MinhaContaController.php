@@ -26,10 +26,6 @@ class MinhaContaController extends Zend_Controller_Action
     public function persistirAction(){
     
     	$POST = $this->getRequest()->getPost();
-    	
-    	echo '<pre>';
-    	print_r($POST);
-    	die();
     
     	$translate = Zend_Registry::get('translate');
     
@@ -68,11 +64,12 @@ class MinhaContaController extends Zend_Controller_Action
     			
     		if( !isset($POST["usr_id"])){
     			$openPass = $POST["usr_password"];
-    			$POST["usr_password"] = md5($POST["usr_password"]);
     		}
+    		$POST["usr_password"] = md5($POST["usr_password"]);
+
     			
     		// executa a inclusão ou alteração
-    		$usrId = $this->userProfileHelper->persistUser($POST);
+    		$usrId = $this->userProfileHelper->persistUser($POST,true);
     			
     		if( empty($POST["usr_id"]) && $usrId){
     
@@ -82,9 +79,9 @@ class MinhaContaController extends Zend_Controller_Action
     			// atualiza a key
     			$POST["usr_id"] = $usrId;
     			$POST["usr_activeKey"] = $data["key"];
-    			$POST["insert"] = true;
+//     			$POST["insert"] = true;
     
-    			$this->userProfileHelper->persistUser($POST);
+    			$this->userProfileHelper->persistUser($POST, false);
     				
     			$this->view->assign("usr_mail",$POST["usr_email"]);
     

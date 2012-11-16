@@ -637,7 +637,8 @@ function addUser(){
         		$('#ContentPlaceHolder_Body_ctvCadastro').show();
         	}else{
         		msg = json.error;
-        		$('#lnkCriarConta').show();
+        		$('#lnkCriarConta').show(); //nao ta exibindo erro
+        		alert(msg);
         	}
         },
         error:  function(json){
