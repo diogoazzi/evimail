@@ -67,18 +67,18 @@ class Fet_Plugin_ViewSetup extends Zend_Controller_Plugin_Abstract
 		
 		Zend_Registry::set('translate', $translate);
 		
-		if($_SESSION[language] == 'en_US' ){
-			$_SESSION[language] = 'en';
+		if($_SESSION['language'] == 'en_US' ){
+			$_SESSION['language'] = 'en';
 		}
-		if($_SESSION[language] == 'pt_BR' ){
-			$_SESSION[language] = 'pt';
+		if($_SESSION['language'] == 'pt_BR' ){
+			$_SESSION['language'] = 'pt';
 		}
 
 		
-		if($_SESSION[language] != 'pt'){
-			$_SESSION[imageDir] = $_SESSION[language]."/";
+		if($_SESSION['language'] != 'pt'){
+			$_SESSION['imageDir'] = $_SESSION['language']."/";
 		} else {
-			$_SESSION[imageDir] = '';
+			$_SESSION['imageDir'] = '';
 		}
 		
 		$this->_view->assign('translate',$translate);

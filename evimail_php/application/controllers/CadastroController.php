@@ -64,8 +64,9 @@ class CadastroController extends Zend_Controller_Action
     			
     		if( !isset($POST["usr_id"])){
     			$openPass = $POST["usr_password"];
-    			$POST["usr_password"] = md5($POST["usr_password"]);
     		}
+    		$POST["usr_password"] = md5($POST["usr_password"]);
+    		unset($POST['usr_password2']);
     			
     		// executa a inclusão ou alteração
     		$usrId = $this->userProfileHelper->persistUser($POST);
