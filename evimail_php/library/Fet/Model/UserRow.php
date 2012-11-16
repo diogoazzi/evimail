@@ -9,6 +9,10 @@ class Fet_Model_UserRow extends Zend_Db_Table_Row
 						"09" => "Setembro", "10" => "Outubro", "11" => "Novembro", "12" => "Dezembro"   	 
 	);
 	
+	public function getData(){
+		return $this->_data;
+	}
+	
 	public function getUserImage(){
 // 		if($this->img_id){
 // 			if(!$this->userImage){

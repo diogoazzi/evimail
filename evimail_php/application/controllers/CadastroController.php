@@ -137,9 +137,21 @@ class CadastroController extends Zend_Controller_Action
     		$userTable = new Fet_Model_UserTable();
     		$row = $userTable->find($POST["usr_id"])->current();
     		$auth = Zend_Auth::getInstance();
-    		$auth = $auth->getStorage()->read();
-    		$auth->getStorage()->write($row);
+    		$authUser = $auth->getStorage()->read();
+    		
+//     		print_r(get_object_vars($row));
+// 			print_r($row->getData());
+    		
+//     		die();
+//     		print_r($authUser);
 //     		$auth->setIdentity($row);
+			foreach($row->getData() as $key => $value)
+				$authUser->$key = $value;
+			$auth->getStorage()->write($authUser);
+// 			print_r($authUser);
+			$authUser = $auth->getStorage()->read();
+// 			print_r($authUser);
+//     		die('eeeee');
     	}
     
     	$this->_helper->layout()->disableLayout();
