@@ -132,6 +132,15 @@ class CadastroController extends Zend_Controller_Action
     		$aReturn = array("error" => $e->getMessage());
     
     	}
+    	
+    	if(isset($POST['usr_id'])){
+    		$userTable = new Fet_Model_UserTable();
+    		$row = $userTable->find($POST["usr_id"])->current();
+    		$auth = Zend_Auth::getInstance();
+    		$auth = $auth->getStorage()->read();
+    		$auth->getStorage()->write($row);
+//     		$auth->setIdentity($row);
+    	}
     
     	$this->_helper->layout()->disableLayout();
     	$this->_helper->viewRenderer->setNoRender();

@@ -156,7 +156,9 @@ class MinhaContaController extends Zend_Controller_Action
     	$auth = Zend_Auth::getInstance();
     	$identity = $auth->getIdentity();
     	
-//     	get_class_($identity);
+//     	get_class($identity);
+//     	echo '<pre>';
+//     	print_r($identity);
 //     	die();
     	$this->view->assign("user",$identity);
 // 		echo '<pre>';

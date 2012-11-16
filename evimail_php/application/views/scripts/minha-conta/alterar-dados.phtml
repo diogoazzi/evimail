@@ -51,7 +51,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                                 <!-- Campo Data de nascimento -->
                                 <p>
                                 	<label for="ContentPlaceHolder_Body_txtDataNascimento" id="ContentPlaceHolder_Body_txtDataNascimento">Data de Nascimento<span class='corAster'>*</span></label>
-                                    <input name="usr_birthDate" type="text" maxlength="10" id="txtDataNascimento" class="txtBox" <?php echo $this->user->usr_birthDate;?> />
+                                    <input name="usr_birthDate" type="text" maxlength="10" id="txtDataNascimento" class="txtBox" value="<?php echo $this->user->usr_birthDate;?>" />
                                 </p>
                         	</div>
                         </div>
@@ -60,11 +60,11 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                         <div class="boxEuSou">
                                 <p>
                                     <label for="ContentPlaceHolder_Body_txtCNPJ" id="ContentPlaceHolder_Body_txtCNPJ">CNPJ<span class='corAster'>*</span></label>
-                                    <input name="usr_document_cnpj" type="text" maxlength="10" id="txtCNPJ" class="txtBox" <?php echo $this->user->usr_document_cnpj;?> />
+                                    <input name="usr_document_cnpj" type="text" maxlength="10" id="txtCNPJ" class="txtBox" value="<?php echo $this->user->usr_document_cnpj;?>" />
                                 </p>
                                 <p>
                                 	<label for="ContentPlaceHolder_Body_txtRazaoSocial" id="ContentPlaceHolder_Body_lblNome">Razão Social<span class='corAster'>*</span></label>
-                            		<input name="usr_companyname" type="text" maxlength="255" id="txtNome" class="txtBox widthG" <?php echo $this->user->usr_companyname;?> />
+                            		<input name="usr_companyname" type="text" maxlength="255" id="txtNome" class="txtBox widthG" value="<?php echo $this->user->usr_companyname;?>" />
                                 </p>
                         </div>
                         </div>
@@ -479,7 +479,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                     </p>
  				               
 		</div>
-            <span id="ContentPlaceHolder_Body_ctvCadastro" style="display:none;"><label>Seu cadastro foi executado com sucesso. Verifique seu email para mais inscrições.</label></span>
+            <span id="ContentPlaceHolder_Body_ctvCadastro" style="display:none;"><label>Alteração realizada com sucesso.</label></span>
         </div>
         </form>
     </div>
