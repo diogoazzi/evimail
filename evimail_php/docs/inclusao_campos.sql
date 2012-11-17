@@ -16,4 +16,5 @@ ALTER TABLE user DROP COLUMN usr_document;
 -- nova inclusao 17/11
 
 ALTER TABLE email ADD COLUMN ema_body TEXT;
-
+ALTER TABLE email ADD COLUMN ema_usr_id int(11);
+ALTER TABLE email ADD FOREIGN KEY (ema_usr_id) REFERENCES user (usr_id);
