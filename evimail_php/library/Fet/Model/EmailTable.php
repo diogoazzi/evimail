@@ -40,15 +40,11 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		)
 		)
 		->setIntegrityCheck(false)
-		->joinLeft(array('u' => 'user'), 'u.ema_id = e.ema_ema_id', array('ema_email', 'ema_email'))
+// 		->joinLeft(array('u' => 'user'), 'u.usr_id = e.ema_usr_id', array('ema_email', 'ema_email'))
 
 		;//
 	
-	
-	
-		if (isset($params["nome"]))
-		$select->where("u.ema_name like ? or u.ema_nickname like ?", '%'.$params["nome"].'%');
-			    
+	    
 	
 		if (isset($params["ini"]) and isset($params["fim"]))
 		{
@@ -61,7 +57,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 				$dtFim = new Zend_Date($params["fim"] . " 23:59:59", "pt_BR");
 				$dtFim = $dtFim->get(Zend_Date::ISO_8601);
 
-				$select->where('u.ema_insertDate BETWEEN "'.$dtIni.'" AND "'.$dtFim.'"');
+				$select->where('u.ema_sendDate BETWEEN "'.$dtIni.'" AND "'.$dtFim.'"');
 			}
 		}
 
@@ -95,7 +91,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 
 
 		if(!$params['order']){
-			$select->order("ema_senddate desc");
+			$select->order("ema_sendDate desc");
 		} else {
 			$select->order($params['order']);
 		}
