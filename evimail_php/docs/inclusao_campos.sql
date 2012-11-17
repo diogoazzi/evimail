@@ -1,3 +1,7 @@
+-- JOJO fiZ UM novo clone e vieram estes campos somente 
+-- com int(14) no cnpj, foi ele que vc alterou
+-- to dando um push com ele asssm
+-- depois me confirmma se foi isso
 
 ALTER TABLE user ADD COLUMN usr_celularDDD int(2);
 ALTER TABLE user ADD COLUMN usr_telefoneDDD int(2);
