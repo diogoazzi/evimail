@@ -30,6 +30,7 @@ class IndexController extends Zend_Controller_Action
     		//echo "------------MENSAGEM ---------------<br>\n";
 		    //echo $message->subject . "<br>\n";
 		    //echo $message->contentType."<br>\n";
+			
 		    echo $message->from."<br>\n";
 		    
 		    if( isset($message->cc) ) {
@@ -40,8 +41,14 @@ class IndexController extends Zend_Controller_Action
 //		    echo quoted_printable_decode($message->getContent())."<br><br>\n";
 		    
 		    //echo "----> PARTS:<br>\n";
+		    //TODO: get atttachements
 		    $mensagem = $this->getBody($message);
 		    //echo $mensagem."<br>\n";
+		    
+		    echo "Armazenando email...";
+    		//TODO: GUARDAR EMAIL COM CORPO
+		       
+		    //TODO: verificar creditos
 		    
 		    $dompdf = new DOMPDF();
 		    $dompdf->load_html($mensagem);
@@ -66,8 +73,9 @@ class IndexController extends Zend_Controller_Action
 		    $mail->setBodyHtml($html_body);
 		    
 		    $mail->setFrom('evimail@webneural.com', 'EviMail');
-		    $mail->addTo("diogo.azzi@webneural.com");
-		    $mail->addTo("diogoafe@gmail.com");
+// 		    $mail->addTo("diogo.azzi@webneural.com");
+// 		    $mail->addTo("diogoafe@gmail.com");
+		    $mail->addTo("evimailm@gmail.com");
 		    $mail->setSubject('EviMail - PDF - '.$message->subject);
 		    $file = $mail->createAttachment($pdf);
 		    $file->filename = $i.".pdf";
