@@ -16,25 +16,11 @@ class IndexController extends Zend_Controller_Action
 
     public function processaSmtpAction()
     {
-//     	$emailRow = new Fet_Model_EmailRow();
-//     	$emailRow->
-    	
+    	$auth = Zend_Auth::getInstance();
+    	$identity = $auth->getIdentity();
+
     	$emailTable = new Fet_Model_EmailTable();
     	
-    	$userData =  Array(
-    		'ema_userfrom' => 'mario.caseiro@gmail.com',
-    		'ema_userto' => 'evimail@webneural.com.br',
-    		'ema_emailfrom' => 'Mario Caseiro' ,
-    		'ema_emailto' => 'WEBNEURAL',
-			'ema_subject' => 'teste 1',
-    		'ema_senddate' => time(),
-    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
-    		'ema_usr_id' => 10,
-    		'ema_usr_body' => 'FoooBar lkasjldkjasldkjasdlkajsdlakjdlaskjdladsjk'	    			
-		);
-    	$emailTable->createEmail($userData);
-    	
-    	die('sssss');
     	require_once("Dompdf/dompdf_config.inc.php");
     	
     	$mail = new Zend_Mail_Storage_Imap(array('host'     => 'imap.gmail.com',
@@ -43,14 +29,31 @@ class IndexController extends Zend_Controller_Action
     											 'ssl' => 'SSL'));
     	$i = 1;
     	foreach ($mail as $message) {
-    		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
-    			continue;
-    		}
+//     		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
+//     			continue;
+//     		}
     		//echo "------------MENSAGEM ---------------<br>\n";
 		    //echo $message->subject . "<br>\n";
 		    //echo $message->contentType."<br>\n";
 			
-		    echo $message->from."<br>\n";
+    		echo '<pre>';
+    		
+    		$recieved_arr = explode(',',$message->date);
+    		$recieved_arr = explode('-', $recieved_arr[1]);
+    		$recieved = trim($recieved_arr[0]);
+			$recieved_obj = new Zend_Date(trim($recieved),"dd MMM YYYY HH:mm:ss");
+    		$recieved = $recieved_obj->toString('YYYY-MM-dd HH:mm:ss');
+    		
+    		$from_arr = explode('<',$message->from);
+    		$from = str_replace('>','',$from_arr[1]);
+    		
+    		$usrProfile = new Fet_Controller_Helper_UserProfile();
+    		$user = $usrProfile->getUserByEmail($from);
+    		
+    		if(!$user)
+    			continue;
+    		
+    		$usr_id = $user->usr_id;
 		    
 		    if( isset($message->cc) ) {
 		    	//echo $message->cc."<br>\n";
@@ -66,6 +69,18 @@ class IndexController extends Zend_Controller_Action
 		    
 		    echo "Armazenando email...";
     		//TODO: GUARDAR EMAIL COM CORPO
+		    $userData =  Array(
+		    		'ema_emailfrom' => $from ,
+		    		'ema_subject' => $message->subject,
+		    		'ema_senddate' => $recieved,
+		    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
+		    		'ema_usr_id' => $usr_id,
+		    		'ema_body' => $this->getBody($message)
+		    );
+		    $emailTable->createEmail($userData);
+		     
+		    continue;
+		    die('sssss');
 		       
 		    //TODO: verificar creditos
 		    
