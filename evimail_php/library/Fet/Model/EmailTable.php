@@ -9,7 +9,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 	public $erro;
 	protected $_name 				= 'email';
 	protected $_rowClass 			= 'Fet_Model_EmailRow';
-	protected $_primary = 'usr_id';
+	protected $_primary = 'ema_id';
 	
 	//public function __construct(){
 		//$this->db = Zend_Registry::get('db_adapter_comunidade');
@@ -31,23 +31,23 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		->from(
 		array('e' => $this->_name),
 		array(
-		/*'usr_id', 'usr_email', 'usr_name', 'usr_nickname',
-		 'usr_occupation', 'usr_birthDate', 'cit_id', 'usr_status', 'usr_destaque',
-		'usr_insertDate',
-		'usr_insertDateFormat' => "DATE_FORMAT(u.usr_insertDate, '%d/%m/%Y %H:%i')"*/
-// 				'*','usr_insertDateFormat' => "DATE_FORMAT(u.usr_insertDate, '%d/%m/%Y %H:%i')",'usr_dataTerminoPlanoFormat' => "DATE_FORMAT(u.usr_dataTerminoPlano, '%d/%m/%Y %H:%i')"
-		//'usr_twitter', 'twitter_token', 'twitter_token_secret'
+		/*'ema_id', 'ema_email', 'ema_name', 'ema_nickname',
+		 'ema_occupation', 'ema_birthDate', 'cit_id', 'ema_status', 'ema_destaque',
+		'ema_insertDate',
+		'ema_insertDateFormat' => "DATE_FORMAT(u.ema_insertDate, '%d/%m/%Y %H:%i')"*/
+// 				'*','ema_insertDateFormat' => "DATE_FORMAT(u.ema_insertDate, '%d/%m/%Y %H:%i')",'ema_dataTerminoPlanoFormat' => "DATE_FORMAT(u.ema_dataTerminoPlano, '%d/%m/%Y %H:%i')"
+		//'ema_twitter', 'twitter_token', 'twitter_token_secret'
 		)
 		)
 		->setIntegrityCheck(false)
-		->joinLeft(array('u' => 'user'), 'u.usr_id = e.ema_usr_id', array('usr_email', 'usr_email'))
+		->joinLeft(array('u' => 'user'), 'u.ema_id = e.ema_ema_id', array('ema_email', 'ema_email'))
 
 		;//
 	
 	
 	
 		if (isset($params["nome"]))
-		$select->where("u.usr_name like ? or u.usr_nickname like ?", '%'.$params["nome"].'%');
+		$select->where("u.ema_name like ? or u.ema_nickname like ?", '%'.$params["nome"].'%');
 			    
 	
 		if (isset($params["ini"]) and isset($params["fim"]))
@@ -61,7 +61,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 				$dtFim = new Zend_Date($params["fim"] . " 23:59:59", "pt_BR");
 				$dtFim = $dtFim->get(Zend_Date::ISO_8601);
 
-				$select->where('u.usr_insertDate BETWEEN "'.$dtIni.'" AND "'.$dtFim.'"');
+				$select->where('u.ema_insertDate BETWEEN "'.$dtIni.'" AND "'.$dtFim.'"');
 			}
 		}
 
@@ -96,15 +96,15 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		 {
 		switch ($params["orderby"]) {
 		case 'n':
-		$order = "usr_name";
+		$order = "ema_name";
 		break;
 		case 'd':
-		$order = "usr_insertDate";
+		$order = "ema_insertDate";
 		break;
 		}
 		}
 
-		if (isset($order)===false) $order = "usr_nickname";
+		if (isset($order)===false) $order = "ema_nickname";
 		$select->order($order . " asc");*/
 
 		// 	$select->group('e.ema_id');
@@ -142,7 +142,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		}
 		
 		$data = array();
-		foreach($post as $key => $value){
+		foreach($userData as $key => $value){
 			$data[$key] = $value;
 		}
 		
@@ -164,86 +164,86 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 	*/	
 	public function updateUser( $post ){
 		
-		$row = $this->find($post["usr_id"])->current();
+		$row = $this->find($post["ema_id"])->current();
 
-		if($post['usr_birthDate']){
-			$dataNasc = explode("/",$post['usr_birthDate']);
-			$userData["usr_birthYear"] = $dataNasc[2]; 
-			$userData["usr_birthMonth"] = $dataNasc[1]; 
-			$userData["usr_birthDay"] = $dataNasc[0];
+		if($post['ema_birthDate']){
+			$dataNasc = explode("/",$post['ema_birthDate']);
+			$userData["ema_birthYear"] = $dataNasc[2]; 
+			$userData["ema_birthMonth"] = $dataNasc[1]; 
+			$userData["ema_birthDay"] = $dataNasc[0];
 			
 			$birthDate = new Zend_Date(
-				$userData["usr_birthYear"]."-".$userData["usr_birthMonth"]."-".$userData["usr_birthDay"],"YYYY-MM-DD"
+				$userData["ema_birthYear"]."-".$userData["ema_birthMonth"]."-".$userData["ema_birthDay"],"YYYY-MM-DD"
 			);
 			$birthDateF = $birthDate->toString('YYYY-MM-dd');
 		}
 		
-		$post['usr_birthDate'] = $birthDateF;
-		$post['usr_celular'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_celular']))));
-		$post['usr_telefone'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_telefone']))));
-		$post['usr_comercial'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_comercial']))));
+		$post['ema_birthDate'] = $birthDateF;
+		$post['ema_celular'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['ema_celular']))));
+		$post['ema_telefone'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['ema_telefone']))));
+		$post['ema_comercial'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['ema_comercial']))));
 
 		$userData = array();
 		foreach($post as $key => $value){
 			$userData[$key] = $value;
 		}
 		
-// 		$userData = array(  'usr_name'=>$post["usr_name"],
-// 							'usr_birthDate'=>$birthDateF,
+// 		$userData = array(  'ema_name'=>$post["ema_name"],
+// 							'ema_birthDate'=>$birthDateF,
 // 						    'cit_id'=>$post["cit_id"],
-// 						    'usr_maritalStatus'=>$post["usr_maritalStatus"],
-// 						    'usr_occupation'=>trim($post["usr_occupation"]),
-// 							'usr_aboutme'=>$post["usr_aboutme"],
-// 							'usr_passion'=>$post["usr_passion"],
-// 							'usr_activity'=>$post["usr_activity"],
-// 							'usr_music'=>$post["usr_music"],
-// 							'usr_party'=>$post["usr_party"],
-// 							'usr_orkut'=>$post["usr_orkut"],
-// 							'usr_twiter'=>$post["usr_twiter"],
-// 							'usr_facebook'=>$post["usr_facebook"],
-// 							'usr_myspace'=>$post["usr_myspace"],
-// 							'usr_msn'=>$post["usr_msn"],
-// 							'usr_site'=>$post["usr_site"],
-// 							'usr_hometown'=>$post["usr_hometown"],
-// 							'usr_drinking'=>$post["usr_drinking"],
-// 							'usr_drink'=>$post["usr_drink"],
-// 							'usr_smoke'=>$post["usr_smoke"],
-// 							'usr_celular'=>$post["usr_celular"],
-// 							'usr_logradouro'=>$post[usr_logradouro],
-// 							'usr_numero'=>$post[usr_numero],
-// 							'usr_bairro'=>$post[usr_bairro],
-// 							'usr_estado'=>$post[usr_estado],
-// 							'usr_cidade'=>$post[usr_cidade],
-// 							'usr_country'=>$post[usr_country],
-// 							'usr_cidadenatal'=>$post[usr_cidadenatal],
-// 							'usr_estadonatal'=>$post[usr_estadonatal],
-// 							'usr_paisnatal'=>$post[usr_paisnatal],
-// 							'usr_gender'=>$post[usr_gender],
-// 							'usr_celular'=>$post[usr_celular],
-// 							'usr_telefone'=>$post[usr_telefone],
-// 							'usr_comercial'=>$post[usr_comercial],
-// 							'usr_company'=>$post[usr_company],
-// 							'usr_companyposition'=>$post[usr_companyposition],
-// 							'usr_companycity'=>$post[usr_companycity],
-// 							'usr_companydescription'=>$post[usr_companydescription],
-// 							'usr_university'=>$post[usr_university],
-// 							'usr_universityyear'=>$post[usr_universityyear],
-// 							'usr_universitycurse'=>$post[usr_universitycurse],
-// 							'usr_universitydegree'=>$post[usr_universitydegree],
-// 							'usr_universitydescription'=>$post[usr_universitydescription],
-// 							'usr_college'=>$post[usr_college],
-// 							'usr_collegeyear'=>$post[usr_collegeyear],
-// 							'usr_collegedescription'=>$post[usr_collegedescription],
-// 							'usr_music'=>$post[usr_music],
-// 							'usr_books'=>$post[usr_books],
-// 							'usr_movies'=>$post[usr_movies],
-// 							'usr_television'=>$post[usr_television],
-// 							'usr_games'=>$post[usr_games],
-// 							'usr_team'=>$post[usr_team],
+// 						    'ema_maritalStatus'=>$post["ema_maritalStatus"],
+// 						    'ema_occupation'=>trim($post["ema_occupation"]),
+// 							'ema_aboutme'=>$post["ema_aboutme"],
+// 							'ema_passion'=>$post["ema_passion"],
+// 							'ema_activity'=>$post["ema_activity"],
+// 							'ema_music'=>$post["ema_music"],
+// 							'ema_party'=>$post["ema_party"],
+// 							'ema_orkut'=>$post["ema_orkut"],
+// 							'ema_twiter'=>$post["ema_twiter"],
+// 							'ema_facebook'=>$post["ema_facebook"],
+// 							'ema_myspace'=>$post["ema_myspace"],
+// 							'ema_msn'=>$post["ema_msn"],
+// 							'ema_site'=>$post["ema_site"],
+// 							'ema_hometown'=>$post["ema_hometown"],
+// 							'ema_drinking'=>$post["ema_drinking"],
+// 							'ema_drink'=>$post["ema_drink"],
+// 							'ema_smoke'=>$post["ema_smoke"],
+// 							'ema_celular'=>$post["ema_celular"],
+// 							'ema_logradouro'=>$post[ema_logradouro],
+// 							'ema_numero'=>$post[ema_numero],
+// 							'ema_bairro'=>$post[ema_bairro],
+// 							'ema_estado'=>$post[ema_estado],
+// 							'ema_cidade'=>$post[ema_cidade],
+// 							'ema_country'=>$post[ema_country],
+// 							'ema_cidadenatal'=>$post[ema_cidadenatal],
+// 							'ema_estadonatal'=>$post[ema_estadonatal],
+// 							'ema_paisnatal'=>$post[ema_paisnatal],
+// 							'ema_gender'=>$post[ema_gender],
+// 							'ema_celular'=>$post[ema_celular],
+// 							'ema_telefone'=>$post[ema_telefone],
+// 							'ema_comercial'=>$post[ema_comercial],
+// 							'ema_company'=>$post[ema_company],
+// 							'ema_companyposition'=>$post[ema_companyposition],
+// 							'ema_companycity'=>$post[ema_companycity],
+// 							'ema_companydescription'=>$post[ema_companydescription],
+// 							'ema_university'=>$post[ema_university],
+// 							'ema_universityyear'=>$post[ema_universityyear],
+// 							'ema_universitycurse'=>$post[ema_universitycurse],
+// 							'ema_universitydegree'=>$post[ema_universitydegree],
+// 							'ema_universitydescription'=>$post[ema_universitydescription],
+// 							'ema_college'=>$post[ema_college],
+// 							'ema_collegeyear'=>$post[ema_collegeyear],
+// 							'ema_collegedescription'=>$post[ema_collegedescription],
+// 							'ema_music'=>$post[ema_music],
+// 							'ema_books'=>$post[ema_books],
+// 							'ema_movies'=>$post[ema_movies],
+// 							'ema_television'=>$post[ema_television],
+// 							'ema_games'=>$post[ema_games],
+// 							'ema_team'=>$post[ema_team],
 // 							'codUsuarioAntigo'=>isset($post["codUsuarioAntigo"])? $post["codUsuarioAntigo"] : null);
 		
-// 		if($post["usr_status"]){
-// 			$userData['usr_status'] = $post['usr_status'];
+// 		if($post["ema_status"]){
+// 			$userData['ema_status'] = $post['ema_status'];
 // 		}
 		
 // 		if($post[img_id]){
@@ -252,14 +252,14 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		
 		$row->setFromArray($userData);
 
-// 		if( isset($post["usr_activeKey"])){
-// 			$row->usr_activeKey = $post["usr_activeKey"];
+// 		if( isset($post["ema_activeKey"])){
+// 			$row->ema_activeKey = $post["ema_activeKey"];
 // 		}
-// 		if( isset($post["usr_birthDate"])){
-// 			$row->usr_birthDate = $post["usr_birthDate"];
+// 		if( isset($post["ema_birthDate"])){
+// 			$row->ema_birthDate = $post["ema_birthDate"];
 // 		}
 		// atualiza username na session
-//		Zend_Auth::getInstance()->getIdentity()->usr_nickname = $post["usr_name"];
+//		Zend_Auth::getInstance()->getIdentity()->ema_nickname = $post["ema_name"];
 		
 		$row->save();
 	}
@@ -273,19 +273,19 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		$confirKey = $this->fetchAll(
 						$this->select()
 						->from(array('u'=>'user'),
-		                       array('u.usr_id'))
-						->where("usr_activeKey = ?", $key)
+		                       array('u.ema_id'))
+						->where("ema_activeKey = ?", $key)
 		);
 
-		$usrId = $confirKey->current()->usr_id;
+		$usrId = $confirKey->current()->ema_id;
 
 		if(!empty($usrId)){
 			$set = array(
-			    'u.usr_id' => $usrId
+			    'u.ema_id' => $usrId
 			);
 			
 			$row = $this->find($usrId)->current();
-			$row->usr_status = "1";
+			$row->ema_status = "1";
 			$row->save();
 			
 			return $row;
@@ -302,10 +302,10 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 
 		$select = $this->select()
 		->from(array('u'=>'user'))
-		->where("usr_email = ?", $email);
+		->where("ema_email = ?", $email);
 
 		if($deleted != null){
-			$select->where('u.usr_deleted = '.$deleted );
+			$select->where('u.ema_deleted = '.$deleted );
 		}
 		
 		$user = $this->fetchAll(
@@ -325,10 +325,10 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 	
 		$select = $this->select()
 		->from(array('u'=>'user'))
-		->where("usr_facebookid = ?", $facebook);
+		->where("ema_facebookid = ?", $facebook);
 	
 		if($deleted != null){
-			$select->where('u.usr_deleted = '.$deleted );
+			$select->where('u.ema_deleted = '.$deleted );
 		}
 	
 		$user = $this->fetchAll(
@@ -347,10 +347,10 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 	
 		$select = $this->select()
 		->from(array('u'=>'user'))
-		->where("usr_facebookid > 0");
+		->where("ema_facebookid > 0");
 	
 		if($deleted != null){
-			$select->where('u.usr_deleted = '.$deleted );
+			$select->where('u.ema_deleted = '.$deleted );
 		}
 	
 		$user = $this->fetchAll(
@@ -366,8 +366,8 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 
 	public function getFriendsWithFacebookId($usrId){
 
-		$sql1 = 'select usr_id as idFriend from friend where usr_idFriend = '.$usrId;
-		$sql2 = 'select usr_idFriend as idFriend from friend where usr_id = '.$usrId;
+		$sql1 = 'select ema_id as idFriend from friend where ema_idFriend = '.$usrId;
+		$sql2 = 'select ema_idFriend as idFriend from friend where ema_id = '.$usrId;
 	
 		$db = $this->getAdapter();
 	
@@ -375,13 +375,13 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		 * Amigos que adicionaram o usuario $usrId
 		 * @var Zend_Db_Sql
 		 */
-		$sql1 = $db->select()->from('friend', array('idFriend'=>'usr_id'))->where('usr_idFriend = ?', $usrId)->where('fri_status = 1');
+		$sql1 = $db->select()->from('friend', array('idFriend'=>'ema_id'))->where('ema_idFriend = ?', $usrId)->where('fri_status = 1');
 	
 		/**
 		 * Amigos adicionados pelo usupário $usrId
 		 * @var Zend_Db_Sql
 		 */
-		$sql2 = $db->select()->from('friend', array('idFriend'=>'usr_idFriend'))->where('usr_id = ?', $usrId)->where('fri_status = 1');
+		$sql2 = $db->select()->from('friend', array('idFriend'=>'ema_idFriend'))->where('ema_id = ?', $usrId)->where('fri_status = 1');
 	
 	
 		$sqlUserFriends = $db->select()->union(array($sql1, $sql2));
@@ -393,10 +393,10 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		$sql = $this->select()
 		->from(array('u'=>'user'))
 		->setIntegrityCheck(false)
-		->join(array('uf'=>$sqlUserFriends), 'uf.idFriend = u.usr_id')
-		->where("usr_facebookid > 0");
+		->join(array('uf'=>$sqlUserFriends), 'uf.idFriend = u.ema_id')
+		->where("ema_facebookid > 0");
 	
-		$sql->where('u.usr_deleted = 0');
+		$sql->where('u.ema_deleted = 0');
 		
 		$user = $this->fetchAll(
 		$sql
@@ -412,7 +412,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 
 	public function updatePasswd( $usrId, $nPasswd ){
 		$row = $this->find($usrId)->current();
-		$userData = array(  'usr_password'=>$nPasswd);
+		$userData = array(  'ema_password'=>$nPasswd);
 		$row->setFromArray($userData);
 		$row->save();
 	}
@@ -425,9 +425,9 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		
 		$select = $this->select()
 		->from(array('u'=>'user'))
-		->where("usr_nickname = ?", trim($login));
+		->where("ema_nickname = ?", trim($login));
 		if($deleted != null){
-			$select->where('u.usr_deleted = '.$deleted);
+			$select->where('u.ema_deleted = '.$deleted);
 		}		
 		
 		$user = $this->fetchAll(
@@ -450,11 +450,11 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 
 		$select = $this->select()
 					->from(array('u'=>'user'))
-					->where("usr_name like '%$name%'")
-					->where('u.usr_deleted = 0');
+					->where("ema_name like '%$name%'")
+					->where('u.ema_deleted = 0');
 		
 		if($params[status] != ""){
-			$select->where('usr_status = ?',$params[status]);
+			$select->where('ema_status = ?',$params[status]);
 		}
 		if($limit){
 			$select->limit($limit);
