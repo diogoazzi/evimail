@@ -9,3 +9,7 @@ ALTER TABLE user ADD COLUMN usr_companyname varchar(255);
 
 ALTER TABLE user DROP COLUMN usr_document;
 
+-- nova inclusao 17/11
+
+ALTER TABLE email ADD COLUMN ema_body TEXT;
+
