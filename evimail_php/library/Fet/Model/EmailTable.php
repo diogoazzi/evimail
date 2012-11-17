@@ -29,19 +29,9 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		 */
 		$select = $this->select()
 		->from(
-		array('e' => $this->_name),
-		array(
-		/*'ema_id', 'ema_email', 'ema_name', 'ema_nickname',
-		 'ema_occupation', 'ema_birthDate', 'cit_id', 'ema_status', 'ema_destaque',
-		'ema_insertDate',
-		'ema_insertDateFormat' => "DATE_FORMAT(e.ema_insertDate, '%d/%m/%Y %H:%i')"*/
-// 				'*','ema_insertDateFormat' => "DATE_FORMAT(e.ema_insertDate, '%d/%m/%Y %H:%i')",'ema_dataTerminoPlanoFormat' => "DATE_FORMAT(e.ema_dataTerminoPlano, '%d/%m/%Y %H:%i')"
-		//'ema_twitter', 'twitter_token', 'twitter_token_secret'
-		)
+			array('e' => $this->_name)
 		)
 		->setIntegrityCheck(false)
-// 		->joinLeft(array('u' => 'user'), 'e.usr_id = e.ema_usr_id', array('ema_email', 'ema_email'))
-
 		;//
 	
 	    
@@ -81,9 +71,13 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		if(isset($params["ema_id"])){
 			$select->where('e.ema_id = ?', $params['ema_id']);
 		}
+		
+		if(isset($params["ema_hash"])){
+			$select->where('e.ema_hash = ?', $params['ema_hash']);
+		}
 
 
-		//  Zend_Debug::dump($select->__toString());
+// 		 Zend_Debug::dump($select->__toString());
 
 		if($limit || $offset)
 			$select->limit($limit, $offset);
@@ -182,6 +176,18 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		} else {
 			return false;
 		}
+	}
+	
+	public function verificaByHash($hash){
+		$param = array('ema_hash' => $hash);
+		$mail = $this->getAllEmail($param, true);
+		
+		
+// 		print_r($mail);
+		if(!$mail || count($mail) == 0)
+			return false;
+		
+		return true;
 	}
 }
 ?>

@@ -54,8 +54,10 @@ class IndexController extends Zend_Controller_Action
 		    //TODO: get atttachements
 		    $mensagem = $this->getBody($message);
 		    
-		    //TODO: verificar hash se hasg igual nao armazena
-		    //por um IF HASH NAO EXISTE
+		    $hash = md5($from.$recieved.$this->getBody($message));
+		    if($emailTable->verificaByHash($hash))
+		    	continue;
+		    
 		    echo "Armazenando email...";
 		    $userData =  Array(
 		    		'ema_emailfrom' => $from ,
@@ -63,9 +65,15 @@ class IndexController extends Zend_Controller_Action
 		    		'ema_senddate' => $recieved,
 		    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
 		    		'ema_usr_id' => $usr_id,
-		    		'ema_body' => $this->getBody($message)
+		    		'ema_body' => $this->getBody($message),
+		    		'ema_hash' => $hash
 		    );
-// 		    $emailTable->createEmail($userData);
+		    $emailTable->createEmail($userData);
+		    
+			continue;		    
+		    die('acaba aqui a rotina de processa smtp');
+		    
+		    //TODO: remover isto tudo para o laudo
 		     		       
 		    //TODO: verificar creditos
 		    $creditTable = new Fet_Model_CreditTable();
@@ -73,8 +81,10 @@ class IndexController extends Zend_Controller_Action
 		    $usr_id = 18;
 		    
 		    $totalCredito = $creditTable->getTotalCreditosDisponiveis($usr_id);
-		    
+		    //TODO: alterar payed para utiloizado e nao confirmado
 // 		    $creditRow = $creditTable->getFirstPayedRow($usr_id);
+// 		    $data = array('1')
+// 		    $creditTable->update($data, $where);
 		    
 		    continue;
 		    die('sssss');

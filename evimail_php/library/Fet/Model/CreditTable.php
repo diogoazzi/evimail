@@ -3,7 +3,8 @@ class Fet_Model_CreditTable extends Zend_Db_Table
 {	
 	const CREDITO_NAO_PAGO =0;
 	const CREDITO_PAGO = 1;
-	const CREDITO_UTILIZADO = 2;
+	const CREDITO_UTILIZADO_NAO_CONFIRMADO = 2;
+	const CREDITO_UTILIZADO_CONFIRMADO = 3;
 
 	private $db;
 	public $erro;
