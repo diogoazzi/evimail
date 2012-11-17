@@ -32,10 +32,6 @@ class IndexController extends Zend_Controller_Action
 //     		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
 //     			continue;
 //     		}
-    		//echo "------------MENSAGEM ---------------<br>\n";
-		    //echo $message->subject . "<br>\n";
-		    //echo $message->contentType."<br>\n";
-			
     		echo '<pre>';
     		
     		$recieved_arr = explode(',',$message->date);
@@ -55,20 +51,12 @@ class IndexController extends Zend_Controller_Action
     		
     		$usr_id = $user->usr_id;
 		    
-		    if( isset($message->cc) ) {
-		    	//echo $message->cc."<br>\n";
-		    }
-		    
-//		    echo "----> FULL BODY:<br>\n";
-//		    echo quoted_printable_decode($message->getContent())."<br><br>\n";
-		    
-		    //echo "----> PARTS:<br>\n";
 		    //TODO: get atttachements
 		    $mensagem = $this->getBody($message);
-		    //echo $mensagem."<br>\n";
 		    
+		    //TODO: verificar hash se hasg igual nao armazena
+		    //por um IF HASH NAO EXISTE
 		    echo "Armazenando email...";
-    		//TODO: GUARDAR EMAIL COM CORPO
 		    $userData =  Array(
 		    		'ema_emailfrom' => $from ,
 		    		'ema_subject' => $message->subject,
@@ -77,12 +65,15 @@ class IndexController extends Zend_Controller_Action
 		    		'ema_usr_id' => $usr_id,
 		    		'ema_body' => $this->getBody($message)
 		    );
-		    $emailTable->createEmail($userData);
-		     
+// 		    $emailTable->createEmail($userData);
+		     		       
+		    //TODO: verificar creditos
+		    $creditTable = new Fet_Model_CreditTable();
+		    $totalCredito = $creditTable->getTotalCreditosDisponiveis($usr_id);
+		    
+		    
 		    continue;
 		    die('sssss');
-		       
-		    //TODO: verificar creditos
 		    
 		    $dompdf = new DOMPDF();
 		    $dompdf->load_html($mensagem);
