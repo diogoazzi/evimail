@@ -16,6 +16,25 @@ class IndexController extends Zend_Controller_Action
 
     public function processaSmtpAction()
     {
+//     	$emailRow = new Fet_Model_EmailRow();
+//     	$emailRow->
+    	
+    	$emailTable = new Fet_Model_EmailTable();
+    	
+    	$userData =  Array(
+    		'ema_userfrom' => 'mario.caseiro@gmail.com',
+    		'ema_userto' => 'evimail@webneural.com.br',
+    		'ema_emailfrom' => 'Mario Caseiro' ,
+    		'ema_emailto' => 'WEBNEURAL',
+			'ema_subject' => 'teste 1',
+    		'ema_senddate' => time(),
+    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
+    		'ema_usr_id' => 10,
+    		'ema_usr_body' => 'FoooBar lkasjldkjasldkjasdlkajsdlakjdlaskjdladsjk'	    			
+		);
+    	$emailTable->createEmail($userData);
+    	
+    	die('sssss');
     	require_once("Dompdf/dompdf_config.inc.php");
     	
     	$mail = new Zend_Mail_Storage_Imap(array('host'     => 'imap.gmail.com',
