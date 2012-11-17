@@ -34,13 +34,13 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		/*'ema_id', 'ema_email', 'ema_name', 'ema_nickname',
 		 'ema_occupation', 'ema_birthDate', 'cit_id', 'ema_status', 'ema_destaque',
 		'ema_insertDate',
-		'ema_insertDateFormat' => "DATE_FORMAT(u.ema_insertDate, '%d/%m/%Y %H:%i')"*/
-// 				'*','ema_insertDateFormat' => "DATE_FORMAT(u.ema_insertDate, '%d/%m/%Y %H:%i')",'ema_dataTerminoPlanoFormat' => "DATE_FORMAT(u.ema_dataTerminoPlano, '%d/%m/%Y %H:%i')"
+		'ema_insertDateFormat' => "DATE_FORMAT(e.ema_insertDate, '%d/%m/%Y %H:%i')"*/
+// 				'*','ema_insertDateFormat' => "DATE_FORMAT(e.ema_insertDate, '%d/%m/%Y %H:%i')",'ema_dataTerminoPlanoFormat' => "DATE_FORMAT(e.ema_dataTerminoPlano, '%d/%m/%Y %H:%i')"
 		//'ema_twitter', 'twitter_token', 'twitter_token_secret'
 		)
 		)
 		->setIntegrityCheck(false)
-// 		->joinLeft(array('u' => 'user'), 'u.usr_id = e.ema_usr_id', array('ema_email', 'ema_email'))
+// 		->joinLeft(array('u' => 'user'), 'e.usr_id = e.ema_usr_id', array('ema_email', 'ema_email'))
 
 		;//
 	
@@ -57,7 +57,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 				$dtFim = new Zend_Date($params["fim"] . " 23:59:59", "pt_BR");
 				$dtFim = $dtFim->get(Zend_Date::ISO_8601);
 
-				$select->where('u.ema_sendDate BETWEEN "'.$dtIni.'" AND "'.$dtFim.'"');
+				$select->where('e.ema_sendDate BETWEEN "'.$dtIni.'" AND "'.$dtFim.'"');
 			}
 		}
 
@@ -78,7 +78,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 					or e.ema_body like ?", '%'.$params["search"].'%');
 		}
 
-		if($params["ema_id"]){
+		if(isset($params["ema_id"])){
 			$select->where('e.ema_id = ?', $params['ema_id']);
 		}
 
@@ -90,7 +90,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 
 
 
-		if(!$params['order']){
+		if(!isset($params['order'])){
 			$select->order("ema_sendDate desc");
 		} else {
 			$select->order($params['order']);
