@@ -69,8 +69,12 @@ class IndexController extends Zend_Controller_Action
 		     		       
 		    //TODO: verificar creditos
 		    $creditTable = new Fet_Model_CreditTable();
+		    
+		    $usr_id = 18;
+		    
 		    $totalCredito = $creditTable->getTotalCreditosDisponiveis($usr_id);
 		    
+// 		    $creditRow = $creditTable->getFirstPayedRow($usr_id);
 		    
 		    continue;
 		    die('sssss');

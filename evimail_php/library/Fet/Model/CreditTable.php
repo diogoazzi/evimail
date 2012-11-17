@@ -136,7 +136,7 @@ class Fet_Model_CreditTable extends Zend_Db_Table
 	
 	public function getTotalCreditosDisponiveis($usr_id){
 		
-		$usr_id = 18;
+// 		$usr_id = 18;
 		
 		$params = array(
 				'usr_id' => $usr_id,
@@ -146,16 +146,24 @@ class Fet_Model_CreditTable extends Zend_Db_Table
 		$credits = $this->getAllCredits($params,true);
 		$total = 0;
 		
-		echo count($credits);
-		
 		foreach($credits as $credit)
 			$total += $credit->cre_value;
 
-		die("#$total");
+		return $total;
 	}
 
 	public function getFirstPayedRow($usr_id){
+		$params = array(
+				'usr_id' => $usr_id,
+				'payed' => Fet_Model_CreditTable::CREDITO_PAGO
+		);
 		
+		$credits = $this->getAllCredits($params,true);
+		
+		if(!credits || count($credits) == 0)
+			return null;
+		
+		return($credits[0]);
 	}
 	
 
