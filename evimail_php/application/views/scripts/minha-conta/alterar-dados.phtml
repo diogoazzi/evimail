@@ -40,7 +40,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                         	<div class="boxEuSou">
                                 <p>
                                 	<label for="ContentPlaceHolder_Body_txtCPF" id="ContentPlaceHolder_Body_txtCPF">CPF<span class='corAster'>*</span></label>
-                                    <input name="usr_document_cpf" type="text" maxlength="14" id="txtNome" class="txtBox" value="<?php echo $this->user->usr_document_cpf?>" />
+                                    <input name="usr_document_cpf" type="text" maxlength="11" id="txtNome" class="txtBox" value="<?php echo $this->user->usr_document_cpf?>" />
                                 </p>
                                 <p>
                                 	<label for="ContentPlaceHolder_Body_rblSexo" id="ContentPlaceHolder_Body_rblSexo">Sexo<span class='corAster'>*</span></label>
@@ -61,7 +61,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                         <div class="boxEuSou">
                                 <p>
                                     <label for="ContentPlaceHolder_Body_txtCNPJ" id="ContentPlaceHolder_Body_txtCNPJ">CNPJ<span class='corAster'>*</span></label>
-                                    <input name="usr_document_cnpj" type="text" maxlength="10" id="txtCNPJ" class="txtBox" value="<?php echo $this->user->usr_document_cnpj;?>" />
+                                    <input name="usr_document_cnpj" type="text" maxlength="14" id="txtCNPJ" class="txtBox" value="<?php echo $this->user->usr_document_cnpj;?>" />
                                 </p>
                                 <p>
                                 	<label for="ContentPlaceHolder_Body_txtRazaoSocial" id="ContentPlaceHolder_Body_lblNome">Razão Social<span class='corAster'>*</span></label>
