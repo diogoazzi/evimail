@@ -199,6 +199,10 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	$auth = Zend_Auth::getInstance();
     	$user = $auth->getIdentity();
+    	
+//     	echo '<pre>';
+//     	print_r($user);
+//     	die();
     	$this->view->assign('user', $user);
     	
     	
@@ -274,5 +278,10 @@ class MinhaContaController extends Zend_Controller_Action
     	echo '<pre>';
     	print_r($POST);
     	die(); 	
-    }    
+    }
+
+    
+    public function consultarHistoricoAction(){
+    	
+    }
 }

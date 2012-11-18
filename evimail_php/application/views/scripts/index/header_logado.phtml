@@ -128,7 +128,7 @@ return true;
 		
             <div id="divLogadoCont">
                 <a id="lnkSair" href="/auth/logout">Sair</a>
-                <p class="firstChild">Olá,&nbsp;Samira PJ</p>
+                <p class="firstChild">Olá,&nbsp;<?php echo $this->user->usr_name?></p>
                 <p>Você não possui um serviço contratado</p>
             </div>
         
@@ -141,7 +141,7 @@ return true;
             <li id="menuUsrLogado_Dados" <?php if($this->menu == 'alterar-dados') echo 'class="selected"';?>><a href="/minha-conta/alterar-dados"><span>Alterar Dados</span></a></li>
             <li id="menuUsrLogado_Emails" <?php if($this->menu == 'emails') echo 'class="selected"';?>><a href="/minha-conta/gerenciar-emails"><span>Gerenciar Emails Adicionais</span></a></li>
             <li id="menuUsrLogado_Contratar" <?php if($this->menu == 'contratar') echo 'class="selected"';?>><a href="/minha-conta/contratar-servico"><span>Contratar um Serviço</span></a></li>
-            <li id="menuUsrLogado_Historico" <?php if($this->menu == 'historico') echo 'class="selected"';?>> <a href="ConsultarHistorico.aspx"><span>Consultar Histórico de Emails</span></a></li>
+            <li id="menuUsrLogado_Historico" <?php if($this->menu == 'historico') echo 'class="selected"';?>> <a href="/minha-conta/consultar-historico"><span>Consultar Histórico de Emails</span></a></li>
             <li id="menuUsrLogado_Laudo" <?php if($this->menu == 'laudo') echo 'class="selected"';?>> <a href="/xpto"><span>Laudos</span></a></li>
         </ul>
     </div>
