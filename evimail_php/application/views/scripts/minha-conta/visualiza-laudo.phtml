@@ -1,0 +1,81 @@
+<body id="body" class="inner cadastro">
+<?php
+echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'alterar-dados'));
+?>
+	<form method="post" action="/minha-conta/gerar-pdf" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="ema_id" id="__VIEWSTATE" value="<?php echo $this->email->ema_id?>" />
+</div>
+
+	<div id="laudoPDF" class="body">
+		<h3>Transforme seu e-mail</h3>
+		<h4>Laudo</h4>
+		<p class="assunto">
+			<span id="lblTituloAssunto">Assunto do email</span>
+			<?php echo $this->email->ema_subject;?> 
+		</p>
+		
+		<p class="legendDetalhe">
+			<span>
+				confirmação pendente
+			</span><span>
+				confirmado
+			</span>
+		</p>
+	
+<div class="box">
+    <p>
+        <span id="ucDetalhesEmail_lblIPOrigem">Cabeçalho:</span>
+        <span id="ucDetalhesEmail_lblIPOrigemValue"> Data Recebimento: <?php echo $this->email->ema_DateFormatado?></span>
+    </p>
+    <p>
+        
+        <span id="ucDetalhesEmail_lblIPDestinoValue"></span>
+    </p>
+    <div>
+        <p>
+            <span id="ucDetalhesEmail_lblEviMail">Evimail</span>
+            -
+            
+            -
+            
+        </p>
+    </div>
+</div>
+    <div class="box">
+        <p>
+            <span id="ucDetalhesEmail_lblCorpo">corpo: <?php echo $this->email->ema_body;?></span>
+            
+        </p>
+
+        
+<div id="ucDetalhesEmail_pnlAnexo">
+	
+        <p>
+            <span id="ucDetalhesEmail_lblArquivos">anexos:</span>
+            
+        </p>
+        
+
+</div>
+    </div>
+<div id="ucDetalhesEmail_pnlGerarPdf">
+	
+    <a id="lnkCriarConta" class="button" target="_blank"><span>GERAR PDF</span></a>
+
+</div>
+
+	</div>
+	</form>
+<?php
+echo $this->partial('index/footer.phtml');
+?>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#lnkCriarConta').click(function(){
+		$("#form1").submit();
+	});
+});
+</script>	
+</body>
+</html>
