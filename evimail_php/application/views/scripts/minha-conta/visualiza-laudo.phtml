@@ -2,7 +2,7 @@
 <?php
 echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'alterar-dados'));
 ?>
-	<form method="post" action="/minha-conta/gerar-pdf" id="form1">
+<form method="post" action="/minha-conta/gerar-pdf" id="form1">
 <div class="aspNetHidden">
 <input type="hidden" name="ema_id" id="__VIEWSTATE" value="<?php echo $this->email->ema_id?>" />
 </div>
@@ -73,6 +73,7 @@ echo $this->partial('index/footer.phtml');
 <script type="text/javascript">
 $(document).ready(function() {
 	$('#lnkCriarConta').click(function(){
+		alert('xpto');
 		$("#form1").submit();
 	});
 });
