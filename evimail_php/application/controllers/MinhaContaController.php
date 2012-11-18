@@ -334,10 +334,10 @@ class MinhaContaController extends Zend_Controller_Action
     	$mail->send($transport);
 
 
-    	die('eeee');
-    	//TODO: debitar credito
+    	$creditRow->cre_value = $creditRow->cre_value -1;
+    	$creditRow->save();
     	
-    	
+    	$this->_redirect('/minha-conta');
     }
 
     
