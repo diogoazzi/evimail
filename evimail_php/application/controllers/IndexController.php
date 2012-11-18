@@ -21,18 +21,15 @@ class IndexController extends Zend_Controller_Action
 
     	$emailTable = new Fet_Model_EmailTable();
     	
-    	require_once("Dompdf/dompdf_config.inc.php");
-    	
     	$mail = new Zend_Mail_Storage_Imap(array('host'     => 'imap.gmail.com',
     	                                         'user'     => 'evimail@webneural.com',
     	                                         'password' => 'y2s2r2i4',
     											 'ssl' => 'SSL'));
     	$i = 1;
     	foreach ($mail as $message) {
-//     		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
-//     			continue;
-//     		}
-    		echo '<pre>';
+    		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
+    			continue;
+    		}
     		
     		$recieved_arr = explode(',',$message->date);
     		$recieved_arr = explode('-', $recieved_arr[1]);
@@ -50,37 +47,31 @@ class IndexController extends Zend_Controller_Action
     		if(!$user)
     			continue;
     		
-    		//TODO:remover DEBUG
-    		if($user->usr_id != 18)
-    			continue;
-    		
     		$usr_id = $user->usr_id;
 		    
 		    //TODO: get atttachements
 		    $mensagem = $this->getBody($message);
 		    
 		    //email jah cadastrado nao salva
-// 		    $hash = md5($from.$recieved.$this->getBody($message));
-// 		    if($emailTable->verificaByHash($hash))
-// 		    	continue;
+		    $hash = md5($from.$recieved.$this->getBody($message));
+		    if($emailTable->verificaByHash($hash))
+		    	continue;
 		    
-// 		    echo "Armazenando email...";
-// 		    $userData =  Array(
-// 		    		'ema_emailfrom' => $from ,
-// 		    		'ema_subject' => $message->subject,
-// 		    		'ema_senddate' => $recieved,
-// 		    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
-// 		    		'ema_usr_id' => $usr_id,
-// 		    		'ema_body' => $this->getBody($message),
-// 		    		'ema_hash' => $hash
-// 		    );
-// 		    $emailSaved = $emailTable->createEmail($userData);
+		    echo "Armazenando email...";
+		    $userData =  Array(
+		    		'ema_emailfrom' => $from ,
+		    		'ema_subject' => $message->subject,
+		    		'ema_senddate' => $recieved,
+		    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
+		    		'ema_usr_id' => $usr_id,
+		    		'ema_body' => $this->getBody($message),
+		    		'ema_hash' => $hash
+		    );
+		    $emailSaved = $emailTable->createEmail($userData);
 		    
-// 		    print_r($user);
-		    //TODO: gerar auth key
+
 		    $auth_key = $user->usr_activeKey;
-		    
-		    //TODO: envial email de confirmação de recebimento
+
 		    $creditTable = new Fet_Model_CreditTable();
 		    $totalCredito = $creditTable->getTotalCreditosDisponiveis($usr_id);
 		    
@@ -104,73 +95,17 @@ class IndexController extends Zend_Controller_Action
 		    $mail->setBodyHtml($html_body);
 		    
 		    $mail->setFrom('evimail@webneural.com', 'EviMail');
-		    // 		    $mail->addTo("diogo.azzi@webneural.com");
-		    // 		    $mail->addTo("diogoafe@gmail.com");
 		    $mail->addTo($from);
 		    $mail->setSubject('EviMail - PDF - '.$message->subject);
 		    $mail->send($transport);
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
 		    
 		    
 		    die('acaba aqui a rotina de processa smtp');
 			//fim		    
 			continue;		    
 		    die('acaba aqui a rotina de processa smtp');
-		    
-		    //TODO: remover isto tudo para o laudo
 		     		       
-		    //TODO: verificar creditos
-		    $creditTable = new Fet_Model_CreditTable();
-		    
-		    $usr_id = 18;
-		    
-		    $totalCredito = $creditTable->getTotalCreditosDisponiveis($usr_id);
-		    //TODO: alterar payed para utiloizado e nao confirmado
-// 		    $creditRow = $creditTable->getFirstPayedRow($usr_id);
-// 		    $data = array('1')
-// 		    $creditTable->update($data, $where);
-		    
-		    continue;
-		    die('sssss');
-		    
-		    $dompdf = new DOMPDF();
-		    $dompdf->load_html($mensagem);
-		    $dompdf->set_paper('letter', 'landscape');
-		    $dompdf->render();
-		    
-		    $pdf = $dompdf->output();
-		    file_put_contents($i.".pdf", $pdf);
-		    
-
-		    $config = array('auth' => 'login',
-		                    'username' => 'evimail@webneural.com',
-		                    'password' => 'y2s2r2i4',
-		    				'ssl' => 'tls',
-		    				'port' => 587);
-		    
-		    $transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
-		    
-		    $html_body = $message->subject ."<br><br>".$mensagem;
-		    $mail = new Zend_Mail();
-		    $mail->setType(Zend_Mime::MULTIPART_RELATED);
-		    $mail->setBodyHtml($html_body);
-		    
-		    $mail->setFrom('evimail@webneural.com', 'EviMail');
-// 		    $mail->addTo("diogo.azzi@webneural.com");
-// 		    $mail->addTo("diogoafe@gmail.com");
-		    $mail->addTo("evimailm@gmail.com");
-		    $mail->setSubject('EviMail - PDF - '.$message->subject);
-		    $file = $mail->createAttachment($pdf);
-		    $file->filename = $i.".pdf";
-		    $mail->send($transport);
-		    $i++;
+		    		    $i++;
     	}
     	
     	die('a');

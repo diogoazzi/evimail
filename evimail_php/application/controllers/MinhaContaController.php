@@ -274,10 +274,68 @@ class MinhaContaController extends Zend_Controller_Action
 
     
     public function gerarPdfAction(){
-    	$POST = $this->getRequest()->getPost();
-    	echo '<pre>';
-    	print_r($POST);
-    	die(); 	
+    	$post = $this->getRequest()->getPost();
+    	$emailTable = new Fet_Model_EmailTable();
+    	$email = $emailTable->find($post['ema_id'])->current();
+    	
+    	$creditTable = new Fet_Model_CreditTable();    	
+    	$totalCredito = $creditTable->getTotalCreditosDisponiveis($email->ema_usr_id);
+		$creditRow = $creditTable->getFirstPayedRow($email->ema_usr_id);
+		
+		$auth = Zend_Auth::getInstance();
+		$user = $auth->getIdentity();
+		
+		$Date = new Zend_Date($email->ema_senddate,"YYYY-MM-DD HH:mm:ss");
+		$DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
+		
+		$mail_pdf = '<html><body>hash autentica&ccedil;&atilde;o: '.$email->ema_hash.'<br><br>';
+		$mail_pdf .= 'Recebido em: '.$DateF.'<br>';
+		$mail_pdf .= 'De: '.$email->ema_emailfrom.'<br>';
+		$mail_pdf .= 'Assunto: '.$email->ema_subject.'<br><br>';
+		$mail_pdf .= $email->ema_body;
+		
+		require_once("Dompdf/dompdf_config.inc.php");
+    	$dompdf = new DOMPDF();
+    	$dompdf->load_html($mail_pdf);
+    	$dompdf->set_paper('letter', 'landscape');
+    	$dompdf->render();
+    	
+    	$pathBase = pathinfo(__FILE__);
+    	$pathBase = $pathBase['dirname'];
+    	$path = $pathBase.'/../../public/pdf/'.$user->usr_id.'/'.$email->ema_hash.'/';
+    	if(!file_exists($path))
+    		mkdir($path, 0755,true);
+    	
+
+    	$pdf = $dompdf->output();
+    	file_put_contents($path."email.pdf", $pdf);
+    	
+    	
+    	die('eeeee');
+    	$config = array('auth' => 'login',
+    			'username' => 'evimail@webneural.com',
+    			'password' => 'y2s2r2i4',
+    			'ssl' => 'tls',
+    			'port' => 587);
+    	
+    	$transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
+    	
+    	$html_body = $mail->ema_subject ."<br><br>".$mail->ema_body;
+    	$mail = new Zend_Mail();
+    	$mail->setType(Zend_Mime::MULTIPART_RELATED);
+    	$mail->setBodyHtml($html_body);
+    	
+    	$mail->setFrom('evimail@webneural.com', 'EviMail');
+    	// 		    $mail->addTo("diogo.azzi@webneural.com");
+    	// 		    $mail->addTo("diogoafe@gmail.com");
+    	$mail->addTo("evimailm@gmail.com");
+    	$mail->setSubject('EviMail - PDF - '.$message->subject);
+    	$file = $mail->createAttachment($pdf);
+    	$file->filename = $i.".pdf";
+    	$mail->send($transport);
+
+    	
+    	//TODO: debitar credito
     }
 
     
