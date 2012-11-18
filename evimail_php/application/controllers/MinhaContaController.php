@@ -311,7 +311,6 @@ class MinhaContaController extends Zend_Controller_Action
     	file_put_contents($path."email.pdf", $pdf);
     	
     	
-    	die('eeeee');
     	$config = array('auth' => 'login',
     			'username' => 'evimail@webneural.com',
     			'password' => 'y2s2r2i4',
@@ -320,7 +319,7 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	$transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
     	
-    	$html_body = $mail->ema_subject ."<br><br>".$mail->ema_body;
+    	$html_body = $email->ema_subject ."<br><br>".$email->ema_body;
     	$mail = new Zend_Mail();
     	$mail->setType(Zend_Mime::MULTIPART_RELATED);
     	$mail->setBodyHtml($html_body);
@@ -328,14 +327,17 @@ class MinhaContaController extends Zend_Controller_Action
     	$mail->setFrom('evimail@webneural.com', 'EviMail');
     	// 		    $mail->addTo("diogo.azzi@webneural.com");
     	// 		    $mail->addTo("diogoafe@gmail.com");
-    	$mail->addTo("evimailm@gmail.com");
-    	$mail->setSubject('EviMail - PDF - '.$message->subject);
+    	$mail->addTo($email->ema_emailfrom);
+    	$mail->setSubject('EviMail - PDF - '.$email->ema_subject);
     	$file = $mail->createAttachment($pdf);
-    	$file->filename = $i.".pdf";
+    	$file->filename = $path."email.pdf";
     	$mail->send($transport);
 
-    	
+
+    	die('eeee');
     	//TODO: debitar credito
+    	
+    	
     }
 
     
