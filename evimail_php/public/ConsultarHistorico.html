@@ -328,7 +328,74 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', 
             
         </div>
         <div class="row">
-            
+                                <table class="tableStyle">
+                        <thead>
+                            <tr>
+                                <th align="center">
+                                    DATA
+                                </th>
+                                <th align="left">
+                                    Remetente
+                                </th>
+                                <th align="left">
+                                    Destinatário
+                                </th>
+                                <th align="left">
+                                    Assunto
+                                </th>
+                                <th align="center">
+                                    Anexos
+                                </th>
+                                <th align="center">
+                                    PDF
+                                </th>
+                                <th align="center">
+                                    Entregue
+                                </th>
+                                <th align="center">
+                                    Conteúdo
+                                </th>
+<!--                                <th align="center">
+                                    Enviado/ recebido
+                                </th>-->
+                            </tr>
+                        </thead>
+                        <tbody runat="server" id="itemPlaceholder">
+                    <tr class="tableStyle">
+                        <!--<tr class="linhaHistoricoDesSelecionada" onmouseover="this.className='linhaHistoricoSelecionada'" onmouseout="this.className='linhaHistoricoDesSelecionada'">-->
+                        <td align="center">
+                        a
+			</td>
+                        <td align="left">
+                        a
+			</td>
+                        <td align="left">
+                        a
+			</td>
+                        <td align="left">
+                        a
+			</td>
+                        <td align="center">
+			    <img src="img/ico_anexo.gif" border="0">
+                        </td>
+                        <td align="center">
+                            <asp:ImageButton runat="server" ID="btnPdf" OnCommand="GerarPdf" />
+			    <img src="img/icone-pdf.png" border="0">
+                        </td>
+                        <td align="center">
+			    <img src="img/ico_sim.gif" border="0">
+			    <img src="img/ico_nao.gif" border="0">
+                        </td>
+                        <td align="center">
+			    <img src="img/ico_more.gif" border="0">
+                        </td>
+                        <!--<td align="center">
+                        a
+			</td>-->
+                    </tr>
+ 
+                        </tbody>
+		</table>
             <div class="pagination">
                 <span class="paginationMsg">
                     
@@ -336,6 +403,8 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', 
                 </span>
                 <div class="paginationPg">
                     <small>
+<img src="/img/ico_pagination_left_arrow.gif" border="0">
+<img src="/img/ico_pagination_right_arrow.gif" border="0">
                         </small>
                     <span id="ContentPlaceHolder_Body_dpgMinhaConta"></span>
                 </div>
