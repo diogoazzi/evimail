@@ -185,11 +185,25 @@ class MinhaContaController extends Zend_Controller_Action
     
     function visualizaLaudoAction(){
 
-    	$POST = $this->getRequest()->getParams();
-    	echo '<pre>';
-    	print_r($POST);
+    	$params = $this->getRequest()->getParams();
+    	$emailTable = new Fet_Model_EmailTable();
     	
-    	die('eeeeeeeee');
+    	$email = $emailTable->find($params['ema_id'])->current();
+    	
+    	$Date = new Zend_Date($email->ema_senddate,"YYYY-MM-DD HH:mm:ss");
+    	$DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
+    	 
+    	$email->ema_DateFormatado = $DateF;
+    	
+    	$this->view->assign('email', $email);
+    	
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);
+    	
+    	
+    	$this->view->assign('menu', 'laudo');
+    	
     }
     
     
@@ -253,6 +267,12 @@ class MinhaContaController extends Zend_Controller_Action
     	return $authAdapter;
     
     }
+
     
-    
+    public function gerarPdfAction(){
+    	$POST = $this->getRequest()->getPost();
+    	echo '<pre>';
+    	print_r($POST);
+    	die(); 	
+    }    
 }
