@@ -78,7 +78,7 @@ class IndexController extends Zend_Controller_Action
 		    
 		    $emailMsg = "Você acaba de receber novo email no seu evimail.<br>".
 				    "Você possui um total de $totalCredito créditos.<br>".
-				    'Clique <a href="http://evimail.local/minha-conta/visualiza-laudo/activeKey/'.$auth_key.'/ema_id/41/usr_email/'.$from.'"> aqui </a> para visualiza-lo.<br>';
+				    'Clique <a href="http://evimail.local/minha-conta/visualiza-laudo/activeKey/'.$auth_key.'/ema_id/'.$emailSaved.'/usr_email/'.$from.'"> aqui </a> para visualiza-lo.<br>';
 		    
 		    
 		    $config = array('auth' => 'login',
@@ -100,7 +100,7 @@ class IndexController extends Zend_Controller_Action
 		    $mail->send($transport);
 		    
 		    
-		    die('acaba aqui a rotina de processa smtp');
+// 		    die('acaba aqui a rotina de processa smtp');
 			//fim		    
 			continue;		    
 		    die('acaba aqui a rotina de processa smtp');
@@ -108,7 +108,7 @@ class IndexController extends Zend_Controller_Action
 		    		    $i++;
     	}
     	
-    	die('a');
+    	die('fim do processamento SMTP');
     }
     
     public function getBody(Zend_Mail_Message $message)

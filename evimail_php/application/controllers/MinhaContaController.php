@@ -171,16 +171,8 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	$identity->usr_birthDateFormatado = $birthDateF;
     	
-//     	get_class($identity);
-//     	echo '<pre>';
-//     	print_r($identity);
-//     	die();
     	$this->view->assign("user",$identity);
-// 		echo '<pre>';
-// 		print_r($identity);
-//     	if(!$identity){
-    		
-//     	}
+
     }
     
     function visualizaLaudoAction(){
@@ -336,6 +328,9 @@ class MinhaContaController extends Zend_Controller_Action
 
     	$creditRow->cre_value = $creditRow->cre_value -1;
     	$creditRow->save();
+    	
+    	$email->ema_confirmed = Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO;
+    	$email->save();
     	
     	$this->_redirect('/minha-conta');
     }
