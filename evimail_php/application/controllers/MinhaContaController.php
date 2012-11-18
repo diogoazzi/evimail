@@ -17,10 +17,18 @@ class MinhaContaController extends Zend_Controller_Action
     	$this->userProfileHelper = $this->_helper->UserProfile;
     	$this->_helper->_acl->allow(null);
     	
-    	$usr_id = Zend_Auth::getInstance()->getIdentity()->usr_id;
+    	$user = Zend_Auth::getInstance()->getIdentity();
     	
-    	if(!$usr_id)
-    		$this->_redirect('/');
+    	if(!$user){
+    		$params = $this->getRequest()->getParams();
+ 
+    		//tenta autenticar por activeKey
+    		if(isset($params['activeKey']) && isset($params['usr_email'])){
+    			if(!$this->identifyFromActiveKey($params['usr_email'], $params['activeKey']))
+    				$this->_redirect('/');
+    		}else
+    			$this->_redirect('/');
+    	}
     }
 
     public function indexAction()
@@ -174,5 +182,77 @@ class MinhaContaController extends Zend_Controller_Action
     		
 //     	}
     }
+    
+    function visualizaLaudoAction(){
+
+    	$POST = $this->getRequest()->getParams();
+    	echo '<pre>';
+    	print_r($POST);
+    	
+    	die('eeeeeeeee');
+    }
+    
+    
+    public function identifyFromActiveKey($email, $key)
+    {
+    	$translate = Zend_Registry::get('translate');
+    
+    	$formData['txtLoginEmail'] = $email;
+    	$formData['key'] = $key;
+    		
+    	if (empty($key)) {
+    		return false;
+    	} else {
+    
+    		$authAdapter = $this->_getAuthAdapterActiveKey($formData);
+    		$auth = Zend_Auth::getInstance();
+    		$result = $auth->authenticate($authAdapter);
+    
+    		if (!$result->isValid()) {
+    			$this->_flashMessage('Login failed');
+    			return false;
+    		} else {
+    			// success: store database row to auth's storage
+    			// (Not the password though!)
+    			$data = $authAdapter->getResultRowObject(null,
+    					'pwdLoginSenha');
+    			
+    			$data->role = 'member';
+    
+    			$user = new Fet_Model_UserTable();
+    			$user = $user->find($data->usr_id)->current();
+    			$auth->getStorage()->write($data);
+
+    			return true;
+    		}
+    	}
+    }
+
+    /**
+     * Set up the auth adapater for interaction with the database
+     *
+     * @return Zend_Auth_Adapter_DbTable
+     */
+    protected function _getAuthAdapterActiveKey($formData, $identifyColumn='usr_email')
+    {
+    
+    	//$dbAdapter = Zend_Registry::get('db_adapter_comunidade');
+    	$authAdapter = new Zend_Auth_Adapter_DbTable();
+    	$authAdapter->setTableName('user')
+    	->setIdentityColumn($identifyColumn)
+    	->setCredentialColumn('usr_activeKey')
+    	->setCredentialTreatment('?');
+    
+    	$password = $formData['key'];
+    
+    	//echo "a".$formData['txtLoginEmail']."b - c".md5($password)."d"; exit;
+    
+    	$authAdapter->setIdentity(trim(trim($formData['txtLoginEmail'])));
+    	$authAdapter->setCredential(trim($password));
+    	//print_r($authAdapter); exit;
+    	return $authAdapter;
+    
+    }
+    
     
 }

@@ -46,7 +46,12 @@ class IndexController extends Zend_Controller_Action
     		$usrProfile = new Fet_Controller_Helper_UserProfile();
     		$user = $usrProfile->getUserByEmail($from);
     		
+    		//usuario nao encontrado nao salva email
     		if(!$user)
+    			continue;
+    		
+    		//TODO:remover DEBUG
+    		if($user->usr_id != 18)
     			continue;
     		
     		$usr_id = $user->usr_id;
@@ -54,22 +59,68 @@ class IndexController extends Zend_Controller_Action
 		    //TODO: get atttachements
 		    $mensagem = $this->getBody($message);
 		    
-		    $hash = md5($from.$recieved.$this->getBody($message));
-		    if($emailTable->verificaByHash($hash))
-		    	continue;
+		    //email jah cadastrado nao salva
+// 		    $hash = md5($from.$recieved.$this->getBody($message));
+// 		    if($emailTable->verificaByHash($hash))
+// 		    	continue;
 		    
-		    echo "Armazenando email...";
-		    $userData =  Array(
-		    		'ema_emailfrom' => $from ,
-		    		'ema_subject' => $message->subject,
-		    		'ema_senddate' => $recieved,
-		    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
-		    		'ema_usr_id' => $usr_id,
-		    		'ema_body' => $this->getBody($message),
-		    		'ema_hash' => $hash
-		    );
-		    $emailTable->createEmail($userData);
+// 		    echo "Armazenando email...";
+// 		    $userData =  Array(
+// 		    		'ema_emailfrom' => $from ,
+// 		    		'ema_subject' => $message->subject,
+// 		    		'ema_senddate' => $recieved,
+// 		    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
+// 		    		'ema_usr_id' => $usr_id,
+// 		    		'ema_body' => $this->getBody($message),
+// 		    		'ema_hash' => $hash
+// 		    );
+// 		    $emailSaved = $emailTable->createEmail($userData);
 		    
+// 		    print_r($user);
+		    //TODO: gerar auth key
+		    $auth_key = $user->usr_activeKey;
+		    
+		    //TODO: envial email de confirmação de recebimento
+		    $creditTable = new Fet_Model_CreditTable();
+		    $totalCredito = $creditTable->getTotalCreditosDisponiveis($usr_id);
+		    
+		    
+		    $emailMsg = "Você acaba de receber novo email no seu evimail.<br>".
+				    "Você possui um total de $totalCredito créditos.<br>".
+				    'Clique <a href="http://evimail.local/minha-conta/visualiza-laudo/activeKey/'.$auth_key.'/ema_id/41/usr_email/'.$from.'"> aqui </a> para visualiza-lo.<br>';
+		    
+		    
+		    $config = array('auth' => 'login',
+		    		'username' => 'evimail@webneural.com',
+		    		'password' => 'y2s2r2i4',
+		    		'ssl' => 'tls',
+		    		'port' => 587);
+		    
+		    $transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
+		    
+		    $html_body = "<html>".'<meta http-equiv="Content-Type" content="text/html; charset=utf-8">'.$message->subject ."<br><br>".$emailMsg;
+		    $mail = new Zend_Mail();
+		    $mail->setType(Zend_Mime::MULTIPART_RELATED);
+		    $mail->setBodyHtml($html_body);
+		    
+		    $mail->setFrom('evimail@webneural.com', 'EviMail');
+		    // 		    $mail->addTo("diogo.azzi@webneural.com");
+		    // 		    $mail->addTo("diogoafe@gmail.com");
+		    $mail->addTo($from);
+		    $mail->setSubject('EviMail - PDF - '.$message->subject);
+		    $mail->send($transport);
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    die('acaba aqui a rotina de processa smtp');
+			//fim		    
 			continue;		    
 		    die('acaba aqui a rotina de processa smtp');
 		    

@@ -234,6 +234,7 @@ class AuthController extends Zend_Controller_Action
 		 
 		if (empty($key)) {
 			$this->_flashMessage($translate->_("Por favor, forneça a chave de ativacao."));
+			return false;
 		} else {
 			 
 			$authAdapter = $this->_getAuthAdapterActiveKey($formData);
@@ -242,11 +243,14 @@ class AuthController extends Zend_Controller_Action
 
 			if (!$result->isValid()) {
 				$this->_flashMessage('Login failed');
+				return false;
 			} else {
 				// success: store database row to auth's storage
 				// (Not the password though!)
 				$data = $authAdapter->getResultRowObject(null,
                                 'pwdLoginSenha');
+				
+				$data->role = 'member';
 				
 				$user = new Fet_Model_UserTable();
 				$user = $user->find($data->usr_id)->current();
@@ -261,6 +265,8 @@ class AuthController extends Zend_Controller_Action
 				*/
 				
 				$auth->getStorage()->write($data);
+				
+				return true;
 			}
 		}
 	}
