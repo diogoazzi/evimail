@@ -44,6 +44,9 @@ class Fet_Model_CreditTable extends Zend_Db_Table
 
 		if (isset($params['payed']))
 			$select->where("c.cre_payed = ? ", $params["payed"]);
+		
+		if (isset($params['cre_value']))
+			$select->where("c.cre_value > ? ", $params["cre_value"]);
 	
 		if (isset($params["ini"]) and isset($params["fim"]))
 		{
@@ -137,8 +140,6 @@ class Fet_Model_CreditTable extends Zend_Db_Table
 	
 	public function getTotalCreditosDisponiveis($usr_id){
 		
-// 		$usr_id = 18;
-		
 		$params = array(
 				'usr_id' => $usr_id,
 				'payed' => Fet_Model_CreditTable::CREDITO_PAGO
@@ -156,7 +157,8 @@ class Fet_Model_CreditTable extends Zend_Db_Table
 	public function getFirstPayedRow($usr_id){
 		$params = array(
 				'usr_id' => $usr_id,
-				'payed' => Fet_Model_CreditTable::CREDITO_PAGO
+				'payed' => Fet_Model_CreditTable::CREDITO_PAGO,
+				'cre_value' => '0'
 		);
 		
 		$credits = $this->getAllCredits($params,true);

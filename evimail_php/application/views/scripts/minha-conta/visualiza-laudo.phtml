@@ -1,6 +1,6 @@
 <body id="body" class="inner cadastro">
 <?php
-echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'visualiza-laudo', 'user' => $this->user ));
+echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'laudo', 'user' => $this->user ));
 ?>
 <form method="post" action="/minha-conta/gerar-pdf" id="form1">
 <div class="aspNetHidden">
@@ -26,7 +26,9 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 <div class="box">
     <p>
         <span id="ucDetalhesEmail_lblIPOrigem">Cabeçalho:</span>
-        <span id="ucDetalhesEmail_lblIPOrigemValue"> Data Recebimento: <?php echo $this->email->ema_DateFormatado?></span>
+        <span id="ucDetalhesEmail_lblIPOrigemValue"> Hash autentica&ccedil;&atilde;o: <?php echo $this->email->ema_hash?></span><br>
+        <span id="ucDetalhesEmail_lblIPOrigemValue"> Data Recebimento: <?php echo $this->email->ema_DateFormatado?></span><br>
+        <span id="ucDetalhesEmail_lblIPOrigemValue"> De: <?php echo $this->email->ema_emailfrom?></span><br>
     </p>
     <p>
         
@@ -44,7 +46,8 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 </div>
     <div class="box">
         <p>
-            <span id="ucDetalhesEmail_lblCorpo">corpo: <?php echo $this->email->ema_body;?></span>
+            <span id="ucDetalhesEmail_lblCorpo">corpo: </span>
+             <span id="ucDetalhesEmail_lblCorpo"><?php echo $this->email->ema_body;?></span> 
             
         </p>
 

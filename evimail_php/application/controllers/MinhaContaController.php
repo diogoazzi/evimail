@@ -272,6 +272,10 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	$creditTable = new Fet_Model_CreditTable();    	
     	$totalCredito = $creditTable->getTotalCreditosDisponiveis($email->ema_usr_id);
+    	
+    	if($totalCredito <= 0)
+    		throw new Exception("Crédito insuficiente.");
+    	
 		$creditRow = $creditTable->getFirstPayedRow($email->ema_usr_id);
 		
 		$auth = Zend_Auth::getInstance();
