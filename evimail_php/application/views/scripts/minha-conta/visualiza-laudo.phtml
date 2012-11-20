@@ -1,6 +1,6 @@
 <body id="body" class="inner cadastro">
 <?php
-echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'laudo', 'user' => $this->user ));
+echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'laudo', 'user' => $this->user, 'mostrarLaudo' => true ));
 ?>
 <form method="post" action="/minha-conta/gerar-pdf" id="form1">
 <div class="aspNetHidden">

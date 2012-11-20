@@ -33,6 +33,10 @@ class MinhaContaController extends Zend_Controller_Action
 
     public function indexAction()
     {
+    	
+    	$auth = Zend_Auth::getInstance();
+    	$identity = $auth->getIdentity();
+    	$this->view->assign('user', $identity);
 
     }
     
@@ -156,7 +160,9 @@ class MinhaContaController extends Zend_Controller_Action
     }
     
     function contratarServicoAction() {
-    	
+    	$auth = Zend_Auth::getInstance();
+    	$identity = $auth->getIdentity();
+    	$this->view->assign('user', $identity);
     	
     }
     
@@ -191,10 +197,6 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	$auth = Zend_Auth::getInstance();
     	$user = $auth->getIdentity();
-    	
-//     	echo '<pre>';
-//     	print_r($user);
-//     	die();
     	$this->view->assign('user', $user);
     	
     	

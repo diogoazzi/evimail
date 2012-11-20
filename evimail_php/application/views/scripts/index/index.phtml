@@ -1,5 +1,5 @@
 	<?php
-	echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth));
+	echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'user' => $this->user));
 	?>
 
 <body id="body" class="frontPage home">

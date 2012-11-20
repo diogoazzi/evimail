@@ -1,5 +1,5 @@
 <?php
-echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'contratar-servico'));
+echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'contratar-servico', 'user' => $this->user));
 ?>
 <div id="container">
 		<div id="wrapper">
