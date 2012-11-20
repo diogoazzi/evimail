@@ -289,6 +289,7 @@ class MinhaContaController extends Zend_Controller_Action
 		$mail_pdf = '<html><body>hash autentica&ccedil;&atilde;o: '.$email->ema_hash.'<br><br>';
 		$mail_pdf .= 'Recebido em: '.$DateF.'<br>';
 		$mail_pdf .= 'De: '.$email->ema_emailfrom.'<br>';
+		$mail_pdf .= 'Para: '.$email->ema_emailto.'<br>';
 		$mail_pdf .= 'Assunto: '.$email->ema_subject.'<br><br>';
 		$mail_pdf .= $email->ema_body;
 		

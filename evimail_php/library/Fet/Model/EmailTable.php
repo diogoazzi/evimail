@@ -96,7 +96,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 			}
 		}
 		
-		Zend_Debug::dump($select->__toString());
+// 		Zend_Debug::dump($select->__toString());
 
 		if($fetchResult)
 		{

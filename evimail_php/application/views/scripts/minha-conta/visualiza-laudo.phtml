@@ -29,6 +29,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
         <span id="ucDetalhesEmail_lblIPOrigemValue"> Hash autentica&ccedil;&atilde;o: <?php echo $this->email->ema_hash?></span><br>
         <span id="ucDetalhesEmail_lblIPOrigemValue"> Data Recebimento: <?php echo $this->email->ema_DateFormatado?></span><br>
         <span id="ucDetalhesEmail_lblIPOrigemValue"> De: <?php echo $this->email->ema_emailfrom?></span><br>
+                <span id="ucDetalhesEmail_lblIPOrigemValue"> Para: <?php echo $this->email->ema_emailto?></span><br>
     </p>
     <p>
         

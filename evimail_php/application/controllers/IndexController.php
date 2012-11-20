@@ -40,6 +40,18 @@ class IndexController extends Zend_Controller_Action
     		
     		$from_arr = explode('<',$message->from);
     		$from = str_replace('>','',$from_arr[1]);
+
+    		//TODO: fazer tratativa de varios to
+    		$to_arr = explode('<',$message->to);
+    		$to = str_replace('>','',$to_arr[1]);
+
+    		//TODO: fazer tratativa de varios cc
+    		$cc_arr = explode('<',$message->cc);
+    		$cc = str_replace('>','',$cc_arr[1]);
+    		
+    		//TODO: fazer tratativa de bcc nao consta no header bcc
+//     		$bcc_arr = explode('<',$message->bcc);
+//     		$bcc = str_replace('>','',$bcc_arr[1]);
     		
     		$usrProfile = new Fet_Controller_Helper_UserProfile();
     		$user = $usrProfile->getUserByEmail($from);
@@ -61,6 +73,9 @@ class IndexController extends Zend_Controller_Action
 		    echo "Armazenando email...";
 		    $userData =  Array(
 		    		'ema_emailfrom' => $from ,
+		    		'ema_emailto'	=> $to,
+		    		'ema_cc' => $cc,
+// 		    		'ema_bcc' => $bcc,
 		    		'ema_subject' => $message->subject,
 		    		'ema_senddate' => $recieved,
 		    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,

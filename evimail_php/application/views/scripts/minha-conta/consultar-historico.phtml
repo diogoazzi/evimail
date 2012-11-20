@@ -113,7 +113,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                                     Entregue
                                 </th>
                                 <th align="center">
-                                    Conte�do
+                                    Conteúdo
                                 </th>
 <!--                                <th align="center">
                                     Enviado/ recebido
@@ -137,18 +137,22 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                         <?php echo $email->ema_subject?>
 			</td>
                         <td align="center">
-			    <img src="img/ico_anexo.gif" border="0">
+			    <img src="/img/ico_anexo.gif" border="0">
                         </td>
                         <td align="center">
                             <asp:ImageButton runat="server" ID="btnPdf" OnCommand="GerarPdf" />
-			    <img src="img/icone-pdf.png" border="0">
+			    <img src="/img/icone-pdf.png" border="0">
                         </td>
                         <td align="center">
-			    <img src="img/ico_sim.gif" border="0">
-			    <img src="img/ico_nao.gif" border="0">
+                        <?php if($email->ema_confirmed == Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO) {?>
+						    <img src="/img/ico_sim.gif" border="0">
+					    <?php }?>
+					    <?php if($email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) {?>
+			    			<img src="/img/ico_nao.gif" border="0">
+						<?php }?>
                         </td>
                         <td align="center">
-			    <img src="img/ico_more.gif" border="0">
+			    			<a href="/minha-conta/visualiza-laudo/ema_id/<?php echo $email->ema_id?>"><img src="/img/ico_more.gif" border="0"></a>
                         </td>
                         <!--<td align="center">
                         a
@@ -180,87 +184,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 	</div>
 	<!--/#container-->
 	
-<div id="footer">
-    <div id="footerCont">
-        <ul>
-            <li><a href="PoliticaPrivacidade.aspx">Pol�tica de Privacidade</a></li>
-            <li>|</li>
-            <li><a href="TermosCondicoes.aspx">Termos e Condi��es de Uso</a></li>
-        </ul>
-        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
-    </div>
-</div>
-	<!--/#footer-->
+<?php
+echo $this->partial('index/footer.phtml');
+?>
 	
-<script type="text/javascript">
-//<![CDATA[
-var Page_ValidationSummaries =  new Array(document.getElementById("ContentPlaceHolder_Body_vldsmyHistorico"));
-var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator1"), document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator2"));
-//]]>
-</script>
-
-<script type="text/javascript">
-//<![CDATA[
-var ContentPlaceHolder_Body_vldsmyHistorico = document.all ? document.all["ContentPlaceHolder_Body_vldsmyHistorico"] : document.getElementById("ContentPlaceHolder_Body_vldsmyHistorico");
-ContentPlaceHolder_Body_vldsmyHistorico.displaymode = "List";
-ContentPlaceHolder_Body_vldsmyHistorico.validationGroup = "Historico";
-var ContentPlaceHolder_Body_RegularExpressionValidator1 = document.all ? document.all["ContentPlaceHolder_Body_RegularExpressionValidator1"] : document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator1");
-ContentPlaceHolder_Body_RegularExpressionValidator1.controltovalidate = "ContentPlaceHolder_Body_txtDataInicial";
-ContentPlaceHolder_Body_RegularExpressionValidator1.errormessage = "Data inv�lida";
-ContentPlaceHolder_Body_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ContentPlaceHolder_Body_RegularExpressionValidator1.validationexpression = "([0][1-9]|[1|2][0-9]|[3][0|1])[/]([0][1-9]|[1][0-2])[/]([0-9]{4})";
-var ContentPlaceHolder_Body_RegularExpressionValidator2 = document.all ? document.all["ContentPlaceHolder_Body_RegularExpressionValidator2"] : document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator2");
-ContentPlaceHolder_Body_RegularExpressionValidator2.controltovalidate = "ContentPlaceHolder_Body_txtDataFinal";
-ContentPlaceHolder_Body_RegularExpressionValidator2.errormessage = "Data inv�lida";
-ContentPlaceHolder_Body_RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ContentPlaceHolder_Body_RegularExpressionValidator2.validationexpression = "([0][1-9]|[1|2][0-9]|[3][0|1])[/]([0][1-9]|[1][0-2])[/]([0-9]{4})";
-//]]>
-</script>
-
-<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'menuHeader', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script>
-<script type="text/javascript">
-//<![CDATA[
-
-(function(id) {
-    var e = document.getElementById(id);
-    if (e) {
-        e.dispose = function() {
-            Array.remove(Page_ValidationSummaries, document.getElementById(id));
-        }
-        e = null;
-    }
-})('ContentPlaceHolder_Body_vldsmyHistorico');
-
-var Page_ValidationActive = false;
-if (typeof(ValidatorOnLoad) == "function") {
-    ValidatorOnLoad();
-}
-
-function ValidatorOnSubmit() {
-    if (Page_ValidationActive) {
-        return ValidatorCommonOnSubmit();
-    }
-    else {
-        return true;
-    }
-}
-        Sys.Application.add_init(function() {
-    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ContentPlaceHolder_Body_calendar_ini"),"firstDayOfWeek":0,"format":"dd/MM/yyyy","id":"ContentPlaceHolder_Body_CalendarExtender1","popupPosition":4}, {"dateSelectionChanged":checkDate}, null, $get("ContentPlaceHolder_Body_txtDataInicial"));
-});
-
-document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator1').dispose = function() {
-    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator1'));
-}
-Sys.Application.add_init(function() {
-    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ContentPlaceHolder_Body_calendar_fim"),"firstDayOfWeek":0,"format":"dd/MM/yyyy","id":"ContentPlaceHolder_Body_CalendarExtender2","popupPosition":4}, {"dateSelectionChanged":checkDate}, null, $get("ContentPlaceHolder_Body_txtDataFinal"));
-});
-
-document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator2').dispose = function() {
-    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator2'));
-}
-//]]>
-</script>
-</form>
-	<script type="text/javascript">        Cufon.now(); </script>
-</body>
-</html>
