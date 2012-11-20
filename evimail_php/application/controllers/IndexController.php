@@ -28,9 +28,9 @@ class IndexController extends Zend_Controller_Action
     											 'ssl' => 'SSL'));
     	$i = 1;
     	foreach ($mail as $message) {
-    		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
-    			continue;
-    		}
+//     		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
+//     			continue;
+//     		}
     		
     		$recieved_arr = explode(',',$message->date);
     		$recieved_arr = explode('-', $recieved_arr[1]);
@@ -39,42 +39,120 @@ class IndexController extends Zend_Controller_Action
     		$recieved = $recieved_obj->toString('YYYY-MM-dd HH:mm:ss');
     		
     		$from_arr = explode('<',$message->from);
-    		$from = str_replace('>','',$from_arr[1]);
+    		if(count($from_arr) > 1)
+    			$from = str_replace('>','',$from_arr[1]);
 
     		//TODO: fazer tratativa de varios to
     		$to_arr = explode('<',$message->to);
-    		$to = str_replace('>','',$to_arr[1]);
+    		if(count($to_arr) > 1)
+    			$to = str_replace('>','',$to_arr[1]);
 
     		//TODO: fazer tratativa de varios cc
-    		$cc_arr = explode('<',$message->cc);
-    		$cc = str_replace('>','',$cc_arr[1]);
+    		if(isset($message->cc)) {
+	    		$cc_arr = explode('<',$message->cc);
+	    		$cc = str_replace('>','',$cc_arr[1]);
+    		}
     		
     		//TODO: fazer tratativa de bcc nao consta no header bcc
+    		echo '<pre>';
+//     		print_r($message->cco);
 //     		$bcc_arr = explode('<',$message->bcc);
 //     		$bcc = str_replace('>','',$bcc_arr[1]);
     		
     		$usrProfile = new Fet_Controller_Helper_UserProfile();
     		$user = $usrProfile->getUserByEmail($from);
     		
+    		
     		//usuario nao encontrado nao salva email
-    		if(!$user)
+    		if(!$user) {    			
     			continue;
+    		}
+
     		
     		$usr_id = $user->usr_id;
+
+    		
+    		$hash = md5($from.$recieved.$this->getBody($message));
+    		$pathBase = pathinfo(__FILE__);
+    		$pathBase = $pathBase['dirname'];
+    		$path = $pathBase.'/../../public/pdf/'.$user->usr_id.'/'.$hash.'/';
+    		 
 		    
-		    //TODO: get atttachements
+    		// Check for attachment
+		    $y = 0;
+    		if($message->isMultipart())
+    		{    			
+    			$totalAttachements = $message->countParts();
+    			
+    			for($i=2;$i<= $totalAttachements;$i++){
+    				$part = $message->getPart($i);
+    				 
+    				$text = false;
+    				if (strtok($part->contentType, ';') == 'text/plain' || strtok($part->contentType, ';') == 'text/html') {
+    					try {
+    						$fileName = $part->getHeader('content-disposition');
+    						$fileName = explode('filename=',$fileName);
+    						$fileName = str_replace('"','', $fileName[1]);
+    					} catch (Exception $e){
+    						$fileName = 'anexo'.$y.'.txt';
+    					}
+    					
+    					$text = true;
+    				}
+
+    				$base64 = false;
+    				try {
+    				if($part->getHeader('content-transfer-encoding') == 'base64')
+    					$base64 = true;
+    				} catch (Exception $e){
+    					
+    				}
+					if(!$text) {
+	    				try {
+	    					$fileName = $part->getHeader('content-disposition');
+	    					$fileName = explode('filename=',$fileName);
+	    					$fileName = str_replace('"','', $fileName[1]);
+	    				} catch (Exception $e) {
+							$fileName = $part->getHeader('content-type');
+							$fileName = explode('name=',$fileName);
+							$fileName = str_replace('"','', $fileName[1]);
+	    				}
+					}
+//     				echo '<pre>';
+//     				echo $message->subject.'#<br>';
+//     				echo $i.' parte <br>';
+//     				echo $base64.': base64<br>';
+//     				echo 'fileName: '.$fileName.'<br><hr><br>';
+//     				continue;
+    				
+    				if(!file_exists($path))
+    					mkdir($path, 0755,true);
+    				 
+    				// Get the attachement and decode
+    				if($base64)
+    					$attachment = base64_decode($part->getContent());
+    				else
+    					$attachment = $part->getContent();
+    				 
+    				// Save the attachment
+    				$fh = fopen($path.$fileName, 'w');
+    				fwrite($fh, $attachment);
+    				fclose($fh);
+    			}
+    			$y++;
+    		}
+
 		    $mensagem = $this->getBody($message);
 		    
 		    //email jah cadastrado nao salva
-		    $hash = md5($from.$recieved.$this->getBody($message));
 		    if($emailTable->verificaByHash($hash))
 		    	continue;
 		    
 		    echo "Armazenando email...";
 		    $userData =  Array(
-		    		'ema_emailfrom' => $from ,
-		    		'ema_emailto'	=> $to,
-		    		'ema_cc' => $cc,
+		    		'ema_emailfrom' => $message->from ,
+		    		'ema_emailto'	=> $message->to,
+		    		'ema_cc' => $message->cc,
 // 		    		'ema_bcc' => $bcc,
 		    		'ema_subject' => $message->subject,
 		    		'ema_senddate' => $recieved,
@@ -92,8 +170,8 @@ class IndexController extends Zend_Controller_Action
 		    $totalCredito = $creditTable->getTotalCreditosDisponiveis($usr_id);
 		    
 		    
-		    $emailMsg = "Você acaba de receber novo email no seu evimail.<br>".
-				    "Você possui um total de $totalCredito créditos.<br>".
+		    $emailMsg = "Voc&ecirc;  acaba de receber novo email no seu evimail.<br>".
+				    "Voc&ecirc;  possui um total de $totalCredito cr&eacute;ditos.<br>".
 				    'Clique <a href="http://evimail.local/minha-conta/visualiza-laudo/activeKey/'.$auth_key.'/ema_id/'.$emailSaved.'/usr_email/'.$from.'"> aqui </a> para visualiza-lo.<br>';
 		    
 		    
