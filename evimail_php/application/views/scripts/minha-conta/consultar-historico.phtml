@@ -1,0 +1,266 @@
+<body id="body" class="inner cadastro">
+<?php
+echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'alterar-dados', 'user' => $this->user));
+?>			
+    
+    <div id="content">
+        <h2 class="title">
+            Consultar Histórico de Emails</h2>
+        <div id="procurarEmail">
+            <h5 class="title_1">
+                Procurar e-mail:</h5>
+            <div class="rounded_a">
+                <div id="ContentPlaceHolder_Body_vldsmyHistorico" style="display:none;">
+
+</div>
+                <fieldset>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_ddlDirecao" id="ContentPlaceHolder_Body_lblDirecao" class="lblTextbox">Dire��o</label>
+                        <select name="ctl00$ContentPlaceHolder_Body$ddlDirecao" id="ContentPlaceHolder_Body_ddlDirecao">
+	<option value="0">Indiferente</option>
+	<option value="1">Enviado</option>
+	<option value="2">Recebido</option>
+
+</select>
+                    </div>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_txtAssunto" id="ContentPlaceHolder_Body_lblAssunto" class="lblTextbox">Assunto:</label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtAssunto" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtAssunto" class="textbox" />
+                    </div>
+                    <div class="campoHistorico">
+                        <div id="ContentPlaceHolder_Body_pnlRemetente">
+	
+                            <label for="ContentPlaceHolder_Body_txtRemetente" id="ContentPlaceHolder_Body_lblRemetente" class="lblTextbox">Remetente:</label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtRemetente" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtRemetente" class="textbox" />
+                        
+</div>
+                    </div>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_txtDestinatario" id="ContentPlaceHolder_Body_lblDestinatario" class="lblTextbox">Destinat�rio:</label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtDestinatario" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtDestinatario" class="textbox" />
+                    </div>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_ddlAnexos" id="ContentPlaceHolder_Body_lblAnexos" class="lblTextbox">Anexos</label>
+                        <select name="ctl00$ContentPlaceHolder_Body$ddlAnexos" id="ContentPlaceHolder_Body_ddlAnexos">
+	<option value="0">Indiferente</option>
+	<option value="1">Sem Anexos</option>
+	<option value="2">Com Anexos</option>
+
+</select>
+                    </div>
+                    <div class="campoHistorico">
+                        <label for="ContentPlaceHolder_Body_ddlStatus" id="ContentPlaceHolder_Body_lblStatus" class="lblTextbox">Status:</label>
+                        <select name="ctl00$ContentPlaceHolder_Body$ddlStatus" id="ContentPlaceHolder_Body_ddlStatus">
+	<option value="0">Indiferente</option>
+	<option value="1">Pendente</option>
+	<option value="2">Recebido</option>
+	<option value="3">Confirmado - Conte&#250;do</option>
+	<option value="4">Confirmado - Anexos</option>
+	<option value="5">Confirmado - Conte&#250;do e Anexos</option>
+
+</select>
+                    </div>
+                    <div>
+                        <label for="ContentPlaceHolder_Body_txtDataInicial" id="ContentPlaceHolder_Body_lblDataIni" class="lblTextbox">Per�odo de:</label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtDataInicial" type="text" id="ContentPlaceHolder_Body_txtDataInicial" class="textbox txtDataIni" />
+                        <a id="ContentPlaceHolder_Body_calendar_ini" title="Calend�rio" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Body$calendar_ini&#39;,&#39;&#39;)"> 
+                            <img src="../img/ico_calendar.gif" width="32" height="28" alt="Calend�rio" style="margin:0 9px 0 0; vertical-align:bottom; " />                             
+                        </a>
+                        
+                        <span id="ContentPlaceHolder_Body_RegularExpressionValidator1" style="visibility:hidden;">Data inv�lida</span>
+                        <label for="ContentPlaceHolder_Body_txtDataFinal" id="ContentPlaceHolder_Body_lblDataFim">a</label>
+                        <input name="ctl00$ContentPlaceHolder_Body$txtDataFinal" type="text" id="ContentPlaceHolder_Body_txtDataFinal" class="textbox txtDataFim" />
+                        <a id="ContentPlaceHolder_Body_calendar_fim" title="Calend�rio" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Body$calendar_fim&#39;,&#39;&#39;)">   
+                            <img src="../img/ico_calendar.gif" width="32" height="28" alt="Calend�rio" style="margin:0 9px 0 0; vertical-align:bottom; " />                        
+                        </a>
+                        
+                        <span id="ContentPlaceHolder_Body_RegularExpressionValidator2" style="visibility:hidden;">Data inv�lida</span>
+                    </div>
+                    <div class="btnContLine">
+                        <span id="ContentPlaceHolder_Body_lblErro"></span>
+                        <a id="ContentPlaceHolder_Body_btnProcurar" class="btnProcurar" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder_Body$btnProcurar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Procurar</a>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <!--/#procurarEmail-->
+        <div style="text-align: center;">
+            
+        </div>
+        <div class="row">
+                                <table class="tableStyle">
+                        <thead>
+                            <tr>
+                                <th align="center">
+                                    DATA
+                                </th>
+                                <th align="left">
+                                    Remetente
+                                </th>
+                                <th align="left">
+                                    Destinatário
+                                </th>
+                                <th align="left">
+                                    Assunto
+                                </th>
+                                <th align="center">
+                                    Anexos
+                                </th>
+                                <th align="center">
+                                    PDF
+                                </th>
+                                <th align="center">
+                                    Entregue
+                                </th>
+                                <th align="center">
+                                    Conte�do
+                                </th>
+<!--                                <th align="center">
+                                    Enviado/ recebido
+                                </th>-->
+                            </tr>
+                        </thead>
+                    <tbody runat="server" id="itemPlaceholder">
+                    <?php foreach($this->emails as $email) {?> 
+                    <tr class="tableStyle">
+                        <!--<tr class="linhaHistoricoDesSelecionada" onmouseover="this.className='linhaHistoricoSelecionada'" onmouseout="this.className='linhaHistoricoDesSelecionada'">-->
+                        <td align="center">
+                        <?php echo $email->ema_DateFormatado?>
+			</td>
+                        <td align="left">
+                        <?php echo $email->ema_emailfrom?>
+			</td>
+                        <td align="left">
+                        <?php echo $email->ema_emailto?>
+			</td>
+                        <td align="left">
+                        <?php echo $email->ema_subject?>
+			</td>
+                        <td align="center">
+			    <img src="img/ico_anexo.gif" border="0">
+                        </td>
+                        <td align="center">
+                            <asp:ImageButton runat="server" ID="btnPdf" OnCommand="GerarPdf" />
+			    <img src="img/icone-pdf.png" border="0">
+                        </td>
+                        <td align="center">
+			    <img src="img/ico_sim.gif" border="0">
+			    <img src="img/ico_nao.gif" border="0">
+                        </td>
+                        <td align="center">
+			    <img src="img/ico_more.gif" border="0">
+                        </td>
+                        <!--<td align="center">
+                        a
+			</td>-->
+                    </tr>
+ 				<?php }?>
+                        </tbody>
+		</table>
+            <div class="pagination">
+                <span class="paginationMsg">
+                    
+                    
+                </span>
+                <div class="paginationPg">
+                    <small>
+<img src="/img/ico_pagination_left_arrow.gif" border="0">
+<img src="/img/ico_pagination_right_arrow.gif" border="0">
+                        </small>
+                    <span id="ContentPlaceHolder_Body_dpgMinhaConta"></span>
+                </div>
+            </div>
+            <!--/.pagination-->
+        </div>
+        <!--/.row-->
+    </div>
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<div id="footer">
+    <div id="footerCont">
+        <ul>
+            <li><a href="PoliticaPrivacidade.aspx">Pol�tica de Privacidade</a></li>
+            <li>|</li>
+            <li><a href="TermosCondicoes.aspx">Termos e Condi��es de Uso</a></li>
+        </ul>
+        <div id="copyright">Copyright 2012 Evimail - Design e Desenvolvimento: <a href="http://www.marlin.com.br/" target="_blank">Marlin</a></div>
+    </div>
+</div>
+	<!--/#footer-->
+	
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("ContentPlaceHolder_Body_vldsmyHistorico"));
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator1"), document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator2"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder_Body_vldsmyHistorico = document.all ? document.all["ContentPlaceHolder_Body_vldsmyHistorico"] : document.getElementById("ContentPlaceHolder_Body_vldsmyHistorico");
+ContentPlaceHolder_Body_vldsmyHistorico.displaymode = "List";
+ContentPlaceHolder_Body_vldsmyHistorico.validationGroup = "Historico";
+var ContentPlaceHolder_Body_RegularExpressionValidator1 = document.all ? document.all["ContentPlaceHolder_Body_RegularExpressionValidator1"] : document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator1");
+ContentPlaceHolder_Body_RegularExpressionValidator1.controltovalidate = "ContentPlaceHolder_Body_txtDataInicial";
+ContentPlaceHolder_Body_RegularExpressionValidator1.errormessage = "Data inv�lida";
+ContentPlaceHolder_Body_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder_Body_RegularExpressionValidator1.validationexpression = "([0][1-9]|[1|2][0-9]|[3][0|1])[/]([0][1-9]|[1][0-2])[/]([0-9]{4})";
+var ContentPlaceHolder_Body_RegularExpressionValidator2 = document.all ? document.all["ContentPlaceHolder_Body_RegularExpressionValidator2"] : document.getElementById("ContentPlaceHolder_Body_RegularExpressionValidator2");
+ContentPlaceHolder_Body_RegularExpressionValidator2.controltovalidate = "ContentPlaceHolder_Body_txtDataFinal";
+ContentPlaceHolder_Body_RegularExpressionValidator2.errormessage = "Data inv�lida";
+ContentPlaceHolder_Body_RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder_Body_RegularExpressionValidator2.validationexpression = "([0][1-9]|[1|2][0-9]|[3][0|1])[/]([0][1-9]|[1][0-2])[/]([0-9]{4})";
+//]]>
+</script>
+
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'menuHeader', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+
+(function(id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.dispose = function() {
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));
+        }
+        e = null;
+    }
+})('ContentPlaceHolder_Body_vldsmyHistorico');
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ContentPlaceHolder_Body_calendar_ini"),"firstDayOfWeek":0,"format":"dd/MM/yyyy","id":"ContentPlaceHolder_Body_CalendarExtender1","popupPosition":4}, {"dateSelectionChanged":checkDate}, null, $get("ContentPlaceHolder_Body_txtDataInicial"));
+});
+
+document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator1'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ContentPlaceHolder_Body_calendar_fim"),"firstDayOfWeek":0,"format":"dd/MM/yyyy","id":"ContentPlaceHolder_Body_CalendarExtender2","popupPosition":4}, {"dateSelectionChanged":checkDate}, null, $get("ContentPlaceHolder_Body_txtDataFinal"));
+});
+
+document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_RegularExpressionValidator2'));
+}
+//]]>
+</script>
+</form>
+	<script type="text/javascript">        Cufon.now(); </script>
+</body>
+</html>

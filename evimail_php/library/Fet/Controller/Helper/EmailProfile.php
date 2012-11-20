@@ -51,5 +51,24 @@ class Fet_Controller_Helper_EmailProfile extends Zend_Controller_Action_Helper_A
 		
 // 		$row->usr_deleted = 1;
 // 		$row->save();
-// 	}	
+// 	}
+
+	public function getAllEmailFromUser($usr_id){
+		$emailTable = new Fet_Model_EmailTable();
+		
+		$param = array('ema_usr_id' => $usr_id, 'order' => array ('ema_senddate', 'ema_confirmed'));
+		$emails = $emailTable->getAllEmail($param, true);
+		
+		$return = array();
+		foreach($emails as $email){
+			$Date = new Zend_Date($email->ema_senddate,"YYYY-MM-DD HH:mm:ss");
+			$DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
+
+			$email->ema_DateFormatado = $DateF;
+			
+			$return[] = $email;
+		}
+		
+		return $emails;
+	}
 }

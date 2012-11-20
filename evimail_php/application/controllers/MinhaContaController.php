@@ -343,6 +343,15 @@ class MinhaContaController extends Zend_Controller_Action
 
     
     public function consultarHistoricoAction(){
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
     	
+    	
+    	$emailProfile = new Fet_Controller_Helper_EmailProfile();
+    	$emails = $emailProfile->getAllEmailFromUser($user->usr_id);
+
+    	
+    	$this->view->assign('emails', $emails);
+    	$this->view->assign('user', $user);
     }
 }

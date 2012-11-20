@@ -75,9 +75,10 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		if(isset($params["ema_hash"])){
 			$select->where('e.ema_hash = ?', $params['ema_hash']);
 		}
-
-
-// 		 Zend_Debug::dump($select->__toString());
+		
+		if(isset($params["ema_usr_id"])){	
+			$select->where('e.ema_usr_id = ?', $params['ema_usr_id']);
+		}
 
 		if($limit || $offset)
 			$select->limit($limit, $offset);
@@ -87,8 +88,15 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		if(!isset($params['order'])){
 			$select->order("ema_sendDate desc");
 		} else {
-			$select->order($params['order']);
+			if(!is_array($params['order']))
+				$select->order($params['order']);
+			else {
+				foreach($params['order'] as $order)
+					$select->order($order);
+			}
 		}
+		
+		Zend_Debug::dump($select->__toString());
 
 		if($fetchResult)
 		{
