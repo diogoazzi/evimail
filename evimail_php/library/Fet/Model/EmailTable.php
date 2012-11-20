@@ -79,6 +79,22 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		if(isset($params["ema_usr_id"])){	
 			$select->where('e.ema_usr_id = ?', $params['ema_usr_id']);
 		}
+		
+		
+		if(isset($params['to']))
+			$select->where('e.ema_emailto = ?', $params['to']);
+		 
+		if(isset($params['from']))
+			$select->where('e.ema_emailfrom = ?', $params['from']);
+		 
+		if(isset($params['subject']))
+			$select->where('e.ema_subject like ?', '%'.$params['subject'].'%');
+		 
+		if(isset($params['status']))
+			$select->where('e.ema_confirmed = ?', $params['status']);
+		
+		
+		
 
 		if($limit || $offset)
 			$select->limit($limit, $offset);
@@ -96,7 +112,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 			}
 		}
 		
-// 		Zend_Debug::dump($select->__toString());
+		Zend_Debug::dump($select->__toString());
 
 		if($fetchResult)
 		{

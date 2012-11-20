@@ -1,9 +1,9 @@
 <body id="body" class="inner cadastro">
 <?php
 echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'alterar-dados', 'user' => $this->user));
-?>			
-    
+?>			   
     <div id="content">
+    <form method="post" action="/minha-conta/procurar-email" id="form1">
         <h2 class="title">
             Consultar Histórico de Emails</h2>
         <div id="procurarEmail">
@@ -15,8 +15,8 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 </div>
                 <fieldset>
                     <div class="campoHistorico">
-                        <label for="ContentPlaceHolder_Body_ddlDirecao" id="ContentPlaceHolder_Body_lblDirecao" class="lblTextbox">Dire��o</label>
-                        <select name="ctl00$ContentPlaceHolder_Body$ddlDirecao" id="ContentPlaceHolder_Body_ddlDirecao">
+                        <label for="ContentPlaceHolder_Body_ddlDirecao" id="ContentPlaceHolder_Body_lblDirecao" class="lblTextbox">Direção</label>
+                        <select name="direcao" id="ContentPlaceHolder_Body_ddlDirecao">
 	<option value="0">Indiferente</option>
 	<option value="1">Enviado</option>
 	<option value="2">Recebido</option>
@@ -25,23 +25,23 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                     </div>
                     <div class="campoHistorico">
                         <label for="ContentPlaceHolder_Body_txtAssunto" id="ContentPlaceHolder_Body_lblAssunto" class="lblTextbox">Assunto:</label>
-                        <input name="ctl00$ContentPlaceHolder_Body$txtAssunto" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtAssunto" class="textbox" />
+                        <input name="subject" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtAssunto" class="textbox" />
                     </div>
                     <div class="campoHistorico">
                         <div id="ContentPlaceHolder_Body_pnlRemetente">
 	
                             <label for="ContentPlaceHolder_Body_txtRemetente" id="ContentPlaceHolder_Body_lblRemetente" class="lblTextbox">Remetente:</label>
-                            <input name="ctl00$ContentPlaceHolder_Body$txtRemetente" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtRemetente" class="textbox" />
+                            <input name="from" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtRemetente" class="textbox" />
                         
 </div>
                     </div>
                     <div class="campoHistorico">
-                        <label for="ContentPlaceHolder_Body_txtDestinatario" id="ContentPlaceHolder_Body_lblDestinatario" class="lblTextbox">Destinat�rio:</label>
-                        <input name="ctl00$ContentPlaceHolder_Body$txtDestinatario" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtDestinatario" class="textbox" />
+                        <label for="ContentPlaceHolder_Body_txtDestinatario" id="ContentPlaceHolder_Body_lblDestinatario" class="lblTextbox">Destinatário:</label>
+                        <input name="to" type="text" maxlength="40" id="ContentPlaceHolder_Body_txtDestinatario" class="textbox" />
                     </div>
                     <div class="campoHistorico">
                         <label for="ContentPlaceHolder_Body_ddlAnexos" id="ContentPlaceHolder_Body_lblAnexos" class="lblTextbox">Anexos</label>
-                        <select name="ctl00$ContentPlaceHolder_Body$ddlAnexos" id="ContentPlaceHolder_Body_ddlAnexos">
+                        <select name="anexos" id="ContentPlaceHolder_Body_ddlAnexos">
 	<option value="0">Indiferente</option>
 	<option value="1">Sem Anexos</option>
 	<option value="2">Com Anexos</option>
@@ -50,39 +50,41 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                     </div>
                     <div class="campoHistorico">
                         <label for="ContentPlaceHolder_Body_ddlStatus" id="ContentPlaceHolder_Body_lblStatus" class="lblTextbox">Status:</label>
-                        <select name="ctl00$ContentPlaceHolder_Body$ddlStatus" id="ContentPlaceHolder_Body_ddlStatus">
-	<option value="0">Indiferente</option>
-	<option value="1">Pendente</option>
-	<option value="2">Recebido</option>
-	<option value="3">Confirmado - Conte&#250;do</option>
-	<option value="4">Confirmado - Anexos</option>
-	<option value="5">Confirmado - Conte&#250;do e Anexos</option>
+                        <select name="status" id="ContentPlaceHolder_Body_ddlStatus">
+	<option value="">Indiferente</option>
+	<option value="0">Pendente</option>
+	<option value="2">Confirmado</option>
+<!-- 	<option value="0">Recebido</option> -->
+<!-- 	<option value="2">Confirmado - Conte&#250;do</option> -->
+<!-- 	<option value="2">Confirmado - Anexos</option> -->
+<!-- 	<option value="2">Confirmado - Conte&#250;do e Anexos</option> -->
 
 </select>
                     </div>
                     <div>
-                        <label for="ContentPlaceHolder_Body_txtDataInicial" id="ContentPlaceHolder_Body_lblDataIni" class="lblTextbox">Per�odo de:</label>
-                        <input name="ctl00$ContentPlaceHolder_Body$txtDataInicial" type="text" id="ContentPlaceHolder_Body_txtDataInicial" class="textbox txtDataIni" />
-                        <a id="ContentPlaceHolder_Body_calendar_ini" title="Calend�rio" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Body$calendar_ini&#39;,&#39;&#39;)"> 
-                            <img src="../img/ico_calendar.gif" width="32" height="28" alt="Calend�rio" style="margin:0 9px 0 0; vertical-align:bottom; " />                             
+                        <label for="ContentPlaceHolder_Body_txtDataInicial" id="ContentPlaceHolder_Body_lblDataIni" class="lblTextbox">Período de:</label>
+                        <input name="dt_ini" type="text" id="ContentPlaceHolder_Body_txtDataInicial" class="textbox txtDataIni" />
+                        <a id="ContentPlaceHolder_Body_calendar_ini" title="Calendario" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Body$calendar_ini&#39;,&#39;&#39;)"> 
+                            <img src="../img/ico_calendar.gif" width="32" height="28" alt="Calendario" style="margin:0 9px 0 0; vertical-align:bottom; " />                             
                         </a>
                         
-                        <span id="ContentPlaceHolder_Body_RegularExpressionValidator1" style="visibility:hidden;">Data inv�lida</span>
+                        <span id="ContentPlaceHolder_Body_RegularExpressionValidator1" style="visibility:hidden;">Data inválida</span>
                         <label for="ContentPlaceHolder_Body_txtDataFinal" id="ContentPlaceHolder_Body_lblDataFim">a</label>
-                        <input name="ctl00$ContentPlaceHolder_Body$txtDataFinal" type="text" id="ContentPlaceHolder_Body_txtDataFinal" class="textbox txtDataFim" />
-                        <a id="ContentPlaceHolder_Body_calendar_fim" title="Calend�rio" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Body$calendar_fim&#39;,&#39;&#39;)">   
-                            <img src="../img/ico_calendar.gif" width="32" height="28" alt="Calend�rio" style="margin:0 9px 0 0; vertical-align:bottom; " />                        
+                        <input name="dt_fim" type="text" id="ContentPlaceHolder_Body_txtDataFinal" class="textbox txtDataFim" />
+                        <a id="ContentPlaceHolder_Body_calendar_fim" title="Calendario" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Body$calendar_fim&#39;,&#39;&#39;)">   
+                            <img src="../img/ico_calendar.gif" width="32" height="28" alt="Calendario" style="margin:0 9px 0 0; vertical-align:bottom; " />                        
                         </a>
                         
-                        <span id="ContentPlaceHolder_Body_RegularExpressionValidator2" style="visibility:hidden;">Data inv�lida</span>
+                        <span id="ContentPlaceHolder_Body_RegularExpressionValidator2" style="visibility:hidden;">Data inválida</span>
                     </div>
                     <div class="btnContLine">
                         <span id="ContentPlaceHolder_Body_lblErro"></span>
-                        <a id="ContentPlaceHolder_Body_btnProcurar" class="btnProcurar" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder_Body$btnProcurar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Procurar</a>
+                        <a id="procurar" class="btnProcurar" href="javascript:;">Procurar</a>
                     </div>
                 </fieldset>
             </div>
         </div>
+        </form>
         <!--/#procurarEmail-->
         <div style="text-align: center;">
             
@@ -183,6 +185,14 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 		<!--/#wrapper-->
 	</div>
 	<!--/#container-->
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#procurar').click(function(){
+		$("#form1").submit();
+	});
+});
+</script>	
 	
 <?php
 echo $this->partial('index/footer.phtml');

@@ -355,4 +355,56 @@ class MinhaContaController extends Zend_Controller_Action
     	$this->view->assign('emails', $emails);
     	$this->view->assign('user', $user);
     }
+    
+    public function procurarEmailAction(){
+    	$post = $this->getRequest()->getPost();
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	 
+    	$emailTable = new Fet_Model_EmailTable();
+    	
+    	$param = array(
+    			'ema_usr_id' => $user->usr_id, 
+    			'order' => array ('ema_senddate', 'ema_confirmed'));
+    	
+    	if(isset($post['to']) && $post['to'] != '')
+    		$param['to'] = $post['to'];
+    	
+    	if(isset($post['from'])  && $post['from'] != '')
+    		$param['from'] = $post['from'];
+    	
+    	if(isset($post['subject']) && $post['subject'] != '')
+    		$param['subject'] = $post['subject'];
+    	
+    	if(isset($post['status']) && $post['status'] != '')
+    		$param['status'] = $post['status'];
+    	//TODO: colocar os filtros de dt_ini edt_fim
+    	
+    	$emails = $emailTable->getAllEmail($param, true);
+    	
+    	echo '<pre>';
+    	echo '###'.count($emails)."###<br>";
+    	print_r($emails);    	 
+    	die();
+    	
+    	$return = array();
+    	foreach($emails as $email){
+    		$Date = new Zend_Date($email->ema_senddate,"YYYY-MM-DD HH:mm:ss");
+    		$DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
+    	
+    		$email->ema_DateFormatado = $DateF;
+    			
+    		$return[] = $email;
+    	} 
+
+    	
+//     	echo '<pre>';
+//     	print_r($emails);    	
+// 		die();
+    	 
+    	$this->view->assign('emails', $emails);
+    	$this->view->assign('user', $user);
+    	
+    	//TODO: tem de ser a view consultar-historico
+    } 
 }
