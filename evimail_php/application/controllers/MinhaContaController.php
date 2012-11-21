@@ -174,6 +174,13 @@ class MinhaContaController extends Zend_Controller_Action
     }
     
     public function pagarServicoAction(){
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	
+    	$creditTable = new Fet_Model_CreditTable();
+    	
+    	
+    	
     	// CONSTANTES
     	define('VERSAO', "1.1.0");
     	define("ENDERECO_BASE", "https://qasecommerce.cielo.com.br");
@@ -214,10 +221,20 @@ class MinhaContaController extends Zend_Controller_Action
     	$Pedido->autorizar = 2; //Autorizar transa��o autenticada e n�o-autenticada
     	
     	
-    	//TODO: gerar um credits com value pre-setado e status nAO_PAGO
-    	$Pedido->dadosPedidoNumero = 1;
+    	//Gera credit com status nao_pago
+    	$userData = array(
+    		'usr_id' => $user->usr_id,
+    		'cre_type' => 1, //TODO: veruficar cre_type
+    		'cre_value' => $post['produto'],
+    		'cre_date' => date('Y-m-d H:i:s', time()),
+    		'cre_payed' => Fet_Model_CreditTable::CREDITO_NAO_PAGO
+    	);
+    	$credit_id = $creditTable->createCredit($userData);
+
+    	$Pedido->dadosPedidoNumero = $credit_id;
     	$Pedido->dadosPedidoValor = $post["produto"];
     	
+    	//TODO: arrumar URL de retorno
     	$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL();
     	
     	// ENVIA REQUISI��O SITE CIELO
@@ -227,9 +244,32 @@ class MinhaContaController extends Zend_Controller_Action
     	$Pedido->pan = $objResposta->pan;
     	$Pedido->status = $objResposta->status;
     	
-    	//TODO: salvar cielo_transacao
+//     	echo '<pre>';
+//     	print_r($objResposta);
+//     	die();
+    	
+    	if(!isset($Pedido->tid) || ! $Pedido->tid > 0 )
+    		throw new Exception("TID NAO ENCONTRADO. TRANSACAO NAO SALVA NO BANCO");
+    	
+    	$date_obj = new Zend_Date(trim($Pedido->dadosPedidoData),"YYYY-MM-ddTHH:mm:ss");
+    	$date = $date_obj->toString('YYYY-MM-dd HH:mm:ss');
+    	
+    	//salvar cielo_transacao
+    	$cieloTable = new Fet_Model_TransCieloTable();
+    	$userData = array(
+    			'tid' => $Pedido->tid,
+    			'date' => $date,
+    			'status' => $Pedido->status,
+    			'valor' => $Pedido->dadosPedidoValor,
+    			'bandeira' => $Pedido->formaPagamentoBandeira,
+    			'produto' => $Pedido->formaPagamentoProduto,
+    			'parcelas' => $Pedido->formaPagamentoParcelas,
+    			'numero_pedido' => $Pedido->dadosPedidoNumero
+		);
+    	$cieloTrans = $cieloTable->createTrans($userData);
     	
     	
+//     	die('trans:'. $cieloTrans);
     	$urlAutenticacao = "url-autenticacao";
     	$Pedido->urlAutenticacao = $objResposta->$urlAutenticacao;
     	

@@ -306,7 +306,7 @@
 		
 		
 		// Transforma em/l� string
-		public function ToString()
+		public function __toString()
 		{
 			$msg = $this->XMLHeader() .
 				   '<objeto-pedido>'

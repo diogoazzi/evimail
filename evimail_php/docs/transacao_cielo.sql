@@ -1,5 +1,5 @@
 CREATE TABLE trans_cielo (
-  tid int(11) NOT NULL ,
+  tid char(20) NOT NULL ,
   date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   status int(2) NOT NULL,
   valor int(11) NOT NULL,
