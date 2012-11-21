@@ -146,9 +146,11 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 			    			</a>
                         </td>
                         <td align="center">
+                        <?php if ($email->ema_confirmed != Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) {?>
                         	<a href="/minha-conta/download-pdf/ema_hash/<?php echo $email->ema_hash?>">
 			    			<img src="/img/icone-pdf.png" border="0">
 			    			</a>
+		    			<?php }?>
                         </td>
                         <td align="center">
                         <?php if($email->ema_confirmed == Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO) {?>

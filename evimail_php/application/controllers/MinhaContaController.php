@@ -339,7 +339,7 @@ class MinhaContaController extends Zend_Controller_Action
     	$email->ema_confirmed = Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO;
     	$email->save();
     	
-    	$this->_redirect('/minha-conta');
+    	$this->_redirect('/minha-conta/consultar-historico');
     }
 
     

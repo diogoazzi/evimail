@@ -2,7 +2,11 @@
 <?php
 echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'laudo', 'user' => $this->user, 'mostrarLaudo' => true ));
 ?>
-<form method="post" action="/minha-conta/gerar-pdf" id="form1">
+<?php if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) {?>
+	<form method="post" action="/minha-conta/gerar-pdf" id="form1">
+<?php } else {?>
+	<form method="post" action="/minha-conta/download-pdf/ema_hash/<?echo $this->email->ema_hash;?>" id="form1">
+<?php }?>
 <div class="aspNetHidden">
 <input type="hidden" name="ema_id" id="__VIEWSTATE" value="<?php echo $this->email->ema_id?>" />
 </div>
@@ -69,7 +73,13 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
     </div>
 <div id="ucDetalhesEmail_pnlGerarPdf">
 	
-    <a id="lnkCriarConta" class="button" target="_blank"><span>GERAR PDF</span></a>
+    <a id="lnkCriarConta" class="button" target="_blank">
+    <?php if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) {?>
+    	<span>GERAR PDF</span>
+	<?php } else {?>
+    	<span>BAIXAR PDF</span>
+	<?php }?>    
+    </a>
 
 </div>
 
