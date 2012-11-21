@@ -28,9 +28,13 @@ class IndexController extends Zend_Controller_Action
     											 'ssl' => 'SSL'));
     	$i = 1;
     	foreach ($mail as $message) {
-//     		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
-//     			continue;
-//     		}
+    		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
+    			continue;
+    		}
+    		
+    		
+//     		echo '<pre>';
+//     		print_r($message);
     		
     		$recieved_arr = explode(',',$message->date);
     		$recieved_arr = explode('-', $recieved_arr[1]);
@@ -48,10 +52,12 @@ class IndexController extends Zend_Controller_Action
 //     			$to = str_replace('>','',$to_arr[1]);
 
     		//TODO: fazer tratativa de varios cc
-//     		if(isset($message->cc)) {
+    		$cc = null;
+    		if(isset($message->cc)) {
+    			$cc = $message->cc;
 // 	    		$cc_arr = explode('<',$message->cc);
 // 	    		$cc = str_replace('>','',$cc_arr[1]);
-//     		}
+    		}
     		
     		//TODO: fazer tratativa de bcc nao consta no header bcc
     		echo '<pre>';
@@ -152,7 +158,7 @@ class IndexController extends Zend_Controller_Action
 		    $userData =  Array(
 		    		'ema_emailfrom' => $from ,
 		    		'ema_emailto'	=> $message->to,
-		    		'ema_cc' => $message->cc,
+		    		'ema_cc' => $cc,
 // 		    		'ema_bcc' => $bcc,
 		    		'ema_subject' => $message->subject,
 		    		'ema_senddate' => $recieved,
