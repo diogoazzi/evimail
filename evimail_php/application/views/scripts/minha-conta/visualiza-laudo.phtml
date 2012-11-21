@@ -16,11 +16,15 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 		</p>
 		
 		<p class="legendDetalhe">
-			<span>
+			<?php if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) {?>
+			<span class="notconfirmed">
 				confirmação pendente
-			</span><span>
+			</span>
+			<?php } else {?>
+			<span class="confirmed">
 				confirmado
 			</span>
+			<?php }?>
 		</p>
 	
 <div class="box">

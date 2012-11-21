@@ -789,15 +789,16 @@ div.emailAdd .txtBox {
     margin-top: 5px;
 }
 
-.legendDetalhe span {
+.legendDetalhe .confirmed{
     display: inline-block;
     margin-left: 20px;
     background: url(../img/ico_sim.gif) center left no-repeat;
     padding: 5px 0 5px 25px;
 }
 
-.legendDetalhe span:first-child {
+.legendDetalhe  .notconfirmed {
     background: url(../img/ico_nao.gif) center left no-repeat;
+    padding: 20px;
 }
 
 .confirmado {
