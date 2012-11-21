@@ -1,7 +1,9 @@
 <body id="body" class="inner cadastro">
 <?php
 echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'alterar-dados', 'user' => $this->user));
-?>			   
+?>
+	<div id="container">
+		<div id="wrapper">			   
     <div id="content">
     <form method="post" action="/minha-conta/procurar-email" id="form1">
         <h2 class="title">
