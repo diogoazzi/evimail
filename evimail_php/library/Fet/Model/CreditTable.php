@@ -153,6 +153,18 @@ class Fet_Model_CreditTable extends Zend_Db_Table
 
 		return $total;
 	}
+	
+	
+	public function jaContratou($usr_id){
+	
+		$params = array(
+				'usr_id' => $usr_id,
+		);
+	
+		$credits = $this->getAllCredits($params,true);
+		
+		return count($credits);
+	}
 
 	public function getFirstPayedRow($usr_id){
 		$params = array(

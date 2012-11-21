@@ -161,9 +161,86 @@ class MinhaContaController extends Zend_Controller_Action
     
     function contratarServicoAction() {
     	$auth = Zend_Auth::getInstance();
-    	$identity = $auth->getIdentity();
-    	$this->view->assign('user', $identity);
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);
     	
+    	$creditTable = new Fet_Model_CreditTable();
+    	
+    	if($creditTable->jaContratou($user->usr_id) > 0 )
+    		$this->view->assign('jaContratou', true);
+    	else
+    		$this->view->assign('jaContratou', false);
+    	
+    }
+    
+    public function pagarServicoAction(){
+    	// CONSTANTES
+    	define('VERSAO', "1.1.0");
+    	define("ENDERECO_BASE", "https://qasecommerce.cielo.com.br");
+    	define("ENDERECO", ENDERECO_BASE."/servicos/ecommwsec.do");
+    	
+    	define("LOJA", "1006993069");
+    	define("LOJA_CHAVE", "25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3");
+    	define("CIELO", "1001734898");
+    	define("CIELO_CHAVE", "e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832");  	
+    	
+    	$Pedido = new Fet_Controller_Helper_PedidoProfile();
+    	$post =  $this->getRequest()->getPost();
+    	
+    	
+    	//TODO: enviar estes parametros pra pagina
+    	$post['codigoBandeira'] = 'visa';
+    	$post["formaPagamento"] = 'A';
+    	$post["capturarAutomaticamente"] = true;
+    	$post["produto"] = '12300' ; //valor
+    	
+    	// L� dados do $post
+    	$Pedido->formaPagamentoBandeira = $post["codigoBandeira"];
+    	if($post["formaPagamento"] != "A")
+    	{
+    		$Pedido->formaPagamentoProduto = 'A'; //debito
+    		$Pedido->formaPagamentoParcelas = 1;
+    	}
+    	else
+    	{
+    		$Pedido->formaPagamentoProduto = 1; // credito a vista
+    		$Pedido->formaPagamentoParcelas = 1;
+    	}
+    	
+    	$Pedido->dadosEcNumero = CIELO;
+    	$Pedido->dadosEcChave = CIELO_CHAVE;
+    	
+    	$Pedido->capturar = $post["capturarAutomaticamente"];
+    	$Pedido->autorizar = 2; //Autorizar transa��o autenticada e n�o-autenticada
+    	
+    	
+    	//TODO: gerar um credits com value pre-setado e status nAO_PAGO
+    	$Pedido->dadosPedidoNumero = 1;
+    	$Pedido->dadosPedidoValor = $post["produto"];
+    	
+    	$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL();
+    	
+    	// ENVIA REQUISI��O SITE CIELO
+    	$objResposta = $Pedido->RequisicaoTransacao(false);
+    	
+    	$Pedido->tid = $objResposta->tid;
+    	$Pedido->pan = $objResposta->pan;
+    	$Pedido->status = $objResposta->status;
+    	
+    	//TODO: salvar cielo_transacao
+    	
+    	
+    	$urlAutenticacao = "url-autenticacao";
+    	$Pedido->urlAutenticacao = $objResposta->$urlAutenticacao;
+    	
+    	// Serializa Pedido e guarda na SESSION
+    	$StrPedido = $Pedido->ToString();
+
+    	echo '<script type="text/javascript">
+			window.location.href = "' . $Pedido->urlAutenticacao . '"
+		 </script>';
+    	
+    	 die();
     }
     
     function alterarDadosAction() {

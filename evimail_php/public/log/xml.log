@@ -1,0 +1,405 @@
+***********************************************
+2012-11-21 14:18:42:000000 (EST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="5dfc43ed444dbbce0de70a0f08e971bd" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T14:18:42</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 14:18:43:000000 (EST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+RESPOSTA: 
+
+***********************************************
+2012-11-21 17:22:46:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="af0754be76cbc5a4022e99a023b5d322" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:22:46</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:23:29:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="d852b57844e40367586583b0258b8988" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:23:29</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:24:14:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="d1a187952e72369e48bbcd0b7dcba0c1" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:24:14</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:25:08:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="4919b991842d04c59feeaefe4b8c8121" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:25:08</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:25:43:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="c852450b23c5e3e5a172c1570ae90de4" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:25:43</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:26:56:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="09332ffbe6d7712e3ffe815583deaa17" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:26:56</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:29:43:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="a0d43b701197641785e0782b418afde9" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:29:43</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:30:31:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="1b966d87f50247ba8b72f5515b32371d" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:30:31</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:43:44:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="c10ac606390cf72863133ccdffaa75bf" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:43:44</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:43:44:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+RESPOSTA: error setting certificate verify locations:
+  CAfile: /home/goao/devel/jojo/evimail/evimail_php/public/ssl/VeriSignClass3PublicPrimaryCertificationAuthority-G5.crt
+  CApath: /etc/ssl/certs
+
+***********************************************
+2012-11-21 17:44:03:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="4dea99681db69606a38313050e0a42d7" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:44:03</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:44:03:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+RESPOSTA: error setting certificate verify locations:
+  CAfile: /home/goao/devel/jojo/evimail/evimail_php/public/ssl/VeriSignClass3PublicPrimaryCertificationAuthority-G5.crt
+  CApath: /etc/ssl/certs
+
+***********************************************
+2012-11-21 17:45:04:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="fd76f523bb9c8a99882e59fc05b2dd7d" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:45:04</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:45:04:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+RESPOSTA: error setting certificate verify locations:
+  CAfile: /home/goao/devel/jojo/evimail/evimail_php/public/ssl/VeriSignClass3PublicPrimaryCertificationAuthority-G5.crt
+  CApath: /etc/ssl/certs
+
+***********************************************
+2012-11-21 17:46:36:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="538830f7f4987d77aa909e7b70cb1b2b" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1</numero>
+      <valor>12300</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-21T17:46:36</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://evimail.local/minha-conta/pagar-servico</url-retorno>
+   <autorizar>2</autorizar>
+   <capturar>1</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-21 17:46:36:000000 (BRST)
+DO ARQUIVO: /minha-conta/pagar-servico
+OPERA��O: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="538830f7f4987d77aa909e7b70cb1b2b" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E9541001</tid>
+  <dados-pedido>
+    <numero>1</numero>
+    <valor>12300</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-21T17:44:33.063-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=d4c1243cbf0baf7e910a15a068e27864</url-autenticacao>
+</transacao>
+
+

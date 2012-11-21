@@ -2,14 +2,7 @@
 echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'contratar-servico', 'user' => $this->user));
 ?>
 <div id="container">
-		<div id="wrapper">
-			<script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', ['tctl00$ContentPlaceHolder_Body$uppContratarServico','ContentPlaceHolder_Body_uppContratarServico'], [], [], 90, 'ctl00');
-//]]>
-</script>
-
-			
+		<div id="wrapper">			
     <div id="ContentPlaceHolder_Body_uppContratarServico">
 	
             <div id="content">
@@ -18,10 +11,11 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', 
                     <div class="relative row">
                         <h2 class="title">
                             contratar um serviço</h2>
-                        <div id="ContentPlaceHolder_Body_pnlAlertaServico" class="alert">
-		
-                            Você ainda não possui um serviço contratado!
-	</div>
+                        <?php if(!$this->jaContratou) {?>    
+	                        <div id="ContentPlaceHolder_Body_pnlAlertaServico" class="alert">
+	                            Você ainda não possui um serviço contratado!
+							</div>
+						<?php }?>
                     </div>
                     
                         <!--COM OPÇÃO 1 E 2-->
@@ -45,10 +39,10 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', 
                                                     Planos disponíveis:</h4>
                                                 <fieldset>
                                                     <ul id="ContentPlaceHolder_Body_rblPlanosDisp" class="radioList">
-			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_0" type="radio" name="ctl00$ContentPlaceHolder_Body$rblPlanosDisp" value="emails/mês - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_0">emails/mês - <span class="semCredUvaia">R$</span></label></li>
-			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_1" type="radio" name="ctl00$ContentPlaceHolder_Body$rblPlanosDisp" value="emails/mês - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_1">emails/mês - <span class="semCredUvaia">R$</span></label></li>
-			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_2" type="radio" name="ctl00$ContentPlaceHolder_Body$rblPlanosDisp" value="emails/mês - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_2">emails/mês - <span class="semCredUvaia">R$</span></label></li>
-			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_3" type="radio" name="ctl00$ContentPlaceHolder_Body$rblPlanosDisp" value="emails/mês - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$3\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_3">emails/mês - <span class="semCredUvaia">R$</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_0" type="radio" name="plano" value="0" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_0">20 emails/mês - <span class="semCredUvaia">R$ 20,00</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_1" type="radio" name="plano" value="1" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_1">40 emails/mês - <span class="semCredUvaia">R$ 40,00</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_2" type="radio" name="plano" value="2" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_2">70 emails/mês - <span class="semCredUvaia">R$70,00</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblPlanosDisp_3" type="radio" name="plano" value="3" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblPlanosDisp$3\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblPlanosDisp_3">100 emails/mês - <span class="semCredUvaia">R$100,00</span></label></li>
 
 		</ul>
                                                 </fieldset>
@@ -87,10 +81,10 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', 
                                                     Pacotes disponíveis:</h4>
                                                 <fieldset>
                                                     <ul id="ContentPlaceHolder_Body_rblCreditosDisp" class="radioList">
-			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_0" type="radio" name="ctl00$ContentPlaceHolder_Body$rblCreditosDisp" value="emails - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_0">emails - <span class="semCredUvaia">R$</span></label></li>
-			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_1" type="radio" name="ctl00$ContentPlaceHolder_Body$rblCreditosDisp" value="emails - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_1">emails - <span class="semCredUvaia">R$</span></label></li>
-			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_2" type="radio" name="ctl00$ContentPlaceHolder_Body$rblCreditosDisp" value="emails - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_2">emails - <span class="semCredUvaia">R$</span></label></li>
-			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_3" type="radio" name="ctl00$ContentPlaceHolder_Body$rblCreditosDisp" value="emails - &lt;span class=&quot;semCredUvaia&quot;>R$&lt;/span>" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$3\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_3">emails - <span class="semCredUvaia">R$</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_0" type="radio" name="plano" value="4" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_0">100 emails - <span class="semCredUvaia">R$ 100,00</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_1" type="radio" name="plano" value="5" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_1">150 emails - <span class="semCredUvaia">R$ 150,00</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_2" type="radio" name="plano" value="6" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_2">250 emails - <span class="semCredUvaia">R$ 250,00</span></label></li>
+			<li><input id="ContentPlaceHolder_Body_rblCreditosDisp_3" type="radio" name="plano" value="7" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblCreditosDisp$3\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblCreditosDisp_3">500 emails - <span class="semCredUvaia">R$ 500,00</span></label></li>
 
 		</ul>
                                                 </fieldset>
@@ -135,9 +129,9 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'formMain', 
                                         Cartões de crédito disponíveis:</h4>
                                     <fieldset class="formPagamentoCard">
                                         <ol id="ContentPlaceHolder_Body_rblBandeiraCartao" class="bandeiraCartao">
-		<li><input id="ContentPlaceHolder_Body_rblBandeiraCartao_0" type="radio" name="ctl00$ContentPlaceHolder_Body$rblBandeiraCartao" value="Mastercard" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblBandeiraCartao$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblBandeiraCartao_0"><span><img src="../img/site/mastercard.gif" alt="Mastercard" title="Mastercard" /></span>Mastercard</label></li>
-		<li><input id="ContentPlaceHolder_Body_rblBandeiraCartao_1" type="radio" name="ctl00$ContentPlaceHolder_Body$rblBandeiraCartao" value="Visa" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblBandeiraCartao$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblBandeiraCartao_1"><span><img src="../img/site/visa.gif" alt="Visa" title="Visa" /></span>Visa</label></li>
-		<li><span class="aspNetDisabled"><input id="ContentPlaceHolder_Body_rblBandeiraCartao_2" type="radio" name="ctl00$ContentPlaceHolder_Body$rblBandeiraCartao" value="Cr�ditos Uvaia" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblBandeiraCartao$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblBandeiraCartao_2"><span><img src="../img/credUvaia.png" alt="Cr�ditos Uvaia" title="Cr�ditos Uvaia" /></span><strong>Créditos Uvaia</strong><a target="_blank" href="http://www.uvaia.com.br/webforms/Default.aspx" class="linkUvaia">Conheça o Uvaia</a></label></span></li>
+		<li><input id="ContentPlaceHolder_Body_rblBandeiraCartao_0" type="radio" name="cartao" value="mastercard" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblBandeiraCartao$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblBandeiraCartao_0"><span><img src="../img/site/mastercard.gif" alt="Mastercard" title="Mastercard" /></span>Mastercard</label></li>
+		<li><input id="ContentPlaceHolder_Body_rblBandeiraCartao_1" type="radio" name="cartao" value="visa" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblBandeiraCartao$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblBandeiraCartao_1"><span><img src="../img/site/visa.gif" alt="Visa" title="Visa" /></span>Visa</label></li>
+		<li><span class="aspNetDisabled"><input id="ContentPlaceHolder_Body_rblBandeiraCartao_2" type="radio" name="cartao" value="Créditos Uvaia" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder_Body$rblBandeiraCartao$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ContentPlaceHolder_Body_rblBandeiraCartao_2"><span><img src="../img/credUvaia.png" alt="Cr�ditos Uvaia" title="Cr�ditos Uvaia" /></span><strong>Créditos Uvaia</strong><a target="_blank" href="http://www.uvaia.com.br/webforms/Default.aspx" class="linkUvaia">Conheça o Uvaia</a></label></span></li>
 
 	</ol>
                                         <div class="boxTip">
@@ -242,28 +236,8 @@ $('.closeBoxTip').click(function (e) { e.preventDefault(); $(this).parent('.boxT
 Cufon.replace(".title, .titleHome, .entryContent h3, .opcao h3, .fonte700, .emailClose, .linkHome, .emailOpen", { fontFamily: "Helvetica Neue", fontWeight: "700" });
 //]]>
 </script>
-<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'menuHeader', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script>
 <script type="text/javascript">
-//<![CDATA[
 
-var Page_ValidationActive = false;
-if (typeof(ValidatorOnLoad) == "function") {
-    ValidatorOnLoad();
-}
-
-function ValidatorOnSubmit() {
-    if (Page_ValidationActive) {
-        return ValidatorCommonOnSubmit();
-    }
-    else {
-        return true;
-    }
-}
-        
-document.getElementById('ContentPlaceHolder_Body_ctvContratar').dispose = function() {
-    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder_Body_ctvContratar'));
-}
-//]]>
 </script>
 </form>
 	<script type="text/javascript">        Cufon.now(); </script>
