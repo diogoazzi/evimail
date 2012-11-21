@@ -1,11 +1,11 @@
 <body id="body" class="inner cadastro">
 <?php
-echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'alterar-dados', 'user' => $this->user));
+echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'historico', 'user' => $this->user));
 ?>
 	<div id="container">
 		<div id="wrapper">			   
     <div id="content">
-    <form method="post" action="/minha-conta/procurar-email" id="form1">
+    <form method="post" action="/minha-conta/consultar-historico" id="form1">
         <h2 class="title">
             Consultar Histórico de Emails</h2>
         <div id="procurarEmail">
@@ -141,11 +141,14 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                         <?php echo $email->ema_subject?>
 			</td>
                         <td align="center">
-			    <img src="/img/ico_anexo.gif" border="0">
+                        	<a href="minha-conta/lista-anexos/<?php echo $this->user->usr->id.'/'.$email->ema_hash?>">
+			    			<img src="/img/ico_anexo.gif" border="0">
+			    			</a>
                         </td>
                         <td align="center">
-                            <asp:ImageButton runat="server" ID="btnPdf" OnCommand="GerarPdf" />
-			    <img src="/img/icone-pdf.png" border="0">
+                        	<a href="/minha-conta/download-pdf/ema_hash/<?php echo $email->ema_hash?>">
+			    			<img src="/img/icone-pdf.png" border="0">
+			    			</a>
                         </td>
                         <td align="center">
                         <?php if($email->ema_confirmed == Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO) {?>

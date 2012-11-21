@@ -43,15 +43,15 @@ class IndexController extends Zend_Controller_Action
     			$from = str_replace('>','',$from_arr[1]);
 
     		//TODO: fazer tratativa de varios to
-    		$to_arr = explode('<',$message->to);
-    		if(count($to_arr) > 1)
-    			$to = str_replace('>','',$to_arr[1]);
+//     		$to_arr = explode('<',$message->to);
+//     		if(count($to_arr) > 1)
+//     			$to = str_replace('>','',$to_arr[1]);
 
     		//TODO: fazer tratativa de varios cc
-    		if(isset($message->cc)) {
-	    		$cc_arr = explode('<',$message->cc);
-	    		$cc = str_replace('>','',$cc_arr[1]);
-    		}
+//     		if(isset($message->cc)) {
+// 	    		$cc_arr = explode('<',$message->cc);
+// 	    		$cc = str_replace('>','',$cc_arr[1]);
+//     		}
     		
     		//TODO: fazer tratativa de bcc nao consta no header bcc
     		echo '<pre>';
@@ -150,7 +150,7 @@ class IndexController extends Zend_Controller_Action
 		    
 		    echo "Armazenando email...";
 		    $userData =  Array(
-		    		'ema_emailfrom' => $message->from ,
+		    		'ema_emailfrom' => $from ,
 		    		'ema_emailto'	=> $message->to,
 		    		'ema_cc' => $message->cc,
 // 		    		'ema_bcc' => $bcc,

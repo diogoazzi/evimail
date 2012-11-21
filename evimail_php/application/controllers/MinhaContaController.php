@@ -347,64 +347,101 @@ class MinhaContaController extends Zend_Controller_Action
     	$auth = Zend_Auth::getInstance();
     	$user = $auth->getIdentity();
     	
-    	
-    	$emailProfile = new Fet_Controller_Helper_EmailProfile();
-    	$emails = $emailProfile->getAllEmailFromUser($user->usr_id);
 
-    	
-    	$this->view->assign('emails', $emails);
-    	$this->view->assign('user', $user);
-    }
-    
-    public function procurarEmailAction(){
     	$post = $this->getRequest()->getPost();
     	$auth = Zend_Auth::getInstance();
     	$user = $auth->getIdentity();
-    	 
+    	
     	$emailTable = new Fet_Model_EmailTable();
-    	
+    	 
     	$param = array(
-    			'ema_usr_id' => $user->usr_id, 
+    			'ema_usr_id' => $user->usr_id,
     			'order' => array ('ema_senddate', 'ema_confirmed'));
-    	
+    	 
     	if(isset($post['to']) && $post['to'] != '')
     		$param['to'] = $post['to'];
-    	
+    	 
     	if(isset($post['from'])  && $post['from'] != '')
     		$param['from'] = $post['from'];
-    	
+    	 
     	if(isset($post['subject']) && $post['subject'] != '')
     		$param['subject'] = $post['subject'];
-    	
+    	 
     	if(isset($post['status']) && $post['status'] != '')
     		$param['status'] = $post['status'];
     	//TODO: colocar os filtros de dt_ini edt_fim
-    	
+    	 
     	$emails = $emailTable->getAllEmail($param, true);
-    	
-    	echo '<pre>';
-    	echo '###'.count($emails)."###<br>";
-    	print_r($emails);    	 
-    	die();
-    	
     	$return = array();
     	foreach($emails as $email){
     		$Date = new Zend_Date($email->ema_senddate,"YYYY-MM-DD HH:mm:ss");
     		$DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
-    	
+    		 
     		$email->ema_DateFormatado = $DateF;
-    			
+    		 
     		$return[] = $email;
-    	} 
-
+    	}
     	
-//     	echo '<pre>';
-//     	print_r($emails);    	
-// 		die();
-    	 
-    	$this->view->assign('emails', $emails);
+    	$this->view->assign('emails', $return);
     	$this->view->assign('user', $user);
-    	
-    	//TODO: tem de ser a view consultar-historico
     } 
+    
+    
+    function downloadPdfAction(){
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	 
+    	$params = $this->getRequest()->getParams();
+    	
+    	$pathBase = pathinfo(__FILE__);
+    	$pathBase = $pathBase['dirname'];
+    	$path = $pathBase.'/../../public/pdf/'.$user->usr_id.'/'.$params['ema_hash'].'/';
+    	
+//     	die($path);
+    	
+    	$filename = $path.'email.pdf';
+    	$tp = pathinfo($filename);
+    	 
+    	header("Content-Type: application/pdf");
+    	header("Content-disposition: attachment; filename=".$tp['basename'].";");
+    	header("Content-Length: ".filesize($filename));
+    	 
+    	header('Content-Transfer-Encoding: Binary');
+    	header('Accept-Ranges: bytes');
+    	 
+    	header('ETag: "'.md5($filename).'"');
+    	header("Cache-Control: no-cache, must-revalidate");
+    	header("Pragma: no-cache");
+    	ob_clean(); // in case anything else was buffered
+    	ob_start();
+    	$this->readfile_chunked($filename);
+    	ob_end_flush();
+    	die();
+    	
+    }
+    
+    private function readfile_chunked($filename,$retbytes=true) { 
+    	$chunksize = 1*(1024*1024); // how many bytes per chunk
+    	$buffer = '';
+    	$cnt =0;
+    	// $handle = fopen($filename, 'rb');
+    	$handle = fopen($filename, 'rb');
+    	if ($handle === false) {
+    		return false;
+    	}
+    	while (!feof($handle)) {
+    		$buffer = fread($handle, $chunksize);
+    		echo $buffer;
+    		ob_flush();
+    		flush();
+    		if ($retbytes) {
+    			$cnt += strlen($buffer);
+    		}
+    	}
+    	$status = fclose($handle);
+    	if ($retbytes && $status) {
+    		return $cnt; // return num. bytes delivered like readfile() does.
+    	}
+    	return $status;
+}
 }
