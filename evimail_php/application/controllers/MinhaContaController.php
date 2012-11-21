@@ -196,10 +196,45 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	
     	//TODO: enviar estes parametros pra pagina
-    	$post['codigoBandeira'] = 'visa';
+//     	$post['codigoBandeira'] = 'visa';
     	$post["formaPagamento"] = 'A';
+    	
+    	
     	$post["capturarAutomaticamente"] = true;
-    	$post["produto"] = '12300' ; //valor
+    	
+//     	print_r($post);
+    	
+    	switch ($post['plano']){
+    		case '1':
+				$post['produto'] = 2000;
+				break;
+			case '2':
+				$post['produto'] = 4000;
+				break;				
+			case '3':
+				$post['produto'] = 7000;
+				break;
+			case '4':
+				$post['produto'] = 10000;
+				break;
+			case '5':
+				$post['produto'] = 10000;
+				break;
+			case '6':
+				$post['produto'] = 15000;
+				break;
+			case '7':
+				$post['produto'] = 25000;
+				break;
+			case '8':
+				$post['produto'] = 50000;
+				break;
+			default:
+				throw new Exception("Plano nao selecionado.");
+    	}
+    	
+//     	die($post['produto'].'#');
+//     	$post["produto"] = '12300' ; //valor
     	
     	// L� dados do $post
     	$Pedido->formaPagamentoBandeira = $post["codigoBandeira"];
@@ -274,13 +309,13 @@ class MinhaContaController extends Zend_Controller_Action
     	$Pedido->urlAutenticacao = $objResposta->$urlAutenticacao;
     	
     	// Serializa Pedido e guarda na SESSION
-    	$StrPedido = $Pedido->ToString();
+//     	$StrPedido = $Pedido->ToString();
 
     	echo '<script type="text/javascript">
 			window.location.href = "' . $Pedido->urlAutenticacao . '"
 		 </script>';
     	
-    	 die();
+    	 die('eee');
     }
     
     function alterarDadosAction() {
