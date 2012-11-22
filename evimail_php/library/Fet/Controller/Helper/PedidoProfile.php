@@ -41,6 +41,33 @@
 			$this->logger = new Logger();
 		}
 		
+		public function hidrate($transCielo){
+			
+			define("LOJA", "1006993069");
+			define("LOJA_CHAVE", "25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3");
+			define('VERSAO', "1.1.0");
+			define("ENDERECO_BASE", "https://qasecommerce.cielo.com.br");
+			define("ENDERECO", ENDERECO_BASE."/servicos/ecommwsec.do");
+			
+			$this->formaPagamentoBandeira = $transCielo->bandeira;
+			$this->formaPagamentoProduto = $transCielo->produto;
+			$this->formaPagamentoParcelas = $transCielo->parcelas;
+		
+			$this->dadosEcNumero = LOJA;
+			$this->dadosEcChave = LOJA_CHAVE;
+			 
+			$this->capturar = true;
+			$this->autorizar = 2; //Autorizar transa��o autenticada e n�o-autenticada
+			$this->dadosPedidoNumero = $transCielo->numero_pedido;
+			$this->dadosPedidoValor = $transCielo->valor;
+			 
+			$this->tid = $transCielo->tid;
+			$this->status = $transCielo->status;
+	
+			return $this;
+			 
+		}
+		
 		// Geradores de XML
 		private function XMLHeader()
 		{
@@ -300,6 +327,7 @@
 				    . $this->XMLDadosEc() . "\n" .
 				   '</requisicao-consulta>';
 			
+// 			die($msg);
 			$objResposta = $this->Enviar($msg, "Consulta");
 			return $objResposta;
 		}
@@ -439,7 +467,7 @@
 		}
 		
 		// Monta URL de retorno
-		public static function ReturnURL()
+		public static function ReturnURL($numPedido)
 		{
 			$pageURL = 'http';
 		
@@ -459,8 +487,10 @@
 			$file = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
 		
 			$ReturnURL = str_replace($file, "retorno.php", $pageURL);
+			
+			return 'http://'.$_SERVER['SERVER_NAME'].'/cielo/get-retorno/numero_pedido/'.$numPedido;
 		
-			return $ReturnURL;
+// 			return $ReturnURL;
 		}
 		
 		

@@ -161,14 +161,16 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                             <fieldset>
                                 
                                     <!--Era o q j� estava programado-->
-                                    <div>
-                                        <label for="ContentPlaceHolder_Body_tbNomeCartao" id="ContentPlaceHolder_Body_lblNomeCartao" class="lblTextbox">Nome impresso no cartão:</label><input name="ctl00$ContentPlaceHolder_Body$tbNomeCartao" type="text" id="ContentPlaceHolder_Body_tbNomeCartao" class="textbox" />
-                                    </div>
+<!--                                     <div> -->
+<!--                                         <label for="ContentPlaceHolder_Body_tbNomeCartao" id="ContentPlaceHolder_Body_lblNomeCartao" class="lblTextbox">Nome impresso no cartão:</label><input name="ctl00$ContentPlaceHolder_Body$tbNomeCartao" type="text" id="ContentPlaceHolder_Body_tbNomeCartao" class="textbox" /> -->
+<!--                                     </div> -->
                                    
                                 
                                     <div class="formPagamento">
                                         <p>
-                                            Forma do Pagamento: <span id="ContentPlaceHolder_Body_lblFormPagamento">não selecionado</span>
+                                            Forma do Pagamento: <br><br>
+                                            <input id="forma" type="radio" name="formaPagamento" value="A">Débito &nbsp;&nbsp;
+                                            <input type="radio" name="formaPagamento" value="1">Crédito<br>
                                         </p>
                                         
                                             <p>

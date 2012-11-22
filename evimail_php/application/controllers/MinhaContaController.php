@@ -197,7 +197,7 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	//TODO: enviar estes parametros pra pagina
 //     	$post['codigoBandeira'] = 'visa';
-    	$post["formaPagamento"] = 'A';
+//     	$post["formaPagamento"] = 'A';
     	
     	
     	$post["capturarAutomaticamente"] = true;
@@ -238,7 +238,7 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	// L� dados do $post
     	$Pedido->formaPagamentoBandeira = $post["codigoBandeira"];
-    	if($post["formaPagamento"] != "A")
+    	if($post["formaPagamento"] == "A")
     	{
     		$Pedido->formaPagamentoProduto = 'A'; //debito
     		$Pedido->formaPagamentoParcelas = 1;
@@ -252,7 +252,7 @@ class MinhaContaController extends Zend_Controller_Action
     	$Pedido->dadosEcNumero = CIELO;
     	$Pedido->dadosEcChave = CIELO_CHAVE;
     	
-    	$Pedido->capturar = $post["capturarAutomaticamente"];
+    	$Pedido->capturar = true;
     	$Pedido->autorizar = 2; //Autorizar transa��o autenticada e n�o-autenticada
     	
     	
@@ -270,7 +270,7 @@ class MinhaContaController extends Zend_Controller_Action
     	$Pedido->dadosPedidoValor = $post["produto"];
     	
     	//TODO: arrumar URL de retorno
-    	$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL();
+    	$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL($Pedido->dadosPedidoNumero);
     	
     	// ENVIA REQUISI��O SITE CIELO
     	$objResposta = $Pedido->RequisicaoTransacao(false);
@@ -280,6 +280,7 @@ class MinhaContaController extends Zend_Controller_Action
     	$Pedido->status = $objResposta->status;
     	
 //     	echo '<pre>';
+//     	print_r($Pedido);
 //     	print_r($objResposta);
 //     	die();
     	
@@ -307,6 +308,10 @@ class MinhaContaController extends Zend_Controller_Action
 //     	die('trans:'. $cieloTrans);
     	$urlAutenticacao = "url-autenticacao";
     	$Pedido->urlAutenticacao = $objResposta->$urlAutenticacao;
+    	
+    	echo '<pre>';
+    	print_r($Pedido);
+    	die();
     	
     	// Serializa Pedido e guarda na SESSION
 //     	$StrPedido = $Pedido->ToString();
