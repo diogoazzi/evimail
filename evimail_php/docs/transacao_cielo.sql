@@ -5,7 +5,7 @@ CREATE TABLE trans_cielo (
   valor int(11) NOT NULL,
   bandeira varchar(50) NOT NULL,
   produto char(1) NOT NULL,
-  parccelas int(2) NOT NULL,
+  parcelas int(2) NOT NULL,
   numero_pedido int(11) NOT NULL,
 
   PRIMARY KEY (tid),

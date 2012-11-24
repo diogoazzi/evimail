@@ -356,9 +356,24 @@ class MinhaContaController extends Zend_Controller_Action
     	$user = $auth->getIdentity();
     	$this->view->assign('user', $user);
     	
+    	$creditTable = new Fet_Model_CreditTable();
+    	$totalCredito = $creditTable->getTotalCreditosDisponiveis($user->usr_id);
+    	$this->view->assign('totalCredits', $totalCredito);
     	
-    	$this->view->assign('menu', 'laudo');
+    	$pathBase = pathinfo(__FILE__);
+    	$pathBase = $pathBase['dirname'];
+    	$path = $pathBase.'/../../public/pdf/'.$user->usr_id.'/'.$email->ema_hash.'/';
     	
+    	$anexos = array();
+    	if ($handle = opendir($path)) {
+    		/* This is the correct way to loop over the directory. */
+    		while (false !== ($entry = readdir($handle))) {
+    			$anexos[]=$entry;
+    		}
+    		closedir($handle);
+    	}
+    	
+    	$this->view->assign('anexos', $anexos);
     }
     
     
@@ -485,8 +500,37 @@ class MinhaContaController extends Zend_Controller_Action
     	// 		    $mail->addTo("diogoafe@gmail.com");
     	$mail->addTo($email->ema_emailfrom);
     	$mail->setSubject('EviMail - PDF - '.$email->ema_subject);
+    	
     	$file = $mail->createAttachment($pdf);
     	$file->filename = $path."email.pdf";
+    	
+    	if ($handle = opendir($path)) {
+    		/* This is the correct way to loop over the directory. */
+    		while (false !== ($entry = readdir($handle))) {
+    			if($entry == 'email.pdf')
+    				continue;
+    			
+    			$ext_arr = explode('.',$entry);
+				$ext = $ext_arr[1];
+				
+				$at = new Zend_Mime_Part($myImage);
+				
+				if($ext == 'txt') {
+					$at->type        = 'plain/text';
+// 					$at->disposition = Zend_Mime::DISPOSITION_INLINE;
+// 					$at->encoding    = Zend_Mime::ENCODING_BASE64;
+					$at->filename    = $path.$entry;
+				} else {
+					$at->type        = 'application';
+										$at->disposition = Zend_Mime::DISPOSITION_INLINE;
+										$at->encoding    = Zend_Mime::ENCODING_BASE64;
+					$at->filename    = $path.$entry;					
+				}
+				$mail->addAttachment($at);
+    		}
+    		closedir($handle);
+    	}
+    	 
     	$mail->send($transport);
 
 

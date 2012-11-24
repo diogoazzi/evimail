@@ -64,22 +64,30 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 <div id="ucDetalhesEmail_pnlAnexo">
 	
         <p>
-            <span id="ucDetalhesEmail_lblArquivos">anexos:</span>
-            
+            <span id="ucDetalhesEmail_lblArquivos">anexos:</span><br><br>
+            <?php foreach($this->anexos as $anexo) {
+            		if($anexo == '.' || $anexo == '..')
+            			continue;
+            		echo $anexo.'<br>';	
+            	}
+            ?>
         </p>
         
 
 </div>
     </div>
 <div id="ucDetalhesEmail_pnlGerarPdf">
-	
+<?php if($this->totalCredits > 0 ) { ?>	
     <a id="lnkCriarConta" class="button" target="_blank">
     <?php if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) {?>
     	<span>GERAR PDF</span>
 	<?php } else {?>
     	<span>BAIXAR PDF</span>
 	<?php }?>    
-    </a>
+    </a>'
+    <?php } else {?>
+     <a id="xpto" class="button" href="/minha-conta/contratar-servico"><span>Contratar Serviço</span></a>
+    <?php }?>
 
 </div>
 

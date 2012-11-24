@@ -60,7 +60,7 @@ class IndexController extends Zend_Controller_Action
     		}
     		
     		//TODO: fazer tratativa de bcc nao consta no header bcc
-    		echo '<pre>';
+//     		echo '<pre>';
 //     		print_r($message->cco);
 //     		$bcc_arr = explode('<',$message->bcc);
 //     		$bcc = str_replace('>','',$bcc_arr[1]);
