@@ -14,37 +14,47 @@ class CieloController extends Zend_Controller_Action
 			
 
 	}
-	
+
 	public function getRetornoAction(){
-	
+
 		$params = $this->getRequest()->getParams();
-		
+
 		$transCieloTable = new Fet_Model_TransCieloTable();
 		$userData = array('numero_pedido' => $params['numero_pedido']);
 		$transCielo = $transCieloTable->getAllTrans($userData, true);
 		$transCielo = $transCielo[0];
-		
+
 
 		$Pedido = new Fet_Controller_Helper_PedidoProfile();
 		$Pedido = $Pedido->hidrate($transCielo);
-		
-// 		$Pedido->tid = '100173489808EBA4A001';
-		echo '<pre>';
-		print_r($Pedido);
-// 		die();
+
+		// 		$Pedido->tid = '100173489808EE20A001';
+		// 		echo '<pre>';
+		// 		print_r($Pedido);
+		// 		die();
 		$objResposta = $Pedido->RequisicaoConsulta();
-		
-		echo '<pre>';
-		print_r($objResposta);
-		die();
-// 		$objResposta = $Pedido->RequisicaoCaptura('100', null);
-		
-		
-		echo '<pre>';
-		
-		print_r($objResposta);
-		
-		die();
-// 		str_replace('<','\<', )
+
+		if($objResposta->status == 4)
+			$objResposta = $Pedido->RequisicaoCaptura('100', null);
+		// 		echo '<pre>';
+		// 		print_r($objResposta);
+		// 		die();
+		//
+		if($objResposta->status == 6) {
+			$creditTable = new Fet_Model_CreditTable();
+			$data = array ('cre_id' => $params['numero_pedido']);
+			$credits = $creditTable->getAllCredits($data, true);
+			$credit = $credits[0];
+			$credit->cre_payed = Fet_Model_CreditTable::CREDITO_PAGO;
+			$credit->save();
+			die('capturada com sucesso.');
+		}
+			
+		die('status transacao: '.$objResposta->status);
+
+// 		echo '<pre>';
+// 		print_r($objResposta);
+// 		die();
+		// 		str_replace('<','\<', )
 	}
 }

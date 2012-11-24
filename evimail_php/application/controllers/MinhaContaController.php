@@ -309,9 +309,9 @@ class MinhaContaController extends Zend_Controller_Action
     	$urlAutenticacao = "url-autenticacao";
     	$Pedido->urlAutenticacao = $objResposta->$urlAutenticacao;
     	
-    	echo '<pre>';
-    	print_r($Pedido);
-    	die();
+//     	echo '<pre>';
+//     	print_r($Pedido);
+//     	die();
     	
     	// Serializa Pedido e guarda na SESSION
 //     	$StrPedido = $Pedido->ToString();
@@ -521,7 +521,7 @@ class MinhaContaController extends Zend_Controller_Action
 // 					$at->encoding    = Zend_Mime::ENCODING_BASE64;
 					$at->filename    = $path.$entry;
 				} else {
-					$at->type        = 'application';
+// 					$at->type        = 'application';
 										$at->disposition = Zend_Mime::DISPOSITION_INLINE;
 										$at->encoding    = Zend_Mime::ENCODING_BASE64;
 					$at->filename    = $path.$entry;					
