@@ -35,8 +35,27 @@ class MinhaContaController extends Zend_Controller_Action
     {
     	
     	$auth = Zend_Auth::getInstance();
-    	$identity = $auth->getIdentity();
-    	$this->view->assign('user', $identity);
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);
+    	
+    	
+    	$creditTable = new Fet_Model_CreditTable();
+    	$data = array ('usr_id' => $user->usr_id ,'order' => 'cre_date desc');
+    	$credits = $creditTable->getAllCredits($data, true);
+    	$lastTrans = $credits[0];
+    	
+    	$this->view->assign('lastTrans', $lastTrans);
+    	
+    	$emailTable = new Fet_Model_EmailTable();
+    	$data = array('ema_usr_id' => $user->usr_id, 'ema_confirmed' => Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO);
+    	$emails = $emailTable->getAllEmail($data, true);
+    	$total_enviado = count($emails);
+    	$this->view->assign('totalEmailEnviado', $total_enviado);
+    	
+    	$data = array('ema_usr_id' => $user->usr_id, 'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO);
+    	$emails = $emailTable->getAllEmail($data, true);
+    	$total_nao_enviado = count($emails);
+    	$this->view->assign('totalEmailNaoEnviado', $total_nao_enviado);
 
     }
     
@@ -260,7 +279,7 @@ class MinhaContaController extends Zend_Controller_Action
     	$userData = array(
     		'usr_id' => $user->usr_id,
     		'cre_type' => 1, //TODO: veruficar cre_type
-    		'cre_value' => $post['produto'],
+    		'cre_value' => $post['produto']/100,
     		'cre_date' => date('Y-m-d H:i:s', time()),
     		'cre_payed' => Fet_Model_CreditTable::CREDITO_NAO_PAGO
     	);

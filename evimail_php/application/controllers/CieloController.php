@@ -47,6 +47,7 @@ class CieloController extends Zend_Controller_Action
 			$credit = $credits[0];
 			$credit->cre_payed = Fet_Model_CreditTable::CREDITO_PAGO;
 			$credit->save();
+			$this->_redirect('/minha-conta/');
 			die('capturada com sucesso.');
 		}
 			

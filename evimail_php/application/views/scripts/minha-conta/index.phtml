@@ -20,11 +20,11 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                         
                             <!-- COM CR�DITO -->
                             <p>
-                                Último serviço contratado:<span id="ContentPlaceHolder_Body_lblServicoContratado">10 e-mails<br /></span></p>
+                                Último serviço contratado:<span id="ContentPlaceHolder_Body_lblServicoContratado"><?php echo $this->lastTrans->cre_value;?> e-mails<br /></span></p>
                             <p>
-                                Quantidade de emails enviados:<span id="ContentPlaceHolder_Body_lblQtdEmailsEnviados">0</span></p>
+                                Quantidade de emails enviados:<span id="ContentPlaceHolder_Body_lblQtdEmailsEnviados"><?php echo $this->totalEmailEnviado;?></span></p>
                             <p>
-                                Quantidade de emails para enviar: <span id="ContentPlaceHolder_Body_lblEmailRestante">26</span></p>
+                                Quantidade de emails para enviar: <span id="ContentPlaceHolder_Body_lblEmailRestante"><?php echo $this->totalEmailNaoEnviado?></span></p>
                             <p>
                                 Data da última compra:<span id="ContentPlaceHolder_Body_lblDataUltimaCompra">13/05/2011</span></p>
                             <p>
