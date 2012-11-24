@@ -40,7 +40,7 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	
     	$creditTable = new Fet_Model_CreditTable();
-    	$data = array ('usr_id' => $user->usr_id ,'order' => 'cre_date desc');
+    	$data = array ('usr_id' => $user->usr_id ,'order' => 'cre_date desc', 'payed' => Fet_Model_CreditTable::CREDITO_PAGO);
     	$credits = $creditTable->getAllCredits($data, true);
     	
     	if(count($credits) > 0) {
