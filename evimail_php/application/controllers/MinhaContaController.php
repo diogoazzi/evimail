@@ -501,7 +501,6 @@ class MinhaContaController extends Zend_Controller_Action
     	$pdf = $dompdf->output();
     	file_put_contents($path."email.pdf", $pdf);
     	
-    	
     	$config = array('auth' => 'login',
     			'username' => 'evimail@webneural.com',
     			'password' => 'y2s2r2i4',
@@ -510,9 +509,13 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	$transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
     	
-    	$data['msg'] = $email->ema_subject ."<br><br>".$email->ema_body;
+    	$data['msg'] = "Seu email foi gerado com sucesso<br>
+        <br>
+        Assunto: ".$email->ema_subject ."<br>
+        <br>
+        Conteúdo: ".$email->ema_body;
         $data["url"] = "http://".$_SERVER["SERVER_NAME"];
-        $data["usuario"] = 'User';
+        $data["usuario"] = $user->usr_name;
 
         $view = Zend_Registry::get("view");
         $view->data = $data;
