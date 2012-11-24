@@ -42,19 +42,25 @@ class MinhaContaController extends Zend_Controller_Action
     	$creditTable = new Fet_Model_CreditTable();
     	$data = array ('usr_id' => $user->usr_id ,'order' => 'cre_date desc');
     	$credits = $creditTable->getAllCredits($data, true);
-    	$lastTrans = $credits[0];
     	
-    	$date_obj = new Zend_Date(trim($lastTrans->cre_date),"YYYY-MM-dd HH:mm:ss");
-    	$date = $date_obj->toString('dd/MM/YYYY');
-    	$lastTrans->cre_date_formatado = $date;
-    	$this->view->assign('lastTrans', $lastTrans);
+    	if(count($credits) > 0) {
+    		$lastTrans = $credits[0];
+    		 
+    		$date_obj = new Zend_Date(trim($lastTrans->cre_date),"YYYY-MM-dd HH:mm:ss");
+    		$date = $date_obj->toString('dd/MM/YYYY');
+    		$lastTrans->cre_date_formatado = $date;
+    		$this->view->assign('lastTrans', $lastTrans);
+    		 
+    		$totalCredito = $creditTable->getTotalCreditosDisponiveis($user->usr_id);
+    		$this->view->assign('totalCredits', $totalCredito);
+    	}
     	
     	$emailTable = new Fet_Model_EmailTable();
     	$data = array('ema_usr_id' => $user->usr_id, 'confirmed' => Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO);
     	$emails = $emailTable->getAllEmail($data, true);
     	$total_enviado = count($emails);
     	$this->view->assign('totalEmailEnviado', $total_enviado);
-    	
+    	 
     	$data = array('ema_usr_id' => $user->usr_id, 'confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO);
     	$emails = $emailTable->getAllEmail($data, true);
     	$total_nao_enviado = count($emails);

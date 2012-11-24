@@ -14,7 +14,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                     <!-- TÍTULO DO SALDO -->
                     <div class="usrAlert">
                         <p>
-                            Você possui<span id="ContentPlaceHolder_Body_lblSaldoRestante">26</span>créditos(cada crédito corresponde a 1 email)</p>
+                            Você possui<span id="ContentPlaceHolder_Body_lblSaldoRestante"><?php echo $this->totalCredits?></span>créditos(cada crédito corresponde a 1 email)</p>
                     </div>
                     <div id="minhaContaDetails" class="rounded_a">
                         
