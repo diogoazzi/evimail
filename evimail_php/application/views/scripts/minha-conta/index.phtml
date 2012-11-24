@@ -26,7 +26,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                             <p>
                                 Quantidade de emails para enviar: <span id="ContentPlaceHolder_Body_lblEmailRestante"><?php echo $this->totalEmailNaoEnviado?></span></p>
                             <p>
-                                Data da última compra:<span id="ContentPlaceHolder_Body_lblDataUltimaCompra">13/05/2011</span></p>
+                                Data da última compra:<span id="ContentPlaceHolder_Body_lblDataUltimaCompra"><?php echo $this->lastTrans->cre_date_formatado;?></span></p>
                             <p>
                                 </p>
                             <p>

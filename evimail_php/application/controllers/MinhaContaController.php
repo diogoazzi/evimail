@@ -44,15 +44,18 @@ class MinhaContaController extends Zend_Controller_Action
     	$credits = $creditTable->getAllCredits($data, true);
     	$lastTrans = $credits[0];
     	
+    	$date_obj = new Zend_Date(trim($lastTrans->cre_date),"YYYY-MM-dd HH:mm:ss");
+    	$date = $date_obj->toString('dd/MM/YYYY');
+    	$lastTrans->cre_date_formatado = $date;
     	$this->view->assign('lastTrans', $lastTrans);
     	
     	$emailTable = new Fet_Model_EmailTable();
-    	$data = array('ema_usr_id' => $user->usr_id, 'ema_confirmed' => Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO);
+    	$data = array('ema_usr_id' => $user->usr_id, 'confirmed' => Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO);
     	$emails = $emailTable->getAllEmail($data, true);
     	$total_enviado = count($emails);
     	$this->view->assign('totalEmailEnviado', $total_enviado);
     	
-    	$data = array('ema_usr_id' => $user->usr_id, 'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO);
+    	$data = array('ema_usr_id' => $user->usr_id, 'confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO);
     	$emails = $emailTable->getAllEmail($data, true);
     	$total_nao_enviado = count($emails);
     	$this->view->assign('totalEmailNaoEnviado', $total_nao_enviado);
@@ -288,7 +291,6 @@ class MinhaContaController extends Zend_Controller_Action
     	$Pedido->dadosPedidoNumero = $credit_id;
     	$Pedido->dadosPedidoValor = $post["produto"];
     	
-    	//TODO: arrumar URL de retorno
     	$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL($Pedido->dadosPedidoNumero);
     	
     	// ENVIA REQUISI��O SITE CIELO
@@ -323,17 +325,8 @@ class MinhaContaController extends Zend_Controller_Action
 		);
     	$cieloTrans = $cieloTable->createTrans($userData);
     	
-    	
-//     	die('trans:'. $cieloTrans);
     	$urlAutenticacao = "url-autenticacao";
     	$Pedido->urlAutenticacao = $objResposta->$urlAutenticacao;
-    	
-//     	echo '<pre>';
-//     	print_r($Pedido);
-//     	die();
-    	
-    	// Serializa Pedido e guarda na SESSION
-//     	$StrPedido = $Pedido->ToString();
 
     	echo '<script type="text/javascript">
 			window.location.href = "' . $Pedido->urlAutenticacao . '"
