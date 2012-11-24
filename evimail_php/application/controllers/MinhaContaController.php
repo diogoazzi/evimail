@@ -510,10 +510,18 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	$transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
     	
-    	$html_body = $email->ema_subject ."<br><br>".$email->ema_body;
-    	$mail = new Zend_Mail();
+    	$data['msg'] = $email->ema_subject ."<br><br>".$email->ema_body;
+        $data["url"] = "http://".$_SERVER["SERVER_NAME"];
+        $data["usuario"] = 'User';
+
+        $view = Zend_Registry::get("view");
+        $view->data = $data;
+        $view->translate = $translate;
+        $content = $view->render("mail/confirmacao_cadastro.phtml");
+
+    	$mail = new Zend_Mail("UTF-8");
     	$mail->setType(Zend_Mime::MULTIPART_RELATED);
-    	$mail->setBodyHtml($html_body);
+    	$mail->setBodyHtml($content);
     	
     	$mail->setFrom('evimail@webneural.com', 'EviMail');
     	// 		    $mail->addTo("diogo.azzi@webneural.com");
@@ -522,7 +530,7 @@ class MinhaContaController extends Zend_Controller_Action
     	$mail->setSubject('EviMail - PDF - '.$email->ema_subject);
     	
     	$file = $mail->createAttachment($pdf);
-    	$file->filename = $path."email.pdf";
+    	$file->filename = $email->ema_hash.".pdf";
     	
     	if ($handle = opendir($path)) {
     		/* This is the correct way to loop over the directory. */
@@ -531,20 +539,23 @@ class MinhaContaController extends Zend_Controller_Action
     				continue;
     			
     			$ext_arr = explode('.',$entry);
-				$ext = $ext_arr[1];
+                $finalKey = count($ext_arr) - 1;
+				$ext = $ext_arr[$finalKey];
 				
+                $myImage = file_get_contents($path.$entry);
+
 				$at = new Zend_Mime_Part($myImage);
 				
 				if($ext == 'txt') {
 					$at->type        = 'plain/text';
 // 					$at->disposition = Zend_Mime::DISPOSITION_INLINE;
 // 					$at->encoding    = Zend_Mime::ENCODING_BASE64;
-					$at->filename    = $path.$entry;
+					$at->filename    = $entry;
 				} else {
 // 					$at->type        = 'application';
 										$at->disposition = Zend_Mime::DISPOSITION_INLINE;
 										$at->encoding    = Zend_Mime::ENCODING_BASE64;
-					$at->filename    = $path.$entry;					
+					$at->filename    = $entry;
 				}
 				$mail->addAttachment($at);
     		}
