@@ -507,7 +507,7 @@ class MinhaContaController extends Zend_Controller_Action
     	if ($handle = opendir($path)) {
     		/* This is the correct way to loop over the directory. */
     		while (false !== ($entry = readdir($handle))) {
-    			if($entry == 'email.pdf')
+    			if($entry == 'email.pdf' || $entry == '.' || $entry == '..')
     				continue;
     			
     			$ext_arr = explode('.',$entry);
