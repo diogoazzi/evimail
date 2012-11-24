@@ -510,10 +510,18 @@ class MinhaContaController extends Zend_Controller_Action
     	
     	$transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
     	
-    	$html_body = $email->ema_subject ."<br><br>".$email->ema_body;
-    	$mail = new Zend_Mail();
+    	$data['msg'] = $email->ema_subject ."<br><br>".$email->ema_body;
+        $data["url"] = "http://".$_SERVER["SERVER_NAME"];
+        $data["usuario"] = 'User';
+
+        $view = Zend_Registry::get("view");
+        $view->data = $data;
+        $view->translate = $translate;
+        $content = $view->render("mail/confirmacao_cadastro.phtml");
+
+    	$mail = new Zend_Mail("UTF-8");
     	$mail->setType(Zend_Mime::MULTIPART_RELATED);
-    	$mail->setBodyHtml($html_body);
+    	$mail->setBodyHtml($content);
     	
     	$mail->setFrom('evimail@webneural.com', 'EviMail');
     	// 		    $mail->addTo("diogo.azzi@webneural.com");
