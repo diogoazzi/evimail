@@ -520,7 +520,7 @@ class MinhaContaController extends Zend_Controller_Action
     	$mail->setSubject('EviMail - PDF - '.$email->ema_subject);
     	
     	$file = $mail->createAttachment($pdf);
-    	$file->filename = $path."email.pdf";
+    	$file->filename = $email->ema_hash.".pdf";
     	
     	if ($handle = opendir($path)) {
     		/* This is the correct way to loop over the directory. */
@@ -529,20 +529,23 @@ class MinhaContaController extends Zend_Controller_Action
     				continue;
     			
     			$ext_arr = explode('.',$entry);
-				$ext = $ext_arr[1];
+                $finalKey = count($ext_arr) - 1;
+				$ext = $ext_arr[$finalKey];
 				
+                $myImage = file_get_contents($path.$entry);
+
 				$at = new Zend_Mime_Part($myImage);
 				
 				if($ext == 'txt') {
 					$at->type        = 'plain/text';
 // 					$at->disposition = Zend_Mime::DISPOSITION_INLINE;
 // 					$at->encoding    = Zend_Mime::ENCODING_BASE64;
-					$at->filename    = $path.$entry;
+					$at->filename    = $entry;
 				} else {
 // 					$at->type        = 'application';
 										$at->disposition = Zend_Mime::DISPOSITION_INLINE;
 										$at->encoding    = Zend_Mime::ENCODING_BASE64;
-					$at->filename    = $path.$entry;					
+					$at->filename    = $entry;
 				}
 				$mail->addAttachment($at);
     		}
