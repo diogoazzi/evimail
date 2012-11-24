@@ -53,7 +53,7 @@ class MinhaContaController extends Zend_Controller_Action
     		 
     		$totalCredito = $creditTable->getTotalCreditosDisponiveis($user->usr_id);
     		$this->view->assign('totalCredits', $totalCredito);
-    	}
+    	} 
     	
     	$emailTable = new Fet_Model_EmailTable();
     	$data = array('ema_usr_id' => $user->usr_id, 'confirmed' => Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO);
