@@ -189,8 +189,17 @@ class IndexController extends Zend_Controller_Action
 		    
 		    $transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
 		    
-		    $html_body = "<html>".'<meta http-equiv="Content-Type" content="text/html; charset=utf-8">'.$message->subject ."<br><br>".$emailMsg;
-		    $mail = new Zend_Mail();
+		    //$html_body = "<html>".'<meta http-equiv="Content-Type" content="text/html; charset=utf-8">'.$message->subject ."<br><br>".$emailMsg;
+            $data['msg'] = $emailMsg;
+            $data["url"] = "http://".$_SERVER["SERVER_NAME"];
+            $data["usuario"] = $user->usr_name;
+            $data["title"] = 'EviMail - PDF - '.$message->subject;
+
+            $view = Zend_Registry::get("view");
+            $view->data = $data;
+            $html_body = $view->render("mail/confirmacao_cadastro.phtml");
+
+		    $mail = new Zend_Mail("UTF-8");
 		    $mail->setType(Zend_Mime::MULTIPART_RELATED);
 		    $mail->setBodyHtml($html_body);
 		    

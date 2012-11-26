@@ -516,6 +516,7 @@ class MinhaContaController extends Zend_Controller_Action
         Conteúdo: ".$email->ema_body;
         $data["url"] = "http://".$_SERVER["SERVER_NAME"];
         $data["usuario"] = $user->usr_name;
+        $data["title"] = 'EviMail - PDF - '.$email->ema_subject;
 
         $view = Zend_Registry::get("view");
         $view->data = $data;

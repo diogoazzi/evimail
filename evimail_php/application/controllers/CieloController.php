@@ -45,7 +45,7 @@ class CieloController extends Zend_Controller_Action
 		if($objResposta->status == 5){
 			$msg = 'Sou solicita&ccedil;&atilde;o de pagamento n&atilde;o foi aprovada.';
 			$subject = 'Evimail - Pagamento Recusado pela Operadora';
-			$this->enviaEmail($msg, $subject, $user->usr_email);
+			$this->enviaEmail($msg, $subject, $user->usr_email, $user->usr_name);
 			$this->_redirect('/minha-conta/');
 			die();
 		}
@@ -63,7 +63,7 @@ class CieloController extends Zend_Controller_Action
 			
 			$msg = 'Sou solicita&ccedil;&atilde;o de pagamento foi aprovada.';
 			$subject = 'Evimail - Pagamento Autorizado pela Operadora';
-			$this->enviaEmail($msg, $subject, $user->usr_email);
+			$this->enviaEmail($msg, $subject, $user->usr_email, $user->usr_name);
 			
 			$this->_redirect('/minha-conta/');
 			die('capturada com sucesso.');
@@ -99,7 +99,7 @@ class CieloController extends Zend_Controller_Action
 			if($objResposta->status == 5){
 				$msg = 'Sou solicita&ccedil;&atilde;o de pagamento n&atilde;o foi aprovada.';
 				$subject = 'Evimail - Pagamento Recusado pela Operadora';
-				$this->enviaEmail($msg, $subject, $user->usr_email);
+				$this->enviaEmail($msg, $subject, $user->usr_email, $user->usr_name);
 			}
 			
 			if($objResposta->status == 4){
@@ -112,7 +112,7 @@ class CieloController extends Zend_Controller_Action
 
 				$msg = 'Sou solicita&ccedil;&atilde;o de pagamento foi aprovada.';
 				$subject = 'Evimail - Pagamento Autorizado pela Operadora';
-				$this->enviaEmail($msg, $subject, $user->usr_email);
+				$this->enviaEmail($msg, $subject, $user->usr_email, $user->usr_name);
 			}
 			
 			$trans->status = $objResposta->status;
@@ -123,7 +123,7 @@ class CieloController extends Zend_Controller_Action
 		die('Fim do processamento.');
 	}
 	
-	private function enviaEmail($emailMsg, $subject, $to){
+	private function enviaEmail($emailMsg, $subject, $to, $toName=null){
 		$config = array('auth' => 'login',
 				'username' => 'evimail@webneural.com',
 				'password' => 'y2s2r2i4',
@@ -132,7 +132,16 @@ class CieloController extends Zend_Controller_Action
 		
 		$transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
 		
-		$mail = new Zend_Mail();
+		$data['msg'] = $emailMsg;
+		$data["url"] = "http://".$_SERVER["SERVER_NAME"];
+		$data["usuario"] = $toName;
+		$data["title"] = $subject;
+
+		$view = Zend_Registry::get("view");
+    $view->data = $data;
+    $content = $view->render("mail/confirmacao_cadastro.phtml");
+
+		$mail = new Zend_Mail("UTF-8");
 		$mail->setType(Zend_Mime::MULTIPART_RELATED);
 		$mail->setBodyHtml($emailMsg);
 		
