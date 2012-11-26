@@ -1,0 +1,84 @@
+<body id="body" class="inner cadastro">
+<?php
+echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'alterar-dados', 'user' => $this->user));
+?>
+	<div id="container">
+		<div id="wrapper">
+
+			
+<div id="content">
+	<form id="form1" action="/minha-conta/add-email-adicional" method="post">
+    <h2 class="title">Gerenciar emails adicionais</h2>
+    <div class="body">
+        <div id="ContentPlaceHolder_Body_UpdatePanelEmailAdicional">
+	
+                <p><span id="ContentPlaceHolder_Body_lblNumEmailAdd">
+                <?php 
+				if($this->totalEmails == '' || ! $this->totalEmails > 0)
+					echo 'Você não possui emails adicionais cadastrado';
+				else	
+                	echo 'Você possui '.$this->totalEmails.' e-mail(s) cadastrado(s)';
+				?>
+                </span></p>
+                <fieldset>
+                    <div class="bordaTop"></div>
+                        <div>
+                            <p class="info">Você pode cadastrar atá 3 emails adicionais</p>
+                            <p class="emailAdd">
+                                <label for="ContentPlaceHolder_Body_ltlEmailTitular" id="ContentPlaceHolder_Body_lblEmailTitular">Email Titular: </label>
+                                <?php echo $this->emailTitular;?>
+                            </p>
+                            	  <?php
+                            	  	$i = 1; 
+                            	  	foreach($this->emails as $email) {?>
+	                                    <div class="emailAdd">
+	                                        <p>
+	                                            Email 0<?php echo $i;?>: 
+	                                            <?php echo $email->email;?>
+	                                        &nbsp;&nbsp;&nbsp;
+	                                        <a id="ContentPlaceHolder_Body_ListViewEmails_lnkRemover_0" class="remove" href="/minha-conta/remover-email-adicional/id/<?php echo $email->id;?>">Remover</a>
+	                                        </p>                                       
+	                                    </div>
+                                  <?php 
+                                  	$i++;
+									}?>
+                             <br>   
+                            <div id="ContentPlaceHolder_Body_pnlEmailAdicional" class="emailAdd">
+                                <p>
+                                </p>
+                                
+                                <?php if($this->totalEmails < 3) {?>
+                                <p>
+                                    <label for="ContentPlaceHolder_Body_txtEmailAdicional" id="ContentPlaceHolder_Body_lblEmailAdicional">Cadastre outro email:</label>
+                                    <input name="email" type="text" id="ContentPlaceHolder_Body_txtEmailAdicional" class="txtBox" />
+                                <a id="cadastrar" class="button" href="javascript:;"><span>CADASTRAR</span></a>   
+                                </p>
+                                <?php }?>
+                                
+                                <span id="ContentPlaceHolder_Body_ctvGerenciarEmails" style="display:none;"></span>
+                            
+	</div>
+                        </div>
+                    <div class="bordaBottom"></div>
+                </fieldset>
+            
+</div>
+    </div>
+</div>
+</form> 
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#cadastrar').click(function(){
+		$("#form1").submit();
+	});
+});
+</script>	
+	
+<?php
+echo $this->partial('index/footer.phtml');
+?>
+	
