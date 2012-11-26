@@ -89,7 +89,7 @@
     });
 </script>
 </head>
-<body id="body" class="frontPage home">
+<body id="body" class="<?=$this->classPrinc?>">
 	<form method="post" action="Default.html" id="formMain">
 <div class="aspNetHidden">
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
@@ -124,7 +124,7 @@ function __doPostBack(eventTarget, eventArgument) {
         <h1 id="logo"><a href="/">Evimail Evidência</a></h1>
         <div id="menuHeader">
 		<ul class="level1">
-			<li><a class="level1" href="/">Home</a></li><li><a class="level1" href="QuemSomos.html">Quem Somos</a></li><li><a class="level1" href="PerguntasFrequentes.html">Perguntas Frequentes</a></li><li><a class="level1" href="FaleConosco.html">Fale Conosco</a></li>
+			<li><a class="level1" href="/">Home</a></li><li><a class="level1 <?if($this->menuSelected=='quemsomos'): echo 'selected'; endif;?>" href="quemsomos">Quem Somos</a></li><li><a class="level1 <?if($this->menuSelected=='perguntas-frequentes'): echo 'selected'; endif;?>" href="perguntas-frequentes">Perguntas Frequentes</a></li><li><a class="level1 <?if($this->menuSelected=='faleconosco'): echo 'selected'; endif;?>" href="faleconosco">Fale Conosco</a></li>
 		</ul>
 		</div>
         <div id="pnlNaoLogado">

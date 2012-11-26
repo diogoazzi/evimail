@@ -251,6 +251,37 @@ class IndexController extends Zend_Controller_Action
     	$body = quoted_printable_decode($part->getContent());
     	return $body;  
     }
+
+    public function termosAction(){
+
+    }
     
+    public function politicaPrivacidadeAction(){
+
+    }
+
+    public function faleconoscoAction(){
+        
+    }
+
+    public function perguntasFrequentesAction(){
+        
+    }
+
+    public function quemsomosAction(){
+        
+    }    
+
+    public function vantagensAction(){
+        
+    }
+
+    public function melhorplanoAction(){
+        
+    }
+
+    public function modelolaudoAction(){
+        
+    }    
 }
 

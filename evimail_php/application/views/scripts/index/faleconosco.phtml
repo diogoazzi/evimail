@@ -1,0 +1,93 @@
+<?php
+echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'user' => $this->user, 'classPrinc'=>'inner faleConosco', 'menuSelected'=>'faleconosco'));
+?>
+
+	<div id="container">
+		<div id="wrapper">
+    <script type="text/javascript" language="javascript">
+        function fnCustomValidator(source, args) {
+            args.IsValid = true;
+        };
+
+        function limitTextArea(sender, limit) {
+            if (sender.val().length > limit) {
+                var trunc = sender.val().substr(0, limit);
+                sender.val(trunc);
+            }
+        }
+
+        $(document).ready(function () {
+            $("#ContentPlaceHolder_Body_txtMensagem").keyup(function () {
+                limitTextArea($(this), 1024)
+            })
+        })
+
+    </script>
+			
+    <div id="ContentPlaceHolder_Body_upFaleConosco">
+	
+            <div id="content">
+                <h2 class="title">
+                    Fale Conosco</h2>
+                <div class="entryContent" id="faleConoscoForm">
+                    <fieldset>
+                        <span id="ContentPlaceHolder_Body_lblCampoObrigatorio" class="campo_obrigatorio">* Campos de preenchimento obrigatório</span>
+                        <div>
+                            <label for="ContentPlaceHolder_Body_txtNome" id="ContentPlaceHolder_Body_lblNome">Nome<span>*</span></label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtNome" type="text" maxlength="100" id="ContentPlaceHolder_Body_txtNome" class="textbox" />
+                        </div>
+                        <div>
+                            <label for="ContentPlaceHolder_Body_txtEmail" id="ContentPlaceHolder_Body_lblEmail">Email<span>*</span></label>
+                            <input name="ctl00$ContentPlaceHolder_Body$txtEmail" type="text" maxlength="50" id="ContentPlaceHolder_Body_txtEmail" class="textbox" />
+                          
+                        </div>
+                        <div>
+                            <label for="ContentPlaceHolder_Body_ddlAssunto" id="ContentPlaceHolder_Body_lblAssunto">Assunto<span>*</span></label>
+                            <!--<input name="ctl00$ContentPlaceHolder_Body$txtAssunto" type="text" maxlength="30" id="ContentPlaceHolder_Body_txtAssunto" class="textbox" />-->
+                            <select name="ctl00$ContentPlaceHolder_Body$ddlAssunto" id="ContentPlaceHolder_Body_ddlAssunto" class="select">
+		<option value="Selecione">Selecione</option>
+		<option value="Elogio">Elogio</option>
+		<option value="Reclamação">Reclama&#231;&#227;o</option>
+		<option value="Sugestão">Sugest&#227;o</option>
+		<option value="Crítica">Cr&#237;tica</option>
+		<option value="Informação">Informa&#231;&#227;o</option>
+		<option value="Quero ser parceiro">Quero ser parceiro</option>
+		<option value="Inclusão de Projeto Ambiental">Inclus&#227;o de Projeto Ambiental</option>
+		<option value="Outros">Outros</option>
+
+	</select>
+                        
+                        </div>
+                        <div>
+                            <label for="ContentPlaceHolder_Body_txtMensagem" id="ContentPlaceHolder_Body_lblMensagem">Mensagem<span>*</span></label>
+                            <textarea name="ctl00$ContentPlaceHolder_Body$txtMensagem" rows="2" cols="20" id="ContentPlaceHolder_Body_txtMensagem" class="textarea">
+</textarea>
+                            
+                        </div>
+                        <div>
+                            <input id="ContentPlaceHolder_Body_chkReceberCopia" type="checkbox" name="ctl00$ContentPlaceHolder_Body$chkReceberCopia" />
+                            <label for="ContentPlaceHolder_Body_chkReceberCopia" id="ContentPlaceHolder_Body_lblReceberCopia" class="lblCheckbox">Receber cópia</label>
+                        </div>
+                        <div class="btnContLine">
+                            <a id="ContentPlaceHolder_Body_btnEnviar" class="button" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder_Body$btnEnviar&quot;, &quot;&quot;, true, &quot;Fale&quot;, &quot;&quot;, false, true))"><span>Enviar</span></a>
+                        </div>
+                    </fieldset>
+                    <span id="ContentPlaceHolder_Body_ctvFale" style="display:none;"></span>
+                </div>
+            </div>
+        
+</div>
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<?php
+echo $this->partial('index/footer.phtml');
+?>
+	
+</form>
+	<script type="text/javascript">        Cufon.now(); </script>
+</body>
+</html>

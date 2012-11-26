@@ -1,0 +1,41 @@
+<?php
+echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'user' => $this->user, 'classPrinc'=>'inner perguntasFrequentes', 'menuSelected'=>'perguntas-frequentes'));
+?>
+
+<script type="text/javascript">
+    $(function () {
+        $("#faq dd").hide();
+        $("#faq dt").css('cursor', 'pointer').click(function () {
+            $(this).toggleClass("on").next("#faq dd").slideToggle();
+        });
+    });
+</script>
+
+	<div id="container">
+		<div id="wrapper">
+
+    <div id="content"> 
+        <h2 class="title">Perguntas Frequentes</h2> 
+        <div class="entryContent"> 
+            <dl id="faq">
+                <dt>Como faço para me cadastrar?</dt>
+                <dd>Basta clicar no link Cadastre-se e escolher o serviço que deseja contratar.</dd>
+                <dt>Quais as diferenças entre contratar um pacote e um plano?</dt>
+                <dd>Basta clicar no link Cadastre-se e escolher o serviço que deseja contratar.</dd>
+            </dl>
+        </div>
+    </div>
+
+		</div>
+		<!--/#wrapper-->
+	</div>
+	<!--/#container-->
+	
+<?php
+echo $this->partial('index/footer.phtml');
+?>
+	
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'menuHeader', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script></form>
+	<script type="text/javascript">        Cufon.now(); </script>
+</body>
+</html>

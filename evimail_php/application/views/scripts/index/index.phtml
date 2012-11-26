@@ -1,30 +1,7 @@
-	<?php
-	echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'user' => $this->user));
-	?>
+<?php
+echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'user' => $this->user, 'classPrinc'=>'frontPage home'));
+?>
 
-<body id="body" class="frontPage home">
-	<form method="post" action="Default.html" id="formMain">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTE3NzU0OTI3D2QWAmYPZBYCAgMPFgIeBWNsYXNzBQ5mcm9udFBhZ2UgaG9tZRYCAgEPZBYGAgEPZBYCZg8PFgQeCENzc0NsYXNzBQ9oZWFkZXJOYW9Mb2dhZG8eBF8hU0ICAmQWBAIDDzwrAA0BDBQrAAVkFCsAAhYEHghTZWxlY3RlZGceBFRleHQFBEhvbWVkFCsAAhYCHwQFClF1ZW0gU29tb3NkFCsAAhYCHwQFFFBlcmd1bnRhcyBGcmVxdWVudGVzZBQrAAIWAh8EBQxGYWxlIENvbm9zY29kZAIFDw8WAh4HVmlzaWJsZWdkFgYCAQ8WAh8EBQ9Kw6Egw6kgY2xpZW50ZT9kAgMPDxYCHwQFD0Zhw6dhIHNldSBsb2dpbmRkAgUPFgIfBAUOTm92byB1c3XDoXJpbz9kAgUPZBYGAgEPFgIfBAUTTyBxdWUgw6kgbyBFdmltYWlsP2QCAw8WAh8EBfsCPHA+TyBFdmltYWlsIMOpIHVtYSBwbGF0YWZvcm1hIHF1ZSBwb3NzaWJpbGl0YSBldmlkZW5jaWFyIGFzIGNvbXVuaWNhw6fDtWVzIHJlYWxpemFkYXMgcG9yIG1laW8gZGUgY29ycmVpby1lbGV0csO0bmljbyBkZSBmb3JtYSBzaW1wbGVzLjwvcD48cD7DiSBwb3Nzw612ZWwgZ2VyYXIgdW0gY29tcHJvdmFudGUgbGVnYWwgZGUgcXVlIG9zIGRlc3RpbmF0w6FyaW9zIHJlY2ViZXJhbSBlIGxlcmFtIHN1YXMgbWVuc2FnZW5zLjwvcD48cD5Wb2PDqiBwb2RlIG1hbnRlciB1bSBoaXN0w7NyaWNvIHBlcm1hbmVudGUgZG9zIHNldXMgZS1tYWlscyBlbnZpYWRvcyBlIHJlY2ViaWRvcywgYmVtIGNvbW8gb3MgYW5leG9zIGNvbnRpZG9zIG5lc3NhcyBtZW5zYWdlbnMuPC9wPmQCIQ8PFgIeC05hdmlnYXRlVXJsBRhodHRwOi8vd3d3LnV2YWlhLmNvbS5ici9kZAIHD2QWAgIBDxYCHwQFBDIwMTJkGAEFGWN0bDAwJHVjSGVhZGVyJG1lbnVIZWFkZXIPD2QFBEhvbWVke6OqDeHC1AlbZhXelGrzdQ3df22LiIqKKP0SiquDGIE=" />
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['formMain'];
-if (!theForm) {
-    theForm = document.formMain;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
 	<div id="container">
 		<div id="wrapper">
 			
@@ -60,9 +37,9 @@ function __doPostBack(eventTarget, eventArgument) {
 
         <div id="homeBloco3">
             <ul>
-                <li><a id="ContentPlaceHolder_Body_lnkVantagem" class="linkHome" href="Vantagens.html">Vantagens pra você e sua empresa</a></li>
-                <li><a id="ContentPlaceHolder_Body_lnkPlano" class="linkHome" href="MelhorPlano.html">Escolha o melhor plano</a></li>
-                <li><a id="ContentPlaceHolder_Body_lnkLaudo" class="linkHome" href="ModeloLaudo.html">Veja o modelo de laudo</a></li>
+                <li><a id="ContentPlaceHolder_Body_lnkVantagem" class="linkHome" href="/vantagens">Vantagens pra você e sua empresa</a></li>
+                <li><a id="ContentPlaceHolder_Body_lnkPlano" class="linkHome" href="/melhorplano">Escolha o melhor plano</a></li>
+                <li><a id="ContentPlaceHolder_Body_lnkLaudo" class="linkHome" href="/modelolaudo">Veja o modelo de laudo</a></li>
             </ul>
         </div>
 
