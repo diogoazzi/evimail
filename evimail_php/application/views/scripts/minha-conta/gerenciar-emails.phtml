@@ -24,6 +24,9 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
                     <div class="bordaTop"></div>
                         <div>
                             <p class="info">Você pode cadastrar atá 3 emails adicionais</p>
+                            <?php if($this->jaExiste) {?>
+                            	<p class="info">Este email já esta cadastrado em nosso sistema.</p>
+                            <?php }?>
                             <p class="emailAdd">
                                 <label for="ContentPlaceHolder_Body_ltlEmailTitular" id="ContentPlaceHolder_Body_lblEmailTitular">Email Titular: </label>
                                 <?php echo $this->emailTitular;?>

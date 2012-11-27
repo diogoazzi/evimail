@@ -44,6 +44,11 @@ class Fet_Model_UserTable extends Zend_Db_Table
 		{
 			$select->where('u.cit_id = ?', $params["city"], 'integer');
 		}
+		if (isset($params["usr_email"]))
+		{
+			$select->where('u.usr_email = ?', $params["usr_email"]);
+		}
+		
 
 		if (isset($params["cit_name"]))
 		{
@@ -159,7 +164,7 @@ class Fet_Model_UserTable extends Zend_Db_Table
 		if(isset($params["usr_id"])){
 			$select->where('u.usr_id = ?', $params['usr_id']);
 		}
-		// 	 Zend_Debug::dump($select->__toString());
+	 Zend_Debug::dump($select->__toString());
 
 
 	 if($limit || $offset)
@@ -441,6 +446,25 @@ class Fet_Model_UserTable extends Zend_Db_Table
 		);
 
 
+		$current = $user->current();
+		if(isset($current)){
+			return $current;
+		} else {
+			return false;
+		}
+	}
+	
+	public function getUserById($id){
+		$select = $this->select()
+		->from(array('u'=>'user'))
+		->where("usr_id = ?", $id);
+	
+		
+		$user = $this->fetchAll(
+				$select
+		);
+		
+		
 		$current = $user->current();
 		if(isset($current)){
 			return $current;

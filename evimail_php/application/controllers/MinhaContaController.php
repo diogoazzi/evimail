@@ -460,6 +460,8 @@ class MinhaContaController extends Zend_Controller_Action
 
 
 	public function gerarPdfAction(){
+		$translate = Zend_Registry::get('translate');
+		
 		$post = $this->getRequest()->getPost();
 		$emailTable = new Fet_Model_EmailTable();
 		$email = $emailTable->find($post['ema_id'])->current();
@@ -530,7 +532,14 @@ class MinhaContaController extends Zend_Controller_Action
 		$mail->setFrom('evimail@webneural.com', 'EviMail');
 		// 		    $mail->addTo("diogo.azzi@webneural.com");
 		// 		    $mail->addTo("diogoafe@gmail.com");
+		
+		$emailAdicionalTable = new Fet_Model_EmailAdicionalTable();
+		$emailsAdicionais = $emailAdicionalTable->getAllEmailAdicionais(array('usr_id' => $user->usr_id),true);
 		$mail->addTo($email->ema_emailfrom);
+		foreach($emailsAdicionais as $_emailAdicional){
+			$mail->addTo($_emailAdicional->email);
+		}
+				
 		$mail->setSubject('EviMail - PDF - '.$email->ema_subject);
 		 
 		$file = $mail->createAttachment($pdf);
@@ -686,6 +695,10 @@ class MinhaContaController extends Zend_Controller_Action
 		$auth = Zend_Auth::getInstance();
 		$user = $auth->getIdentity();
 		
+		$parms = $this->getRequest()->getParams();
+		if(isset($parms['jaExisteEmail']))
+			$this->view->assign('jaExiste', true);
+		
 		$emaTable = new Fet_Model_EmailAdicionalTable();
 
 		$data = array('usr_id' => $user->usr_id);
@@ -709,6 +722,18 @@ class MinhaContaController extends Zend_Controller_Action
 		$user = $auth->getIdentity();
 		
 		$emaTable = new Fet_Model_EmailAdicionalTable();
+		
+		$jaExiste = $emaTable->getAllEmailAdicionais(array('email' => $parms['email']), true);
+		if(is_array($jaExiste) || count($jaExiste) > 0){
+			$this->_redirect('/minha-conta/gerenciar-emails/jaExisteEmail/true');
+			die();
+		}
+		$userTable = new Fet_Model_UserTable();
+		$jaExiste = $userTable->getAllUsers(array('usr_email' => $parms['email']), true);
+		if(is_array($jaExiste) || count($jaExiste) > 0){
+			$this->_redirect('/minha-conta/gerenciar-emails/jaExisteEmail/true');
+			die();
+		}
 		
 		$data = array('email' => $parms['email'], 
 				'create_date' => date('Y-m-d H:i:s', time()),

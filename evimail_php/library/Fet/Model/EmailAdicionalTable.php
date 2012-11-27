@@ -40,6 +40,9 @@ class Fet_Model_EmailAdicionalTable extends Zend_Db_Table
 		if (isset($params['email']))
 			$select->where("c.email = ? ", $params["email"]);
 		
+		if (isset($params['usr_id']))
+			$select->where("c.usr_id = ? ", $params["usr_id"]);
+		
 
 		if (isset($params["ini"]) and isset($params["fim"]))
 		{
@@ -70,6 +73,7 @@ class Fet_Model_EmailAdicionalTable extends Zend_Db_Table
 			$select->order($params['order']);
 		}
 
+		
 		if($fetchResult)
 		{
 			return $this->fetchAll($select);

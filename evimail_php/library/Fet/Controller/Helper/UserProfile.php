@@ -127,6 +127,12 @@ class Fet_Controller_Helper_UserProfile extends Zend_Controller_Action_Helper_Ab
 		
 	}
 	
+	public function getUserById( $email , $deleted = 0){
+		$userTable = new Fet_Model_UserTable();
+		return $userTable->getUserById( $email , $deleted);
+	
+	}
+	
 	public function getUserByFacebookId( $email , $deleted = 0){
 		$userTable = new Community_Model_UserTable();
 		return $userTable->getUserByFacebookId( $email , $deleted);

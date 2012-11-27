@@ -28,9 +28,11 @@ class IndexController extends Zend_Controller_Action
     											 'ssl' => 'SSL'));
     	$i = 1;
     	foreach ($mail as $message) {
+    		//DEBUG Descomentar
     		if ($message->hasFlag(Zend_Mail_Storage::FLAG_SEEN)) {
     			continue;
     		}
+			
     		
     		
 //     		echo '<pre>';
@@ -45,6 +47,10 @@ class IndexController extends Zend_Controller_Action
     		$from_arr = explode('<',$message->from);
     		if(count($from_arr) > 1)
     			$from = str_replace('>','',$from_arr[1]);
+    		
+    		//DEBUG REMVER
+//     		if($message->from != 'caseirom@yahoo.com' && $from != 'caseirom@yahoo.com')
+//     			continue;
 
     		//TODO: fazer tratativa de varios to
 //     		$to_arr = explode('<',$message->to);
@@ -70,13 +76,20 @@ class IndexController extends Zend_Controller_Action
     		
     		
     		//usuario nao encontrado nao salva email
-    		if(!$user) {    			
-    			continue;
+    		if(!$user) {
+    			$emailAdicionalTable = new Fet_Model_EmailAdicionalTable();
+    			$emailsAdicionais = $emailAdicionalTable->getAllEmailAdicionais(array('email' => $from),true);
+	
+    			if(!$emailsAdicionais || ! count($emailsAdicionais)> 0 )
+    				continue;
+    			
+    			$user = $usrProfile->getUserById($emailsAdicionais[0]->usr_id);
+    			
+    			if(!$user)
+    				continue;
     		}
-
     		
     		$usr_id = $user->usr_id;
-
     		
     		$hash = md5($from.$recieved.$this->getBody($message));
     		$pathBase = pathinfo(__FILE__);
@@ -204,7 +217,19 @@ class IndexController extends Zend_Controller_Action
 		    $mail->setBodyHtml($html_body);
 		    
 		    $mail->setFrom('evimail@webneural.com', 'EviMail');
+		    
+		    
+		    $emailAdicionalTable = new Fet_Model_EmailAdicionalTable();
+		    $emailsAdicionais = $emailAdicionalTable->getAllEmailAdicionais(array('usr_id' => $user->usr_id),true);
+		    	
 		    $mail->addTo($from);
+
+		    foreach($emailsAdicionais as $_emailAdicional){
+		    	if($_emailAdicional->email == $from)
+		    		continue;
+		    	$mail->addTo($_emailAdicional->email);
+		    }
+		    
 		    $mail->setSubject('EviMail - PDF - '.$message->subject);
 		    $mail->send($transport);
 		    
