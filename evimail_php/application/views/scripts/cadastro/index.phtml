@@ -399,7 +399,7 @@
                             </dd>
                             <dd>
                                 <label for="ContentPlaceHolder_Body_txtTelefoneCelularNumero" id="ContentPlaceHolder_Body_lblTelefoneCelularNumero">Tel</label>
-                                <input name="usr_celular" type="text" maxlength="9" id="ContentPlaceHolder_Body_txtTelefoneCelularNumero" class="txtBox" onKeyPress="return DigSomenteNumeros(event);" onKeyUp="MascaraTel(this);" />
+                                <input name="usr_celular" type="text" maxlength="10" id="ContentPlaceHolder_Body_txtTelefoneCelularNumero" class="txtBox" />
                                 <span id="ContentPlaceHolder_Body_lblTelefoneCelularObservacao" class="legendForm">(somente números)</span>
                             </dd>
                         </dl>
@@ -502,6 +502,7 @@ echo $this->partial('index/footer.phtml');
 <script type="text/javascript">
 $(document).ready(function() {
 	$("#txtDataNascimento").mask("99/99/9999");
+  $("#ContentPlaceHolder_Body_txtTelefoneCelularNumero").mask("9999-9999?9");
 	
 	$('#ContentPlaceHolder_Body_rblTipoPessoa_0').click(function(){
 		$("#phCPF").show();
@@ -616,7 +617,7 @@ $(document).ready(function() {
 		usr_numero: "Número é obrigatório.<br />",
 		usr_bairro: "Bairro é obrigatório.<br />",
 		usr_celularDDD: "DDD do Telefone Celular é obrigatório.<br />",
-		usr_celular: "Telefone Celular é obrigatório.<br />",
+		usr_celular: "Telefone Celular é um campo obrigatório.<br />",
 		usr_password: "Senha deve ter mínimo de 6 e máximo de 8 caracteres.<br />",
 		usr_password2: "Senhas Diferentes<br>",
 		chkTermoCondicoes: "Você deve aceitar os termos e condições de uso."
