@@ -148,12 +148,13 @@ class CieloController extends Zend_Controller_Action
 
 	private function enviaEmail($emailMsg, $subject, $to_array, $toName=null){
 		$config = array('auth' => 'login',
-				'username' => 'evimail@webneural.com',
-				'password' => 'y2s2r2i4',
+				'username' => $_config->mail->contato->user,
+				'password' => $_config->mail->contato->pass,
 				'ssl' => 'tls',
 				'port' => 587);
-
-		$transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', $config);
+		
+		$transport = new Zend_Mail_Transport_Smtp($_config->mail->host, $config);
+		
 
 		$data['msg'] = $emailMsg;
 		$data["url"] = "http://".$_SERVER["SERVER_NAME"];
@@ -168,7 +169,7 @@ class CieloController extends Zend_Controller_Action
 		$mail->setType(Zend_Mime::MULTIPART_RELATED);
 		$mail->setBodyHtml($emailMsg);
 
-		$mail->setFrom('evimail@webneural.com', 'EviMail');
+		$mail->setFrom($_config->mail->contato->from, $_config->mail->contato->name);
 
 		foreach($to_array as $to)
 			$mail->addTo($to);
