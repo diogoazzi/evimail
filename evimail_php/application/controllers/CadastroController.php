@@ -78,8 +78,8 @@ class CadastroController extends Zend_Controller_Action
     			$data["key"] = md5($usrId.$key);
     
     			// atualiza a key
-    			$POST["usr_id"] = $usrId;
-    			$POST["usr_activeKey"] = $data["key"];
+//     			$POST["usr_id"] = $usrId;
+//     			$POST["usr_activeKey"] = $data["key"];
 //     			$POST["insert"] = true;
     
     			$this->userProfileHelper->persistUser($POST);
@@ -158,17 +158,15 @@ class CadastroController extends Zend_Controller_Action
 			
 // 			print_r($authUser);
 //     		die('eeeee');
-    	} else {
-    		die('fooo');
-    	}
+    	} 
     
     	$this->_helper->layout()->disableLayout();
     	$this->_helper->viewRenderer->setNoRender();
     	$this->getResponse()->clearBody();
     	$this->getResponse()->setBody(
     	Zend_Json::encode(
-    	$aReturn
-    	)
+	    	$aReturn
+	    	)
     	);
     }
     

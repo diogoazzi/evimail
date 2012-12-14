@@ -12,7 +12,16 @@ class Fet_Controller_Helper_InterMail extends Zend_Controller_Action_Helper_Abst
 				{
 					$transport = new Amazon_Mail_Transport_AmazonSES(array('accessKey'=>$mailConfig->smtpconfig->username,'privateKey'=>$mailConfig->smtpconfig->password));
 				}else{
-					$transport = new Zend_Mail_Transport_Smtp($mailConfig->host, $mailConfig->smtpconfig->toArray());
+// 					$transport = new Zend_Mail_Transport_Smtp($mailConfig->host, $mailConfig->smtpconfig->toArray());
+					$transport = new Zend_Mail_Transport_Smtp($mailConfig->host, 
+						array(
+							'auth' => 'login',
+							'username' => $mailConfig->contato->user,
+							'password' => $mailConfig->contato->pass,
+							'ssl' => 'tls',
+							'port' => 587
+						)
+					);
 				}
 	 		}else{
 				$transport = new Zend_Mail_Transport_Sendmail();
