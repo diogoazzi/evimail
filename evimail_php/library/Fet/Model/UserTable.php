@@ -226,14 +226,20 @@ class Fet_Model_UserTable extends Zend_Db_Table
 		}
 
 
-		if(!$userData["usr_status"]){
+		if(!isset($userData["usr_status"])){
 			$userData["usr_status"] = 0;
 		}
 
 		$post['usr_birthDate'] = $birthDateF;
-		$post['usr_celular'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_celular']))));
-		$post['usr_telefone'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_telefone']))));
-		$post['usr_comercial'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_comercial']))));
+		
+		if(isset($post['usr_celular']))
+			$post['usr_celular'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_celular']))));
+		if(isset($post['usr_telefone']))
+			$post['usr_telefone'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_telefone']))));
+		if(isset($post['usr_comercial']))
+			$post['usr_comercial'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_comercial']))));
+		
+		
 
 
 		$data = array();

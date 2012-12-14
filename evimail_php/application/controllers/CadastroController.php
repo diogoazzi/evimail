@@ -143,11 +143,13 @@ class CadastroController extends Zend_Controller_Action
 //     		print_r(get_object_vars($row));
 // 			print_r($row->getData());
     		
-//     		die();
+//     		die('eeeeeee');
 //     		print_r($authUser);
 //     		$auth->setIdentity($row);
-			foreach($row->getData() as $key => $value)
-				$authUser->$key = $value;
+			foreach($row->getData() as $key => $value) {
+				if($value != '')
+					$authUser->$key = $value;
+			}
 			$authUser->role = 'member';
 			
 			$auth->getStorage()->write($authUser);
