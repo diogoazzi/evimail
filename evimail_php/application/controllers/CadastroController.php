@@ -24,7 +24,7 @@ class CadastroController extends Zend_Controller_Action
     }
     
     public function persistirAction(){
-    
+    	    
     	$POST = $this->getRequest()->getPost();
     
     	$translate = Zend_Registry::get('translate');
@@ -133,6 +133,7 @@ class CadastroController extends Zend_Controller_Action
     
     	}
     	
+    	
     	if(isset($POST['usr_id'])){
     		$userTable = new Fet_Model_UserTable();
     		$row = $userTable->find($POST["usr_id"])->current();
@@ -147,11 +148,16 @@ class CadastroController extends Zend_Controller_Action
 //     		$auth->setIdentity($row);
 			foreach($row->getData() as $key => $value)
 				$authUser->$key = $value;
+			$authUser->role = 'member';
+			
 			$auth->getStorage()->write($authUser);
 // 			print_r($authUser);
 			$authUser = $auth->getStorage()->read();
+			
 // 			print_r($authUser);
 //     		die('eeeee');
+    	} else {
+    		die('fooo');
     	}
     
     	$this->_helper->layout()->disableLayout();

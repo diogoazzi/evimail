@@ -29,13 +29,13 @@ class Fet_Controller_Helper_UserProfile extends Zend_Controller_Action_Helper_Ab
 				$data = $auth->getIdentity();
 				$user = $userTable->find($post["usr_id"])->current();
 				
-				if($userImage = $user->getUserImage()):
-					$thumb = $userImage->getThumbnailUrl();
-				else:
-					$thumb = '/img/bgImgDial.gif';
-				endif;
+// 				if($userImage = $user->getUserImage()):
+// 					$thumb = $userImage->getThumbnailUrl();
+// 				else:
+// 					$thumb = '/img/bgImgDial.gif';
+// 				endif;
 				
-				$data->thumb = $thumb;
+// 				$data->thumb = $thumb;
 				
 				$auth->getStorage()->clear();
 				$auth->getStorage()->write($data);

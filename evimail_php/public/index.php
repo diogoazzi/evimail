@@ -1,4 +1,9 @@
 <?php
+// session_start();
+// $_SESSION['Zend_Auth'] = null;
+// print_r($_SESSION);
+// die('eeeeee');
+
 
 // Define path to application directory
 defined('APPLICATION_PATH')

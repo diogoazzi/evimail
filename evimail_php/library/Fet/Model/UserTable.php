@@ -231,9 +231,9 @@ class Fet_Model_UserTable extends Zend_Db_Table
 		}
 
 		$post['usr_birthDate'] = $birthDateF;
-		$post['usr_celular'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post[usr_celular]))));
-		$post['usr_telefone'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post[usr_telefone]))));
-		$post['usr_comercial'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post[usr_comercial]))));
+		$post['usr_celular'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_celular']))));
+		$post['usr_telefone'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_telefone']))));
+		$post['usr_comercial'] = str_replace(" ","",str_replace("-","",str_replace(")","",str_replace("(","",$post['usr_comercial']))));
 
 
 		$data = array();
