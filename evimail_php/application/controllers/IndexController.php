@@ -196,6 +196,8 @@ class IndexController extends Zend_Controller_Action
 				    "Voc&ecirc;  possui um total de $totalCredito cr&eacute;ditos.<br>".
 				    'Clique <a href="http://evimail.local/minha-conta/visualiza-laudo/activeKey/'.$auth_key.'/ema_id/'.$emailSaved.'/usr_email/'.$from.'"> aqui </a> para visualiza-lo.<br>';
 		    
+
+            $_config = Zend_Registry::get('config');
 		    
 		    $config = array('auth' => 'login',
 		    		'username' => $_config->mail->contato->user,

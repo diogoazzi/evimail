@@ -147,6 +147,8 @@ class CieloController extends Zend_Controller_Action
 
 
 	private function enviaEmail($emailMsg, $subject, $to_array, $toName=null){
+
+    	$_config = Zend_Registry::get('config');
 		$config = array('auth' => 'login',
 				'username' => $_config->mail->contato->user,
 				'password' => $_config->mail->contato->pass,
