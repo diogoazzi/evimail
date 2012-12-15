@@ -17,29 +17,16 @@ class Fet_Controller_Helper_UserProfile extends Zend_Controller_Action_Helper_Ab
 		}else{
 			$data = $userTable->find($post["usr_id"])->current();
 			
-// 			if(isset($post['fileAvatar50name'])){
-// 				$post['img_id'] = $this->createProfileImage($post);
-// 			}
-			
 			$userTable->updateUser($post);
 			
 			//pra que este if,  jah tem empty$post[usr_id]
-			if(!$insert){
-				$auth = Zend_Auth::getInstance();
-				$data = $auth->getIdentity();
-				$user = $userTable->find($post["usr_id"])->current();
-				
-// 				if($userImage = $user->getUserImage()):
-// 					$thumb = $userImage->getThumbnailUrl();
-// 				else:
-// 					$thumb = '/img/bgImgDial.gif';
-// 				endif;
-				
-// 				$data->thumb = $thumb;
-				
-				$auth->getStorage()->clear();
-				$auth->getStorage()->write($data);
-			}
+// 			if(!$insert){
+// 				$auth = Zend_Auth::getInstance();
+// 				$data = $auth->getIdentity();
+// 				$user = $userTable->find($post["usr_id"])->current();
+// 				$auth->getStorage()->clear();
+// 				$auth->getStorage()->write($data);
+// 			}
 			
 			return $post["usr_id"];
 		}

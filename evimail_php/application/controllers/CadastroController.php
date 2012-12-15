@@ -64,22 +64,27 @@ class CadastroController extends Zend_Controller_Action
     			
     		if( !isset($POST["usr_id"])){
     			$openPass = $POST["usr_password"];
+    			$update = false;
+    		} else {
+    			$update = true;
     		}
     		$POST["usr_password"] = md5($POST["usr_password"]);
     		unset($POST['usr_password2']);
     		unset($POST['ctl00$ContentPlaceHolder_Body$txtTermosCondicoes']);
     			
     		// executa a inclusão ou alteração
-    		$usrId = $this->userProfileHelper->persistUser($POST, true);
+    		$usrId = $this->userProfileHelper->persistUser($POST);
     			
+    		
     		if( empty($POST["usr_id"]) && $usrId){
+    			$update = false;
     
     			$key = Zend_Registry::get('config')->key->active;
     			$data["key"] = md5($usrId.$key);
     
     			// atualiza a key
-//     			$POST["usr_id"] = $usrId;
-//     			$POST["usr_activeKey"] = $data["key"];
+    			$POST["usr_id"] = $usrId;
+    			$POST["usr_activeKey"] = $data["key"];
 //     			$POST["insert"] = true;
     
     			$this->userProfileHelper->persistUser($POST);
@@ -134,30 +139,23 @@ class CadastroController extends Zend_Controller_Action
     	}
     	
     	
-    	if(isset($POST['usr_id'])){
+    	if(isset($POST['usr_id']) && $update = true){
     		$userTable = new Fet_Model_UserTable();
     		$row = $userTable->find($POST["usr_id"])->current();
     		$auth = Zend_Auth::getInstance();
     		$authUser = $auth->getStorage()->read();
     		
-//     		print_r(get_object_vars($row));
-// 			print_r($row->getData());
-    		
-//     		die('eeeeeee');
-//     		print_r($authUser);
-//     		$auth->setIdentity($row);
 			foreach($row->getData() as $key => $value) {
-				if($value != '')
-					$authUser->$key = $value;
+				if($value != '') {
+					
+					if(isset($authUser->$key))
+						$authUser->$key = $value;
+				}
 			}
 			$authUser->role = 'member';
 			
 			$auth->getStorage()->write($authUser);
-// 			print_r($authUser);
 			$authUser = $auth->getStorage()->read();
-			
-// 			print_r($authUser);
-//     		die('eeeee');
     	} 
     
     	$this->_helper->layout()->disableLayout();
