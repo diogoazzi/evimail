@@ -250,7 +250,7 @@ class IndexController extends Zend_Controller_Action
 						$user_to->usr_activeKey = md5($user_to_id.$key);
 						$user_to->save(); 
 						
-						$emailMsg = "Voc&ecirc;  acaba de receber um email de confirma&cecdil;&atilde;o Evimail..<br>".
+						$emailMsg = "Voc&ecirc;  acaba de receber um email de confirma&ccedil;&atilde;o Evimail..<br>".
 								"Este servi&ccedil;o serve para confirmar o recebimento do email enviado por:".$user->usr_name.".<br>".
 								'Clique <a href="http://'.$_SERVER["SERVER_NAME"].'/minha-conta/alterar-dados/activeKey/'.$user_to->usr_activeKey.'/ema_id/'.$emailSaved.'/usr_email/'.$to.'"> aqui </a> para visualiza-lo e confirmar.<br>';
 						
