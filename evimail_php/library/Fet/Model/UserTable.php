@@ -213,7 +213,7 @@ class Fet_Model_UserTable extends Zend_Db_Table
 		$row = $this->createRow();
 		unset($userData["usr_id"]);
 
-		if($userData['usr_birthDate']){
+		if(isset($userData['usr_birthDate'])){
 			$dataNasc = explode("/",$userData['usr_birthDate']);
 			$_userData["usr_birthYear"] = $dataNasc[2];
 			$_userData["usr_birthMonth"] = $dataNasc[1];

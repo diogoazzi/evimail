@@ -346,7 +346,18 @@ class MinhaContaController extends Zend_Controller_Action
 	function alterarDadosAction() {
 		$auth = Zend_Auth::getInstance();
 		$identity = $auth->getIdentity();
-		 
+		
+		
+		//TODO: verificar se autenticacao via activeKey e email esta ok
+		if(!$identity){
+			
+		}
+
+		$params = $this->getRequest()->getParams();
+		//alterar dados de link com ema_id
+		if(isset($params['ema_id'])){
+			$this->view->assign('ema_id', $params['ema_id']);
+		}
 
 		 
 		$birthDate = new Zend_Date($identity->usr_birthDate,"YYYY-MM-DD");
@@ -364,6 +375,12 @@ class MinhaContaController extends Zend_Controller_Action
 		$emailTable = new Fet_Model_EmailTable();
 		 
 		$email = $emailTable->find($params['ema_id'])->current();
+		
+		if($email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_EVIADO_DEBITADO || 
+				$email->ema_confirmed == Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO)
+			$this->view->assign('emailDebitato', true);
+		else 
+			$this->view->assign('emailDebitato', false);
 		 
 		$Date = new Zend_Date($email->ema_senddate,"YYYY-MM-DD HH:mm:ss");
 		$DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
@@ -382,7 +399,7 @@ class MinhaContaController extends Zend_Controller_Action
 		 
 		$pathBase = pathinfo(__FILE__);
 		$pathBase = $pathBase['dirname'];
-		$path = $pathBase.'/../../public/pdf/'.$user->usr_id.'/'.$email->ema_hash.'/';
+		$path = $pathBase.'/../../public/pdf/'.$email->ema_usr_id.'/'.$email->ema_hash.'/';
 		 
 		$anexos = array();
 		if ($handle = opendir($path)) {
@@ -458,54 +475,33 @@ class MinhaContaController extends Zend_Controller_Action
 
 	}
 
-
-	public function gerarPdfAction(){
-		$translate = Zend_Registry::get('translate');
-		
+	
+	public function confirmarPdfAction(){
 		$post = $this->getRequest()->getPost();
 		$emailTable = new Fet_Model_EmailTable();
 		$email = $emailTable->find($post['ema_id'])->current();
-		 
-		$creditTable = new Fet_Model_CreditTable();
-		$totalCredito = $creditTable->getTotalCreditosDisponiveis($email->ema_usr_id);
-		 
-		if($totalCredito <= 0)
-			throw new Exception("Crédito insuficiente.");
-		 
-		$creditRow = $creditTable->getFirstPayedRow($email->ema_usr_id);
-
+		
+		
 		$auth = Zend_Auth::getInstance();
 		$user = $auth->getIdentity();
-
-		$Date = new Zend_Date($email->ema_senddate,"YYYY-MM-DD HH:mm:ss");
-		$DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
-
-		$mail_pdf = '<html><body>hash autentica&ccedil;&atilde;o: '.$email->ema_hash.'<br><br>';
-		$mail_pdf .= 'Recebido em: '.$DateF.'<br>';
-		$mail_pdf .= 'De: '.$email->ema_emailfrom.'<br>';
-		$mail_pdf .= 'Para: '.$email->ema_emailto.'<br>';
-		$mail_pdf .= 'Assunto: '.$email->ema_subject.'<br><br>';
-		$mail_pdf .= $email->ema_body;
-
-		require_once("Dompdf/dompdf_config.inc.php");
-		$dompdf = new DOMPDF();
-		$dompdf->load_html($mail_pdf);
-		$dompdf->set_paper('letter', 'landscape');
-		$dompdf->render();
-		 
+		
 		$pathBase = pathinfo(__FILE__);
 		$pathBase = $pathBase['dirname'];
-		$path = $pathBase.'/../../public/pdf/'.$user->usr_id.'/'.$email->ema_hash.'/';
+		$path = $pathBase.'/../../public/pdf/'.$email->ema_usr_id.'/'.$email->ema_hash.'/';
 		if(!file_exists($path))
-			mkdir($path, 0755,true);
-		 
-
-		$pdf = $dompdf->output();
-		file_put_contents($path."email.pdf", $pdf);
-		 
+			throw new Exception("Path $path nao encontrado.");
+		
+		$confTable = new Fet_Model_ConfirmacaoDestinatariosTable();
+		$confRow = $confTable->getAllTrans(array('usr_id' => $user->usr_id, 'ema_id' => $email->ema_id), true);
+		
+		if(!count($confRow) > 0 )
+			throw new Exception('ConfirmacaoDestinatario nao encontrado para usr_id: '.$user->usr_id.' ema_id: '.$email->ema_id);
+		$confRow = $confRow[0];
+		$confRow->status = Fet_Model_ConfirmacaoDestinatariosTable::CONFIRMADO;
+		$confRow->save();
+		
+		
 		$_config = Zend_Registry::get('config');
-		
-		
 		$config = array('auth' => 'login',
 				'username' => $_config->mail->contato->user,
 				'password' => $_config->mail->contato->pass,
@@ -513,10 +509,7 @@ class MinhaContaController extends Zend_Controller_Action
 				'port' => 587);
 		
 		$transport = new Zend_Mail_Transport_Smtp($_config->mail->host, $config);
-		
-		
-		 
-		$data['msg'] = "Seu email foi gerado com sucesso<br>
+		$data['msg'] = "Seu email foi confirmado com sucesso<br>
 				<br>
 				Assunto: ".$email->ema_subject ."<br>
 						<br>
@@ -533,20 +526,16 @@ class MinhaContaController extends Zend_Controller_Action
 		$mail = new Zend_Mail("UTF-8");
 		$mail->setType(Zend_Mime::MULTIPART_RELATED);
 		$mail->setBodyHtml($content);
-		 
 		$mail->setFrom($_config->mail->contato->from, $_config->mail->contato->name);
-		// 		    $mail->addTo("diogo.azzi@webneural.com");
-		// 		    $mail->addTo("diogoafe@gmail.com");
-		
-		$emailAdicionalTable = new Fet_Model_EmailAdicionalTable();
-		$emailsAdicionais = $emailAdicionalTable->getAllEmailAdicionais(array('usr_id' => $user->usr_id),true);
 		$mail->addTo($email->ema_emailfrom);
-		foreach($emailsAdicionais as $_emailAdicional){
-			$mail->addTo($_emailAdicional->email);
-		}
-				
+		
+		$userTable = new Fet_Model_UserTable();
+		$user = $userTable->find($confRow->usr_id)->current();
+		$mail->addTo($user->usr_email);
+		
 		$mail->setSubject('EviMail - PDF - '.$email->ema_subject);
-		 
+		
+		$pdf = file_get_contents($path."email.pdf");
 		$file = $mail->createAttachment($pdf);
 		$file->filename = $email->ema_hash.".pdf";
 		 
@@ -581,14 +570,123 @@ class MinhaContaController extends Zend_Controller_Action
 		}
 
 		$mail->send($transport);
+		
+		$confDestinatarios = $confTable->getAllTrans(array('ema_id' => $email->ema_id), true);
+		$nao_confirmado = false;
+		foreach($confDestinatarios as $_confDest){
+			if($_confDest->status == Fet_Model_ConfirmacaoDestinatariosTable::NAO_CONFIRMADO)
+				$nao_confirmado = true;
+		}
+		//todos os destinatarios confirmaram, entao atualiza par EMAIL_ENVIADO
+		if(!$nao_confirmado) {
+			$email->ema_confirmed = Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO;
+			$email->save();			
+		}
+			
+		
+		$this->_redirect('/minha-conta/consultar-historico'); 
+	}
 
+	public function gerarPdfAction(){
+		$translate = Zend_Registry::get('translate');
+		
+		$post = $this->getRequest()->getPost();
+		$emailTable = new Fet_Model_EmailTable();
+		$email = $emailTable->find($post['ema_id'])->current();
+		 
+		$creditTable = new Fet_Model_CreditTable();
+		$totalCredito = $creditTable->getTotalCreditosDisponiveis($email->ema_usr_id);
+		 
+		if($totalCredito <= 0)
+			throw new Exception("Crédito insuficiente.");
+		 
+		$_config = Zend_Registry::get('config');
+		$config = array('auth' => 'login',
+				'username' => $_config->mail->contato->user,
+				'password' => $_config->mail->contato->pass,
+				'ssl' => 'tls',
+				'port' => 587);
+		
+		$transport = new Zend_Mail_Transport_Smtp($_config->mail->host, $config);
+		 
+		$data['msg'] = "Seu email foi gerado com sucesso<br>
+				<br>
+				Assunto: ".$email->ema_subject ."<br>
+						<br>
+						Conteúdo: ".$email->ema_body;
+		$data["url"] = "http://".$_SERVER["SERVER_NAME"];
+		$data["usuario"] = $user->usr_name;
+		$data["title"] = 'EviMail - PDF - '.$email->ema_subject;
 
+		$view = Zend_Registry::get("view");
+		$view->data = $data;
+		$view->translate = $translate;
+		$content = $view->render("mail/confirmacao_cadastro.phtml");
+
+		$mail = new Zend_Mail("UTF-8");
+		$mail->setType(Zend_Mime::MULTIPART_RELATED);
+		$mail->setBodyHtml($content);
+		$mail->setFrom($_config->mail->contato->from, $_config->mail->contato->name);
+		
+		$to_arr = explode(",", $mail->ema_emailto);
+		
+		foreach($to_arr as $key => $__to) {
+			$to_arr2 = explode('<',$__to);
+			if(count($to_arr2) > 1)
+				$to = str_replace('>','',$to_arr2[1]);
+			else
+				$to = $to_arr2[0];
+				
+			if($to == 'evimail@evimail.com.br')
+				continue;
+				
+			$mail->addTo($email->ema_emailfrom);
+		}
+		
+		$mail->setSubject('EviMail - PDF - '.$email->ema_subject);
+
+		$pdf = file_get_contents($path."email.pdf");
+		$file = $mail->createAttachment($pdf);
+		$file->filename = $email->ema_hash.".pdf";
+
+		if ($handle = opendir($path)) {
+			/* This is the correct way to loop over the directory. */
+			while (false !== ($entry = readdir($handle))) {
+				if($entry == 'email.pdf' || $entry == '.' || $entry == '..')
+					continue;
+
+				$ext_arr = explode('.',$entry);
+				$finalKey = count($ext_arr) - 1;
+				$ext = $ext_arr[$finalKey];
+
+				$myImage = file_get_contents($path.$entry);
+
+				$at = new Zend_Mime_Part($myImage);
+
+				if($ext == 'txt') {
+					$at->type        = 'plain/text';
+					// 					$at->disposition = Zend_Mime::DISPOSITION_INLINE;
+					// 					$at->encoding    = Zend_Mime::ENCODING_BASE64;
+					$at->filename    = $entry;
+				} else {
+					// 					$at->type        = 'application';
+					$at->disposition = Zend_Mime::DISPOSITION_INLINE;
+					$at->encoding    = Zend_Mime::ENCODING_BASE64;
+					$at->filename    = $entry;
+				}
+				$mail->addAttachment($at);
+			}
+			closedir($handle);
+		}
+
+		$mail->send($transport);
+		$creditRow = $creditTable->getFirstPayedRow($email->ema_usr_id);
 		$creditRow->cre_value = $creditRow->cre_value -1;
 		$creditRow->save();
-		 
-		$email->ema_confirmed = Fet_Model_EmailTable::EMAIL_ENVIADO_DEBITADO;
+		
+		$email->ema_confirmed = Fet_Model_EmailTable::EMAIL_NAO_EVIADO_DEBITADO;
 		$email->save();
-		 
+		
 		$this->_redirect('/minha-conta/consultar-historico');
 	}
 

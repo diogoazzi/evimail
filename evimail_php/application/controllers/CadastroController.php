@@ -158,6 +158,10 @@ class CadastroController extends Zend_Controller_Action
 			$auth->getStorage()->write($authUser);
 			$authUser = $auth->getStorage()->read();
     	} 
+    	
+    	if(isset($POST['ema_id'])){
+    		$this->_redirect('/minha-conta/visualiza-laudo/', array('ema_id' => $POST['ema_id']));
+    	}
     
     	$this->_helper->layout()->disableLayout();
     	$this->_helper->viewRenderer->setNoRender();

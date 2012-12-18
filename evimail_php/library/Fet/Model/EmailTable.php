@@ -4,6 +4,7 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 	const EMAIL_NAO_ENVIADO =0;
 	const EMAIL_ENVIADO_NAO_DEBIATO = 1;
 	const EMAIL_ENVIADO_DEBITADO = 2;
+	const EMAIL_NAO_EVIADO_DEBITADO = 3;
 
 	private $db;
 	public $erro;

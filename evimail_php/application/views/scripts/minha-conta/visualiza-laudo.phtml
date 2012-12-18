@@ -2,8 +2,12 @@
 <?php
 echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'menu'=>'laudo', 'user' => $this->user, 'mostrarLaudo' => true ));
 ?>
-<?php if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) {?>
-	<form method="post" action="/minha-conta/gerar-pdf" id="form1">
+<?php if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_EVIADO_DEBITADO && $this->email->ema_usr_id == $this->user->usr_id) {?>
+	<form method="post" action="/minha-conta/download-pdf/ema_hash/<?echo $this->email->ema_hash;?>" id="form1">
+<?php } else if($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_EVIADO_DEBITADO && $this->email->ema_usr_id != $this->user->usr_id ) { ?>
+	<form method="post" action="/minha-conta/confirmar-pdf" id="form1">
+<?php } else if($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) { ?>
+	<form method="post" action="/minha-conta/gerar-pdf" id="form1">	
 <?php } else {?>
 	<form method="post" action="/minha-conta/download-pdf/ema_hash/<?echo $this->email->ema_hash;?>" id="form1">
 <?php }?>
@@ -20,7 +24,8 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 		</p>
 		
 		<p class="legendDetalhe">
-			<?php if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) {?>
+			<?php if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO ||
+					$this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_EVIADO_DEBITADO) {?>
 			<span class="notconfirmed">
 				confirmação pendente
 			</span>
@@ -77,17 +82,19 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 </div>
     </div>
 <div id="ucDetalhesEmail_pnlGerarPdf">
-<?php if($this->totalCredits > 0 ) { ?>	
+<?php if($this->totalCredits > 0 || $this->emailDebitato == true) { ?>	
     <a id="lnkCriarConta" class="button" target="_blank">
     <?php if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_ENVIADO) {?>
-    	<span>GERAR PDF</span>
+    	<span>GERAR</span>
+    <?php } else if ($this->email->ema_confirmed == Fet_Model_EmailTable::EMAIL_NAO_EVIADO_DEBITADO) {?>
+    	<span>CONFIRMAR</span>    	
 	<?php } else {?>
-    	<span>BAIXAR PDF</span>
+    	<span>BAIXAR</span>
 	<?php }?>    
     </a>'
-    <?php } else {?>
+<?php } else {?>
      <a id="xpto" class="button" href="/minha-conta/contratar-servico"><span>Contratar Serviço</span></a>
-    <?php }?>
+<?php }?>
 
 </div>
 

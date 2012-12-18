@@ -10,6 +10,9 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
         <p class="campoObrig">
             * Campos de preenchimento obrigatório</p>
         <form method="post" action="/cadastro/inserir" id="formMain">
+        <?php if(isset($this->ema_id)) {?>
+        	<input type="hidden" name="ema_id" value="<?php echo $this->ema_id;?>">
+        <?php }?>
         <div class="formRounded_a rounded_a">
             <div id="ContentPlaceHolder_Body_upCadastroCima">
             		
