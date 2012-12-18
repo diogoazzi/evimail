@@ -283,35 +283,51 @@ class IndexController extends Zend_Controller_Action
     }
 
     public function termosAction(){
-
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);
     }
     
     public function politicaPrivacidadeAction(){
-
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);
     }
 
     public function faleconoscoAction(){
-        
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);        
     }
 
     public function perguntasFrequentesAction(){
-        
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);        
     }
 
     public function quemsomosAction(){
-        
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);
     }    
 
     public function vantagensAction(){
-        
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);        
     }
 
     public function melhorplanoAction(){
-        
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);        
     }
 
     public function modelolaudoAction(){
-        
+    	$auth = Zend_Auth::getInstance();
+    	$user = $auth->getIdentity();
+    	$this->view->assign('user', $user);        
     }    
 }
 

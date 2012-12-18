@@ -1,5 +1,8 @@
 <?php
-echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'user' => $this->user, 'classPrinc'=>'inner perguntasFrequentes', 'menuSelected'=>'perguntas-frequentes'));
+if(isset($this->user) && isset($this->user->usr_id))
+	echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'user' => $this->user, 'classPrinc'=>'inner quemSomos', 'menuSelected'=>'quemsomos'));
+else
+	echo $this->partial('index/header_naologado.phtml', array('actionErrors'=>$this->actionErrors,'auth'=>$this->auth, 'user' => $this->user, 'classPrinc'=>'inner quemSomos', 'menuSelected'=>'quemsomos'));
 ?>
 
 <script type="text/javascript">
