@@ -166,9 +166,22 @@ class AuthController extends Zend_Controller_Action
 					$result = $auth->authenticate($authAdapter);
 				}*/
 
-				if (!$result->isValid()) {
+				if ($result->isValid()) {
+					$autenticado = true;
+				} else {
+					$authAdapter = $this->_getAuthAdapter($formData, 'usr_nickname');
+
+					$auth = Zend_Auth::getInstance();
+					$result = $auth->authenticate($authAdapter);
+
+					if ($result->isValid()) {
+						$autenticado = true;
+					}
+				}
+
+				if(!$autenticado) {
 					$this->_flashMessage($message = $translate->_("Login ou senha inválidos"));
-					$redirect = $this->view->baseUrl('/auth');	
+					$redirect = $this->view->baseUrl('/auth');
 				} else {
 					$data = $authAdapter->getResultRowObject(null,
                                 'pwdLoginSenha');
