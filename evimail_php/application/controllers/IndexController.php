@@ -194,7 +194,7 @@ class IndexController extends Zend_Controller_Action
 		    
 		    $emailMsg = "Voc&ecirc;  acaba de receber novo email no seu evimail.<br>".
 				    "Voc&ecirc;  possui um total de $totalCredito cr&eacute;ditos.<br>".
-				    'Clique <a href="http://evimail.local/minha-conta/visualiza-laudo/activeKey/'.$auth_key.'/ema_id/'.$emailSaved.'/usr_email/'.$from.'"> aqui </a> para visualiza-lo.<br>';
+				    'Clique <a href="http://'.$_SERVER["SERVER_NAME"].'/minha-conta/visualiza-laudo/activeKey/'.$auth_key.'/ema_id/'.$emailSaved.'/usr_email/'.$from.'"> aqui </a> para visualiza-lo.<br>';
 		    
 
             $_config = Zend_Registry::get('config');
