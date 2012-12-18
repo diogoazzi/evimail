@@ -160,7 +160,9 @@ class CadastroController extends Zend_Controller_Action
     	} 
     	
     	if(isset($POST['ema_id'])){
-    		$this->_redirect('/minha-conta/visualiza-laudo/', array('ema_id' => $POST['ema_id']));
+//     		$this->_redirect('/minha-conta/visualiza-laudo/', array('ema_id' => $POST['ema_id']));
+			$aReturn['ema_id'] = $POST['ema_id'];
+			$aReturn['ok'] = '2';
     	}
     
     	$this->_helper->layout()->disableLayout();

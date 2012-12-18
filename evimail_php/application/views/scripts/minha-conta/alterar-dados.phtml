@@ -631,7 +631,10 @@ function addUser(){
         	{
         		$('.painelCadastro').hide();
         		$('#ContentPlaceHolder_Body_ctvCadastro').show();
-        	}else{
+        	} else if(json.ok == 2) {
+            	//TODO redirect para visualiza-laudo com ema_id
+        		window.location = 'http://www.evimail.com.br/minha-conta/visualiza-laudo/ema_id/'.json.ema_id;
+            } else{
         		msg = json.error;
         		$('#lnkCriarConta').show();
         	}
