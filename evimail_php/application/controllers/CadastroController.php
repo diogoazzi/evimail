@@ -31,7 +31,8 @@ class CadastroController extends Zend_Controller_Action
     
     	$auth = Zend_Auth::getInstance();
     	$identity = $auth->getIdentity();
-    	if($identity){
+    	
+    	if(isset($identity) && isset($identity->usr_id)){
     		$usr_id = $identity->usr_id;
     		if( $usr_id != "" ){
     			$POST["usr_id"] = $usr_id;
