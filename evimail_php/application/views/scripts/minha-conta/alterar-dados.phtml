@@ -627,14 +627,15 @@ function addUser(){
 			$('#lnkCriarConta').hide();
 		},
         success:  function(json, statusText){
+          alert(json.ok);
         	if(json.ok == 1)
         	{
         		$('.painelCadastro').hide();
         		$('#ContentPlaceHolder_Body_ctvCadastro').show();
         	} else if(json.ok == 2) {
             	//TODO redirect para visualiza-laudo com ema_id
-        		window.location = 'http://www.evimail.com.br/minha-conta/visualiza-laudo/ema_id/'.json.ema_id;
-            } else{
+        		window.location = 'http://www.evimail.com.br/minha-conta/visualiza-laudo/ema_id/'+json.ema_id;
+          } else{
         		msg = json.error;
         		$('#lnkCriarConta').show();
         	}
