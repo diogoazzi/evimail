@@ -232,7 +232,7 @@ class IndexController extends Zend_Controller_Action
 					
 					//ENVIA EMAIL PARA DESTINARIO QUE JAH EH USUARIO
 					if($user_to) {
-						$emailMsg = "Voc&ecirc;  acaba de receber um email de confirma&ccdeil;&atilde;o Evimail..<br>".
+						$emailMsg = "Voc&ecirc;  acaba de receber um email de confirma&ccedil;&atilde;o Evimail..<br>".
 								"Este servi&ccedil;o serve para confirmar o recebimento do email enviado por:".$user->usr_name.".<br>".
 								'Clique <a href="http://'.$_SERVER["SERVER_NAME"].'/minha-conta/visualiza-laudo/activeKey/'.$user_to->usr_activeKey.'/ema_id/'.$emailSaved.'/usr_email/'.$to.'"> aqui </a> para visualiza-lo e confirmar.<br>';
 						
