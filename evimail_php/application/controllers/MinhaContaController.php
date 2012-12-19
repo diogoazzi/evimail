@@ -614,25 +614,6 @@ class MinhaContaController extends Zend_Controller_Action
 				'port' => 587);
 		
 		$transport = new Zend_Mail_Transport_Smtp($_config->mail->host, $config);
-		 
-		$data['msg'] = "Seu email foi gerado com sucesso<br>
-				<br>
-				Assunto: ".$email->ema_subject ."<br>
-						<br>
-						Conteúdo: ".$email->ema_body;
-		$data["url"] = "http://".$_SERVER["SERVER_NAME"];
-		$data["usuario"] = $user->usr_name;
-		$data["title"] = 'EviMail - PDF - '.$email->ema_subject;
-
-		$view = Zend_Registry::get("view");
-		$view->data = $data;
-		$view->translate = $translate;
-		$content = $view->render("mail/confirmacao_cadastro.phtml");
-
-		$mail = new Zend_Mail("UTF-8");
-		$mail->setType(Zend_Mime::MULTIPART_RELATED);
-		$mail->setBodyHtml($content);
-		$mail->setFrom($_config->mail->contato->from, $_config->mail->contato->name);
 		
 		$to_arr = explode(",", $email->ema_emailto);
 		
@@ -646,46 +627,69 @@ class MinhaContaController extends Zend_Controller_Action
 			if($to == 'evimail@evimail.com.br')
 				continue;
 				
-			$mail->addTo($to);
+			$to_arr3[] = $to;
 		}
 		
-		$mail->setSubject('EviMail - PDF - '.$email->ema_subject);
-
-		$pdf = file_get_contents($path."email.pdf");
-		$file = $mail->createAttachment($pdf);
-		$file->filename = $email->ema_hash.".pdf";
-
-		if ($handle = opendir($path)) {
-			/* This is the correct way to loop over the directory. */
-			while (false !== ($entry = readdir($handle))) {
-				if($entry == 'email.pdf' || $entry == '.' || $entry == '..')
-					continue;
-
-				$ext_arr = explode('.',$entry);
-				$finalKey = count($ext_arr) - 1;
-				$ext = $ext_arr[$finalKey];
-
-				$myImage = file_get_contents($path.$entry);
-
-				$at = new Zend_Mime_Part($myImage);
-
-				if($ext == 'txt') {
-					$at->type        = 'plain/text';
-					// 					$at->disposition = Zend_Mime::DISPOSITION_INLINE;
-					// 					$at->encoding    = Zend_Mime::ENCODING_BASE64;
-					$at->filename    = $entry;
-				} else {
-					// 					$at->type        = 'application';
-					$at->disposition = Zend_Mime::DISPOSITION_INLINE;
-					$at->encoding    = Zend_Mime::ENCODING_BASE64;
-					$at->filename    = $entry;
-				}
-				$mail->addAttachment($at);
+		$usrProfile = new Fet_Controller_Helper_UserProfile();
+		foreach($to_arr3 as $to){
+			$data = array();
+			$user_to = $usrProfile->getUserByEmail($to);
+			
+			
+			//USUARIO TO JAH CADASTRADO
+			if($user_to) {
+				$data['msg'] = "Voc&ecirc;  acaba de receber um email de confirma&ccedil;&atilde;o Evimail..<br>".
+						"Este servi&ccedil;o serve para confirmar o recebimento do email enviado por:".$user->usr_name.".<br>".
+						'Clique <a href="http://'.$_SERVER["SERVER_NAME"].'/minha-conta/visualiza-laudo/activeKey/'.$user_to->usr_activeKey.'/ema_id/'.$email->ema_id.'/usr_email/'.$to.'"> aqui </a> para visualiza-lo e confirmar.<br>';
+				
+				$data["usuario"] = $user_to->usr_name;
+				
+			} //USUARIO TO NAO CADASTRADO 
+			else { 
+				$userTable = new Fet_Model_UserTable();
+				$userData = array();
+				$userData['usr_email'] = $to;
+				$userData['status'] = 1;
+				$user_to_id = $userTable->createUser($userData);
+				$user_to = $usrProfile->getUserByEmail($to);
+				$key = Zend_Registry::get('config')->key->active;
+				$user_to->usr_activeKey = md5($user_to_id.$key);
+				$user_to->save();
+				
+				$data['msg'] = "Voc&ecirc;  acaba de receber um email de confirma&ccedil;&atilde;o Evimail..<br>".
+						"Este servi&ccedil;o serve para confirmar o recebimento do email enviado por:".$user->usr_name.".<br>".
+						'Clique <a href="http://'.$_SERVER["SERVER_NAME"].'/minha-conta/alterar-dados/activeKey/'.$user_to->usr_activeKey.'/ema_id/'.$emailSaved.'/usr_email/'.$to.'"> aqui </a> para visualiza-lo e confirmar.<br>';
+				
+				$data["usuario"] = '';
 			}
-			closedir($handle);
+			
+			$data["url"] = "http://".$_SERVER["SERVER_NAME"];
+			$data["title"] = 'EviMail - PDF - '.$email->ema_subject;
+	
+			$view = Zend_Registry::get("view");
+			$view->data = $data;
+			$view->translate = $translate;
+			$content = $view->render("mail/confirmacao_cadastro.phtml");
+	
+			$mail = new Zend_Mail("UTF-8");
+			$mail->setType(Zend_Mime::MULTIPART_RELATED);
+			$mail->setBodyHtml($content);
+			$mail->setFrom($_config->mail->contato->from, $_config->mail->contato->name);
+			
+			$confirmacaoDestTable = new Fet_Model_ConfirmacaoDestinatariosTable();
+			$confData = array();
+			$confData['usr_id'] = $user_to->usr_id;
+			$confData['ema_id'] = $email->ema_id;
+			$confData['status'] = Fet_Model_ConfirmacaoDestinatariosTable::NAO_CONFIRMADO;
+			$confirmDestRow = $confirmacaoDestTable->createConfirmacaoDestinatarios($confData);
+			
+			$mail->addTo($to);
+			
+			
+			$mail->setSubject('EviMail - PDF - '.$email->ema_subject);
+			$mail->send($transport);
 		}
-
-		$mail->send($transport);
+		
 		$creditRow = $creditTable->getFirstPayedRow($email->ema_usr_id);
 		$creditRow->cre_value = $creditRow->cre_value -1;
 		$creditRow->save();
