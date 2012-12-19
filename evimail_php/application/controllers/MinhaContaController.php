@@ -193,6 +193,11 @@ class MinhaContaController extends Zend_Controller_Action
 		$auth = Zend_Auth::getInstance();
 		$user = $auth->getIdentity();
 		$this->view->assign('user', $user);
+		
+		$params =$this->getRequest()->getParams();
+		
+		if(isset($params['ema_id']))
+			$this->view->assign('ema_id', $params['ema_id']);
 		 
 		$creditTable = new Fet_Model_CreditTable();
 		 
@@ -263,9 +268,6 @@ class MinhaContaController extends Zend_Controller_Action
 				throw new Exception("Plano nao selecionado.");
 		}
 		 
-		//     	die($post['produto'].'#');
-		//     	$post["produto"] = '12300' ; //valor
-		 
 		// L� dados do $post
 		$Pedido->formaPagamentoBandeira = $post["codigoBandeira"];
 		if($post["formaPagamento"] == "A")
@@ -299,7 +301,7 @@ class MinhaContaController extends Zend_Controller_Action
 		$Pedido->dadosPedidoNumero = $credit_id;
 		$Pedido->dadosPedidoValor = $post["produto"];
 		 
-		$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL($Pedido->dadosPedidoNumero);
+		$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL($Pedido->dadosPedidoNumero, $post['ema_id']);
 		 
 		// ENVIA REQUISI��O SITE CIELO
 		$objResposta = $Pedido->RequisicaoTransacao(false);
@@ -492,7 +494,8 @@ class MinhaContaController extends Zend_Controller_Action
 			throw new Exception("Path $path nao encontrado.");
 		
 		$confTable = new Fet_Model_ConfirmacaoDestinatariosTable();
-		$confRow = $confTable->getAllTrans(array('usr_id' => $user->usr_id, 'ema_id' => $email->ema_id), true);
+		$_data = array('usr_id' => $user->usr_id, 'ema_id' => $email->ema_id);
+		$confRow = $confTable->getAllTrans($_data, true);
 		
 		if(!count($confRow) > 0 )
 			throw new Exception('ConfirmacaoDestinatario nao encontrado para usr_id: '.$user->usr_id.' ema_id: '.$email->ema_id);
@@ -590,6 +593,9 @@ class MinhaContaController extends Zend_Controller_Action
 	public function gerarPdfAction(){
 		$translate = Zend_Registry::get('translate');
 		
+		$auth = Zend_Auth::getInstance();
+		$user = $auth->getIdentity();
+		
 		$post = $this->getRequest()->getPost();
 		$emailTable = new Fet_Model_EmailTable();
 		$email = $emailTable->find($post['ema_id'])->current();
@@ -628,7 +634,7 @@ class MinhaContaController extends Zend_Controller_Action
 		$mail->setBodyHtml($content);
 		$mail->setFrom($_config->mail->contato->from, $_config->mail->contato->name);
 		
-		$to_arr = explode(",", $mail->ema_emailto);
+		$to_arr = explode(",", $email->ema_emailto);
 		
 		foreach($to_arr as $key => $__to) {
 			$to_arr2 = explode('<',$__to);
@@ -640,7 +646,7 @@ class MinhaContaController extends Zend_Controller_Action
 			if($to == 'evimail@evimail.com.br')
 				continue;
 				
-			$mail->addTo($email->ema_emailfrom);
+			$mail->addTo($to);
 		}
 		
 		$mail->setSubject('EviMail - PDF - '.$email->ema_subject);

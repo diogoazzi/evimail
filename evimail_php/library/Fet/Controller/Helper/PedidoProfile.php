@@ -472,7 +472,7 @@
 		}
 		
 		// Monta URL de retorno
-		public static function ReturnURL($numPedido)
+		public static function ReturnURL($numPedido,$email_id)
 		{
 			$pageURL = 'http';
 		
@@ -493,9 +493,12 @@
 		
 			$ReturnURL = str_replace($file, "retorno.php", $pageURL);
 			
-			return 'http://'.$_SERVER['SERVER_NAME'].'/cielo/get-retorno/numero_pedido/'.$numPedido;
-		
-// 			return $ReturnURL;
+			$_url = 'http://'.$_SERVER['SERVER_NAME'].'/cielo/get-retorno/numero_pedido/'.$numPedido;
+			
+			if(isset($email_id) && $email_id != null && $email_id != '')
+				$_url = $_url.'/ema_id/'.$email_id;
+			
+			return $_url; 
 		}
 		
 		

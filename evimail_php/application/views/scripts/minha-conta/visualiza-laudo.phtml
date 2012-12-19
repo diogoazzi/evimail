@@ -93,7 +93,7 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 	<?php }?>    
     </a>'
 <?php } else {?>
-     <a id="xpto" class="button" href="/minha-conta/contratar-servico"><span>Contratar Serviço</span></a>
+     <a id="xpto" class="button" href="/minha-conta/contratar-servico/ema_id/<?php echo $this->email->ema_id; ?>"><span>Contratar Serviço</span></a>
 <?php }?>
 
 </div>

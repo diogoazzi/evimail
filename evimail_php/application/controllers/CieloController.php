@@ -28,6 +28,8 @@ class CieloController extends Zend_Controller_Action
 		$data = array ('cre_id' => $params['numero_pedido']);
 		$credits = $creditTable->getAllCredits($data, true);
 		$credit = $credits[0];
+		
+		$email_id = $params['ema_id'];
 
 		$userTable = new Fet_Model_UserTable();
 		$data = array('usr_id' => $credit->usr_id);
@@ -74,8 +76,11 @@ class CieloController extends Zend_Controller_Action
 			$msg = 'Sou solicita&ccedil;&atilde;o de pagamento foi aprovada.';
 			$subject = 'Evimail - Pagamento Autorizado pela Operadora';
 			$this->enviaEmail($msg, $subject, $emails, $user->usr_name);
-				
-			$this->_redirect('/minha-conta/');
+			
+			if(isset($email_id) && $email_id != null && $email_id != '')
+				$this->_redirect('/minha-conta/visualiza-laudo/ema_id/'.$email_id);
+			else
+				$this->_redirect('/minha-conta/');
 			die('capturada com sucesso.');
 		}
 

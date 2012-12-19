@@ -3,7 +3,9 @@ echo $this->partial('index/header_logado.phtml', array('actionErrors'=>$this->ac
 ?>
 
 <form action="/minha-conta/pagar-servico" id="form1" method="post">
-
+<?php if($this->ema_id) {?>
+	<input type= hidden" name="ema_id" value="<?php echo $this->ema_id?>">
+<?php }?>
 <div id="container">
 		<div id="wrapper">			
     <div id="ContentPlaceHolder_Body_uppContratarServico">

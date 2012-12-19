@@ -254,7 +254,7 @@ class IndexController extends Zend_Controller_Action
 								"Este servi&ccedil;o serve para confirmar o recebimento do email enviado por:".$user->usr_name.".<br>".
 								'Clique <a href="http://'.$_SERVER["SERVER_NAME"].'/minha-conta/alterar-dados/activeKey/'.$user_to->usr_activeKey.'/ema_id/'.$emailSaved.'/usr_email/'.$to.'"> aqui </a> para visualiza-lo e confirmar.<br>';
 						
-						$data["usuario"] = 'Usuário';						
+						$data["usuario"] = '';						
 					}
 					
 					$confirmacaoDestTable = new Fet_Model_ConfirmacaoDestinatariosTable();

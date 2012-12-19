@@ -35,12 +35,17 @@ class Fet_Model_ConfirmacaoDestinatariosTable extends Zend_Db_Table
 	
 	
 	
-		if (isset($params["tid"]))
-			$select->where("c.tid = ? ", $params["tid"]);
+		if (isset($params["td"]))
+			$select->where("c.id = ? ", $params["id"]);
 
 		if (isset($params['status']))
 			$select->where("c.status = ? ", $params["status"]);
+
+		if (isset($params['ema_id']))
+			$select->where("c.ema_id = ? ", $params["ema_id"]);
 		
+		if (isset($params['usr_id']))
+			$select->where("c.usr_id = ? ", $params["usr_id"]);
 // 		 Zend_Debug::dump($select->__toString());
 
 		if($limit || $offset)
