@@ -300,8 +300,11 @@ class MinhaContaController extends Zend_Controller_Action
 
 		$Pedido->dadosPedidoNumero = $credit_id;
 		$Pedido->dadosPedidoValor = $post["produto"];
-		 
-		$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL($Pedido->dadosPedidoNumero, $post['ema_id']);
+
+		if(isset($post['ema_id']))
+			$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL($Pedido->dadosPedidoNumero, $post['ema_id']);
+		else
+			$Pedido->urlRetorno = Fet_Controller_Helper_PedidoProfile::ReturnURL($Pedido->dadosPedidoNumero, false);
 		 
 		// ENVIA REQUISI��O SITE CIELO
 		$objResposta = $Pedido->RequisicaoTransacao(false);
