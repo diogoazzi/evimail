@@ -214,5 +214,113 @@ class Fet_Model_EmailTable extends Zend_Db_Table
 		
 		return true;
 	}
+	
+	
+	public function getAllFromConfirmacaoDestinatario($params=array(), $fetchResult = false, $limit = null, $offset = 0)
+	{
+		/**
+		 * Obtendo os dados de todos os amigos do usuário $usrId
+		 * @var Zend_Db_Sql
+		 */
+		$select = $this->select()
+		->from(
+				array('e' => $this->_name)
+		)->join(array('c' => 'confirmacao_destinatarios'),
+                    'c.ema_id = e.ema_id'
+		)->setIntegrityCheck(false)
+		;//
+
+
+
+		if (isset($params["ini"]) and isset($params["fim"]))
+		{
+			if (Zend_Validate::is($params["ini"], "Date", array("dd/MM/yyyy"))
+					and Zend_Validate::is($params["fim"], "Date", array("dd/MM/yyyy")))
+			{
+				$dtIni = new Zend_Date($params["ini"] . " 00:00:00", "pt_BR");
+				$dtIni = $dtIni->get(Zend_Date::ISO_8601);
+
+				$dtFim = new Zend_Date($params["fim"] . " 23:59:59", "pt_BR");
+				$dtFim = $dtFim->get(Zend_Date::ISO_8601);
+
+				$select->where('e.ema_sendDate BETWEEN "'.$dtIni.'" AND "'.$dtFim.'"');
+			}
+		}
+
+
+		if (isset($params["confirmed"]))
+		{
+			$select->where('e.ema_confirmed = ?', $params["confirmed"]);
+		}
+
+		if (isset($params["search"])){
+			$select->where("e.ema_userfrom like ?
+					or e.ema_userto like ?
+					or e.ema_emailfrom like ?
+					or e.ema_emailto like ?
+					or e.ema_cc like ?
+					or e.ema_bcc like ?
+					or e.ema_subject like ?
+					or e.ema_body like ?", '%'.$params["search"].'%');
+		}
+		
+		if(isset($params["usr_id"])){
+			$select->where('c.usr_id = ?', $params['usr_id']);
+		}
+
+		if(isset($params["ema_id"])){
+			$select->where('e.ema_id = ?', $params['ema_id']);
+		}
+
+		if(isset($params["ema_hash"])){
+			$select->where('e.ema_hash = ?', $params['ema_hash']);
+		}
+
+		if(isset($params["ema_usr_id"])){
+			$select->where('e.ema_usr_id = ?', $params['ema_usr_id']);
+		}
+
+
+		if(isset($params['to']))
+			$select->where('e.ema_emailto = ?', $params['to']);
+
+		if(isset($params['from']))
+			$select->where('e.ema_emailfrom = ?', $params['from']);
+
+		if(isset($params['subject']))
+			$select->where('e.ema_subject like ?', '%'.$params['subject'].'%');
+
+		if(isset($params['status']))
+			$select->where('e.ema_confirmed = ?', $params['status']);
+
+
+
+
+		if($limit || $offset)
+			$select->limit($limit, $offset);
+
+
+
+		if(!isset($params['order'])){
+			$select->order("ema_sendDate desc");
+		} else {
+			if(!is_array($params['order']))
+				$select->order($params['order']);
+			else {
+				foreach($params['order'] as $order)
+					$select->order($order);
+			}
+		}
+
+// 		die(Zend_Debug::dump($select->__toString()));
+
+		if($fetchResult)
+		{
+			return $this->fetchAll($select);
+		}else{
+			return $select;
+		}
+
+	}
 }
 ?>

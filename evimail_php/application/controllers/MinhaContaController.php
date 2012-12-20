@@ -740,6 +740,35 @@ class MinhaContaController extends Zend_Controller_Action
 			 
 			$return[] = $email;
 		}
+		
+		$param = array(
+				'usr_id' => $user->usr_id,
+				'order' => array ('ema_senddate', 'ema_confirmed'));
+		
+		if(isset($post['to']) && $post['to'] != '')
+			$param['to'] = $post['to'];
+		
+		if(isset($post['from'])  && $post['from'] != '')
+			$param['from'] = $post['from'];
+		
+		if(isset($post['subject']) && $post['subject'] != '')
+			$param['subject'] = $post['subject'];
+		
+		if(isset($post['status']) && $post['status'] != '')
+			$param['status'] = $post['status'];
+		//TODO: colocar os filtros de dt_ini edt_fim
+		
+		$emails = $emailTable->getAllFromConfirmacaoDestinatario($param, true);
+		foreach($emails as $email){
+			$Date = new Zend_Date($email->ema_senddate,"YYYY-MM-DD HH:mm:ss");
+			$DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
+		
+			$email->ema_DateFormatado = $DateF;
+		
+			$return[] = $email;
+		}
+		
+// 		echo
 		 
 		$this->view->assign('emails', $return);
 		$this->view->assign('user', $user);
@@ -751,10 +780,13 @@ class MinhaContaController extends Zend_Controller_Action
 		$user = $auth->getIdentity();
 
 		$params = $this->getRequest()->getParams();
+		
+		$emailTable = new Fet_Model_EmailTable();
+		$email = $emailTable->find($params['ema_id'])->current();
 		 
 		$pathBase = pathinfo(__FILE__);
 		$pathBase = $pathBase['dirname'];
-		$path = $pathBase.'/../../public/pdf/'.$user->usr_id.'/'.$params['ema_hash'].'/';
+		$path = $pathBase.'/../../public/pdf/'.$email->ema_usr_id.'/'.$params['ema_hash'].'/';
 		 
 		//     	die($path);
 		 

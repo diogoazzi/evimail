@@ -215,7 +215,7 @@ class IndexController extends Zend_Controller_Action
 		    $path = $pathBase.'/../../public/pdf/'.$user->usr_id.'/'.$emailrow->ema_hash.'/';
 		    if(!file_exists($path))
 		    	mkdir($path, 0755,true);
-		    
+
 		    $pdf = $dompdf->output();
 		    file_put_contents($path."email.pdf", $pdf);
 		    
@@ -377,6 +377,7 @@ class IndexController extends Zend_Controller_Action
     	$body = quoted_printable_decode($part->getContent());
 //     	die("<textarea>$body</textarea>");
 //     	$body = utf8_decode($part->getContent());
+// 		$body = 'São Caçarola';
     	return $body;  
     }
 
