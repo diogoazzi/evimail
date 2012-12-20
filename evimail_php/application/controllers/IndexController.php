@@ -56,7 +56,8 @@ class IndexController extends Zend_Controller_Action
 				else
 					$to = $to_arr2[0];
 			
-				if($to == 'evimail@evimail.com.br')
+// 				if($to == 'evimail@evimail.com.br')
+				if($to == $_config->mail->evimail->user)
 					continue;
 				 
 				$to_arr3[] = $to;
@@ -244,6 +245,7 @@ class IndexController extends Zend_Controller_Action
 						$userData = array();
 						$userData['usr_email'] = $to;
 						$userData['status'] = 1;
+						$userData['usr_insertDate'] = time();
 						$user_to_id = $userTable->createUser($userData);
 						$user_to = $usrProfile->getUserByEmail($to);
 						$key = Zend_Registry::get('config')->key->active;
@@ -373,6 +375,8 @@ class IndexController extends Zend_Controller_Action
     		}
     	}
     	$body = quoted_printable_decode($part->getContent());
+//     	die("<textarea>$body</textarea>");
+//     	$body = utf8_decode($part->getContent());
     	return $body;  
     }
 

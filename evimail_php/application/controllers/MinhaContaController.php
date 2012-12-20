@@ -624,7 +624,8 @@ class MinhaContaController extends Zend_Controller_Action
 			else
 				$to = $to_arr2[0];
 				
-			if($to == 'evimail@evimail.com.br')
+// 			if($to == 'evimail@evimail.com.br')
+			if($to == $_config->mail->evimail->user)
 				continue;
 				
 			$to_arr3[] = $to;
