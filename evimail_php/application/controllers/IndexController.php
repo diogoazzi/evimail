@@ -181,7 +181,7 @@ class IndexController extends Zend_Controller_Action
 		    		'ema_emailto'	=> $message->to,
 		    		'ema_cc' => $cc,
 // 		    		'ema_bcc' => $bcc,
-		    		'ema_subject' => $message->subject,
+		    		'ema_subject' => $this->getSubject($message->subject),
 		    		'ema_senddate' => $recieved,
 		    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
 		    		'ema_usr_id' => $usr_id,
@@ -374,11 +374,25 @@ class IndexController extends Zend_Controller_Action
     			break;
     		}
     	}
-    	$body = quoted_printable_decode($part->getContent());
+    	
+    	$str = preg_replace("/\=([A-F][A-F0-9])/","%$1",$part->getContent());
+    	$str = urldecode($str);
+    	$body = utf8_encode($str);
+    	 
+//     	$body = quoted_printable_decode($part->getContent());
+//     	$body = $part->getContent();
 //     	die("<textarea>$body</textarea>");
 //     	$body = utf8_decode($part->getContent());
 // 		$body = 'São Caçarola';
     	return $body;  
+    }
+    
+    public function getSubject($sub){
+    	$str = preg_replace("/\=([A-F][A-F0-9])/","%$1",$sub);
+    	$str = urldecode($str);
+    	$x = utf8_encode($str);
+
+    	return $x;
     }
 
     public function termosAction(){
