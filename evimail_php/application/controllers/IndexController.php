@@ -197,7 +197,8 @@ class IndexController extends Zend_Controller_Action
 		    $Date = new Zend_Date($emailrow->ema_senddate,"YYYY-MM-DD HH:mm:ss");
 		    $DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
 		    
-		    $mail_pdf = '<html><body>hash autentica&ccedil;&atilde;o: '.$emailrow->ema_hash.'<br><br>';
+		    $mail_pdf = '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />';
+		    $mail_pdf .='<html><body>hash autentica&ccedil;&atilde;o: '.$emailrow->ema_hash.'<br><br>';
 		    $mail_pdf .= 'Recebido em: '.$DateF.'<br>';
 		    $mail_pdf .= 'De: '.$emailrow->ema_emailfrom.'<br>';
 		    $mail_pdf .= 'Para: '.$emailrow->ema_emailto.'<br>';
