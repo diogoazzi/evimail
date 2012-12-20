@@ -56,7 +56,8 @@ class IndexController extends Zend_Controller_Action
 				else
 					$to = $to_arr2[0];
 			
-				if($to == 'evimail@evimail.com.br')
+// 				if($to == 'evimail@evimail.com.br')
+				if($to == $_config->mail->evimail->user)
 					continue;
 				 
 				$to_arr3[] = $to;
@@ -180,7 +181,7 @@ class IndexController extends Zend_Controller_Action
 		    		'ema_emailto'	=> $message->to,
 		    		'ema_cc' => $cc,
 // 		    		'ema_bcc' => $bcc,
-		    		'ema_subject' => $message->subject,
+		    		'ema_subject' => $this->getSubject($message->subject),
 		    		'ema_senddate' => $recieved,
 		    		'ema_confirmed' => Fet_Model_EmailTable::EMAIL_NAO_ENVIADO,
 		    		'ema_usr_id' => $usr_id,
@@ -196,7 +197,8 @@ class IndexController extends Zend_Controller_Action
 		    $Date = new Zend_Date($emailrow->ema_senddate,"YYYY-MM-DD HH:mm:ss");
 		    $DateF = $Date->toString('dd/MM/YYYY HH:mm:ss');
 		    
-		    $mail_pdf = '<html><body>hash autentica&ccedil;&atilde;o: '.$emailrow->ema_hash.'<br><br>';
+		    $mail_pdf = '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />';
+		    $mail_pdf .='<html><body>hash autentica&ccedil;&atilde;o: '.$emailrow->ema_hash.'<br><br>';
 		    $mail_pdf .= 'Recebido em: '.$DateF.'<br>';
 		    $mail_pdf .= 'De: '.$emailrow->ema_emailfrom.'<br>';
 		    $mail_pdf .= 'Para: '.$emailrow->ema_emailto.'<br>';
@@ -214,7 +216,7 @@ class IndexController extends Zend_Controller_Action
 		    $path = $pathBase.'/../../public/pdf/'.$user->usr_id.'/'.$emailrow->ema_hash.'/';
 		    if(!file_exists($path))
 		    	mkdir($path, 0755,true);
-		    
+
 		    $pdf = $dompdf->output();
 		    file_put_contents($path."email.pdf", $pdf);
 		    
@@ -244,6 +246,7 @@ class IndexController extends Zend_Controller_Action
 						$userData = array();
 						$userData['usr_email'] = $to;
 						$userData['status'] = 1;
+						$userData['usr_insertDate'] = time();
 						$user_to_id = $userTable->createUser($userData);
 						$user_to = $usrProfile->getUserByEmail($to);
 						$key = Zend_Registry::get('config')->key->active;
@@ -372,8 +375,25 @@ class IndexController extends Zend_Controller_Action
     			break;
     		}
     	}
-    	$body = quoted_printable_decode($part->getContent());
+    	
+    	$str = preg_replace("/\=([A-F][A-F0-9])/","%$1",$part->getContent());
+    	$str = urldecode($str);
+    	$body = utf8_encode($str);
+    	 
+//     	$body = quoted_printable_decode($part->getContent());
+//     	$body = $part->getContent();
+//     	die("<textarea>$body</textarea>");
+//     	$body = utf8_decode($part->getContent());
+// 		$body = 'São Caçarola';
     	return $body;  
+    }
+    
+    public function getSubject($sub){
+    	$str = preg_replace("/\=([A-F][A-F0-9])/","%$1",$sub);
+    	$str = urldecode($str);
+    	$x = utf8_encode($str);
+
+    	return $x;
     }
 
     public function termosAction(){
